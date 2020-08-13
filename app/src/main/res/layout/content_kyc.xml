@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textDirection="locale"
+    tools:ignore="UnusedAttribute">
+
+    <TextView
+        android:id="@+id/textView25"
+        style="@style/AppTheme.Text.Small.Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:text="@string/personal_details"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/textView23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:text="@string/emirates_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/tv_valid_emirates"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:textColor="@color/blue_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView26"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:text="@string/passport"
+        app:layout_constraintEnd_toStartOf="@+id/tv_valid_passport"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/tv_valid_passport"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:textColor="@color/blue_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_valid_emirates" />
+
+    <TextView
+        android:id="@+id/textView28"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:text="@string/email_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/tv_email_id"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:layout_marginBottom="8dp"
+        android:gravity="end"
+        app:layout_constraintBottom_toTopOf="@+id/tv_mobile_number"
+        app:layout_constraintEnd_toStartOf="@+id/iv_edit_email_id"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/tv_valid_passport"
+        tools:text="andrew.mathews@mail.com" />
+
+    <TextView
+        android:id="@+id/textView30"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:text="@string/mobile_num"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/tv_mobile_number"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:gravity="end"
+        android:textAlignment="viewEnd"
+        android:textDirection="ltr"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView30"
+        app:layout_constraintEnd_toStartOf="@+id/iv_edit_mobile_no"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView30"
+        tools:text="+9710512345678" />
+
+    <TextView
+        android:id="@+id/textView32"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:text="@string/link"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/tv_settings"
+        style="@style/AppTheme.Text.Small.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:text="@string/settings"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:text="@string/passwordKyc"
+        app:layout_constraintBottom_toTopOf="@+id/tv_auth"
+        app:layout_constraintEnd_toStartOf="@+id/tv_change_password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_settings" />
+
+    <TextView
+        android:id="@+id/tv_change_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:background="@drawable/ic_upload_bg"
+        android:gravity="center"
+        android:paddingStart="@dimen/dimen_8"
+        android:paddingLeft="@dimen/dimen_8"
+        android:paddingTop="@dimen/dimen_4"
+        android:paddingEnd="@dimen/dimen_8"
+        android:paddingRight="@dimen/dimen_8"
+        android:paddingBottom="@dimen/dimen_4"
+        android:text="@string/change"
+        app:layout_constraintBottom_toTopOf="@+id/tv_auth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_settings" />
+
+    <TextView
+        android:id="@+id/tv_auth"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:text="@string/biometric_authentication"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_password"
+        app:layout_constraintEnd_toStartOf="@+id/tv_update_auth" />
+
+    <TextView
+        android:id="@+id/tv_update_auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:background="@drawable/ic_upload_bg"
+        android:gravity="center"
+        android:paddingStart="@dimen/dimen_8"
+        android:paddingLeft="@dimen/dimen_8"
+        android:paddingTop="@dimen/dimen_4"
+        android:paddingEnd="@dimen/dimen_8"
+        android:paddingRight="@dimen/dimen_8"
+        android:paddingBottom="@dimen/dimen_4"
+        android:text="@string/update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_auth"
+        app:layout_constraintTop_toBottomOf="@+id/tv_change_password" />
+
+
+    <TextView
+        android:id="@+id/textView34"
+        style="@style/AppTheme.Text.Small.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:text="@string/update_kyc_document"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_auth"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <TextView
+        android:id="@+id/textView35"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:text="@string/passport_number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_upload_passport"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_update_passport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/app_name"
+        android:paddingStart="@dimen/dimen_6"
+        android:paddingLeft="@dimen/dimen_6"
+        android:paddingTop="@dimen/dimen_6"
+        android:paddingEnd="@dimen/dimen_14"
+        android:paddingRight="@dimen/dimen_14"
+        android:paddingBottom="@dimen/dimen_6"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_upload_passport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_upload_passport" />
+
+    <TextView
+        android:id="@+id/tv_upload_passport"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:gravity="end"
+        android:paddingStart="@dimen/dimen_8"
+        android:paddingLeft="@dimen/dimen_8"
+        android:paddingTop="@dimen/dimen_4"
+        android:paddingEnd="@dimen/dimen_8"
+        android:paddingRight="@dimen/dimen_8"
+        android:paddingBottom="@dimen/dimen_4"
+        android:text="@string/upload"
+        app:layout_constraintBottom_toTopOf="@+id/tv_upload_emirate_id"
+        app:layout_constraintEnd_toStartOf="@+id/img_update_passport"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView35"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+    <TextView
+        android:id="@+id/textView37"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:text="@string/emirates_id"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_upload_emirate_id"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_upload_emirate_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:background="@drawable/ic_upload_bg"
+        android:gravity="center"
+        android:paddingStart="@dimen/dimen_8"
+        android:paddingLeft="@dimen/dimen_8"
+        android:paddingTop="@dimen/dimen_4"
+        android:paddingEnd="@dimen/dimen_8"
+        android:paddingRight="@dimen/dimen_8"
+        android:paddingBottom="@dimen/dimen_4"
+        android:text="@string/upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView37"
+        app:layout_constraintTop_toBottomOf="@+id/tv_upload_passport" />
+
+    <TextView
+        android:id="@+id/textView39"
+        style="@style/AppTheme.Text.Small.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:text="@string/emergency_contact"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+    <ImageView
+        android:id="@+id/iv_edit_emergency_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/app_name"
+        android:paddingStart="@dimen/dimen_6"
+        android:paddingLeft="@dimen/dimen_6"
+        android:paddingTop="@dimen/dimen_6"
+        android:paddingEnd="@dimen/dimen_14"
+        android:paddingRight="@dimen/dimen_14"
+        android:paddingBottom="@dimen/dimen_6"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintBottom_toBottomOf="@+id/textView39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView39"
+        app:layout_constraintTop_toTopOf="@+id/textView39" />
+
+    <TextView
+        android:id="@+id/textView40"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:text="@string/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+    <TextView
+        android:id="@+id/tv_emergency_name"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView40"
+        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+    <TextView
+        android:id="@+id/textView42"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:text="@string/mobile_num"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+    <TextView
+        android:id="@+id/tv_emergency_contact_no"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView42"
+        app:layout_constraintTop_toBottomOf="@+id/tv_emergency_name" />
+
+    <TextView
+        android:id="@+id/textView44"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:text="@string/relation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+    <TextView
+        android:id="@+id/tv_relation"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_emergency_contact_no" />
+
+    <ImageView
+        android:id="@+id/iv_edit_email_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/app_name"
+        android:paddingStart="@dimen/dimen_6"
+        android:paddingLeft="@dimen/dimen_6"
+        android:paddingTop="@dimen/dimen_6"
+        android:paddingEnd="@dimen/dimen_14"
+        android:paddingRight="@dimen/dimen_14"
+        android:paddingBottom="@dimen/dimen_6"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_email_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_email_id" />
+
+    <ImageView
+        android:id="@+id/iv_edit_mobile_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/app_name"
+        android:paddingStart="@dimen/dimen_6"
+        android:paddingLeft="@dimen/dimen_6"
+        android:paddingTop="@dimen/dimen_6"
+        android:paddingEnd="@dimen/dimen_14"
+        android:paddingRight="@dimen/dimen_14"
+        android:paddingBottom="@dimen/dimen_6"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_mobile_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_edit_email_id"
+        app:layout_constraintTop_toTopOf="@+id/tv_mobile_number" />
+
+    <ImageView
+        android:id="@+id/iv_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_fb"
+        app:layout_constraintBottom_toTopOf="@+id/tv_settings"
+        app:layout_constraintEnd_toStartOf="@+id/iv_instagram"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mobile_number" />
+
+    <ImageView
+        android:id="@+id/iv_instagram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_instagram"
+        app:layout_constraintBottom_toTopOf="@+id/tv_settings"
+        app:layout_constraintEnd_toStartOf="@+id/iv_linkedin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mobile_number" />
+
+    <ImageView
+        android:id="@+id/iv_linkedin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_linkedin"
+        app:layout_constraintBottom_toTopOf="@+id/tv_settings"
+        app:layout_constraintEnd_toStartOf="@+id/iv_twitter"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mobile_number" />
+
+    <ImageView
+        android:id="@+id/iv_twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_twitter"
+        app:layout_constraintBottom_toTopOf="@+id/tv_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mobile_number" />
+
+
+</android.support.constraint.ConstraintLayout>

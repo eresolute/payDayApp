@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_edit_beneficiary"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/dimen_4"
+    android:paddingBottom="@dimen/dimen_4"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10"
+        android:src="@drawable/ic_card_name"
+        android:tint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_beneficiary_acnt"
+        app:layout_constraintEnd_toStartOf="@+id/tv_beneficiary_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_beneficiary_name"
+        android:paddingStart="@dimen/dimen_10"
+        android:paddingEnd="@dimen/dimen_10" />
+
+
+    <TextView
+        android:id="@+id/tv_beneficiary_name"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fontFamily="@font/comfortaa_bold"
+        android:paddingTop="@dimen/dimen_5"
+        android:text="@string/app_name"
+        android:textAlignment="viewStart"
+        android:textColor="@color/textColor"
+        app:layout_constraintBottom_toTopOf="@+id/tv_beneficiary_acnt"
+        app:layout_constraintEnd_toStartOf="@+id/toggle_status"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_beneficiary_acnt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_5"
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_beneficiary_name"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tv_beneficiary_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_beneficiary_name" />
+
+    <ImageView
+        android:id="@+id/toggle_status"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/dimen_8"
+        android:src="@drawable/ic_check"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_beneficiary_acnt"
+        app:layout_constraintEnd_toStartOf="@id/iv_edit"
+        app:layout_constraintStart_toEndOf="@id/tv_beneficiary_acnt"
+        app:layout_constraintTop_toTopOf="@+id/tv_beneficiary_name" />
+
+
+    <ImageView
+        android:id="@+id/iv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/dimen_8"
+        android:src="@drawable/ic_item_edit_beneficiary"
+        android:tint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_beneficiary_acnt"
+        app:layout_constraintEnd_toStartOf="@id/iv_delete"
+        app:layout_constraintStart_toEndOf="@id/toggle_status"
+        app:layout_constraintTop_toTopOf="@+id/tv_beneficiary_name" />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/dimen_8"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_beneficiary_acnt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_edit"
+        app:layout_constraintTop_toTopOf="@+id/tv_beneficiary_name" />
+
+
+</android.support.constraint.ConstraintLayout>

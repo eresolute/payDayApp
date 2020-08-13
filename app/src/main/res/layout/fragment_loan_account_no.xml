@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/dimen_18"
+    android:layout_marginEnd="@dimen/dimen_18">
+
+    <TextView
+        android:id="@+id/tv_emirates_id"
+        style="@style/AppTheme.Text.Medium.Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:padding="@dimen/dimen_8"
+        android:text="@string/enter_emirates_id"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout_emirates_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout_emirates_id"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="@color/grey_light"
+        app:boxCornerRadiusBottomEnd="@dimen/input_text_corner"
+        app:boxCornerRadiusBottomStart="@dimen/input_text_corner"
+        app:boxCornerRadiusTopEnd="@dimen/input_text_corner"
+        app:boxCornerRadiusTopStart="@dimen/input_text_corner"
+        app:boxStrokeColor="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_emirates_id">
+
+        <com.fh.payday.utilities.maskededittext.MaskedEditText
+            android:id="@+id/et_emirates_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_emirates_id_card"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/comfortaa_bold"
+            android:inputType="phone"
+            android:gravity="start"
+            android:textAlignment="textStart"
+            android:textDirection="ltr"
+            android:imeOptions="flagNoFullscreen|actionDone"
+            android:textSize="@dimen/text_16"
+            app:allowed_chars="1234567890"
+            app:keep_hint="true"
+            app:mask="###-####-#######-#"
+            tools:ignore="RtlHardcoded,UnusedAttribute" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:backgroundTint="@color/btn_primary_color"
+        app:cornerRadius="@dimen/button_corner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_emirates_id"
+        app:rippleColor="@color/btn_secondary_color" />
+</android.support.constraint.ConstraintLayout>

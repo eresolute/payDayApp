@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/root_view"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="@dimen/dimen_8"
+    android:paddingRight="@dimen/dimen_8">
+
+    <TextView
+        android:id="@+id/location_name"
+        style="@style/AppTheme.Text.Body1.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        tools:text="AHMEDABAD MERCANTILE COOPERATIVE BANK"
+        android:textAlignment="textStart"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toTopOf="@id/location_details"
+        app:layout_constraintEnd_toStartOf="@+id/radiobtn_location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/location_details"
+        style="@style/AppTheme.Text.Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:includeFontPadding="false"
+        tools:text="hhdbhdbjhdbcjhhdb \ncjhbdbccdbcbsnsnajhh"
+        android:textAlignment="textStart"
+        android:textColor="@color/grey_600"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/location_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/location_name" />
+
+    <RadioButton
+        android:id="@+id/radiobtn_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        app:layout_constraintBottom_toBottomOf="@id/location_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/location_name"
+        app:layout_constraintTop_toTopOf="@id/location_name" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    android:paddingLeft="@dimen/dimen_12"
+    android:paddingRight="@dimen/dimen_12"
+    tools:context=".views2.intlRemittance.transfer.fragments.BeneficiaryFragment">
+
+    <include
+        android:id="@+id/layout_payment"
+        layout="@layout/layout_payment_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_payment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_intl_beneficiaries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tv_add_beneficiary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:visibility="gone"
+                android:drawableEnd="@drawable/ic_add_beneficiary"
+                android:drawableRight="@drawable/ic_add_beneficiary"
+                android:drawablePadding="@dimen/dimen_8"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dimen_8"
+                android:text="@string/add_beneficiary"
+                android:textAlignment="center"
+                app:backgroundTint="@color/btn_primary_color"/>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn_locate_exchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:layout_marginBottom="@dimen/dimen_16"
+        android:text="@string/locate_exchange"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:backgroundTint="@color/btn_primary_color"
+        app:cornerRadius="@dimen/button_corner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/btn_secondary_color" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_payment">
+
+        <TextView
+            android:id="@+id/tvNoBeneficiary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_no_beneficiary_icon"
+            android:drawablePadding="@dimen/dimen_8"
+            android:text="@string/no_beneficiaries_available"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fab_btn_noBeneficiary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:drawableEnd="@drawable/ic_add_beneficiary"
+            android:drawableRight="@drawable/ic_add_beneficiary"
+            android:drawablePadding="@dimen/dimen_12"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dimen_8"
+            android:text="@string/add_beneficiary"
+            android:textAlignment="center"
+            app:backgroundTint="@color/btn_primary_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+    <TextView
+        android:id="@+id/tvNoBeneficiaryInstruction"
+        style="@style/AppTheme.Text.Time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:text="@string/register_intl_beneficiary_instruction"
+        android:textAlignment="center"
+        android:textColor="@color/grey_700"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btn_locate_exchange"
+        app:layout_constraintEnd_toEndOf="@+id/btn_locate_exchange"
+        app:layout_constraintStart_toStartOf="@+id/btn_locate_exchange"
+        android:gravity="center_horizontal" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

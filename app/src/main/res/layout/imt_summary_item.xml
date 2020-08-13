@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dimen_4"
+    android:layout_marginEnd="@dimen/dimen_4"
+    android:padding="@dimen/dimen_4">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/AppTheme.Text.Time"
+        android:textColor="@color/textHintColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        tools:text="From" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_title1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/AppTheme.Text.Body1.Bold"
+        app:layout_constraintBottom_toTopOf="@id/tv_heading1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Zahir Hassan" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/AppTheme.Text.Body1.Bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/tv_heading1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Declined" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_exchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/AppTheme.Text.Body1.Bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/tv_heading1"
+        app:layout_constraintEnd_toStartOf="@+id/img_exchange"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Declined" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_heading1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/AppTheme.Text.Time"
+        android:textSize="@dimen/text_10"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/tv_heading2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/tv_title1"
+        tools:text="First Abu Dhabi Bank" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_heading2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/AppTheme.Text.Time"
+        android:textSize="@dimen/text_10"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/tv_heading1"
+        tools:text="xxxx xxxx xxxx 2345" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        android:drawablePadding="@dimen/dimen_8"
+        android:gravity="start"
+        android:hint="@string/enter_promo_code"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/AppTheme.Text.Body1.Bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/tv_heading1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="jelly_bean_mr1" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="tv_title1,tv_label,tv_heading1,tv_heading2" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:background="@color/grey_700"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barrier" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/img_exchange"
+        android:layout_width="@dimen/dimen_36"
+        android:layout_height="@dimen/dimen_28"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:gravity="start"
+        android:padding="@dimen/dimen_2"
+        android:src="@mipmap/uae_x"
+        android:textAlignment="viewStart"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_exchange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_exchange"
+        app:layout_constraintTop_toTopOf="@+id/tv_exchange" />
+
+</android.support.constraint.ConstraintLayout>

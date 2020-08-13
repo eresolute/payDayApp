@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/items"
+    android:title="@string/egyptian_id"
+    /><item
+    android:id="@+id/items1"
+    android:title="@string/egyptian_id"
+    /><item
+    android:id="@+id/items2"
+    android:title="@string/egyptian_id"
+    /><item
+    android:id="@+id/items3"
+    android:title="@string/egyptian_id"
+    /><item
+    android:id="@+id/items4"
+    android:title="@string/egyptian_id"
+    /><item
+    android:id="@+id/items5"
+    android:title="@string/egyptian_id"
+    />
+    <item
+        android:id="@+id/items6"
+        android:title="@string/egyptian_id" />
+</menu>

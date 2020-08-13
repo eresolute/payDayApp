@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_bg_blue"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/i_toolbar"
+        layout="@layout/toolbar" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/card_radius">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@id/progress_bar"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/AppTheme.Text.Body2.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dimen_8"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_18"
+                app:layout_constraintBottom_toTopOf="@id/tv_description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                style="@style/AppTheme.Text.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:padding="@dimen/dimen_8"
+                android:textColor="@color/grey_700"
+                android:lineSpacingExtra="3dp"
+                app:layout_constraintBottom_toTopOf="@id/btn_apply"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btn_apply"
+                style="@style/AppTheme.Text.Small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_16"
+                android:layout_marginLeft="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_4"
+                android:layout_marginRight="@dimen/dimen_4"
+                android:text="@string/interested"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_10"
+                app:backgroundTint="@color/btn_primary_color"
+                app:cornerRadius="@dimen/button_corner"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_snooze"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.95"
+                app:rippleColor="@color/btn_secondary_color" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btn_snooze"
+                style="@style/AppTheme.Text.Small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_4"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_marginEnd="@dimen/dimen_16"
+                android:layout_marginRight="@dimen/dimen_16"
+                android:text="@string/snooze"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_10"
+                app:backgroundTint="@color/btn_primary_color"
+                app:cornerRadius="@dimen/button_corner"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_apply"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn_apply"
+                app:layout_constraintTop_toTopOf="@+id/btn_apply"
+                app:rippleColor="@color/btn_secondary_color" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <include
+        android:id="@id/i_bottombar"
+        layout="@layout/bottombar_dashboard" />
+
+</LinearLayout>

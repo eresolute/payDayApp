@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_18"
+        android:layout_marginEnd="@dimen/dimen_18">
+
+        <ImageView
+            android:id="@+id/img_payday_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/payday_card"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/tv_card_number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_card_pin"
+            style="@style/AppTheme.Text.Medium.Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dimen_8"
+            android:text="@string/enter_card_pin"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/pin_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout_card_no" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout_card_no"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:boxBackgroundColor="@color/grey"
+            app:boxCornerRadiusBottomEnd="@dimen/input_text_corner"
+            app:boxCornerRadiusBottomStart="@dimen/input_text_corner"
+            app:boxCornerRadiusTopEnd="@dimen/input_text_corner"
+            app:boxCornerRadiusTopStart="@dimen/input_text_corner"
+            app:layout_constraintBottom_toTopOf="@+id/tv_card_pin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_card_number">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:digits="0123456789"
+                android:drawableLeft="@drawable/ic_card_number"
+                android:drawablePadding="12dp"
+                android:gravity="start"
+                android:imeOptions="actionDone"
+                android:inputType="number|textNoSuggestions"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="textStart"
+                android:textColor="@color/textColor"
+                android:textDirection="ltr"
+                android:textSize="@dimen/text_12"
+                tools:ignore="RtlHardcoded,UnusedAttribute" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_card_number"
+            style="@style/AppTheme.Text.Medium.Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dimen_8"
+            android:text="@string/enter_card_number"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayout_card_no"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_payday_card" />
+
+        <com.mukesh.OtpView
+            android:id="@id/pin_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:inputType="numberPassword"
+            android:textSize="@dimen/text_8"
+            app:itemCount="4"
+            app:itemHeight="@dimen/dimen_40"
+            app:itemRadius="@dimen/dimen_6"
+            app:itemWidth="@dimen/dimen_40"
+            app:layout_constraintBottom_toTopOf="@+id/tv_error"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_card_pin"
+            app:lineColor="@color/black"
+            app:state_filled="true"
+            app:viewType="rectangle" />
+
+        <TextView
+            android:id="@+id/tv_error"
+            style="@style/AppTheme.Text.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dimen_8"
+            android:text="@string/please_enter_pin"
+            android:textAlignment="center"
+            android:textColor="@color/color_red"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/btn_submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pin_view" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            app:backgroundTint="@color/btn_primary_color"
+            app:cornerRadius="@dimen/button_corner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_error"
+            app:rippleColor="@color/btn_secondary_color" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

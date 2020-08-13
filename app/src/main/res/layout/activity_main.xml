@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/drawer"
+    style="@style/DrawerArrowStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views2.dashboard.MainActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@id/parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views2.dashboard.MainActivity">
+
+        <include layout="@layout/content_main" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:id="@id/linear_layout"
+        android:layout_width="@dimen/drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@mipmap/app_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_edit_kyc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_4">
+
+            <ImageView
+                android:id="@+id/toolbar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/ic_back"
+                android:src="@drawable/ic_back"
+                app:layout_constraintBottom_toBottomOf="@+id/ivProfilePic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.20" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivProfilePic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_profile_pic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ProgressBar
+                android:id="@+id/progress_bar_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/ivProfilePic"
+                app:layout_constraintEnd_toEndOf="@id/ivProfilePic"
+                app:layout_constraintTop_toTopOf="@id/ivProfilePic"
+                app:layout_constraintBottom_toBottomOf="@id/ivProfilePic"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/AppTheme.Text.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dimen_4"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivProfilePic" />
+
+            <ImageView
+                android:id="@+id/ivProfileEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/ic_profile"
+                android:src="@drawable/ic_edit_profile"
+                app:layout_constraintBottom_toTopOf="@+id/tvName"
+                app:layout_constraintEnd_toEndOf="@+id/ivProfilePic"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/ivProfilePic"
+                app:layout_constraintTop_toTopOf="@+id/ivProfilePic"
+                app:layout_constraintVertical_bias="1" />
+
+            <ImageView
+                android:id="@+id/iv_flag"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/flag"
+                android:src="@drawable/ic_united_arab_emirates"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/drawerRecyclerView"
+            android:layout_width="@dimen/drawer_width"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_4"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

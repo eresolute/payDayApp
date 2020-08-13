@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_16">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_sender_label"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/you_send"
+        android:textColor="@color/textHintColor"
+        app:layout_constraintBottom_toTopOf="@+id/et_sender_amount"
+        app:layout_constraintEnd_toEndOf="@id/divider_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.fh.payday.utilities.AutoFormatEditText
+        android:id="@+id/et_sender_amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:enabled="false"
+        android:gravity="start"
+        android:hint="@string/amount_zero"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorAccent"
+        android:textDirection="ltr"
+        android:textSize="@dimen/text_20"
+        app:isDecimal="true"
+        app:layout_constraintBottom_toTopOf="@+id/divider_1"
+        app:layout_constraintEnd_toEndOf="@id/divider_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sender_label"
+        tools:targetApi="jelly_bean_mr1"
+        tools:text="200.00" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_sender"
+        style="@style/ProgressBarSmall"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/et_sender_amount"
+        app:layout_constraintEnd_toEndOf="@+id/et_sender_amount"
+        app:layout_constraintStart_toStartOf="@+id/et_sender_amount"
+        app:layout_constraintTop_toTopOf="@+id/et_sender_amount" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_sender_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/textHintColor"
+        app:layout_constraintBottom_toBottomOf="@+id/divider_1"
+        app:layout_constraintEnd_toStartOf="@+id/barrier_flags"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="@+id/divider_1"
+        tools:text="AED" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_sender_flag"
+        android:layout_width="@dimen/dimen_32"
+        android:layout_height="@dimen/dimen_32"
+        android:src="@drawable/ic_flag_placeholder"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_sender_currency"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/barrier_flags"
+        app:layout_constraintTop_toTopOf="@+id/tv_sender_currency" />
+
+    <View
+        android:id="@+id/divider_1"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_16"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/tv_sender_amount_error"
+        app:layout_constraintEnd_toStartOf="@id/barrier_country"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_sender_amount" />
+
+    <TextView
+        android:id="@+id/tv_sender_amount_error"
+        style="@style/AppTheme.Text.Error"
+        android:layout_width="0dp"
+        android:text="@string/invalid_amount"
+        app:layout_constraintBottom_toTopOf="@+id/tv_receiver_label"
+        app:layout_constraintEnd_toEndOf="@id/divider_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_1" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_receiver_label"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/they_get"
+        android:textColor="@color/textHintColor"
+        app:layout_constraintBottom_toTopOf="@+id/et_receiver_amount"
+        app:layout_constraintEnd_toEndOf="@id/divider_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sender_amount_error" />
+
+    <com.fh.payday.utilities.AutoFormatEditText
+        android:id="@+id/et_receiver_amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:enabled="false"
+        android:gravity="start"
+        android:hint="@string/amount_zero"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorError"
+        android:textDirection="ltr"
+        android:textSize="@dimen/text_20"
+        app:isDecimal="true"
+        app:layout_constraintBottom_toTopOf="@+id/divider_2"
+        app:layout_constraintEnd_toEndOf="@id/divider_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_receiver_label"
+        tools:targetApi="jelly_bean_mr1"
+        tools:text="3600.87" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_receiver"
+        style="@style/ProgressBarSmall"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/et_receiver_amount"
+        app:layout_constraintEnd_toEndOf="@+id/et_receiver_amount"
+        app:layout_constraintStart_toStartOf="@+id/et_receiver_amount"
+        app:layout_constraintTop_toTopOf="@+id/et_receiver_amount" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_receiver_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/textHintColor"
+        app:layout_constraintBottom_toBottomOf="@+id/divider_2"
+        app:layout_constraintEnd_toStartOf="@+id/barrier_flags"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="@+id/divider_2"
+        tools:text="INR" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_receiver_flag"
+        android:layout_width="@dimen/dimen_32"
+        android:layout_height="@dimen/dimen_32"
+        android:src="@drawable/ic_flag_placeholder"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_receiver_currency"
+        app:layout_constraintEnd_toStartOf="@+id/iv_drop_down"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/barrier_flags"
+        app:layout_constraintTop_toTopOf="@+id/tv_receiver_currency" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_drop_down"
+        android:layout_width="@dimen/dimen_18"
+        android:layout_height="@dimen/dimen_18"
+        android:src="@drawable/ic_down_arrow"
+        android:tint="@color/grey_700"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_receiver_flag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_receiver_flag"
+        app:layout_constraintTop_toTopOf="@+id/iv_receiver_flag" />
+
+    <View
+        android:id="@+id/divider_2"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_16"
+        android:background="@color/colorError"
+        app:layout_constraintBottom_toTopOf="@+id/tv_receiver_amount_error"
+        app:layout_constraintEnd_toStartOf="@id/barrier_country"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_receiver_amount" />
+
+    <TextView
+        android:id="@+id/tv_receiver_amount_error"
+        style="@style/AppTheme.Text.Error"
+        android:layout_width="0dp"
+        android:text="@string/invalid_amount"
+        app:layout_constraintBottom_toTopOf="@+id/tv_exchange_rate"
+        app:layout_constraintEnd_toEndOf="@id/divider_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_2" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_exchange_rate"
+        style="@style/TextAppearance.Compat.Notification.Time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/textHintColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/divider_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_receiver_amount_error"
+        tools:text="Exchange Rate: 1 AED = 19.78 INR" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="tv_receiver_currency,tv_sender_currency" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier_flags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="iv_receiver_flag,iv_sender_flag" />
+
+</android.support.constraint.ConstraintLayout>

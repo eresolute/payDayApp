@@ -1,0 +1,1171 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Finance House App</string>
+    <string name="powered_by">Powered By</string>
+    <string name="next">Next</string>
+    <string name="submit">Submit</string>
+    <string name="confirm">Confirm</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="verify">Verify</string>
+    <string name="default_text">Default Text</string>
+    <string name="amount_in_aed">AED %1s</string>
+    <string name="amount_in_inr">INR %1s</string>
+    <string name="plus_sign" translatable="false">+%1s</string>
+    <string name="plus_91_sign" translatable="false">+91-%1s</string>
+    <string name="plus_971_sign" translatable="false">+971-%1s</string>
+    <string name="percentage">%1$s%%</string>
+    <string name="processing">Processing</string>
+    <string name="invalid_credentials">Invalid Credentials.%1s</string>
+    <string name="invalid_type_format">Invalid %1s</string>
+    <string name="app_alias" translatable="false">Payday_FH</string>
+
+    <string name="text_intro_1">Your Personal \nDigital Bank</string>
+    <string name="text_intro_2">Transfer Money to your \nLoved Ones Instantly</string>
+    <string name="text_intro_3"><![CDATA[Pay Your Bills & Get \nCashback]]></string>
+
+    <string name="contact_us">Contact Us</string>
+    <string name="how_to_register">How to Register</string>
+
+    <!--login and registration-->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="user_id">Enter your User ID</string>
+    <string name="password">Enter your Password</string>
+    <string name="forgot_password">Forgot your Password</string>
+    <string name="forgot_user_id_password">Forgot your User ID or Password?</string>
+    <string name="card_number">Card number</string>
+    <string name="confirm_mobile_no">Confirm your Mobile Number</string>
+    <string name="verify_otp">Verify your OTP</string>
+    <string name="enter_otp">Enter your OTP</string>
+    <string name="otp_info">Please enter the  OTP sent to your mobile number</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="create_login_details">Create your Login Details</string>
+    <string name="password_pattern_info"><![CDATA[Use 8 or more characters with a mix letters, numbers & symbols]]></string>
+    <string name="confirm_password">Confirm your Password</string>
+    <string name="account_registered">Your Account has been \nRegistered Successfully</string>
+    <string name="invalid_username" tools:ignore="ExtraTranslation">Invalid User ID</string>
+    <string name="invalid_password">Invalid password</string>
+    <string name="scan_card">Scan your card</string>
+    <string name="position_card_instruction">Position your card in the frame</string>
+
+    <string-array name="money_transfer_options">
+        <item>International\nMoney Transfer</item>
+        <item>Payday\nto Payday</item>
+        <item>Local\nMoney Transfer</item>
+        <item>Payday \nto Credit Card</item>
+        <item>Transaction\nHistory</item>
+    </string-array>
+
+    <string-array name="languages" translatable="false">
+        <item>English</item>
+        <item>العربية</item>
+        <item>हिंदी</item>
+        <item>മലയാളം</item>
+        <item>اردو</item>
+        <item>বাংলা</item>
+        <item>தமிழ்</item>
+        <item>Tagalog</item>
+    </string-array>
+
+    <string-array name="aadc_languages">
+        <item>""</item>
+        <item>ENG</item>
+    </string-array>
+
+    <!--dashboard-->
+    <string name="card_services">Card Services</string>
+    <string name="loan">PayDay Finance</string>
+    <string name="loan_services_title">Loan Services</string>
+    <string name="early_salary">Early Salary</string>
+    <string name="emi">EMI (approx.)</string>
+    <string name="card_balance">Card Balance</string>
+    <string name="last_salary_credited">Last Salary Credited</string>
+    <string name="welcome">Welcome</string>
+    <string name="cancel">Cancel</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="interested">Interested</string>
+    <string name="not_interested">Not Interested</string>
+
+    <string-array name="drawer_items">
+        <!--<item>Card Services</item>-->
+        <!--<item>Payments</item>-->
+        <!--<item>Transfers</item>-->
+        <!--<item>Transaction History</item>-->
+        <!--<item>Account Summary</item>-->
+        <!--<item>Loans </item>-->
+        <item>Card Details</item>
+        <!--<item>Products</item>-->
+        <item>Service Requests</item>
+        <!--<item>Account Summary</item>-->
+        <item>Contact Us</item><!--<item>Settings</item>-->
+        <item>Logout</item>
+    </string-array>
+    <!--card service items-->
+    <string-array name="card_service_items">
+        <!--<item>Cardless Withdraw</item>-->
+        <!--<item>Card Statement</item>-->
+        <item>Transactions</item>
+        <!--<item>Early Salary</item>-->
+        <item>Salaries Credited</item>
+        <item>PIN Change</item>
+        <item />
+        <!--<item></item>-->
+    </string-array>
+
+
+    <string-array name="services">
+        <item>International Money\nTransfer</item>
+        <item>du</item>
+        <item>Etisalat</item>
+        <item>PayDay-to-PayDay\nTransfer</item>
+        <item>India Bill Payments</item>
+    </string-array>
+
+    <string-array name="freq_services">
+        <item>Transaction\nHistory</item>
+        <item>Payments</item>
+        <item>Transfers</item>
+        <item>Card Services</item>
+        <item>Offers</item>
+        <item>Loan Services</item>
+
+    </string-array>
+
+    <string name="apply_for_loan">Apply for PayDay Finance</string>
+    <string name="apply_for_loan_topup">Apply for Loan Topup</string>
+    <string name="loan_calculator">Loan \nCalculator</string>
+    <string name="support">Support</string>
+
+    <string name="title_how_to_fragment">How To Register</string>
+
+    <string name="select_currency">Select Currency</string>
+
+    <string name="card_statement">Card Statement</string>
+
+    <string name="description_date">Description/Date</string>
+    <string name="salaries_credited">Salaries Credited</string>
+    <string name="salaries_credited_date">Salary Credited Date</string>
+
+    <string name="atm_image">ATM address machines</string>
+
+    <!--todo handle other languages-->
+    <!--Loan Offer Activity-->
+    <string name="loan_offer_details">Loan Offer Details</string>
+    <string name="loan_type">Loan Type</string>
+    <string name="loan_number">Loan Number</string>
+    <string name="loan_disbursal_date">Loan Disbursal Date</string>
+    <string name="interest_rate">Interest Rate</string>
+    <string name="original_loan_amount">Loan Amount</string>
+    <string name="monthly_installment">Monthly Installment</string>
+    <string name="no_installments_paid">Number of installments paid</string>
+    <string name="principal_outstanding">Principal Outstanding</string>
+    <string name="outstanding_installments">Outstanding installments</string>
+    <string name="monthly_installments">Monthly installments</string>
+
+    <string name="terms_and_Conditions">Terms and Conditions</string>
+    <string name="accept">Accept</string>
+    <string name="loan_offer_terms_cond">I have read and agreed to the terms and conditions</string>
+    <string name="agree_terms">I have read and agreed to the &#160;</string>
+
+
+    <!--Edit Beneficiary-->
+    <string-array name="edit_beneficiary_options">
+        <item>PayDay-to-PayDay</item>
+        <item>PayDay to Credit Card</item>
+        <item>Local Money Transfer</item>
+        <item>PayDay-to-PayDay Loan</item>
+        <!--<item>International Money Transfer</item>-->
+    </string-array>
+
+    <!--Locator Options-->
+    <string-array name="locator_options">
+        <item>Branch Locations</item>
+        <item>SMS Banking Short Codes</item>
+    </string-array>
+
+
+    <string-array name="contact_us_options">
+        <item>Call Center Number</item>
+        <item>Website</item>
+        <item>Suggestions &amp; Complaints</item>
+    </string-array>
+
+    <!--Products-->
+
+    <!--
+     Card-->
+    <string-array name="payday_card_key">
+        <item>Customer Name</item>
+        <item>PayDay Card Number</item>
+        <item>Card Type</item>
+        <item>Card Status</item>
+        <item>Available Balance Amount</item>
+        <item>Total Overdraft Limit</item>
+        <item>Available Overdraft Limit</item>
+        <item>Amount on hold</item>
+        <item>Last salary credited</item>
+        <item>Last salary credit date</item>
+    </string-array>
+
+    <!--Accounts Options-->
+    <string-array name="account_option">
+        <item>PayDay Finance</item>
+        <item>Early Salary</item>
+        <item>Credit Card</item>
+        <item>Executive Finance</item>
+    </string-array>
+
+    <string name="conversion_value" translatable="false">%1s %2s = %3s %4s as on 16-10-2018</string>
+    <string name="step_by_step_guide">Step by step Guide</string>
+    <string name="scan_qr_code">Scan this QR code</string>
+    <string name="scan_payday_card">Scan your Payday Card</string>
+    <string name="position_payday_card">Scan your Payday Card</string>
+    <string name="card_scan_error">Please scan your \ncard again</string>
+    <string name="capture_front_emirates_id">Scan front side of your Emirates ID</string>
+    <string name="capture_back_emirates_id">Scan back side of your Emirates ID</string>
+    <string name="scan_back_emirates_id_note">We will never save or store your Emirates ID. \nYour details will be processed securely.</string>
+    <string name="register_card_detail">Enter your Payday Card Details</string>
+    <string name="card_holder_name">Card Name</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="capture">Capture</string>
+    <string name="customer_selfie">Capture Selfie</string>
+    <string name="prepaid">Prepaid</string>
+    <string name="postpaid">Postpaid</string>
+    <string name="operator_image_view">Operator image view</string>
+    <string name="enter_mobile_number">Enter your mobile number</string>
+    <string name="enter_mobile_number_payments">Enter Mobile Number</string>
+    <string name="calling_card">Calling Card</string>
+    <string name="faq">FAQs</string>
+    <string name="international_remittance">International Money Transfer</string>
+    <string name="accounts">Accounts</string>
+    <string name="registered_beneficiaries">Registered Beneficiaries</string>
+    <string name="balance">Balance</string>
+    <string name="payday_card">payDay_card</string>
+    <string name="mobile_recharge">Mobile Recharge</string>
+    <string name="available_overdraft_limit">Available Overdraft Limit</string>
+    <string name="overdraft_limit_2">Overdraft Limit</string>
+    <string name="ok">OK</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="enter_atm_pin">Enter your Payday Card PIN</string>
+    <string name="enter_atm_pin_salik">Enter your PIN</string>
+    <string name="atm_pin">PIN</string>
+    <string name="token_id">Token ID</string>
+    <string name="transaction_successful">Transaction Successful</string>
+
+    <!--Loan Details Activity-->
+    <string name="loans">Loans</string>
+    <string name="eligible_for_loan">You are Eligible for Loan</string>
+
+
+    <!--Loan Details-->
+
+
+    <!--Card Sevices Email Subscription-->
+    <string-array name="mini_statements">
+        <item>1 Month Statement</item>
+        <item>3 Month Statement</item>
+        <item>6 Month Statement</item>
+    </string-array>
+
+    <!--Apply for CC-->
+
+    <!-- Transaction History-->
+    <string-array name="transaction_history">
+        <item>Card Transactions</item>
+        <item>Loan</item>
+        <item>PayDay-to-PayDay\nTransfer</item>
+        <item>Bill Payment</item>
+        <item>Salaries Credited</item>
+    </string-array>
+
+    <string-array name="transaction_history_transfer">
+        <item>PayDay-to-PayDay</item>
+        <item>Local Money Transfer</item>
+        <!--<item>Int Money Transfer</item>-->
+        <item>Credit Card Transfer</item>
+    </string-array>
+
+    <string-array name="transaction_history_option">
+        <item>Monthly</item>
+        <item>5 Last Transaction</item>
+    </string-array>
+
+
+    <string-array name="setting_options">
+        <item>Change Password</item>
+        <!--<item>PIN Reset</item>
+        <item>Link Accounts</item>-->
+        <!--    <item>Update Mobile Number</item>
+        <item>Update Email</item>-->
+        <item>Biometric Authentication</item>
+    </string-array>
+
+
+    <string name="purpose_of_payment">Purpose of Payment</string>
+    <string name="account_no_label">Account number</string>
+    <string name="edit_icon">edit icon</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="currency">Remittance Currency : AED</string>
+    <string name="available_balance_in_aed">Available Balance: AED %1s</string>
+    <string name="beneficiary">Beneficiary</string>
+    <string name="transfer_details">Transfer \nDetails</string>
+    <string name="summary">Summary</string>
+    <string name="previous">previous</string>
+    <string name="cardless_withdrawal">Cardless Withdraw</string>
+    <string name="personal_loan">Personal Loan</string>
+    <string name="loan_amount">AED 0</string>
+    <string name="payments">Payments</string>
+    <string name="bill_payment">UAE Bill Payments</string>
+    <string name="utilities">UAE Utilities Payment</string>
+    <string name="transport">UAE Transport</string>
+    <string name="road_transport">UAE Transport</string>
+    <string name="etisalat">Etisalat Payments</string>
+    <string name="du">du Payments</string>
+    <string name="amount">Amount</string>
+
+    <!--Card Service Activity-->
+    <string name="date">Date</string>
+    <string name="beneficiary_bank">Beneficiary Bank</string>
+    <string name="benificiary_name">Beneficiary Name</string>
+    <string name="aed">AED</string>
+    <string name="successfully_paid">Successfully Paid</string>
+    <string name="available_balance_text">Available Balance</string>
+    <string name="montly">Monthly</string>
+    <string name="mini_statement">Mini Statement</string>
+    <string name="email_subscription">Email Subscription</string>
+    <string name="dr">Dr</string>
+    <string name="cr">Cr</string>
+    <string name="confirm_email">Confirm Email ID</string>
+    <string name="statement_type">Statement Type</string>
+
+
+    <!--Option Activity-->
+    <string name="apply">Apply</string>
+    <string name="apply_pop_up">Apply</string>
+    <string name="products">Products</string>
+    <string name="apply_cc">Apply Credit Card</string>
+    <string name="apply_dc">Apply Debit Card</string>
+    <string name="apply_loan_title">Apply Loan</string>
+    <string name="apply_loan_top_up_title">Loan Topup</string>
+    <string name="loan_amount_title">Loan Amount</string>
+    <string name="monthly_emi">Monthly EMI</string>
+    <string name="months_value">%1s Months</string>
+
+    <string name="edit_beneficiary">Edit Beneficiary</string>
+    <string name="payday_to_payday">PayDay \nto PayDay</string>
+    <string name="local_money_transfer">Local\nMoney Transfer</string>
+    <string name="local_money_transfer_1">Local Money Transfer</string>
+    <string name="select_country">Select Country</string>
+    <string name="select_bank">Select Bank</string>
+    <string name="beneficiary_name">Beneficiary Name</string>
+    <string name="account_number_field">Account Number</string>
+    <string name="address_field">Address</string>
+    <string name="address_line1">Address Line1</string>
+    <string name="egyptian_id">Egyptian Id</string>
+    <string name="address_line2">Address Line2</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="mobile">Mobile</string>
+    <string name="bank">Bank</string>
+    <string name="edit_beneficiary_success">Beneficiary edited successfully</string>
+    <string name="short_name">Short Name</string>
+    <string name="payday_to_payday_1">PayDay-to-PayDay</string>
+    <string name="elife">eLife</string>
+    <string name="landline">Landline</string>
+    <string name="enter_pvt_number">Enter PVT Number</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="enter_new_pin">Enter your new PIN</string>
+    <string name="confirm_pin">Confirm your PIN</string>
+    <string name="message">Message</string>
+    <string name="select_issue">Select Issue  Services</string>
+    <string name="enter_new_mobile_no">Enter your new Mobile Number</string>
+    <string name="send_message">Send Message</string>
+    <string name="arrow_image">Arrow Image</string>
+    <string name="area_of_issue">Area of Issue</string>
+    <string name="message_request">Request No. %1s</string>
+
+    <!--Transaction History-->
+    <string name="money_transfer">Money Transfer</string>
+
+    <!--payday card activity-->
+    <string name="payday_card_title">PayDay Card</string>
+    <string name="banner">banner</string>
+    <string name="Offers">Offers</string>
+    <string name="overdraft">Overdraft</string>
+    <string name="transaction_history">Transaction History</string>
+
+
+    <!--Service Requests-->
+    <string name="payment_holiday">Payment Holiday</string>
+    <string name="activate_card">Activate Card</string>
+    <string name="card_transaction_dispute">Card Transaction Dispute</string>
+    <string name="help">Help</string>
+    <string name="thumb_print_instruction">To make it easier, you can login with the Fingerprint that is already stored in this mobile</string>
+    <string name="activate">Activate</string>
+    <string name="settings">Settings</string>
+    <string name="service_requests">Service Requests</string>
+    <string name="start">Start</string>
+    <string name="terms_conds_error">You need to accept the Terms and Conditions</string>
+    <string name="loan_disbursal">Your loan has been booked and disbursed to your Card/Account</string>
+    <string name="await_instruction">Awaiting Transaction\nto be completed</string>
+    <string name="mobile_service_provider">Mobile Service Providers</string>
+
+    <!--KYC Options-->
+    <string name="passport_title">We will never save or store your Passport. Your details will be processed securely.</string>
+    <string name="scan_passport">Scan Passport</string>
+    <string name="enter_email_id">Enter your Email ID</string>
+    <string name="confirm_email_id">Confirm your Email ID</string>
+    <string name="email_not_match">Email does not match</string>
+    <string name="enter_new_mobile_number">Enter your new Mobile Number</string>
+    <string name="confirm_mobile">Confirm your Mobile Number</string>
+    <string name="mobile_not_match">Mobile Number does not match</string>
+    <string name="scan_emirates_error">Please scan your Emirates ID again</string>
+    <string name="emirates_update_succesful">Emirates ID Update Successful</string>
+    <string name="capture_photo_page_passport">Capture Photo Page of Passport</string>
+    <string name="capture_signature_page_passport">Capture Signature Page of Passport</string>
+    <string name="capture_address_page_passport">Capture Address Page of Passport</string>
+    <string name="passport_capture_successful">Passport Capture Successful</string>
+    <string name="passport_update_succesful">Passport Update Successful</string>
+    <string name="email_update_succesful">Email ID Update Successful</string>
+    <string name="mobile_update_succesful">Mobile Number Update Successful</string>
+    <string name="update_email_id">Update Email ID</string>
+    <string name="update_mobile_no">Update Mobile Number</string>
+    <string name="update_emirates">Update Emirates ID</string>
+    <string name="update_passport">Update Passport</string>
+
+
+    <!--card services activity-->
+    <string name="due">DUE</string>
+    <string name="eligible_for_deferment">You are Eligible for Deferment</string>
+    <string name="defer">Defer</string>
+    <string name="number_of_installment">Number of Installments</string>
+
+
+    <string name="empty_mobile_no">Please enter your mobile number</string>
+    <string name="empty_mobile_no_payments">Please enter mobile number</string>
+    <string name="invalid_mobile_no">Invalid Mobile Number</string>
+    <string name="invalid_expiry_date">Invalid expiry date</string>
+    <string name="empty_card_no">Please enter card number</string>
+    <string name="invalid_card_no">Please enter valid card number</string>
+    <string name="empty_card_name">Please enter  card name</string>
+    <string name="empty_user_id">Please enter user ID</string>
+    <string name="invalid_user_id">User ID should be at least 8 characters with no spaces</string>
+    <string name="empty_password">Please enter password</string>
+    <string name="empty_confirm_password">Confirm your Password</string>
+    <string name="invalid_password_len">Password should be at least 8 characters</string>
+    <string name="password_contains_userid">Password should not contain User ID</string>
+    <string name="password_not_match">Password does not match</string>
+    <string name="password_not_same_as_old">New password should not be same as old password</string>
+    <string name="skip">Skip</string>
+    <string name="card_username_length">Card name should be at least 2 characters</string>
+    <string name="enter_new_password">Enter your new Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="invalid_amount">Please enter a valid amount</string>
+    <string name="ic_back">ic_back</string>
+    <string name="ic_profile">ic_profile</string>
+    <string name="flag">flag</string>
+    <string name="uae_mobile_length">Please enter 9-digit number</string>
+    <string name="invalid_account_length">Please enter a %1s digit number</string>
+    <string name="invalid_account_length_ranged">Please enter %1s-%2s digit number</string>
+    <string name="register_emirate_details">Your Emirates ID details</string>
+    <string name="please_enter_otp">Please enter OTP</string>
+    <string name="empty_emirate_id">Please enter emirates ID</string>
+    <string name="invalid_emirate_id">Invalid Emirates ID</string>
+    <string name="loading">Loading…</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="pin_does_not_match">PINs are different</string>
+    <string name="please_enter_pin">Please enter valid PIN</string>
+    <string name="forgot_user_id">Forgot your User ID</string>
+    <string name="reset_password">Reset your Password</string>
+    <string name="new_password">Enter your new Password</string>
+    <string name="enter_card_number">Enter your Payday Card Number</string>
+    <string name="enter_card_pin">Enter your Payday Card PIN</string>
+    <string name="no_loan_available">Currently, you do not have any loans with Finance House. <!--To apply, please tap on the button below.--></string>
+    <string name="categories">Categories</string>
+    <string name="block_card">Block Card</string>
+    <string name="card_block_success">Card Blocked \nSuccessfully</string>
+    <string name="nationality">Nationality</string>
+    <string name="dob">DOB</string>
+    <string name="empty_nationality">Please enter nationality</string>
+    <string name="invalid_dob">Invalid date of birth</string>
+    <string name="dob_mismatch">DOB does not match Emirates ID</string>
+    <string name="empty_dob">Please enter DOB</string>
+    <string name="empty_expiry_date">Please enter expiry date</string>
+    <string name="link_accounts">Link Accounts</string>
+    <string name="three_dots">…</string>
+    <string name="invalid_pin">Invalid PIN</string>
+    <string name="invalid_installment_value">Invalid installment value</string>
+    <string name="enter_manually">Enter Manually</string>
+    <string name="enter_current_password">Enter your current Password</string>
+    <string name="inbox">Inbox</string>
+    <string name="select_issue_area_error">Please select a valid area of issue</string>
+    <string name="select_issue_error">Please select a valid issue service</string>
+    <string name="valid_message_error">Please Enter a valid message</string>
+    <string name="add_beneficiary">Add Beneficiary</string>
+    <string name="account_summary">Account Summary</string>
+    <string name="loan_details">Loan Details</string>
+    <string name="payday_cards">PayDay Cards</string>
+    <string name="terms_conditions_error">Please accept the terms &amp; conditions</string>
+    <string name="terms_conditions_error_2">**Please accept the terms &amp; conditions</string>
+    <string name="fingerprint_dialog_title">Activate Fingerprint Authentication</string>
+    <string name="fingerprint_dialog_title2">Fingerprint Authentication</string>
+    <string name="fingerprint_dialog_subtitle">PayDay</string>
+    <string name="fingerprint_dialog_description">To make it easier, you can login with the Fingerprint that is already stored in this mobile</string>
+    <string name="notification_channel">fh_notification_channel</string>
+    <string name="channel_desc">notification channel for App</string>
+    <string name="channel_id">payday_fh</string>
+    <string name="enter_account_number">Enter Account Number</string>
+    <string name="empty_account_no">Please enter account no</string>
+    <string name="invalid_account_no">Please enter valid account number</string>
+    <string name="due_date">Due Date</string>
+    <string name="details">Details</string>
+    <string name="last_bill_amount">Last Bill Amount</string>
+    <string name="bill_amount">Bill Amount</string>
+    <string name="no_transaction_available">No Transactions Available</string>
+    <string name="no_operators_available">No Operators Available</string>
+    <string name="no_offers_available">No Offers Available</string>
+
+    <string name="customer_name">Customer Name</string>
+    <string name="available_balance_label">Available Balance</string>
+    <string name="payday_card_number_label">PayDay Card Number</string>
+    <string name="multiple_of_50">Please enter an amount multiple of 50</string>
+    <string name="location">Location</string>
+    <string name="un_successfully_paid">Payment unsuccessful</string>
+    <string name="home">Home</string>
+    <string name="branches">Locator</string>
+    <string name="enter_name">Name</string>
+    <string name="indian_bill_payment">India Bill Payments</string>
+    <string name="airtel">Airtel</string>
+    <string name="verified">Verified</string>
+    <string name="not_verified">Not Verified</string>
+    <string name="contact_updated">Contact Updated Successfully</string>
+    <string name="money_in">Money In</string>
+    <string name="money_out">Money Out</string>
+    <string name="available_overdraft">Available Overdraft</string>
+    <string name="sent_box">Sent Box</string>
+    <string name="welcome_to_payday">Welcome to PayDay</string>
+    <string name="sign_in_diff_account">Sign in as a different user</string>
+    <string name="biometric_auth">Biometric Auth</string>
+    <string name="fingerprint">Fingerprint</string>
+    <string name="enabled">Enabled</string>
+    <string name="disabled">Disabled</string>
+    <string name="version_name">Version %1s</string>
+    <string name="broadband">Broadband</string>
+    <string name="gsm">GSM</string>
+    <string name="evision">E-Vision</string>
+    <string name="biometric_auth_enabled">Biometric Authentication Enabled</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="emirates_id">Emirates ID</string>
+    <string name="passport">Passport</string>
+    <string name="email_id">Email ID</string>
+    <string name="mobile_num">Mobile Number</string>
+    <string name="update_kyc_document">Update KYC Document</string>
+    <string name="link">Link</string>
+    <string name="upload">Upload</string>
+    <string name="emergency_contact">Emergency Contact</string>
+    <string name="name">Name</string>
+    <string name="relation">Relation</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="empty_name">Please enter name</string>
+    <string name="empty_value">Please enter value</string>
+    <string name="upload_mobile_number">Update Mobile Number</string>
+    <string name="set_pin">PIN Change</string>
+    <string name="send">Send</string>
+    <string name="enter_message_hint">Write your issues here&#8230;</string>
+    <string name="generic_payment_error">Error in servicing your request. Please try after sometime.</string>
+    <string name="dewa">DEWA</string>
+    <string name="fewa">FEWA Payments</string>
+    <string name="aadc">AADC Payments</string>
+    <string name="dubai_police">Dubai Police</string>
+    <string name="mawaqif">Mawaqif Payments</string>
+    <string name="salik">Salik Payments</string>
+    <string name="nol">NOL</string>
+    <string name="du_">du Payments</string>
+    <string name="etisalat_">Etisalat Payments</string>
+    <string name="transactions">Transactions</string>
+    <string name="emirates_id_expire">Emirates Id expired or about to expire</string>
+    <string name="update">Update</string>
+    <string name="payable_amount">Payable Amount</string>
+    <string name="card_details">Card Details</string>
+    <string name="payment_details">Payments Details</string>
+    <string name="browse_plans">Browse Plans</string>
+    <string name="dth">DTH</string>
+    <string name="enter_customer_id">Enter Customer ID</string>
+    <string name="customer_id">Customer ID</string>
+    <string name="landline_number">Landline Number</string>
+    <string name="std_code">STD Code</string>
+    <string name="enter_landline_number">Enter Landline Number</string>
+    <string name="select_plan">Select Plan</string>
+    <string name="add_beneficiary_success">Beneficiary Added Successfully</string>
+    <string name="no_beneficiaries_available">No Beneficiaries Available</string>
+    <string name="request_error">Sorry! We are unable to process your request. Please try after some time.</string>
+    <string name="no_mobile_no">No mobile number available</string>
+    <string name="user_Id_not_available">User ID already exists</string>
+    <!--<string name="otp_instructions">Please type the verification code sent \non your mobile number</string>-->
+    <string name="otp_instructions">Please enter the OTP sent to your mobile number</string>
+    <string name="invalid_date">Invalid Date</string>
+    <string name="payday_to_credit">PayDay to Credit Card</string>
+    <string name="insufficient_balance">Insufficient Card Balance</string>
+    <string name="invalid_name">Invalid Name</string>
+    <string name="invalid_nationality">Invalid nationality</string>
+    <string name="i_accept">I accept the&#160;</string>
+    <string name="date_format">%1s/%2s/%3s</string>
+    <string name="date_format_hypen">%1s-%2s-%3s</string>
+    <string name="label_month">Month</string>
+    <string name="label_year">Year</string>
+    <string name="select_card_expiry">Select card expiry</string>
+    <string name="close">Close</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="change">Change</string>
+    <string name="biometric_authentication">Biometric Authentication</string>
+    <string name="locator">Locator</string>
+    <string name="branch_locations">Branch Locations</string>
+
+    <string name="operators">Operators</string>
+    <string name="insurance">Insurance</string>
+    <string name="gas">Gas</string>
+    <string name="electricity">Electricity</string>
+    <string name="enter_consumer_number">Enter Consumer Number</string>
+    <string name="consumer_number">Consumer number</string>
+    <string name="enter_policy_number">Enter Policy Number</string>
+    <string name="policy_number">Policy number</string>
+    <string name="select_dob">Select DOB</string>
+    <string name="request">Request</string>
+    <string name="previous_request">Previous Requests</string>
+    <string name="reschedule_loan">Reschedule Loan</string>
+    <string name="early_settlement">Early Settlement</string>
+    <string name="liability">Liability Letter</string>
+    <string name="clearence_letter">Clearance Letter</string>
+    <string name="partial_settlement">Partial Settlement</string>
+    <string name="request_id">Request ID</string>
+    <string name="time">Time</string>
+    <string name="status">Status</string>
+    <string name="last_login">Last login: \n%1s</string>
+    <string name="beneficiary_disabled">Beneficiary is disabled , Please enable.</string>
+    <string name="enter_PIN">Enter your card PIN</string>
+    <string name="international_topup">International Payments</string>
+
+    <string name="passport_number_hint">Enter new Passport Number</string>
+    <string name="invalid_passport_number">Invalid passport number</string>
+    <string name="password_expired">Password Expired. Please update your password.</string>
+    <string name="confirm_request">Do you confirm your request?</string>
+    <string name="invalid_loan_number">Invalid Loan Number</string>
+    <string name="no_requests">No Requests</string>
+    <string name="download">Download</string>
+    <string name="download_started">Download started</string>
+    <string name="download_complete">Download completed</string>
+    <string name="application_id">Application ID</string>
+    <string name="app_permissions">App Permission</string>
+    <string name="write_storage_permissions">Allow <b>\'Finance House App\'</b> to save files on your device.
+        \n\nTo enable this, click \'APP SETTINGS\' below and activate \'Storage\' under the permissions menu.
+    </string>
+    <string name="camera_permission_title">Camera Permission</string>
+    <string name="camera_permission_description">Access to camera has been prohibited.
+        \n\nTo enable click \'APP SETTINGS\' below and activate \'Camera\' under the permissions menu.
+    </string>
+    <string name="phone_permission_title">Call Permission</string>
+    <string name="phone_permission_description">Access to call has been prohibited.
+        \n\nTo enable click \'APP SETTINGS\' below and activate \'Phone\' under the permissions menu.
+    </string>
+
+    <string name="not_now">Not now</string>
+    <string name="app_settings">App Settings</string>
+    <string name="card_blocked">Your card is blocked.</string>
+    <string name="short_code">Short Code</string>
+    <string name="for_payday_card">For PayDay Card:</string>
+    <string name="sms_banking">SMS Banking</string>
+    <string name="call">Call</string>
+    <string name="tenure_in_years">Tenure (Years)</string>
+    <string name="tenure">Tenure</string>
+    <string name="interest_rates">Interest Rate (% PA)</string>
+    <string name="get_emi_details">Get Instalment Details</string>
+    <string name="total_payable_amount">Total Payable Amount</string>
+    <string name="interest_amount">Interest Amount</string>
+    <string name="principal_amount">Principal Amount</string>
+    <string name="calculate_again">Calculate Again</string>
+    <string name="loan_calculator_label">Loan Calculator</string>
+    <string name="please_select_service">Please select a service</string>
+    <string name="please_select_plan">Please select a plan</string>
+    <string name="number_format_error">Format should be +971–5xxxxxxxx</string>
+    <string name="chars_counter">0/255</string>
+    <string name="INR">INR</string>
+    <string name="pay">Pay</string>
+    <string name="fine_details">Fine Details</string>
+    <string name="search">Search</string>
+    <string name="no_countries_found">No countries found</string>
+    <string name="outstanding_amount">Outstanding Amount</string>
+    <string name="loan_terms_conditions">I would like to apply for PayDay Finance from Finance House and hereby authorize Finance House to access my credit and financial information including Etihad credit bureau.</string>
+    <string name="apply_loan_otp_instructions">After confirming loan booking by entering the OTP the exact loan details will be sent via Email/SMS</string>
+
+    <string name="loan_customer_warning">Sorry\nYou are not authorized. Please contact employer for PayDay card.</string>
+    <string name="paid_on">Paid on %1s</string>
+
+    <string name="sms_code_msg">Just select the \"Short Code\" for the required information and send an sms to 2326 in the format: [Short code][Space][Last 6 digits of the Card Number]\n\n e.g: MIN 123456</string>
+    <string name="uae_toll_free">UAE Toll Free: </string>
+    <string name="tel">Tel: </string>
+    <string name="fax">Fax: </string>
+    <string name="email">Email: </string>
+    <string name="atm_locations">ATM Locations</string>
+    <string name="account_no_nine">Please enter 9-digit account number</string>
+    <string name="long_account_no">Please enter 12-digit account number</string>
+    <string name="transfer_amount">Transfer Amount</string>
+    <string name="loan_customer">Loan Customer</string>
+    <string name="payday_customer">PayDay Customer</string>
+    <string name="converted_payable_amount">Payable Amount (in AED)</string>
+    <string name="book">Book</string>
+    <string name="proceed">Proceed</string>
+    <string name="decline">Decline</string>
+    <string name="du_prefix_no">+971-</string>
+    <string name="please_select_bank">Please select a bank.</string>
+    <string name="iban_number">IBAN Number</string>
+    <string name="transaction_history_2">Transaction\nHistory</string>
+    <string name="mobile_format">Note: Format should be +971–5xxxxxxxx</string>
+    <string name="uae_mobile_format">Number format should be +971–5xxxxxxxx</string>
+    <string name="months_valued">%1s Months</string>
+    <string name="delete_warning">Are you sure to delete this beneficiary?</string>
+    <string name="enable_warning">Are you sure to enable this beneficiary?</string>
+    <string name="enable">Enable</string>
+    <string name="disable">Disable</string>
+    <string name="description">Description</string>
+    <string name="campaign_management">Campaign Management</string>
+    <string name="snooze">Snooze</string>
+    <string name="disable_warning">Are you sure to disable this beneficiary?</string>
+    <string name="suggestions_complaints"><![CDATA[Suggestions & Complaints]]></string>
+    <string name="no_messages_warning">No suggestions or complaints available</string>
+    <string name="add_to_beneficiary">Add to Beneficiary</string>
+    <string name="passport_number">Passport Number</string>
+    <string name="create_dispute">Create Dispute</string>
+    <string name="reference_no">Reference No.</string>
+    <string name="transaction_amount">Transaction Amount</string>
+    <string name="merchant_name">Merchant Name</string>
+    <string name="transaction_date">Transaction Date</string>
+    <string name="name_should_not_less_than_3">Name should not be less than 3 characters</string>
+    <string name="next_installment_date">Next installment date</string>
+    <string name="add_as_beneficiary">Add as Beneficiary</string>
+    <string name="action_settings">Settings</string>
+    <string name="upload_ticket">Upload Ticket</string>
+    <string name="please_select">Please Select</string>
+    <string name="change_pin">Change PIN</string>
+    <string name="loan_summary">Loan Summary</string>
+    <string name="scan">Scan</string>
+    <string name="scan_emirates_id">Scan your Emirates ID</string>
+
+    <string name="credit_card_transfer">PayDay\n to Credit Card</string>
+    <string name="payday_to_credit_1">PayDay to Credit Card</string>
+    <string name="enter_emirates_id">Enter your Emirates ID</string>
+    <string name="enter_emirates_id_payments">Enter Emirates ID</string>
+    <string name="beneficiaries">Beneficiaries</string>
+    <string name="invalid_beneficiary">Invalid Beneficiary</string>
+    <string name="pvt_number">PVT Number</string>
+    <string name="not_enough_balance">Not enough balance left.</string>
+    <string name="fine_amount">Fine Amount</string>
+    <string name="enter_amount_format">Enter %1s</string>
+
+    <string name="card_status">Your card is %s</string>
+    <string name="card_status_stoplist">Your card is in %s</string>
+    <string name="please_enter_pvt_no">Please enter PVT number</string>
+    <string name="invalid_pvt_no">Please enter valid PVT number</string>
+    <string name="no_internet_connectivity">The internet connection appears to be offline.</string>
+    <string name="retry">Retry</string>
+    <string name="select_type">Select Type</string>
+    <string name="enter_person_id">Enter Person ID</string>
+    <string name="empty_person_id">Please enter Person ID</string>
+    <string name="inValid_person_id">Invalid Person ID</string>
+    <string name="select_language">Select Language</string>
+    <string name="please_select_language">Please select language</string>
+    <string name="person_id">Person Id</string>
+    <string name="placeholder" translatable="false">xxxxxxxxxxxxxxx</string>
+    <string name="uea_plus_country_dash">+971-</string>
+    <string name="please_select_type">Please select a type</string>
+    <string name="delele_beneficiary_confirmation">Are you sure to delete \"%1s\" beneficiary?</string>
+    <string name="enable_beneficiary_confirmation">Are you sure to %1s \"%2s\" beneficiary?</string>
+    <string name="delete">Delete</string>
+    <string name="update_beneficiary">Update Beneficiary</string>
+    <string name="maturity_date">Maturity Date</string>
+    <string name="explore">Explore</string>
+    <string name="popular_services">Popular Services</string>
+    <string name="apply_for_deferment">Apply for Deferment</string>
+    <string name="transaction_type">Transaction Type</string>
+    <string name="edit">Edit</string>
+    <string name="invalid_amount_ranged">Please enter an amount between %1s AED and %2s AED </string>
+    <string name="invalid_float_amount_ranged">Please enter an amount between %1s AED and %2s AED </string>
+    <string name="invalid_amount_ranged_with_currency">Please enter an amount between %1s %2s and %3s %4s</string>
+    <string name="enter_old_pin">Enter your current PIN</string>
+    <string name="internal_server_error">Internal Server Error</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="credit">Credit</string>
+    <string name="international">International</string>
+    <string name="data">Data</string>
+    <string name="wasel_renewal">Wasel Renewal</string>
+    <string name="wasel_recharge">Wasel Recharge</string>
+    <string name="browse">Browse</string>
+    <string name="amount_zero" translatable="false">0.00</string>
+
+    <string-array name="aadc_service_type">
+        <item>""</item>
+        <item>Account Number</item>
+        <item>Emirates ID</item>
+        <item>Person ID</item>
+        <item>Mobile Number</item>
+    </string-array>
+
+    <string-array name="purpose_of_payment">
+        <item>Education Support</item>
+        <item>Family Support</item>
+        <item>Student Support</item>
+        <item>Education Support</item>
+        <item>Student Support</item>
+        <item>Education Support</item>
+        <item>Family Support</item>
+    </string-array>
+
+    <string-array name="loan_services_topup">
+        <!--<item>Apply for Loan Topup</item>-->
+        <item>Payment Holiday</item>
+        <item>Reschedule</item>
+        <item>Clearance Letter</item>
+        <item>Early Settlement</item>
+        <item>Partial Settlement</item>
+        <item>Liability Letter</item>
+        <!--<item> </item>-->
+    </string-array>
+
+    <string-array name="loan_services">
+        <!--<item>Apply for PayDay Finance</item>-->
+        <item>Payment Holiday</item>
+        <item>Reschedule Loan</item>
+        <item>Clearance Letter</item>
+        <item>Early Settlement</item>
+        <item>Partial Settlement</item>
+        <item>Liability Letter</item>
+        <!-- <item> </item>-->
+    </string-array>
+
+    <string-array name="sms_codes">
+        <item>BAL</item>
+        <item>LTA</item>
+        <item>SAL</item>
+        <item>ACT</item>
+    </string-array>
+
+    <string-array name="sms_description">
+        <item>Available Balance on your card</item>
+        <item>Last Transaction mode on your card</item>
+        <item>Last Salary Credit</item>
+        <item>Activation</item>
+    </string-array>
+
+    <string-array name="snooze">
+        <item>1 day</item>
+        <item>3 days</item>
+        <item>5 days</item>
+        <item>10 days</item>
+    </string-array>
+
+    <string-array name="registration_steps">
+        <item>- Capture and Verify Emirates ID</item>
+        <item>- Scan and Verify PayDay Card</item>
+        <item>- Verify Mobile Number</item>
+        <item>- Create Login Details</item>
+        <item>- Add Biometric Authentication ( Optional )</item>
+    </string-array>
+
+    <string-array name="service_request_array">
+        <item>Activate Card</item>
+        <item>Card Transaction \nDispute</item>
+        <item>PIN Change</item>
+        <item>Block Card</item>
+    </string-array>
+
+    <string name="loan_topup_amount">Topup Amount</string>
+    <string name="loan_topup_emi">Topup EMI</string>
+    <string name="new_tenure">New Tenure</string>
+    <string name="loan_topup_note">Once you confirm booking your Top-up Loan, please refer to the updated Loan Details Screen reflecting the new total.</string>
+    <string name="track_trans_status">Transaction Status</string>
+    <string name="tap_on_the_transaction_to_initiate_track_request">Tap on the transaction to initiate track request</string>
+    <string name="send_money">Send Money</string>
+    <string name="rate_calculator">Rate Calculator</string>
+    <string name="select_beneficiary">Select Beneficiary</string>
+    <string name="transaction_details">Transaction Details</string>
+    <string name="uae_exchange_transfer_success">Your Request has been successfully received.\n\nYour Transaction ID is: %1s.\n\nYour Transaction will be processed within the next 24 – 48 hours.</string>
+    <string name="uae_exchange_terms_conditions_link">You will be redirected to external browser \nAre you sure you want to continue?</string>
+    <string name="status_colon">Status:</string>
+    <string name="empty_emirate_card_number">Please enter card number</string>
+    <string name="invalid_emirate_card_number">Invalid Emirates Card Number</string>
+    <string name="international_money_transfer">International Money Transfer</string>
+    <string name="locate_exchange">Locate Offices</string>
+    <string name="register_intl_beneficiary_instruction">Please visit the nearest exchange \noffice to register a beneficiary</string>
+    <string name="intl_money_transfer">International Money Transfer</string>
+    <string name="enter_promo_code">Enter Promo Code</string>
+    <string name="exchange_rate_inclusive">Exchange Rates are indicative</string>
+    <string name="select_card">Select Card</string>
+    <string name="account_balance">Account Balance</string>
+    <string name="commission">Commission</string>
+    <string name="exchange_house_commision">Charges of Exchange House</string>
+    <string name="Purpose">Purpose</string>
+    <string name="promo_code">Promo Code</string>
+    <string name="i_accept_terms_and_conditions">I accept terms and conditions</string>
+    <string name="recurring_payment">Recurring Payments</string>
+    <string name="exchange_house_reference_no">Exchange House Reference No.</string>
+    <string name="fh_reference_no">Reference No.</string>
+    <string name="recurring_amount">Recurring Amount</string>
+    <string name="you_pay">YOU PAY</string>
+    <string name="purpose">Purpose</string>
+    <string name="recurring_period">Recurring Period</string>
+    <string name="recurring_frequency">Recurring Frequency</string>
+    <string name="recurr_on_holidays">Recurr on Holidays</string>
+    <string name="charges_of_exchange_house">Charges of Exchange House</string>
+    <string name="total_amount_payable">Total Amount Payable</string>
+    <string name="they_get">They Receive</string>
+    <string name="you_send">You Send</string>
+    <string name="transaction_options">Transaction Options</string>
+    <string name="make_payment">Make Payment</string>
+    <string name="track_request_initiated_successfully">Track Request initiated \nSuccessfully</string>
+    <string name="view_details">View Details</string>
+    <string name="search_currency">Search Currency</string>
+    <string name="cancel_recurring_payment">Are you sure you want to cancel the recurring payment</string>
+    <string name="yes">Yes</string>
+    <string name="exchange_rate_label">*Exchange Rate: %1s %2s = %3s %4s</string>
+    <string name="error_amount">Please enter an amount</string>
+    <string name="invalid_purpose">Invalid Purpose</string>
+    <string name="fetching_account_details">Please wait while we fetch your Account details</string>
+    <string name="fetching_transaction_details">Fetching transaction details</string>
+    <string name="fetching_transactions">Fetching transactions</string>
+    <string name="my_beneficiaries">My Beneficiaries</string>
+    <string name="payout_amt">%1s %2s</string>
+    <string name="load_more">Load More</string>
+    <string name="enter_emirates_card_number">Enter 9-digit Emirates Card Number</string>
+    <string name="invalid_promo_code">Invalid promo code.</string>
+    <string name="not_valid_emirates">Sorry your emirates Id is not registered with UAE Exchange. To Register please visit the nearest UAE Exchange office</string>
+    <string name="added_to_favourites">Transaction added as favourite</string>
+    <string name="finance_house">Finance House</string>
+    <string name="uae_exchange">UAE Exchange</string>
+    <string name="update_exchange_email">Please update your email id before proceeding further</string>
+    <string name="state">State</string>
+    <string name="no_location_availible">Branches not available.</string>
+    <string name="no_location_available_search">No result found based on your location search.</string>
+    <string name="available_balance_after">Available balance after deduction</string>
+    <string name="locate_uae_exchange">Exchange House Branches</string>
+    <string name="locate_al_ansari">Locate Al-Ansari</string>
+    <string name="locating_your_device">Locating your device…</string>
+    <string name="no_branches_in_area">No branches in this area</string>
+    <string name="location_permission_title">Location Permission</string>
+    <string name="location_permission_description">Access to location has been prohibited.
+        \n\nTo enable click \'APP SETTINGS\' below and activate \'Location\' under the permissions menu.
+    </string>
+    <string name="total">Total</string>
+    <string name="card">Select Card</string>
+    <string name="through">Through</string>
+    <string name="other_beneficiaries">Other Beneficiaries</string>
+    <string name="reference_hash">Reference #</string>
+    <string name="otp_sent_to_registered_number">Please enter the  OTP sent to your mobile number</string>
+    <string name="passwordKyc">Password</string>
+    <string name="charges">Charges</string>
+    <string name="vat">VAT</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="unable_to_start_camera" translatable="false">Unable to start camera</string>
+
+    <string name="capture_emirates_id_front">Capture front side of your Emirates ID</string>
+    <string name="capture_emirates_id_back">Capture back side of your Emirates ID</string>
+    <string name="capture_emirated_id">Capture Emirates ID</string>
+
+    <string name="or">OR</string>
+    <string name="app_update_available">The new version (%1s) of %2s is available.</string>
+    <string name="password_changed">Your password was changed</string>
+    <string name="pin_changed">PIN was changed successfully</string>
+    <string name="successfully_transferred">Successfully Transferred</string>
+    <string name="select_state">Select State</string>
+    <string name="no_state_found">No State found</string>
+    <string name="choose_state">Choose State</string>
+    <string name="no_notifications_available">No Notifications Available</string>
+    <string name="mawaqif_card_balance">Mawaqif Card Balance</string>
+    <string name="reject">Reject</string>
+    <string name="notifications">Notifications</string>
+    <string name="view">View</string>
+    <string name="balance_after_transfer">Balance after transfer: %s</string>
+    <string name="emirates_scan_warning">Not able to scan. Try scanning in different light conditions and make sure the card is within the frame.</string>
+    <string name="choose_plan">Choose Plan</string>
+    <string name="please_choose_plan">Please Choose Plan</string>
+    <string name="bill_info">Your actual bill is %1s and you are paying %2s</string>
+    <string name="mawaqif_topup">Mawaqif Topup</string>
+
+    <string name="storage_permission_title">Storage Permission</string>
+    <string name="storage_permission_description">Access to photos, media and files has been prohibited.
+        \n\nTo enable click \'APP SETTINGS\' below and activate \'Storage\' under the permissions menu.
+    </string>
+    <string name="contact_permission_title">Contact Permission</string>
+    <string name="contact_permission_description">Access to contacts has been prohibited.
+        \n\nTo enable click \'APP SETTINGS\' below and activate \'Contact\' under the permissions menu.
+    </string>
+    <string name="_continue">Continue</string>
+
+    <string-array name="intl_remittance">
+        <item>Rate Calculator</item>
+        <item>Transfer Money</item>
+        <item>My Beneficiaries</item>
+        <item>Transaction Status</item>
+        <item>Transaction History</item>
+        <item>Exchange House Branches</item>
+    </string-array>
+
+    <string-array name="intl_locator_options">
+       <!-- <item>UAE Exchange</item>-->
+        <item>Al Fardan Exchange</item>
+    </string-array>
+
+    <string-array name="intl_locator_option">
+         <item>UAE Exchange</item>
+        <item>Al Fardan Exchange</item>
+    </string-array>
+
+    <string-array name="imt_transfer_purpose">
+        <item>Family Maintenance/Savings</item>
+    </string-array>
+
+    <string-array name="transaction_options">
+        <item>View Transaction Details</item>
+        <item>Add to favorite</item>
+        <item>Repeat Transaction</item>
+        <item>Resend</item>
+        <item>Download PDF</item>
+        <item>Share Transaction</item>
+    </string-array>
+
+    <string-array name="transaction_options2">
+        <item>View Transaction Details</item>
+        <item>Remove from favorite</item>
+        <item>Repeat Transaction</item>
+        <item>Resend</item>
+        <item>Download PDF</item>
+        <item>Share Transaction</item>
+    </string-array>
+
+    <string-array name="track_transaction">
+        <item>Bank Transfer</item>
+        <!--<item>Cash Payout</item>-->
+    </string-array>
+
+    <string-array name="intl_transfer_tabs">
+        <item>Bank Transfer</item>
+        <!--<item>Cash Transfer</item>-->
+    </string-array>
+
+    <string-array name="intl_transaction_tabs">
+        <item>Favorites</item>
+        <item>All Transactions</item>
+    </string-array>
+
+    <string-array name="weekly_timing">
+        <item>Sun %1s</item>
+        <item>Mon %1s</item>
+        <item>Tue %1s</item>
+        <item>Wed %1s</item>
+        <item>Thu %1s</item>
+        <item>Fri %1s</item>
+        <item>Sat %1s</item>
+    </string-array>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="branch_address">Branch Address</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="account_number">Account Number</string>
+    <string name="iban">IBAN</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="nick_name">Nick Name</string>
+    <string name="relationship">Relationship</string>
+    <string name="beneficiary_summary">Beneficiary Summary</string>
+    <string name="beneficiary_bank_details">Beneficiary Bank Details</string>
+    <string name="beneficiary_details">Beneficiary Details</string>
+    <string name="bank_account_details">Bank account details</string>
+    <string name="swift_code">Swift Code</string>
+    <string name="add_beneficiary_to_my_favourite_list">Add beneficiary to my favourite list</string>
+    <string name="search_for_a_pickup_location">Search for a pickup location</string>
+    <string name="pickup_locations">Pickup Locations</string>
+    <string name="select_purpose_of_payment">Select purpose of payment</string>
+    <string name="select_remittance_pickup_location">Select remittance pickup location</string>
+    <string name="choose_country">Choose Country</string>
+    <string name="choose_country_error">Chosen Country is not available please chose from the country list.</string>
+    <string name="enter_first_name">Please enter first name</string>
+    <string name="first_name_error">Please enter proper first name</string>
+    <string name="enter_last_name">Please enter last name</string>
+    <string name="invalid_last_name">Please enter proper last name</string>
+    <string name="enter_mobile">Please enter mobile number</string>
+    <string name="error_mobile">Please enter valid mobile number</string>
+    <string name="enter_address">Please enter address</string>
+    <string name="error_address">Please enter proper address</string>
+    <string name="enter_relationship">Please enter relationship</string>
+    <string name="relationship_error">Please enter proper relationship</string>
+    <string name="select_bank_name">Please select Bank Name</string>
+    <string name="error_bank_name">Length must be 4 t0 16 characters long</string>
+    <string name="error_bank_name1">Bank name is not selected</string>
+    <string name="select_city">Please select city</string>
+    <string name="error_city">Length must be 4 to 16 character long</string>
+    <string name="error_state">Length must be 4 to 16 character long</string>
+    <string name="find_agent">Find an Agent</string>
+    <string name="find_bank">Find Bank</string>
+    <string name="recipient_details">Recipient details</string>
+    <string name="send_to">Send to</string>
+    <string name="cash_payout">Cash Payout</string>
+    <string name="bank_transfer">Bank Transfer</string>
+    <string name="payment_option">Payment Option</string>
+    <string name="send_money_to_country">Country you want to send money</string>
+    <string name="inr">INR</string>
+    <string name="mr">Mr.</string>
+    <string name="mrs">Mrs.</string>
+    <string name="ms">Ms.</string>
+    <string name="first_name_as_per_bank">First Name as per Bank</string>
+    <string name="last_name_as_per_bank">Last Name as per Bank</string>
+    <string name="_91">+91</string>
+    <string name="pickup_from">Pickup from</string>
+    <string name="benificiary_added_to_your_favourite_list">Benificiary added to your favourite list</string>
+    <string name="search_for_bank">Search for a Bank</string>
+    <string name="search_for_agent">Search for an agent</string>
+    <string name="beneficiary_added_to_fav">Beneficiary Added to favourite List</string>
+    <string name="choose_currency">Choose Currency</string>
+    <string name="select_country_code">Select country code</string>
+    <string name="select_nationality">Select Nationality</string>
+    <string name="enter_egyptian_id">Please Enter Egyptian Id</string>
+    <string name="branch_name_error">Please select Branch Name</string>
+    <string name="branch_address_error">Please select Branch Address</string>
+    <string name="empty_ifsc_code">Please enter IFSC Code</string>
+    <string name="empty_swift_code">Please enter Swift Code</string>
+    <string name="empty_iban">Please enter IBAN</string>
+    <string name="enter_branch_name">Please enter a valid Branch Name</string>
+    <string name="invalid_branch_name">Length must be 4 to 16 characters long</string>
+    <string name="enter_branch_address">Please enter Branch Address</string>
+    <string name="invalid_branch_address">Length must be 4 to 32 characters long</string>
+    <string name="enter_acc_num">Please enter a valid Account Number</string>
+    <string name="invalid_acc_num">Invalid Account Number</string>
+    <string name="enter_ifsc_code">Please enter a valid Ifsc Code</string>
+    <string name="enter_swift_code">Please enter Swift Code</string>
+    <string name="enter_iban">Please enter Name of bank</string>
+    <string name="select_branch_name">Select Branch Name</string>
+    <string name="select_branch_address">Select Branch Address</string>
+    <string name="select_emirates">Select Emirates</string>
+    <string name="branch_location">Branch Location</string>
+    <string name="pickup_banks">Pickup Banks</string>
+    <string name="select_prupose_of_payment">Select purpose of payment</string>
+    <string name="address_error">You cannot use special characters in the address field except . ,-_</string>
+    <string name="al_fardan_exchange">Al Fardan Exchange</string>
+    <string name="choose_payment_option">Choose Payment Option</string>
+    <string name="no_delivery_modes_for_selected_country">No delivery modes available for selected country</string>
+    <string name="no_bank_found">No bank found</string>
+    <string name="no_location">No location found</string>
+    <string name="no_currency_found">No currency found</string>
+    <string name="no_branch_name_found">No branch name found</string>
+    <string name="no_branch_address_found">No branch address found</string>
+    <string name="no_city_found">No city found</string>
+    <string name="no_emirates_found">No emirates found</string>
+    <string name="enter_state">Please enter State</string>
+    <string name="al_fardan">Al Fardan</string>
+    <string name="cur">CUR</string>
+    <string name="select_location">Please select Location</string>
+    <string name="please_select_state">Please select state</string>
+    <string name="name_of_bank">Bank Name</string>
+
+
+</resources>

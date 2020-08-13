@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/i_rate_calc"
+            layout="@layout/rate_calculator_layout"
+            app:layout_constraintBottom_toTopOf="@id/tv_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/AppTheme.Text.Medium.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/bank_transfer"
+            android:paddingStart="@dimen/dimen_16"
+            android:paddingEnd="@dimen/dimen_16"
+            android:paddingTop="@dimen/dimen_16"
+            android:textAlignment="viewStart"
+            android:visibility="gone"
+            android:textColor="@color/textDarkColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/i_rate_calc"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_4"
+            android:layout_marginRight="@dimen/dimen_4"
+            android:paddingTop="@dimen/dimen_16"
+            android:paddingBottom="@dimen/dimen_16"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/cb_terms_condition"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ProgressBar
+            android:id="@id/progress_bar"
+            android:layout_width="@dimen/dimen_42"
+            android:layout_height="@dimen/dimen_42"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/i_rate_calc" />
+
+        <CheckBox
+            android:id="@+id/cb_terms_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:padding="@dimen/dimen_4"
+            android:text="@string/agree_terms"
+            android:textAppearance="@style/AppTheme.Text.Time"
+            android:textColor="@color/textHintColor"
+            app:layout_constraintBottom_toTopOf="@id/btn_confirm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/tv_terms_condition_link"
+            style="@style/AppTheme.Text.Time.Bold"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="@string/terms_and_Conditions"
+            android:textColor="@color/blue_green"
+            app:layout_constraintBottom_toBottomOf="@+id/cb_terms_condition"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/cb_terms_condition"
+            app:layout_constraintTop_toTopOf="@+id/cb_terms_condition" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_confirm"
+            style="@style/AppTheme.Button.Material"
+            android:text="@string/confirm"
+            app:layout_constraintBottom_toTopOf="@+id/tv_exchange_rate_hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cb_terms_condition" />
+
+        <TextView
+            android:id="@+id/tv_exchange_rate_hint"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/exchange_rate_inclusive"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_confirm" />
+
+        <android.support.constraint.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="tv_exchange_rate_hint,btn_confirm,i_rate_calc,recycler_view,cb_terms_condition,tv_terms_condition_link" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadeScrollbars="false"
+    android:fillViewport="true"
+    android:scrollbarSize="@dimen/dimen_4"
+    android:scrollbarThumbVertical="@color/grey_300"
+    android:scrollbars="vertical"
+    tools:context=".views2.intlRemittance.transfer.fragments.IMTAmountFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/i_rate_calc"
+            layout="@layout/rate_calculator_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            app:layout_constraintBottom_toTopOf="@+id/barrier_rate_calc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier_rate_calc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="i_rate_calc" />
+
+        <TextView
+            android:id="@+id/tv_select_card_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:text="@string/card"
+            app:layout_constraintBottom_toTopOf="@+id/card_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barrier_rate_calc"
+            app:layout_constraintVertical_bias="0.2"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <LinearLayout
+            android:id="@+id/card_layout"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:background="@drawable/bg_grey_blue_border"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/tv_purpose_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_select_card_label">
+
+            <TextView
+                android:id="@+id/tv_card_status"
+                style="@style/AppTheme.Text.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textColor="@color/textColor"
+                tools:text="XXXX XXXX XXXX 1234" />
+
+            <TextView
+                android:id="@+id/card_balance"
+                style="@style/AppTheme.Text.Small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/textColor"
+                app:autoSizeMaxTextSize="@dimen/text_14"
+                app:autoSizeMinTextSize="@dimen/text_8"
+                app:autoSizeTextType="uniform"
+                tools:text="AED 120000.00" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_arrow_down_blue" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_purpose_label"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:text="@string/purpose_of_payment"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toTopOf="@+id/tv_purpose"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_layout" />
+
+        <TextView
+            android:id="@+id/tv_purpose"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:background="@drawable/bg_grey_blue_border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_12"
+            android:hint="@string/purpose_of_payment"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toTopOf="@+id/tv_promo_code_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_purpose_label"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_purpose"
+            app:layout_constraintEnd_toEndOf="@+id/tv_purpose"
+            app:layout_constraintHorizontal_bias="0.92"
+            app:layout_constraintStart_toStartOf="@+id/tv_purpose"
+            app:layout_constraintTop_toTopOf="@+id/tv_purpose" />
+
+        <TextView
+            android:id="@+id/tv_promo_code_label"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:text="@string/enter_promo_code"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toTopOf="@+id/til_promo_code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_purpose" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_promo_code"
+            style="@style/TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_24"
+            app:layout_constraintBottom_toTopOf="@+id/barrier"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_promo_code_label">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_promo_code"
+                style="@style/AppTheme.Text.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textDirection="ltr"
+                tools:ignore="UnusedAttribute" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top"
+            app:constraint_referenced_ids="btn_next" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_next"
+            style="@style/AppTheme.Button.Material"
+            android:text="@string/next"
+            app:layout_constraintBottom_toTopOf="@+id/tv_exchange_rate_note"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tv_exchange_rate_note"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exchange_rate_inclusive"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btn_next"
+            app:layout_constraintStart_toStartOf="@+id/btn_next"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.99" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

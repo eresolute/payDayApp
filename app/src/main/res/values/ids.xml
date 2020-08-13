@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="view"/>
+    <item type="id" name="image_view"/>
+    <item type="id" name="text_view"/>
+    <item type="id" name="recycler_view"/>
+    <item type="id" name="card_view"/>
+    <item type="id" name="button"/>
+    <item type="id" name="btn_submit"/>
+    <item type="id" name="btn_cancel"/>
+    <item type="id" name="cancel"/>
+    <item type="id" name="btn_next"/>
+    <item type="id" name="view_pager"/>
+    <item type="id" name="pin_view"/>
+    <item type="id" name="i_toolbar"/>
+    <item type="id" name="i_bottombar"/>
+    <item type="id" name="parent_view"/>
+    <item type="id" name="root_view"/>
+    <item type="id" name="image_button"/>
+    <item type="id" name="tab_layout"/>
+    <item type="id" name="conatiner"/>
+    <item type="id" name="fab"/>
+    <item type="id" name="camera_view"/>
+
+    <item type="id" name="tv_scan_pd_card"/>
+
+    <item type="id" name="tv_title"/>
+    <item type="id" name="tv_date"/>
+    <item type="id" name="tv_amount"/>
+    <item type="id" name="tv_currency"/>
+
+    <item type="id" name="toolbar_title"/>
+    <item type="id" name="toolbar_menu"/>
+    <item type="id" name="toolbar_notification"/>
+    <item type="id" name="toolbar_back"/>
+
+    <item type="id" name="drawer"/>
+    <item type="id" name="linear_layout"/>
+    <item type="id" name="texture_view"/>
+    <item type="id" name="constraint_layout"/>
+    <item type="id" name="frame_layout"/>
+
+    <item type="id" name="atm_locator"/>
+    <item type="id" name="currency_converter"/>
+    <item type="id" name="contact_us"/>
+    <item type="id" name="how_to_register"/>
+    <item type="id" name="enter_pin"/>
+    <item type="id" name="tv_instructions" />
+    <item type="id" name="btn_scan_pd" />
+</resources>

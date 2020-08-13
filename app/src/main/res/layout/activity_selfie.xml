@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views2.shared.activity.SelfieActivity">
+
+    <include layout="@layout/content_selfie" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="@dimen/dimen_16"
+        app:backgroundTint="@color/btn_primary_color"
+        android:fontFamily="@font/comfortaa_bold"
+        android:gravity="center"
+        android:text="@string/capture"
+        android:textAllCaps="false"
+        app:cornerRadius="@dimen/button_corner"
+        app:icon="@drawable/ic_camera_white"
+        app:rippleColor="@color/btn_secondary_color" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="@dimen/dimen_36"
+        android:visibility="gone" />
+
+</android.support.design.widget.CoordinatorLayout>

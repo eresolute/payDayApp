@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_edit_beneficiary_options"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/dimen_10"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/img_beneficiary_option"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_card_name"
+        android:tint="@color/blue"
+        android:paddingRight="@dimen/dimen_10"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingEnd="@dimen/dimen_10"
+        android:paddingStart="@dimen/dimen_10" />
+
+    <TextView
+        android:id="@+id/tv_beneficiary_option"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fontFamily="@font/comfortaa_bold"
+        android:textAlignment="viewStart"
+        android:layout_gravity="start"
+        android:textColor="@color/textColor"
+        android:paddingTop="@dimen/dimen_5"
+        style="@style/AppTheme.Text.Small"/>
+
+    <ImageView
+        android:id="@+id/img_beneficiary_expand"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_right_arrow"
+        android:paddingRight="@dimen/dimen_10"
+        android:paddingEnd="@dimen/dimen_10" />
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e0e0e0</color>
+    <color name="colorPrimaryDark">#bdbdbd</color>
+    <color name="colorAccent">#1c2f74</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_overlay">#CBFFFFFF</color>
+    <color name="white_click">#c0f2f2f2</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="transparent">#4c000000</color>
+    <color name="black">#de000000</color>
+
+    <color name="blue_green">#036a7a</color>
+    <color name="deep_blue_light">#104a76</color>
+    <color name="deep_blue">#1d2b73</color>
+    <color name="blue">#1c2f74</color>
+    <color name="blue_overlay">#c01c2f74</color>
+    <color name="lt_blue">#8a95c1</color>
+    <color name="grey">#f1f1f1</color>
+    <color name="grey_light">#f5f5f5</color>
+    <color name="textPrimaryColor">#122C66</color>
+    <color name="textDarkColor">#de000000</color>
+    <color name="textColor">#b4000000</color>
+    <color name="textColorLight">#b4454141</color>
+    <color name="textHintColor">#5D5D5D</color>
+    <color name="textDisabled">#39000000</color>
+    <color name="textWhiteDisabled">#85FFFFFF</color>
+    <color name="textBlackDisabled">#50000000</color>
+
+    <color name="grey_500">#9e9e9e</color>
+    <color name="grey_600">#979797</color>
+    <color name="grey_700">#616161</color>
+    <color name="grey_300">#e0e0e0</color>
+    <color name="grey_400">#bdbdbd</color>
+    <color name="grey_ivory5">#e1e1e1</color>
+
+    <color name="colorClicked">#a0c9c8c8</color>
+    <color name="bg_activity">#DFDDDD</color>
+    <color name="colorError">#DD6B55</color>
+    <color name="btn_primary_color">#ba4b28</color>
+    <color name="btn_disable_color">#F39D81</color>
+    <color name="btn_secondary_color">#c2552b</color>
+    <color name="color_red">#f05050</color>
+
+    <color name="textSecondaryColor">#b4000000</color>
+
+    <color name="credit_color">#94d8c5</color>
+    <color name="debit_color">#d5722b</color>
+    <color name="not_verified">#B4D81515</color>
+    <color name="verified">#B4295C1D</color>
+
+    <color name="tab_background_selected">#122C66</color>
+    <color name="tab_background_unselected">#4c000000</color>
+    <color name="color_dashboard_card">#83FFFFFF</color>
+
+</resources>

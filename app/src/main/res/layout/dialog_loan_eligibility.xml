@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dimen_8"
+    android:layout_marginEnd="@dimen/dimen_8"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/dimen_16">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_eligible_title"
+            style="@style/AppTheme.Text.Body2.Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/eligible_for_loan"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/dimen_4"
+            android:layout_marginTop="@dimen/dimen_4"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_eligible_title" />
+
+        <CheckBox
+            android:id="@+id/cb_terms_conditions"
+            style="@style/AppTheme.Text.Time.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="@string/agree_terms"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toTopOf="@+id/btn_interested"
+            app:layout_constraintEnd_toStartOf="@+id/tv_terms_condition_link"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/tv_terms_condition_link"
+            style="@style/AppTheme.Text.Time.Bold"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="@string/terms_and_Conditions"
+            android:textColor="@color/blue_green"
+            app:layout_constraintBottom_toBottomOf="@+id/cb_terms_conditions"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/cb_terms_conditions"
+            app:layout_constraintTop_toTopOf="@+id/cb_terms_conditions" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_interested"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/book"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_10"
+            app:backgroundTint="@color/btn_primary_color"
+            app:cornerRadius="@dimen/button_corner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_not_interested"
+            app:layout_constraintStart_toStartOf="parent"
+            app:rippleColor="@color/btn_secondary_color" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_not_interested"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/decline"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_10"
+            app:backgroundTint="@color/btn_primary_color"
+            app:cornerRadius="@dimen/button_corner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_interested"
+            app:rippleColor="@color/btn_secondary_color" />
+
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_8"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:visibility="visible"
+            android:textColor="@color/colorError"
+            style="@style/AppTheme.Text.Time"
+            android:text="@string/terms_conditions_error_2"
+            app:layout_constraintBottom_toTopOf="@+id/tv_loan_top_note"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cb_terms_conditions" />
+
+        <TextView
+            android:id="@+id/tv_loan_top_note"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_8"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:visibility="gone"
+            android:textSize="@dimen/text_10"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:textColor="@color/textColorLight"
+            android:text="@string/loan_topup_note"
+            app:layout_constraintBottom_toTopOf="@+id/btn_interested"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvError" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
+
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_categories"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/img_next"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img_prev"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:paddingStart="@dimen/dimen_8"
+        android:paddingLeft="@dimen/dimen_8"
+        android:contentDescription="@string/app_name"
+        android:paddingTop="@dimen/dimen_16"
+        android:paddingEnd="@dimen/dimen_8"
+        android:paddingRight="@dimen/dimen_8"
+        android:paddingBottom="@dimen/dimen_16"
+        android:tint="@color/btn_primary_color"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_categories"
+        app:layout_constraintEnd_toStartOf="@+id/rv_categories"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rv_categories"
+        app:srcCompat="@drawable/ic_left_arrow" />
+
+    <ImageView
+        android:id="@+id/img_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:paddingStart="@dimen/dimen_8"
+        android:paddingLeft="@dimen/dimen_8"
+        android:paddingTop="@dimen/dimen_16"
+        android:paddingEnd="@dimen/dimen_8"
+        android:paddingRight="@dimen/dimen_8"
+        android:paddingBottom="@dimen/dimen_16"
+        android:tint="@color/btn_primary_color"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_categories"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rv_categories"
+        app:layout_constraintTop_toTopOf="@+id/rv_categories"
+        app:srcCompat="@drawable/ic_right_arrow" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,990 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">"Araw ng suweldoFH "</string>
+    <string name="powered_by">"Pinatatakbo ng"</string>
+    <string name="next">"Susunod "</string>
+    <string name="submit">"Ipasa"</string>
+    <string name="confirm">"Kumpirmahin "</string>
+    <string name="invalid_type_format">i wasto %1s</string>
+    <string name="confirmation">Pagkumpirma</string>
+    <string name="verify">"Patunayan "</string>
+    <string name="default_text">"Kakulangan na Teksto"</string>
+    <string name="amount_in_aed">AED %1s</string>
+    <string name="amount_in_inr">INR %1s</string>
+    <string name="percentage">%1$s%%</string>
+    <string name="processing">"Pagproseso"</string>
+    <string name="invalid_credentials">"Di-wastong mga kredensyal.%1s"</string>
+    <string name="apply_for_loan_topup">Mag-aplikasyonly para sa top-up na utang</string>
+    <string name="text_intro_1">"Ang iyong Personal na \nDigital Bank "</string>
+    <string name="text_intro_2">"Maglipat ng Pera sa iyong \nmga Minamahal Kaagad "</string>
+    <string name="text_intro_3">"Bayaran mo ang iyong bayarin &amp; Kumuha \nng Cashback "</string>
+    <string name="card">Piliin ang Card</string>
+
+    <string name="contact_us">"Makipag-ugnayan sa amin"</string>
+    <string name="how_to_register">"Kung paano magrehistro"</string>
+
+    <string name="login">"Mag log in"</string>
+    <string name="account_number">"Numero ng managot"</string>
+    <string name="register">"Magparehistro"</string>
+    <string name="user_id">"gumagamit PAGKAKAKILANLAN"</string>
+    <string name="password">"Kontrasenyas"</string>
+    <string name="passwordKyc">"Kontrasenyas"</string>
+    <string name="forgot_password">"Nakalimutan ang kontrasenyas"</string>
+    <string name="forgot_user_id_password">"Nakalimutan ang User PAGKAKAKILANLAN o Kontrasenyas? "</string>
+    <string name="card_number">"Numero ng kard"</string>
+    <string name="confirm_mobile_no">"Kumpirmahin ang Numero ng iyong Mobile "</string>
+    <string name="verify_otp">"I-verify ang OTP"</string>
+    <string name="enter_otp">"Ipasok ang OTP "</string>
+    <string name="otp_info">"Mangyaring i-type ang verification code na ipinadala sa iyong numero ng mobile"</string>
+    <string name="otp_sent_to_registered_number">"Mangyaring i-type ang verification code na ipinadala sa iyong numero ng mobile"</string>
+    <string name="resend_otp">"Ipadala muli ang OTP"</string>
+    <string name="create_login_details">"Lumikha ng Mga Detalye ng Pag-mag log in "</string>
+    <string name="password_pattern_info">"Gumamit ng 8 o higit pang mga character na may pinaghalong mga titik, numero o simbolo"</string>
+    <string name="confirm_password">"Kumpirmahin ang Kontrasenyas"</string>
+    <string name="account_registered">"Matagumpay na Nakarehistro \nang Iyong Managot "</string>
+    <string name="invalid_username" tools:ignore="ExtraTranslation">"Di-wastong User PAGKAKAKILANLAN"</string>
+    <string name="invalid_password">"Di wastong kontrasenyas"</string>
+    <string name="scan_card">"I-scan ang iyong kard"</string>
+    <string name="position_card_instruction">"Ilagay ang iyong kard  sa frame"</string>
+
+    <string name="card_services">"Mga Serbisyo ng Kard"</string>
+    <string name="loan">"Pautang"</string>
+    <string name="loan_services_title">"Serbisyong Pautang"</string>
+    <string name="early_salary">"Maagang Suweldo"</string>
+    <string name="emi">EMI</string>
+    <string name="card_balance">"Balanse ng Kard"</string>
+    <string name="last_salary_credited">"Pinagkakatiwalaang \nHuling Suweldo"</string>
+    <string name="welcome">"MABUHAY"</string>
+    <string name="cancel">"Kanselahin"</string>
+    <string name="choose_language">"Piliin ang Wika"</string>
+    <string name="interested">"Interesado"</string>
+    <string name="not_interested">"Hindi interesado"</string>
+
+    <string-array name="drawer_items">
+        <item>Mga Detalye ng Kard </item>
+        <!--<item>Mga Produkto</item>-->
+        <item>Hiling na serbisyo </item>
+        <item>Makipag-ugnayan sa amin</item>
+        <item>Pag-logout</item>
+    </string-array>
+
+    <string-array name="card_service_items">
+        <!--<item>Pahayag sa kard</item>-->
+        <item>Mga transaksyon</item>
+        <item>Salaries Credited</item>
+        <item>I-reset ang Pin</item>
+        <item />
+    </string-array>
+
+    <string-array name="services">
+        <item>Pag-transfer ng\n Internasyonal na Pera</item>
+        <item>du</item>
+        <item>Etisalat</item>
+        <item>Payday-Payday\nTransfer</item>
+        <item>Pagbabayad ng India Kuwenta</item>
+    </string-array>
+
+    <string-array name="freq_services">
+        <item>Kasaysayan ng \nTransaksyon</item>
+        <item>Mga Pagbabayad</item>
+        <item>Mga paglilipat</item>
+        <item>Mga Serbisyo ng Kard </item>
+        <item>Mga alok </item>
+        <item>Serbisyong Pautang</item>
+    </string-array>
+
+    <string name="apply_for_loan">"Applikasyon para sa Pautang"</string>
+    <string name="loan_calculator">"Utang \nCalculator"</string>
+    <string name="support">"Suporta"</string>
+
+    <string name="title_how_to_fragment">"Kung paano magrehistro"</string>
+
+    <string name="select_currency">"Piliin ang Pera"</string>
+
+    <string name="card_statement">"Pahayag sa kard "</string>
+
+    <string name="description_date">"Paglalarawan / Petsa"</string>
+    <string name="salaries_credited">"Salaries Credited"</string>
+    <string name="salaries_credited_date">"Petsa ng Pinagkaloob ng Suweldo"</string>
+
+    <string name="atm_image">"ATM tirahan makina"</string>
+
+    <string name="loan_offer_details">"Mga Detalye ng Alok ng Pautang"</string>
+    <string name="loan_type">"Uri ng Pautang"</string>
+    <string name="loan_number">"Numero ng Pautang"</string>
+    <string name="loan_disbursal_date">"Petsa ng Disbursing ng Pautang"</string>
+    <string name="interest_rate">"bayad ng Interes "</string>
+    <string name="original_loan_amount">"Halaga ng Pautang "</string>
+    <string name="monthly_installment">"Buwanang kurso"</string>
+    <string name="no_installments_paid">"Bilang ng mga ikabitment na binayaran "</string>
+    <string name="principal_outstanding">"punong-guro Natitirang"</string>
+    <string name="outstanding_installments">"Natitirang mga pag-ikabit "</string>
+    <string name="monthly_installments">"Buwanang mga pag-ikabit "</string>
+
+    <string name="terms_and_Conditions">"Mga Tuntunin at Kundisyon"</string>
+    <string name="accept">"Tanggapin"</string>
+    <string name="loan_offer_terms_cond">"Nabasa at sumasang-ayon ako sa mga tuntunin at kundisyon"</string>
+    <string name="agree_terms">Nabasa ko at sumasang-ayon ako sa &#160;</string>
+
+    <string-array name="edit_beneficiary_options">
+        <item>PayDay-to-PayDay</item>
+        <item>Araw ng suweldosa Kredito Kard</item>
+        <item>Lokal Pera paglipat</item>
+        <item>Payday to Payday Loan</item>
+    </string-array>
+
+    <string-array name="locator_options">
+        <item>Mga Lokasyon ng Sanga</item>
+        <item>Mga Shortcode ng Pagbabangko ng SMS</item>
+    </string-array>
+
+    <string-array name="contact_us_options">
+        <item>Numero ng Call Center</item>
+        <item>Website</item>
+        <item>Mga Mungkahi at Reklamo</item>
+    </string-array>
+
+    <string-array name="payday_card_key">
+        <item>Pangalan ng Mamimili</item>
+        <item>Numero ng Araw ng suweldoKard </item>
+        <item>Uri ng Card</item>
+        <item>Katayuan ng Card</item>
+        <item>Magagamit na Halaga ng Balanse</item>
+        <item>Kabuuang Limitasyon ng Overdraft</item>
+        <item>Magagamit na Limitadong Overdraft</item>
+        <item>Hawak nang matagal</item>
+        <item>Huling Suweldo </item>
+        <item>Huling petsa ng credit sa suweldo</item>
+    </string-array>
+
+    <string-array name="account_option">
+        <item>Araw ng suweldoFinance </item>
+        <item>Maagang suweldo</item>
+        <item>Credit Card</item>
+        <item>Pinansyal na Pananalapi</item>
+    </string-array>
+
+    <string name="conversion_value" translatable="false">%1s %2s = %3s %4s as on 16-10-2018</string>
+    <string name="step_by_step_guide">"Gabay sa hakbang-hakbang "</string>
+    <string name="scan_qr_code">"I-scan ang QR code na ito"</string>
+    <string name="scan_payday_card">"I-scan ang Araw ng suweldoKard"</string>
+    <string name="position_payday_card">"Posisyon Araw ng suweldoKard  sa Frame na ito "</string>
+    <string name="card_scan_error">"Paki-scan muli \nang iyong kard  "</string>
+    <string name="capture_front_emirates_id">"Kunin ang Front ng Emirates PAGKAKAKILANLAN "</string>
+    <string name="capture_back_emirates_id">"Kunin ang Balik ng Emirates PAGKAKAKILANLAN "</string>
+    <string name="scan_back_emirates_id_note">"Hindi namin i-save o iimbak ang iyong Emirates PAGKAKAKILANLAN. \nAng iyong mga detalye ay mapoproseso nang ligtas."</string>
+    <string name="register_card_detail">"Mga Detalye ng Kard"</string>
+    <string name="card_holder_name">"Pangalan ng Kard"</string>
+    <string name="expiry_date">"Petsa ng Pag-mawawalan ng bisa"</string>
+    <string name="capture">"Makuha "</string>
+    <string name="customer_selfie">"Kunin ang Selfie"</string>
+    <string name="prepaid">"Prepaid"</string>
+    <string name="postpaid">"Postpaid"</string>
+    <string name="operator_image_view">"Tingnan ng imahe ng opereytor"</string>
+    <string name="enter_mobile_number">"Ipasok ang Numero ng Mobile "</string>
+    <string name="enter_mobile_number_payments">"Ipasok ang Numero ng Mobile "</string>
+    <string name="calling_card">"Pagtawag  Kard"</string>
+    <string name="faq">FAQ</string>
+    <string name="international_remittance">"Pag-transfer ng Internasyonal na Pera"</string>
+    <string name="accounts">"Mga Managot"</string>
+    <string name="international_money_transfer">"Pag-transfer ng Internasyonal na Pera"</string>
+    <string name="registered_beneficiaries">"Rehistradong Mga Makikinabang"</string>
+    <string name="balance">"Balanse"</string>
+    <string name="payday_card">payday_card</string>
+    <string name="mobile_recharge">"Napagagalaw muling magkarga"</string>
+    <string name="available_overdraft_limit">"Magagamit na Overdraft Limit"</string>
+    <string name="overdraft_limit_2">"Limitado sa Overdraft"</string>
+    <string name="ok">OK</string>
+    <string name="enter_amount">"Ipasok ang halaga "</string>
+    <string name="enter_atm_pin">"Ipasok ang PIN"</string>
+    <string name="enter_atm_pin_salik">"Ipasok ang PIN"</string>
+    <string name="atm_pin">PIN</string>
+    <string name="token_id">"Token PAGKAKAKILANLAN"</string>
+    <string name="transaction_successful">"Matagumpay ang Transaksyon"</string>
+
+    <string name="loans">"Mga Utang"</string>
+    <string name="eligible_for_loan">"Ikaw ay Karapat-dapat para sa Pautang "</string>
+
+    <string-array name="mini_statements">
+        <item>Pahayag ng 1 Buwan</item>
+        <item>3 Pahayag ng Buwan</item>
+        <item>6 Pahayag ng Buwan</item>
+    </string-array>
+
+    <string-array name="transaction_history">
+        <item>Mga Transaksyon sa Kard</item>
+        <item>Mga Utang</item>
+        <item>Araw ng suweldo to \nAraw ng suweldo Transfer</item>
+        <item>pagbabayad ng bayarin</item>
+        <item>suweldo na na-kredito</item>
+    </string-array>
+
+    <string-array name="transaction_history_transfer">
+        <item>PayDay-to-PayDay</item>
+        <item>Lokal Pera paglipat</item>
+        <item>Transfer ng Credit Card</item>
+    </string-array>
+
+    <string-array name="transaction_history_option">
+        <item>Buwanang</item>
+        <item>Huling limang Transaksyon</item>
+    </string-array>
+
+    <string-array name="setting_options">
+        <item>Palitan ANG kontrasenyas </item>
+        <item>Biometric pagpapatunay</item>
+    </string-array>
+
+
+    <string name="purpose_of_payment">"Dahilan ng pagbabayad"</string>
+    <string name="account_no_label">"Numero ng managot"</string>
+    <string name="edit_icon">edit icon</string>
+    <string name="from">"Mula sa"</string>
+    <string name="to">"Upang "</string>
+    <string name="currency">"Pera sa Pagpapadala  : AED"</string>
+    <string name="available_balance_in_aed">Magagamit na Balanse: AED %1s</string>
+    <string name="beneficiary">"Makikinabang"</string>
+    <string name="transfer_details">"Maglipat ng Mga \nDetalye"</string>
+    <string name="summary">"Buod"</string>
+    <string name="previous">"nakaraan"</string>
+    <string name="cardless_withdrawal">"Walang Paglipat ng Kard"</string>
+    <string name="personal_loan">"Personal na Pautang"</string>
+    <string name="loan_amount">AED 0</string>
+    <string name="payments">"Mga Pagbabayad "</string>
+    <string name="bill_payment">"Bill Payment"</string>
+    <string name="utilities">"Mga Kagamitan"</string>
+    <string name="transport">"Ilipat"</string>
+    <string name="road_transport">"Mga Kalsada at ilipat"</string>
+    <string name="etisalat">Etisalat</string>
+    <string name="du">du</string>
+    <string name="amount">"Halaga"</string>
+
+    <string name="date">"Petsa"</string>
+    <string name="beneficiary_bank">"Makikinabang bangko "</string>
+    <string name="benificiary_name">"Pangalan ng Makikinabang "</string>
+    <string name="aed">AED</string>
+    <string name="successfully_paid">"Matagumpay na Bayad "</string>
+    <string name="available_balance_text">"Magagamit na Balanse"</string>
+    <string name="montly">"Buwanang "</string>
+    <string name="mini_statement">"Pahayag ng Mini "</string>
+    <string name="email_subscription">Email Subscription</string>
+    <string name="dr">Dr</string>
+    <string name="cr">Cr</string>
+    <string name="confirm_email">Kumpirmahin ang Email PAGKAKAKILANLAN </string>
+    <string name="statement_type">"Uri ng Pahayag "</string>
+
+
+    <string name="apply">"Mag-aplikasyonly"</string>
+    <string name="apply_pop_up">"Mag-aplikasyonly"</string>
+    <string name="products">"Mga Produkto"</string>
+    <string name="apply_cc">"Applikasyon ng Kredito Kard"</string>
+    <string name="apply_dc">"Applikasyon ng Pagkakarga ng utang Kard "</string>
+    <string name="apply_loan_title">"Applikasyon ng Pautang "</string>
+    <string name="apply_loan_top_up_title">"utang Topup "</string>
+    <string name="loan_amount_title">"Halaga ng Pautang"</string>
+    <string name="monthly_emi">"Buwanang EMI"</string>
+    <string name="months_value">%1s Months</string>
+
+    <string name="edit_beneficiary">"I-edit ang Makikinabang"</string>
+    <string name="payday_to_payday">"PayDay \nto PayDay"</string>
+    <string name="local_money_transfer">"Lokal \nPera paglipat"</string>
+    <string name="local_money_transfer_1">Local Money Transfer</string>
+    <string name="select_country">"Piliin ang bansa"</string>
+    <string name="select_bank">"Piliin ang Bangko"</string>
+    <string name="beneficiary_name">"Pangalan ng Makikinabang"</string>
+    <string name="account_number_field">"Numero ng Managot"</string>
+    <string name="address_field">"Tirahan"</string>
+    <string name="address_line1">"linya ng address 1"</string>
+    <string name="address_line2">"linya ng address 1"</string>
+    <string name="mobile_number">"Numero ng Mobile"</string>
+    <string name="mobile">Mobile</string>
+    <string name="country">"Bansa"</string>
+    <string name="bank">"bangko"</string>
+    <string name="edit_beneficiary_success">"Matagumpay na na-edit ang benepisyaryo"</string>
+    <string name="short_name">"Maikling pangalan"</string>
+    <string name="payday_to_payday_1">"PayDay-to-PayDay"</string>
+    <string name="elife">eLife</string>
+    <string name="landline">Landline</string>
+    <string name="enter_pvt_number">"Ipasok ang Numero ng PVT "</string>
+
+    <string name="enter_new_pin">"Ipasok ang Bagong PIN"</string>
+    <string name="confirm_pin">"Kumpirmahin ang PIN"</string>
+    <string name="message">"Mensahe"</string>
+    <string name="select_issue">"Piliin ang Isyu "</string>
+    <string name="enter_new_mobile_no">"Ipasok ang Bagong Numero ng Mobile "</string>
+    <string name="send_message">"Magpadala ng Mensahe"</string>
+    <string name="arrow_image">"Larawan ng Arrow"</string>
+    <string name="area_of_issue">"Lugar ng Isyu"</string>
+    <string name="message_request">"Humiling ng Hindi. %1s"</string>
+
+
+    <string name="money_transfer">"Paglipat ng Pera"</string>
+
+    <string name="payday_card_title">"Araw ng suweldoKard  "</string>
+    <string name="banner">"Baner"</string>
+    <string name="Offers">"Mga alok"</string>
+    <string name="overdraft">"Utang sa bangko"</string>
+    <string name="transaction_history">Kasaysayan ng Transaksyon</string>
+
+
+    <string name="payment_holiday">"Pagbabayad ng Holpagkakakilanlanay"</string>
+    <string name="activate_card">"Isaaktibo ang Kard"</string>
+    <string name="card_transaction_dispute">"Pagtatalo kard Transaksyon"</string>
+    <string name="help">"Tulong "</string>
+    <string name="thumb_print_instruction">"Hanggang sa gawing mas madali, maaari kang mag-mag log in gamit ang Fingerprint na naka-imbak na sa mobile na ito "</string>
+    <string name="activate">"Isaaktibo "</string>
+    <string name="settings">"Mga Pagtatakda "</string>
+    <string name="service_requests">Service Requests</string>
+    <string name="start">"Magsimula "</string>
+    <string name="terms_conds_error">"Kailangan mong tanggapin ang Mga Tuntunin at Kundisyon "</string>
+    <string name="loan_disbursal">"Na-book na ang iyong Pautang at na-mawawalan ng bisa sa iyong kard  "</string>
+    <string name="await_instruction">"Ang paghihintay ng Transaksyon \nay makumpleto"</string>
+    <string name="mobile_service_provider">"Serbisyo ng Mobile Provpagkakakilanlaner"</string>
+
+    <string name="passport_title">"Hindi namin i-save o iimbak ang iyong Pasaporte. Ang iyong mga detalye ay mapoproseso nang ligtas. "</string>
+    <string name="scan_passport">"I-scan ang Pasaporte"</string>
+    <string name="enter_email_id">"Ipasok ang Email PAGKAKAKILANLAN "</string>
+    <string name="confirm_email_id">"Kumpirmahin ang Email PAGKAKAKILANLAN "</string>
+    <string name="email_not_match">"Hindi tumutugma ang email"</string>
+    <string name="enter_new_mobile_number">"Ipasok ang Bagong Numero ng Mobile "</string>
+    <string name="confirm_mobile">"Kumpirmahin ang Numero ng Mobile"</string>
+    <string name="mobile_not_match">"Hindi tumutugma ang Numero ng Mobile"</string>
+    <string name="scan_emirates_error">"Mangyaring i-scan muli ang iyong Emirates PAGKAKAKILANLAN "</string>
+    <string name="emirates_update_succesful">"Matagumpay ang Pag-magpabago ng PAGKAKAKILANLAN ng Emirates"</string>
+    <string name="capture_photo_page_passport">Capture Photo Page of Passport</string>
+    <string name="capture_signature_page_passport">Capture Signature Page of Passport</string>
+    <string name="capture_address_page_passport">Capture Address Page of Passport</string>
+    <string name="passport_capture_successful">Passport Capture Successful</string>
+    <string name="passport_update_succesful">"Matagumpay ang Pag-magpabago ng Pasaporte "</string>
+    <string name="email_update_succesful">"Matagumpay na Pag-magpabago ng PAGKAKAKILANLAN ng Email "</string>
+    <string name="mobile_update_succesful">"Matagumpay na Pag-magpabago ng Numero ng Mobile "</string>
+    <string name="update_email_id">"I-magpabago ang PAGKAKAKILANLAN ng Email "</string>
+    <string name="update_mobile_no">"I-magpabago ang Numero ng Mobile "</string>
+    <string name="update_emirates">"I-magpabago ang Emirates PAGKAKAKILANLAN "</string>
+    <string name="update_passport">"I-magpabago ang Pasaporte "</string>
+
+    <string name="due">"DUE"</string>
+    <string name="eligible_for_deferment">"Ikaw ay Karapat-dapat para sa Pagtanggol "</string>
+    <string name="defer">"Iliban"</string>
+    <string name="number_of_installment">"Bilang ng mga ikabitment "</string>
+
+    <string name="empty_mobile_no">"Mangyaring ipasok ang iyong numero ng mobile "</string>
+    <string name="empty_mobile_no_payments">"Mangyaring ipasok ang iyong numero ng mobile "</string>
+    <string name="invalid_mobile_no">"Di-wastong numero ng mobile"</string>
+    <string name="invalid_expiry_date">"Di-wastong petsa ng pag-mawawalan ng bisa"</string>
+    <string name="empty_card_no">"Mangyaring ipasok ang numero ng kard  "</string>
+    <string name="invalid_card_no">"Mangyaring ipasok ang wastong numero ng kard  "</string>
+    <string name="empty_card_name">"Mangyaring ipasok ang pangalan ng kard  "</string>
+    <string name="empty_user_id">"Mangyaring ipasok ang user PAGKAKAKILANLAN "</string>
+    <string name="invalid_user_id">"Ang User PAGKAKAKILANLAN ay dapat na hindi bababa sa 8 mga character na walang mga puwang"</string>
+    <string name="empty_password">"Mangyaring ipasok ang kontrasenyas "</string>
+    <string name="empty_confirm_password">"Mangyaring kumpirmahin ang kontrasenyas"</string>
+    <string name="invalid_password_len">"Ang kontrasenyas ay dapat na hindi bababa sa 8 mga character"</string>
+    <string name="password_contains_userid">"Ang kontrasenyas ay hindi dapat maglaman ng User PAGKAKAKILANLAN "</string>
+    <string name="password_not_match">"Hindi tumutugma ang kontrasenyas"</string>
+    <string name="password_not_same_as_old">"Ang bagong kontrasenyas ay hindi dapat maging katulad ng lumang kontrasenyas"</string>
+    <string name="skip">"Laktawan"</string>
+    <string name="card_username_length">"Ang pangalan ng kard  ay dapat na hindi bababa sa 2 mga character"</string>
+    <string name="enter_new_password">"Ipasok ang Bagong Kontrasenyas "</string>
+    <string name="change_password">"Palitan ANG kontrasenyas"</string>
+    <string name="invalid_amount">"Mangyaring maglagay ng wastong halaga"</string>
+    <string name="ic_back">ic_back</string>
+    <string name="ic_profile">ic_profile</string>
+    <string name="flag">flag</string>
+    <string name="invalid_account_length">Mangyaring magpasok ng isang %1s na numero ng numero</string>
+    <string name="invalid_account_length_ranged">Mangyaring magpasok ng %1s-%2s na numero ng numero</string>
+    <string name="register_emirate_details">"Detalye ng PAGKAKAKILANLAN ng Emirates "</string>
+    <string name="please_enter_otp">"Mangyaring ipasok ang OTP "</string>
+    <string name="empty_emirate_id">"Mangyaring magpasok ng PAGKAKAKILANLAN ng emirates "</string>
+    <string name="invalid_emirate_id">"Di-wastong PAGKAKAKILANLAN ng emirates "</string>
+    <string name="loading">"Naglo-hakot … "</string>
+    <string name="something_went_wrong">"May nagkamali "</string>
+    <string name="pin_does_not_match">"Iba't ibang mga PIN"</string>
+    <string name="please_enter_pin">"Mangyaring ipasok ang wastong PIN "</string>
+    <string name="forgot_user_id">"Nakalimutan ang User PAGKAKAKILANLAN "</string>
+    <string name="reset_password">"I-reset ang Kontrasenyas"</string>
+    <string name="new_password">"Bagong Kontrasenyas"</string>
+    <string name="enter_card_number">"Ipasok ang Numero ng Kard "</string>
+    <string name="enter_card_pin">"Ipasok ang PIN ng Kard  "</string>
+    <string name="no_loan_available">"Walang Magagamit na Pautang "</string>
+    <string name="categories">"Mga Kategorya"</string>
+    <string name="block_card">"Harangan Kard "</string>
+    <string name="card_block_success">"Matagumpay na \nNaka-harangan ang Kard  "</string>
+    <string name="nationality">"Nasyonalpagkakakilanlanad "</string>
+    <string name="dob">"ARAW NG KAPANGANAKAN"</string>
+    <string name="empty_nationality">"Mangyaring ipasok ang nasyonalpagkakakilanlanad "</string>
+    <string name="invalid_dob">"Di-wastong petsa ng kapanganakan"</string>
+    <string name="dob_mismatch">"Ang ARAW NG KAPANGANAKAN ay hindi tumutugma sa Emirates PAGKAKAKILANLAN "</string>
+    <string name="empty_dob">"Mangyaring ipasok ang ARAW NG KAPANGANAKAN "</string>
+    <string name="empty_expiry_date">"Mangyaring ipasok ang petsa ng pag-mawawalan ng bisa "</string>
+    <string name="link_accounts">"Link Mga Managot "</string>
+    <string name="three_dots">…</string>
+    <string name="invalid_pin">"Di-wastong PIN"</string>
+    <string name="invalid_installment_value">"Di-wastong halaga ng pag-ikabit "</string>
+    <string name="enter_manually">"Magpasok nang Manwal "</string>
+    <string name="enter_current_password">"Ipasok ang Kasalukuyang Kontrasenyas "</string>
+    <string name="inbox">"Inbox"</string>
+    <string name="select_issue_area_error">"Mangyaring pumili ng isang wastong lugar ng isyu "</string>
+    <string name="select_issue_error">"Mangyaring pumili ng wastong isyu"</string>
+    <string name="valid_message_error">"Mangyaring Ipasok ang isang wastong mensahe "</string>
+    <string name="add_beneficiary">"Magdagdag ng Makikinabang"</string>
+    <string name="account_summary">"Buod ng Managot"</string>
+    <string name="loan_details">"Mga Detalye ng Pautang"</string>
+    <string name="payday_cards">"Mga Araw ng suweldoKard  "</string>
+    <string name="terms_conditions_error">"Mangyaring tanggapin ang mga tuntunin at kundisyon"</string>
+    <string name="fingerprint_dialog_title">"Isaaktibo ang tatak ng daliri pagpapatunay"</string>
+    <string name="fingerprint_dialog_title2">Fingerprint Authentication</string>
+    <string name="fingerprint_dialog_subtitle">"Araw ng suweldo"</string>
+    <string name="fingerprint_dialog_description">"Hanggang sa gawing mas madali, maaari kang mag-mag log in gamit ang Fingerprint na naka-imbak na sa mobile na ito"</string>
+    <string name="notification_channel">fh_notification_channel</string>
+    <string name="channel_desc">notification channel for App</string>
+    <string name="channel_id">payday_fh</string>
+    <string name="enter_account_number">"Ipasok ang Numero ng Managot "</string>
+    <string name="empty_account_no">"Mangyaring ipasok ang no managot "</string>
+    <string name="invalid_account_no">"Mangyaring ipasok ang wastong numero ng managot "</string>
+    <string name="due_date">"Takdang petsa"</string>
+    <string name="details">"Mga Detalye"</string>
+    <string name="last_bill_amount">"Huling Halaga ng Kuwenta "</string>
+    <string name="bill_amount">"Halaga ng Kuwenta"</string>
+    <string name="no_transaction_available">"Walang Magagamit na Mga Transaksyon "</string>
+    <string name="no_operators_available">"Walang Magagamit na Mga Opereytor "</string>
+    <string name="no_offers_available">"Walang Magagamit na Mga Alok "</string>
+    <string name="customer_name">"Pangalan ng Mamimili"</string>
+    <string name="available_balance_label">"Magagamit na Balanse"</string>
+    <string name="payday_card_number_label">"Numero ng Araw ng suweldoKard  "</string>
+    <string name="multiple_of_50">"Mangyaring magpasok ng isang halaga sa maramihang ng 50 "</string>
+    <string name="location">"Lokasyon"</string>
+    <string name="un_successfully_paid">"Ang kabayaran ay hindi matagumpay"</string>
+    <string name="home">"Bahay"</string>
+    <string name="branches">"Naghahanap na "</string>
+    <string name="enter_name">"Pangalan"</string>
+    <string name="indian_bill_payment">"Pagbabayad ng India Kuwenta"</string>
+    <string name="airtel">"Airtel"</string>
+    <string name="verified">"Mapatunayan"</string>
+    <string name="not_verified">"Hindi napatunayan"</string>
+    <string name="contact_updated">"Matagumpay na na-magpabago ang Makipag-ugnay sa "</string>
+    <string name="money_in">"Pera Sa "</string>
+    <string name="money_out">"Maglabas ng pera "</string>
+    <string name="available_overdraft">"Magagamit na Overdraft"</string>
+    <string name="sent_box">"Naipadala na Kahon "</string>
+    <string name="welcome_to_payday" >"Maligayang pagdating sa Araw ng suweldo"</string>
+    <string name="sign_in_diff_account">"Mag-sign in bilang ibang user"</string>
+    <string name="biometric_auth">"Biometric Auth"</string>
+    <string name="fingerprint">"tatak ng daliri"</string>
+    <string name="enabled">"Pinagana "</string>
+    <string name="disabled">"Hindi pinagagana"</string>
+    <string name="version_name">Bersyon %1s</string>
+    <string name="broadband">"Broadband"</string>
+    <string name="gsm">"GSM"</string>
+    <string name="evision">"E-Vision"</string>
+    <string name="biometric_auth_enabled">"Pinagana ang Pagpapatotoo sa Biometric "</string>
+    <string name="personal_details">"Personal na detalye"</string>
+    <string name="emirates_id">"PAGKAKAKILANLAN \nng Emirates"</string>
+    <string name="passport">"Pasaporte"</string>
+    <string name="email_id">"PAGKAKAKILANLAN \nng email"</string>
+    <string name="mobile_num">"Numero ng Mobile"</string>
+    <string name="update_kyc_document">"I-magpabago ang KYC Document"</string>
+    <string name="link">"Kawing"</string>
+    <string name="upload">"Mag-uphakot"</string>
+    <string name="emergency_contact">"kagipitan Makipag-ugnay sa"</string>
+    <string name="name">"Pangalan"</string>
+    <string name="relation">"Relasyon"</string>
+    <string name="invalid_email">"Di-wastong Email"</string>
+    <string name="empty_name">"Mangyaring ipasok ang pangalan "</string>
+    <string name="empty_value">"Mangyaring ipasok ang halaga "</string>
+    <string name="upload_mobile_number">"I-magpabago ang Numero ng Mobile "</string>
+    <string name="set_pin">"I-reset Pin"</string>
+    <string name="send">"Ipadala"</string>
+    <string name="enter_message_hint">Isulat ang iyong mga isyu dito&#8230;</string>
+    <string name="generic_payment_error">"Error sa pag-serbisyo ng iyong kahilingan. Mangyaring subukan pagkatapos ng ilang oras."</string>
+    <string name="dewa">"DEWA"</string>
+    <string name="fewa">"FEWA"</string>
+    <string name="aadc">"AADC"</string>
+    <string name="dubai_police">Dubai Police</string>
+    <string name="mawaqif">"Mawaqif"</string>
+    <string name="salik">"Salik"</string>
+    <string name="nol">NOL</string>
+    <string name="du_">"DU"</string>
+    <string name="etisalat_">"Etisalat"</string>
+    <string name="transactions">"Mga transaksyon"</string>
+    <string name="emirates_id_expire">"Nag-mawawalan ng bisa na ang Emirates Pagkakakilanlan o malapit nang mag-mawawalan ng bisa "</string>
+    <string name="update">"I-magpabago "</string>
+    <string name="payable_amount">"Bayad na Halaga"</string>
+    <string name="card_details">"Mga Detalye ng Kard"</string>
+    <string name="payment_details">"Mga Detalye sa Pagbabayad"</string>
+    <string name="browse_plans">"Mag-browse ng Mga Plano"</string>
+    <string name="dth">"DTH"</string>
+    <string name="enter_customer_id">"Ipasok ang Mamimili PAGKAKAKILANLAN "</string>
+    <string name="customer_id">"Mamimili PAGKAKAKILANLAN "</string>
+    <string name="landline_number">"Numero ng Landline"</string>
+    <string name="std_code">STD Code</string>
+    <string name="enter_landline_number">"Ipasok ang Numero ng Landline "</string>
+    <string name="select_plan">"Piliin ang Plano"</string>
+    <string name="add_beneficiary_success">"Matagumpay na napagkakakilanlanagdag ang Beneficiary"</string>
+    <string name="no_beneficiaries_available">"Walang available na Makikinabang"</string>
+    <string name="request_error">"Paumanhin! Hindi namin maproseso ang iyong kahilingan. Mangyaring subukan pagkatapos ng ilang oras."</string>
+    <string name="no_mobile_no">"Walang magagamit na numero ng mobile"</string>
+    <string name="user_Id_not_available">"Umiiral na ang User PAGKAKAKILANLAN "</string>
+    <string name="otp_instructions">"Mangyaring i-type ang verification code na ipinadala \nsa iyong numero ng mobile "</string>
+    <string name="invalid_date">"Maling petsa"</string>
+    <string name="payday_to_credit">"Araw ng suweldosa Kredito Kard  "</string>
+    <string name="insufficient_balance">"Hindi sapat ang Balanse ng Kard"</string>
+    <string name="invalid_name">"Hindi wastong pangalan"</string>
+    <string name="invalid_nationality">"Di-wastong nasyonalpagkakakilanlanad"</string>
+    <string name="i_accept">tinatanggap ko&#160;</string>
+    <string name="date_format">%1s/%2s/%3s</string>
+    <string name="date_format_hypen">%1s-%2s-%3s</string>
+    <string name="label_month">"Buwan"</string>
+    <string name="label_year">"Taon"</string>
+    <string name="select_card_expiry">"Piliin ang pag-mawawalan ng bisa ng kard"</string>
+    <string name="close">"Isara"</string>
+    <string name="no_internet">"Walang Koneksyon sa Internet"</string>
+    <string name="change">"Baguhin"</string>
+    <string name="biometric_authentication">"Biometric pagpapatunay"</string>
+    <string name="locator">"Naghahanap na "</string>
+    <string name="branch_locations">"Mga Lokasyon ng Sanga "</string>
+
+    <string name="operators">"Mga opereytor"</string>
+    <string name="insurance">"Seguro"</string>
+    <string name="gas">"kerosene"</string>
+    <string name="electricity">"Electricity"</string>
+    <string name="enter_consumer_number">"Ipasok ang numero ng mamimili "</string>
+    <string name="consumer_number">"Numero ng consumer"</string>
+    <string name="enter_policy_number">"Ipasok ang numero ng patakaran "</string>
+    <string name="policy_number">"Numero ng patakaran "</string>
+    <string name="select_dob">"Piliin ang Araw ng kapanganakan"</string>
+    <string name="request">"Kahilingan"</string>
+    <string name="previous_request">"Mga Nakaraang Kahilingan"</string>
+    <string name="reschedule_loan">"Nire-rescheduled utang"</string>
+    <string name="early_settlement">"Maagang Kasunduan "</string>
+    <string name="liability">"Saligang Pananagutan"</string>
+    <string name="clearence_letter">"Sulat ng Paglilinis"</string>
+    <string name="partial_settlement">"Bahagyang kasunduan"</string>
+    <string name="request_id">"Kahilingan \nPAGKAKAKILANLAN"</string>
+    <string name="time">"Oras"</string>
+    <string name="status">"Katayuan"</string>
+    <string name="last_login">Huling pag-login: \n%1s</string>
+    <string name="beneficiary_disabled">"Ang benepisyaryo ay hindi pinagana, Mangyaring paganahin."</string>
+    <string name="enter_PIN">"Ipasok ang PIN "</string>
+    <string name="international_topup">Mga Bayad sa Internasyonal</string>
+
+    <string name="passport_number_hint">"Ipasok ang Numero ng Pasaporte "</string>
+    <string name="invalid_passport_number">"Di-wastong numero ng pasaporte"</string>
+    <string name="password_expired">"Nag-mawawalan ng bisa ang Kontrasenyas. Mangyaring i-magpabago ang iyong kontrasenyas. "</string>
+    <string name="confirm_request">"Pinapatunayan mo ba ang iyong kahilingan? "</string>
+    <string name="invalid_loan_number">"Di-wastong Numero ng Pautang "</string>
+    <string name="no_requests">"Walang Kahilingan "</string>
+    <string name="download">"I-downhakot "</string>
+    <string name="download_started">"Nagsimula ang pag-I-downhakot "</string>
+    <string name="download_complete">"Nakumpleto ang pag-I-downhakot "</string>
+    <string name="application_id">"Aplikasyonlication PAGKAKAKILANLAN "</string>
+    <string name="app_permissions">"Pahintulot ng Aplikasyon"</string>
+    <string name="write_storage_permissions">"Payagan ang \'PayDay FH\' na makatipid ng mga file sa iyong aparato. \n\n Hanggang sa paganahin ito, i-click ang Mga \'APP SETTING \' sa ibaba at paganahin ang Imbakan sa ilalim ng menu ng pahintulot.
+    </string>
+    <string name="camera_permission_title">Pahintulot sa Camera</string>
+    <string name="camera_permission_description">"Ipinagbawal ang pag-access sa camera.
+        \n \n To paganahin ang pag-click \'Mga setting ng APP \' sa ibaba at i-aktibo ang \'Camera \' sa ilalim ng menu ng pahintulot."
+    </string>
+    <string name="not_now">"Hindi ngayon"</string>
+    <string name="app_settings">"Mga Pagtatakda ng Aplikasyon "</string>
+    <string name="card_blocked">"Ang iyong kard  ay naka-harangan. "</string>
+    <string name="short_code">"Maikling Kodigo "</string>
+    <string name="for_payday_card">For PayDay Card:</string>
+    <string name="sms_banking">"SMS Pagbabangko"</string>
+    <string name="call">"Tumawag"</string>
+    <string name="tenure_in_years">"Panunungkulan (Buwan) "</string>
+    <string name="tenure">"panahon ng \npanunungkulan"</string>
+    <string name="interest_rates">Interest Rate (% PA)</string>
+    <string name="get_emi_details">"Kumuha ng mga detalye ng EMI"</string>
+    <string name="total_payable_amount">"Kabuuang Halaga na Bayarin"</string>
+    <string name="interest_amount">"Halaga ng Interes"</string>
+    <string name="principal_amount">"Pangunahing Halaga"</string>
+    <string name="calculate_again">"Kalkulahin Muli"</string>
+    <string name="loan_calculator_label">"Pautang kalkulator"</string>
+    <string name="please_select_service">"Mangyaring pumili ng serbisyo"</string>
+    <string name="please_select_plan">"Mangyaring pumili ng plano"</string>
+    <string name="number_format_error">"Tandaan: Ang format ay dapat na +971–5xxxxxxxx"</string>
+    <string name="chars_counter">0/255</string>
+    <string name="INR">INR</string>
+    <string name="pay">"Magbayad"</string>
+    <string name="fine_details">"Mga Mabuti Detalye "</string>
+    <string name="search">"Paghahanap"</string>
+    <string name="no_countries_found">"Walang nahanap na mga bansa "</string>
+    <string name="outstanding_amount">"Natitirang Halaga"</string>
+    <string name="loan_terms_conditions">"Mag-aplay ako ngayon para sa araw ng suweldoutang na maaaring Pananalapi Bahay at para sa aking pinapahintulutan ang Finance House upang ma-access ang aking kredito at impormasyon sa pananalapi kabilang ang Etihad kredito bureau"</string>
+    <string name="apply_loan_otp_instructions">"Matapos makumpirma ang booking ng pautang sa pamamagitan ng pagpasok ng OTP ang mga eksaktong detalye ng pautang ay ipapadala sa pamamagitan ng Email / SMS"</string>
+
+    <string name="loan_customer_warning">"Paumanhin \nHindi ka pinapahintulutan. Mangyaring makipag-ugnay sa employer para sa araw ng suweldokard . "</string>
+    <string name="paid_on">Paid on %1s</string>
+
+    <string name="sms_code_msg">"Piliin lamang ang \"Short Code \" para sa kinakailangang impormasyon at magpadala ng isang sms sa 2326 sa format: [Short code] [Space] [Huling 6 na numero ng Numero ng Card] \n \n e.g: MIN 123456</string>
+    <string name="uae_toll_free">"UAE Libreng tawag"</string>
+    <string name="tel">"Tel" </string>
+    <string name="fax">"Fax"</string>
+    <string name="email">"Email" </string>
+    <string name="atm_locations">"Mga Lokasyon ng ATM"</string>
+    <string name="account_no_nine">"Mangyaring magpasok ng isang 9-digit na numero ng managot "</string>
+    <string name="long_account_no">"Mangyaring magpasok ng 12-digit na numero ng managot "</string>
+    <string name="transfer_amount">"Maglipat ng Halaga"</string>
+    <string name="loan_customer">"Pautang kliyente"</string>
+    <string name="payday_customer">"araw ng suweldo kliyente"</string>
+    <string name="converted_payable_amount">"Nakuhang Halaga na Bayad"</string>
+    <string name="book">"pagtataan"</string>
+    <string name="proceed">"Magpatuloy"</string>
+    <string name="decline">"Tanggihan"</string>
+    <string name="du_prefix_no">+971-</string>
+    <string name="please_select_bank">Mangyaring pumili ng isang bangko</string>
+    <string name="iban_number">IBAN Number</string>
+    <string name="transaction_history_2">Kasaysayan ng Transaksyon</string>
+    <string name="mobile_format">Ang format ng numero ay dapat +971–5xxxxxxxx</string>
+    <string name="months_valued">%1s Buwan</string>
+    <string name="delete_warning">Sigurado ka bang tanggalin ang beneficiary na ito?</string>
+    <string name="enable_warning">Sigurado ka bang paganahin ang beneficiary na ito?</string>
+    <string name="enable">Pinagana</string>
+    <string name="disable">Hindi pinagagana</string>
+    <string name="total_amount">Kabuuang Halaga</string>
+    <string name="description">Paglalarawan</string>
+    <string name="charges">Singil</string>
+    <string name="vat">VAT</string>
+    <string name="campaign_management">Pamamahala ng Kampanya</string>
+    <string name="snooze">Snooze</string>
+    <string name="disable_warning">Sigurado ka bang hindi paganahin ang beneficiary na ito?</string>
+    <string name="suggestions_complaints">Mga Mungkahi at Reklamo</string>
+    <string name="no_messages_warning">Walang mga mungkahi o reklamo na magagamit</string>
+    <string name="add_to_beneficiary">Idagdag sa beneficiary</string>
+    <string name="passport_number">Numero ng pasaporte</string>
+    <string name="create_dispute">Lumikha ng Hindi pagkakaunawaan</string>
+    <string name="reference_no">Numero ng Sanggunian</string>
+    <string name="transaction_amount">Halaga ng Transaksyon</string>
+    <string name="merchant_name">Pangalan ng Merchant</string>
+    <string name="transaction_date">Petsa ng transaksyon</string>
+    <string name="name_should_not_less_than_3">Ang pangalan ay hindi dapat mas mababa sa 3 character</string>
+    <string name="next_installment_date">Susunod na petsa ng pag-install</string>
+    <string name="add_as_beneficiary">Idagdag bilang beneficiary</string>
+    <string name="action_settings">"Mga Pagtatakda"</string>
+    <string name="upload_ticket">"Mag-uphakot ng Ticket"</string>
+    <string name="please_select">"Pakipili"</string>
+    <string name="change_pin">"I-reset ang Pin"</string>
+    <string name="loan_summary">"Buod ng Utang"</string>
+    <string name="scan">Scan</string>
+    <string name="scan_emirates_id">"I-scan ang PAGKAKAKILANLAN ng Emirates "</string>
+
+    <string name="uae_mobile_length">Mangyaring ilagay ang 9-digit na numero</string>
+    <string name="terms_conditions_error_2">**Mangyaring tanggapin ang mga term at kundisyon</string>
+    <string name="uae_mobile_format">Ang format ng numero ay dapat na +971–5xxxxxxxx</string>
+
+    <string name="credit_card_transfer">Payday\n to Credit Card</string>
+    <string name="payday_to_credit_1">Payday to Credit Card</string>
+    <string name="enter_emirates_id">Ilagay ang Emirates ID</string>
+    <string name="enter_emirates_id_payments">Ilagay ang Emirates ID</string>
+    <string name="beneficiaries" translatable="false">mga benepisyaryo</string>
+    <string name="invalid_beneficiary">hindi wastong benepisyaryo</string>
+    <string name="pvt_number">Bilang ng PVT</string>
+    <string name="not_enough_balance">hindi sapat na balanse</string>
+    <string name="fine_amount">Pinong Halaga</string>
+    <string name="enter_amount_format">Enter %1s</string>
+
+    <string name="card_status">Ang iyong card ay %s</string>
+    <string name="card_status_stoplist">Ang iyong card ay nasa %s</string>
+    <string name="please_enter_pvt_no">Ilagay ang PVT. No.</string>
+    <string name="invalid_pvt_no">Mangyaring magpasok ng wastong numero ng PVT</string>
+    <string name="no_internet_connectivity">Ang koneksyon sa internet ay lumilitaw na offline.</string>
+    <string name="retry">Ulitin</string>
+    <string name="select_type">Piliin ang Uri</string>
+    <string name="enter_person_id">Ilagay ang Person ID</string>
+    <string name="empty_person_id">Mangyaring ilagay ang Person ID</string>
+    <string name="inValid_person_id">Di-wastong Person ID</string>
+    <string name="select_language">Piliin ang Wika </string>
+    <string name="please_select_language">Mangyaring pumili ng wika</string>
+    <string name="person_id">Pagkakakilanlan</string>
+    <string name="placeholder" translatable="false">xxxxxxxxxxxxxxx</string>
+    <string name="uea_plus_country_dash">+971-</string>
+    <string name="please_select_type">Please select a type</string>
+    <string name="delele_beneficiary_confirmation">Sigurado ka bang tanggalin ang \"%1s\" na benepisyaryo?</string>
+    <string name="enable_beneficiary_confirmation">Sigurado ka ba na %1s \"%2s\" na benepisyaryo?</string>
+    <string name="delete">Burahin</string>
+    <string name="update_beneficiary">I-update ang beneficiary</string>
+    <string name="maturity_date">Petsa ng Pagganyak</string>
+    <string name="explore">Saliksikin</string>
+    <string name="popular_services">Mga patok na Serbisyo</string>
+    <string name="apply_for_deferment">Mag-aplikasyonly para sa Deferment</string>
+    <string name="transaction_type">Uri ng Transaksyon</string>
+    <string name="edit">I-edit</string>
+    <string name="invalid_amount_ranged">Mangyaring magpasok ng isang halaga sa pagitan ng %1s AED ng %2s AED</string>
+    <string name="invalid_float_amount_ranged">Mangyaring magpasok ng isang halaga sa pagitan ng %1s AED ng %2s AED</string>
+    <string name="invalid_amount_ranged_with_currency">Mangyaring magpasok ng isang halaga sa pagitan ng %1s %2s at %3s %4s</string>
+    <string name="enter_old_pin">Ipasok ang kasalukuyang PIN</string>
+    <string name="internal_server_error">Error sa Panloob na Server</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+
+    <string name="phone_permission_title">Pagtawag sa Pahintulot</string>
+    <string name="phone_permission_description">Ipinagbawal ang pag-access sa tawag.
+        \n\nHanggang sa paganahin ang pag-click sa Mga setting ng App sa ibaba at paganahin ang telepono sa ilalim ng menu ng pahintulot.
+    </string>
+    <string name="browse">mag-browse</string>
+
+    <string name="credit">Kredito</string>
+    <string name="international">International</string>
+    <string name="data">Data</string>
+    <string name="wasel_renewal">Wasel Renewal</string>
+    <string name="wasel_recharge">Wasel Recharge</string>
+
+    <string-array name="purpose_of_payment">
+        <item>Education Support</item>
+        <item>Family Support</item>
+        <item>Student Support</item>
+        <item>Education Support</item>
+        <item>Student Support</item>
+        <item>Education Support</item>
+        <item>Family Support</item>
+    </string-array>
+
+    <string-array name="aadc_service_type">
+        <item>""</item>
+        <item>Numero ng managot</item>
+        <item>PAGKAKAKILANLAN ng Emirates </item>
+        <item>Pagkakakilanlan</item>
+        <item>Numero ng Mobile</item>
+    </string-array>
+
+    <string-array name="loan_services_topup">
+        <!--<item>Mag-aplikasyonly para sa Nangungunang Topup</item>-->
+        <item>Pagbabayad ng Holpagkakakilanlanay</item>
+        <item>Reschedule</item>
+        <item>Sulat ng Paglilinis</item>
+        <item>Maagang Kasunduan </item>
+        <item>Bahagyang kasunduan</item>
+        <item>Saligang Pananagutan</item>
+        <!--<item> </item>-->
+    </string-array>
+
+    <string-array name="loan_services">
+        <!--<item>Mag-aplikasyonly para sa Pautang </item>-->
+        <item>Pagbabayad ng Holpagkakakilanlanay</item>
+        <item>Nire-rescheduled utang</item>
+        <item>Sulat ng Paglilinis</item>
+        <item>Maagang Kasunduan </item>
+        <item>Bahagyang kasunduan</item>
+        <item>Saligang Pananagutan</item>
+        <!--<item> </item>-->
+    </string-array>
+
+    <string-array name="sms_codes">
+        <item>BAL</item>
+        <item>LTA</item>
+        <item>SAL</item>
+        <item>ACT</item>
+    </string-array>
+
+    <string-array name="sms_description">
+        <item>Magagamit na Balanse sa iyong card</item>
+        <item>Huling Transaksyon mode sa iyong card</item>
+        <item>Huling sweldo</item>
+        <item>Pag-activate</item>
+    </string-array>
+
+    <string-array name="snooze">
+        <item>1 araw</item>
+        <item>3 araw</item>
+        <item>5 araw</item>
+        <item>10 araw</item>
+    </string-array>
+
+    <string-array name="registration_steps">
+        <item>- Capture and Verify Emirates ID</item>
+        <item>- Scan and Verify Payday Card</item>
+        <item>- Verify Mobile Number</item>
+        <item>- Create Login Details</item>
+        <item>- Add Biometric Authentication ( Optional )</item>
+    </string-array>
+
+    <string-array name="service_request_array">
+        <item>Isaaktibo ang Kard</item>
+        <item>Transaksyon ng Card \nDispute</item>
+        <item>I-reset ang Pin</item>
+        <item>Harangan Kard</item>
+    </string-array>
+    <string-array name="money_transfer_options">
+        <item>Pag-transfer ng\n Internasyonal na Pera</item>
+        <item>Payday\nto Payday</item>
+        <item>Local\nMoney Transfer</item>
+        <item>Payday \nto Credit Card</item>
+        <item>Transaction\nHistory</item>
+    </string-array>
+
+    <string name="loan_topup_amount">Halaga ng Topup</string>
+    <string name="loan_topup_emi">Topup EMI</string>
+    <string name="new_tenure">New Tenure</string>
+    <string name="loan_topup_note">Kapag nakumpirma mo ang pag-book ng iyong Top-up Loan, mangyaring sumangguni sa na-update na Screen ng Mga Detalye ng Loan na sumasalamin sa bagong kabuuan.</string>
+    <string name="track_trans_status">Track Transaction Status</string>
+    <string name="tap_on_the_transaction_to_initiate_track_request">I-TAP ang transaksyon upang simulan ang kahilingan sa track</string>
+    <string name="send_money">Magpadala ng pera</string>
+    <string name="rate_calculator">Rate Calculator</string>
+    <string name="select_beneficiary">Piliin ang Makikinabang</string>
+    <string name="transaction_details">Mga Detalye ng Transaksyon</string>
+    <string name="uae_exchange_transfer_success">Ang iyong kahilingan ay matagumpay na natanggap at ang iyong id ng transaksyon %1s. Ang iyong transaksyon ay mapoproseso ng Exchange House sa loob ng susunod na 24–48 oras business hours.</string>
+    <string name="uae_exchange_terms_conditions_link">Ire-redirect ka sa panlabas na browser \n Gusto mo bang magpatuloy?</string>
+    <string name="status_colon">Katayuan:</string>
+    <string name="empty_emirate_card_number">Mangyaring ilagay ang numero ng card</string>
+    <string name="invalid_emirate_card_number">Hindi wastong Numero ng Card ng Emirates</string>
+    <string name="locate_exchange">Hanapin ang mga Opisina</string>
+    <string name="register_intl_beneficiary_instruction">Mangyaring bisitahin ang pinakamalapit na exchange \ office upang magrehistro ng isang benepisyaryo</string>
+    <string name="intl_money_transfer">Pag-transfer ng Internasyonal na Pera</string>
+    <string name="enter_promo_code">I-Enter ang promo code</string>
+    <string name="exchange_rate_inclusive">Exchange Rates are indicative</string>
+    <string name="select_card">Piliin ang Card</string>
+    <string name="account_balance">Balanse ng account</string>
+    <string name="commission">Komisyon</string>
+    <string name="exchange_house_commision">Mga singil ng Exchange House</string>
+    <string name="Purpose">Layunin</string>
+    <string name="promo_code">Promo Code</string>
+    <string name="i_accept_terms_and_conditions">Tinatanggap ko ang mga term at kundisyon</string>
+    <string name="recurring_payment">Recurring Payments</string>
+    <string name="exchange_house_reference_no">Exchange House Reference No.</string>
+    <string name="fh_reference_no">Reference No.</string>
+    <string name="recurring_amount">Recurring Amount</string>
+    <string name="you_pay">bayad mo</string>
+    <string name="purpose">Layunin</string>
+    <string name="recurring_period">Recurring Period</string>
+    <string name="recurring_frequency">Recurring Frequency</string>
+    <string name="recurr_on_holidays">Recurr on Holidays</string>
+    <string name="charges_of_exchange_house">Mga singil ng Exchange House</string>
+    <string name="total_amount_payable">Kabuuang Halaga ng Bayad</string>
+    <string name="they_get">nakukuha nila</string>
+    <string name="you_send">Ipadala mo</string>
+    <string name="transaction_options">Mga Pagpipilian sa Transaksyon</string>
+    <string name="make_payment">Gumawa ng Bayad</string>
+    <string name="track_request_initiated_successfully">Sinimulan ang Pagsubaybay sa Track \n Matagumpay</string>
+    <string name="view_details">Tingnan ang mga detalye</string>
+    <string name="search_currency">Search Currency</string>
+    <string name="cancel_recurring_payment">Sigurado ka bang nais mong kanselahin ang recurring payment</string>
+    <string name="yes">Oo</string>
+    <string name="exchange_rate_label">*Exchange Rate: %1s %2s = %3s %4s</string>
+    <string name="error_amount">Mangyaring ilagay ang  halaga</string>
+    <string name="invalid_purpose">Di-wastong Layunin</string>
+    <string name="fetching_account_details">Mangyaring maghintay habang kinuha namin ang iyong mga detalye ng Account</string>
+    <string name="fetching_transaction_details">Fetching transaction details</string>
+    <string name="fetching_transactions">Fetching transactions</string>
+    <string name="my_beneficiaries">Ang Aking Mga Makikinabang</string>
+    <string name="payout_amt">%1s %2s</string>
+    <string name="load_more">Mag-load pa</string>
+    <string name="enter_emirates_card_number">Ilagay ang 9-digit na Numero ng Card ng Emirates</string>
+    <string name="invalid_promo_code">Hindi wastong code ng promo.</string>
+    <string name="not_valid_emirates">Paumanhin ang iyong mga emirates Id ay hindi nakarehistro sa UAE Exchange. Upang Magrehistro mangyaring bisitahin ang pinakamalapit na tanggapan ng UAE Exchange</string>
+    <string name="added_to_favourites">Idinagdag ang transaksyon bilang paborito</string>
+    <string name="finance_house">Finance House</string>
+    <string name="uae_exchange">UAE Exchange</string>
+    <string name="update_exchange_email">Mangyaring i-update ang iyong email id bago magpatuloy sa karagdagang</string>
+    <string name="state">Estado</string>
+    <string name="no_location_availible">Branches not available.</string>
+    <string name="available_balance_after">Magagamit na balanse pagkatapos ng pagbabawas</string>
+    <string name="locate_uae_exchange">Hanapin ang UAE Exchange</string>
+    <string name="locate_al_ansari">Hanapin ang Al-Ansari</string>
+    <string name="locating_your_device">Paghahanap ng iyong aparato…</string>
+    <string name="no_branches_in_area">No branches in this area</string>
+    <string name="location_permission_title">Location Permission</string>
+    <string name="location_permission_description">Ang pag-access sa lokasyon ay ipinagbabawal. \n \n\nTo enable click \'APP SETTINGS\' below and activate \'Location\' under the permissions menu.\n</string>
+
+    <string name="total">Total</string>
+    <string name="through">Through</string>
+    <string name="other_beneficiaries">Other Beneficiaries</string>
+    <string name="reference_hash">Reference #</string>
+
+    <string name="or">O</string>
+    <string name="app_update_available">Ang bagong bersyon (%1s) ng %2s ay maaring magagamit.</string>
+    <string name="password_changed">Nabago ang iyong password</string>
+    <string name="pin_changed">Matagumpay na nabago ang PIN</string>
+    <string name="successfully_transferred">Matagumpay na Inilipat</string>
+    <string name="select_state">Piliin ang Estado</string>
+    <string name="no_state_found">Walang nahanap na Estado</string>
+    <string name="choose_state">Piliin ang Estado</string>
+    <string name="no_notifications_available">Walang Magagamit na Mga Abiso</string>
+    <string name="mawaqif_card_balance">Balanse ng Mawaqif Card</string>
+    <string name="reject">Tanggihan</string>
+    <string name="notifications">Mga Abiso</string>
+    <string name="view">Silipin</string>
+    <string name="balance_after_transfer">Balanse matapos ang paglipat: %s</string>
+    <string name="emirates_scan_warning">Hindi ma-scan. Subukang mag-scan sa iba\'t ibang mga kondisyon ng ilaw at siguraduhin na ang card ay nasa loob ng frame.</string>
+    <string name="choose_plan">Piliin ang Plano</string>
+    <string name="please_choose_plan">Mangyaring Pumili ng Plano</string>
+    <string name="bill_info">Ang iyong aktwal na bayarin ay (%1s) at nagbabayad ka ng (%2s)</string>
+    <string name="mawaqif_topup">Mawaqif Topup</string>
+
+    <string name="storage_permission_title">Pahintulot sa Pag-iimbak</string>
+    <string name="storage_permission_description">Ang pag-access sa mga larawan, media at mga file ay ipinagbabawal.
+        \n\nUpang paganahin ang pag-click sa \'APP SETTINGS\' sa ibaba at i-aktibo ang \'Storage\' sa ilalim ng menu ng pahintulot.
+    </string>
+    <string name="contact_permission_title">Pahintulot sa Makipag-ugnay</string>
+    <string name="contact_permission_description">Ipinagbawal ang pag-access sa mga contact.
+        \n\nUpang paganahin ang pag-click sa \'APP SETTINGS\' sa ibaba at buhayin ang \'Contact\' sa ilalim ng menu ng pahintulot.
+    </string>
+
+    <string name="_continue">Magpatuloy</string>
+
+    <string-array name="intl_remittance">
+        <item>Rate Calculator</item>
+        <item>Maglipat ng pera</item>
+        <item>Ang Aking Mga Makikinabang</item>
+        <item>Subaybayan ang Transaksyon \Katayuan</item>
+        <item>Kasaysayan ng Transaksyon</item>
+        <item>Hanapin ang Exchange \Opisina</item>
+    </string-array>
+
+    <string-array name="intl_locator_options">
+        <!--<item>UAE Exchange</item>-->
+        <item>Al Fardan Exchange</item>
+    </string-array>
+
+    <string-array name="intl_locator_option">
+        <item>UAE Exchange</item>
+        <item>Al Fardan Exchange</item>
+    </string-array>
+
+    <string-array name="imt_transfer_purpose">
+        <item>Pagpapanatili ng Pamilya/Pag-iimpok</item>
+    </string-array>
+
+    <string-array name="transaction_options">
+        <item>Tingnan ang Mga Detalye ng Transaksyon</item>
+        <item>Idagdag sa Paborito</item>
+        <item>Ulitin ang Transaksyon</item>
+        <item>I-resend ang Halaga</item>
+        <item>Download</item>
+        <item>Ibahagi ang Transaksyon</item>
+    </string-array>
+
+    <string-array name="transaction_options2">
+        <item>Tingnan ang Mga Detalye ng Transaksyon</item>
+        <item>Alisin mula sa paborito</item>
+        <item>Ulitin ang Transaksyon</item>
+        <item>I-resend ang Halaga</item>
+        <item>Download</item>
+        <item>Ibahagi ang Transaksyon</item>
+    </string-array>
+
+    <string-array name="track_transaction">
+        <item>Transfer ng Bank</item>
+        <!--<item>Pagbabayad sa Cash</item>-->
+    </string-array>
+
+    <string-array name="intl_transfer_tabs">
+        <item>Transfer ng Bank</item>
+        <!--<item>Transfer ng Cash</item>-->
+    </string-array>
+
+    <string-array name="intl_transaction_tabs">
+        <item>Mga Paborito</item>
+        <item>Lahat ng Mga Transaksyon</item>
+    </string-array>
+
+    <string-array name="weekly_timing">
+        <item>Sun %1s</item>
+        <item>Mon %1s</item>
+        <item>Tue %1s</item>
+        <item>Wed %1s</item>
+        <item>Thu %1s</item>
+        <item>Fri %1s</item>
+        <item>Sat %1s</item>
+    </string-array>
+
+</resources>

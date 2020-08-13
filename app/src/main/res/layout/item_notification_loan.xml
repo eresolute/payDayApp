@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dimen_8"
+    android:paddingBottom="@dimen/dimen_8">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_loans"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/AppTheme.Text.Small.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dimen_4"
+        android:paddingEnd="@dimen/dimen_4"
+        android:paddingBottom="@dimen/dimen_4"
+        android:text="@string/app_name"
+        android:textColor="@color/textColor"
+        app:layout_constraintBottom_toTopOf="@+id/tv_description"
+        app:layout_constraintEnd_toStartOf="@+id/tv_time"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/image_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/AppTheme.Text.Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_8"
+        android:background="@drawable/bg_white_blue_rounded_left_border"
+        android:padding="@dimen/dimen_4"
+        android:hint="@string/app_name"
+        android:textColor="@color/grey_500"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/tv_title"
+        app:layout_constraintTop_toTopOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        style="@style/AppTheme.Text.Time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dimen_4"
+        android:paddingEnd="@dimen/dimen_4"
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@+id/btn_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn_view"
+        style="@style/AppTheme.Text.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:text="@string/view"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_10"
+        app:backgroundTint="@color/colorAccent"
+        app:cornerRadius="@dimen/button_corner"
+        app:layout_constraintEnd_toStartOf="@+id/btn_reject"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description"
+        app:rippleColor="@color/btn_secondary_color" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn_reject"
+        style="@style/AppTheme.Text.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_4"
+        android:text="@string/reject"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_10"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="@dimen/button_corner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_view"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description"
+        app:rippleColor="@color/btn_secondary_color"
+        app:strokeColor="@color/colorAccent"
+        app:strokeWidth="1dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/grey_300"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_view"
+        app:layout_constraintTop_toBottomOf="@+id/btn_view"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

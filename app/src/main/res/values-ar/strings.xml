@@ -1,0 +1,975 @@
+<resources>
+    <string name="app_name">"تطبيق باي داي من دار التمويل"</string>
+    <string name="powered_by">"مدعوم بواسطة"</string>
+    <string name="next">"التالي"</string>
+    <string name="submit">"تقديم الطلب"</string>
+    <string name="confirm">"تأكيد"</string>
+    <string name="confirmation">التأكيد</string>
+    <string name="verify">"تحقق"</string>
+    <string name="default_text">"النص الافتراضي"</string>
+    <string name="amount_in_aed">AED %1s</string>
+    <string name="amount_in_inr">INR %1s</string>
+    <string name="percentage">%1$s%%</string>
+    <string name="processing">"قيد التنفيذ"</string>
+    <string name="invalid_credentials">"بيانات مرور غير صحيحة 1s%"</string>
+    <string name="text_intro_1">"البنك الإلكتروني \nالشخصي الخاص بك"</string>
+    <string name="text_intro_2">"قم بتحويل الأموال إلى\n احبائك على الفور"</string>
+    <string name="text_intro_3">"إدفع فواتيرك واحصل\n على عائد نقدي"</string>
+
+    <string name="contact_us">"اتصل بنا"</string>
+    <string name="how_to_register">"كيفية التسجيل"</string>
+
+    <string name="login">"تسجيل الدخول"</string>
+    <string name="account_number">"رقم الحساب"</string>
+    <string name="register">"تسجيل"</string>
+    <string name="user_id">"اسم المستخدم"</string>
+    <string name="password">"كلمة المرور"</string>
+    <string name="passwordKyc">"كلمة المرور"</string>
+    <string name="forgot_password">"نسيت كلمة المرور"</string>
+    <string name="forgot_user_id_password">"هل نسيت اسم المستخدم أو كلمة المرور؟"</string>
+    <string name="card_number">"رقم بطاقة الائتمان"</string>
+    <string name="confirm_mobile_no">"يرجي تأكيد رقم هاتفك الجوال"</string>
+    <string name="verify_otp">"يرجي تأكيد كلمة المرور لمرة واحدة"</string>
+    <string name="enter_otp">"أدخل كلمة المرور المؤقتة"</string>
+    <string name="otp_info">"يرجى كتابة رمز التحقق المرسل إلى رقم هاتفك الجوال"</string>
+    <string name="otp_sent_to_registered_number">"يرجى كتابة رمز التحقق المرسل إلى رقم هاتفك الجوال"</string>
+    <string name="resend_otp">"إعادة إرسال كلمة المرور المؤقتة"</string>
+    <string name="create_login_details">"إنشاء تفاصيل تسجيل الدخول "</string>
+    <string name="password_pattern_info">"استخدم 8 أحرف أو أكثر مع مزيج من الحروف أو الأرقام أو الرموز"</string>
+    <string name="confirm_password">"تأكيد كلمة المرور"</string>
+    <string name="account_registered">"لقد تم تسجيل\n حسابك بنجاح"</string>
+    <string name="invalid_username">"اسم المستخدم غير صحيح"</string>
+    <string name="invalid_password">"كلمة المرور غير صحيحة"</string>
+    <string name="scan_card">"امسح بطاقتك"</string>
+    <string name="position_card_instruction">"ضع البطاقة داخل نطاق كادر التصوير"</string>
+    <string name="card">أختر بطاقة الدفع</string>
+
+
+    <string name="card_services">"خدمات البطاقات"</string>
+    <string name="loan">"القرض"</string>
+    <string name="loan_services_title">"خدمات القروض"</string>
+    <string name="early_salary">"خدمة الراتب المبكر"</string>
+    <string name="emi">"قيمة القسط الشهري"</string>
+    <string name="card_balance">"رصيد البطاقة"</string>
+    <string name="last_salary_credited">"آخر راتب مودع"</string>
+    <string name="welcome">"مرحبًا"</string>
+    <string name="cancel">"إلغاء"</string>
+    <string name="choose_language">"اختر اللغة"</string>
+    <string name="interested">"مهتم"</string>
+    <string name="not_interested">"غير مهتم"</string>
+
+    <string-array name="drawer_items">
+        <item>بيانات البطاقة</item>
+        <!--<item>المنتجات</item>-->
+        <item>خدمات البطاقة</item>
+        <item>اتصل بنا</item>
+        <item>تسجيل الخروج</item>
+    </string-array>
+
+    <string-array name="card_service_items">
+        <!--<item>كشف حساب البطاقة</item>-->
+        <item>المعاملات</item>
+        <item>الرواتب المودعة</item>
+        <item>إعادة ضبط الرقم السري للبطاقة</item>
+        <item />
+    </string-array>
+
+
+    <string-array name="services">
+        <item>التحويل الدولي للاموال</item>
+        <item>شبكة دو</item>
+        <item>شبكة اتصالات</item>
+        <item>تحويل من باي داي\n الي باي داي</item>
+        <item>مدفوعات - الهند</item>
+    </string-array>
+
+    <string-array name="freq_services">
+        <item>سجل المعاملات</item>
+        <item>المدفوعات</item>
+        <item>تحويل</item>
+        <item>خدمات البطاقات</item>
+        <item>العروض</item>
+        <item>خدمات القروض</item>
+
+    </string-array>
+
+    <string name="apply_for_loan">"تقدم بطلب قرض"</string>
+    <string name="loan_calculator">"حاسبة\n القروض"</string>
+    <string name="support">"الدعم"</string>
+    <string name="title_how_to_fragment">"كيفية التسجيل"</string>
+    <string name="select_currency">"اختر العملة"</string>
+    <string name="card_statement">"كشف حساب البطاقة"</string>
+    <string name="description_date">"الوصف/ التاريخ"</string>
+    <string name="salaries_credited">"الرواتب المودعة"</string>
+    <string name="salaries_credited_date">"تاريخ إيداع الراتب"</string>
+    <string name="atm_image">"عناوين أجهزة الصرف الآلي"</string>
+
+    <string name="loan_offer_details">"تفاصيل عرض القرض"</string>
+    <string name="loan_type">"نوع القرض"</string>
+    <string name="loan_number">"رقم حساب  القرض"</string>
+    <string name="loan_disbursal_date">"تاريخ صرف القرض"</string>
+    <string name="interest_rate">"سعر الفائدة"</string>
+    <string name="original_loan_amount">"مبلغ القرض"</string>
+    <string name="monthly_installment">"القسط الشهري"</string>
+    <string name="no_installments_paid">"عدد الأقساط المدفوعة"</string>
+    <string name="principal_outstanding">"مبلغ القرض الأصلي المستحق"</string>
+    <string name="outstanding_installments">"الأقساط غير المدفوعة"</string>
+    <string name="monthly_installments">"الأقساط الشهرية"</string>
+    <string name="terms_and_Conditions">"الشروط والأحكام"</string>
+    <string name="accept">"موافق"</string>
+    <string name="loan_offer_terms_cond">"لقد قرأت  الشروط والأحكام بعناية وأوافق عليها"</string>
+    <string name="agree_terms">&#160; لقد قرأت ووافقت على </string>
+
+    <string name="uae_mobile_length">يرجي إدخال رقم مكون من 9 أرقام</string>
+    <string name="terms_conditions_error_2">** يرجي قبول الشروط والأحكام</string>
+    <string name="uae_mobile_format">+971–5xxxxxxxx يجب أن يكون الرقم علي النمط</string>
+    <string name="credit_card_transfer">من بطاقة باي داي الي بطاقة الائتمان</string>
+    <string name="payday_to_credit_1">من بطاقة باي داي الي بطاقة الائتمان</string>
+    <string name="enter_emirates_id">يرجى إدخال بيانات الهوية الإماراتية</string>
+    <string name="enter_emirates_id_payments">يرجى إدخال بيانات الهوية الإماراتية</string>
+    <string name="beneficiaries" translatable="false">المستفيدون</string>
+    <string name="invalid_beneficiary">المستفيد غير صحيح</string>
+    <string name="pvt_number">رقم إيصال المخالفة</string>
+    <string name="not_enough_balance">الرصيد المتبقي غير كاف</string>
+    <string name="fine_amount">قيمة المخالفة</string>
+    <string name="enter_amount_format">Enter %1s</string>
+    <string name="card_status">بطاقتك هي %s</string>
+    <string name="card_status_stoplist">Your card is in %s</string>
+    <string name="please_enter_pvt_no">أدخل رقم إيصال المخالفة</string>
+    <string name="invalid_pvt_no">أدخل رقم إيصال المخالفة الصحيح</string>
+    <string name="no_internet_connectivity">لا يوجد اتصال بالإنترنت</string>
+    <string name="retry">حاول مرة أخري</string>
+    <string name="select_type">يرجي إختيار النوع</string>
+    <string name="enter_person_id">إدخل رمز تعريف الشخص</string>
+    <string name="empty_person_id">يرجي إدخال رمز تعريف الشخص</string>
+    <string name="inValid_person_id">رمز تعريف الشخص غير صحيح</string>
+    <string name="select_language">إختر لغة</string>
+    <string name="please_select_language">يرجي إختيار اللغة</string>
+    <string name="person_id">رمو تعريف الشخص</string>
+    <string name="placeholder" translatable="false">xxxxxxxxxxxxxxx</string>
+    <string name="uea_plus_country_dash">+971-</string>
+    <string name="please_select_type">يرجي إختيار النوع</string>
+    <string name="delele_beneficiary_confirmation">هل أنت متأكد من حذف المستفيد \"%1s\"؟</string>
+    <string name="enable_beneficiary_confirmation">هل أنت متأكد من أن المستفيد %1s%"\ 2s\"؟</string>
+    <string name="delete">حذف</string>
+    <string name="update_beneficiary">تحديث بيانات المستفيد</string>
+    <string name="maturity_date">تاريخ الانتهاء</string>
+    <string name="explore">بحث</string>
+    <string name="popular_services">خدمات شائعة</string>
+    <string name="apply_for_deferment">طلب تأجيل قسط</string>
+    <string name="transaction_type">نوع المعاملة</string>
+    <string name="contact_permission_description">تم حظر الوصول إلى جهات الاتصال "للتفعيل قم بالضغط علي اعدادت التطبيق و قم بتفعيل "اذن الاتصال</string>
+    <string name="bill_info">فاتورتك الفعلية هي درهم (%1s) وأنت تدفع درهم (%2s)</string>
+    <string name="mawaqif_card_balance">رصيد بطاقة مواقف</string>
+    <string name="no_notifications_available">لا توجد اشعارات المتاحة</string>
+    <string name="mawaqif_topup">اعادة شحن مواقف</string>
+    <string name="please_choose_plan">يرجى اختيار الخطة</string>
+    <string name="choose_plan">اختر الخطة</string>
+    <string name="emirates_scan_warning">لم نتمكن من مسح البطاقة حاول المسح في ظروف إضاءة مختلفة وتأكد من أن البطاقة داخل الإطار.</string>
+    <string name="balance_after_transfer">الرصيد بعد التحويل: %s</string>
+    <string name="view">عرض</string>
+    <string name="notifications">إشعارات</string>
+    <string name="reject">رفض</string>
+    <string name="choose_state">اختر الولاية</string>
+    <string name="no_state_found">لم يتم العثور على دولة</string>
+    <string name="select_state">اختر ولايه</string>
+    <string name="app_update_available">الإصدار الجديد متاح الان  (%1s) من %2s.</string>
+   <string name="or">أو</string>
+    <string name="contact_permission_title">إذن الاتصال</string>
+    <string name="storage_permission_description">تم حظر الوصول إلى الصور والوسائط والملفات للتفعيل قم بالضغط علي اعدادت التطبيق و قم بتفعيل "اذن التخزين"</string>
+    <string name="storage_permission_title">إذن التخزين</string>
+
+    <string name="_continue">استمر</string>
+    
+    
+    <string-array name="edit_beneficiary_options">
+        <item>حساب باي داي إلى حساب باي داي</item>
+        <item>من باي داي الي بطاقة الائتمان</item>
+        <item>التحويل المحلي للأموال</item>
+        <item>تحويل من البطاقة الي حساب القرض</item>
+    </string-array>
+
+    <string-array name="locator_options">
+        <item>مواقع الفروع</item>
+        <item>الرموز المختصرة لخدمة الرسائل النصية</item>
+    </string-array>
+
+    <string-array name="contact_us_options">
+        <item>رقم مركز خدمة العملاء</item>
+        <item>الموقع الإلكتروني</item>
+        <item>الاقتراحات و الشكاوي</item>
+    </string-array>
+
+    <string-array name="payday_card_key">
+        <item>اسم العميل</item>
+        <item>رقم بطاقة باي داي</item>
+        <item>نوع البطاقة</item>
+        <item>حالة البطاقة</item>
+        <item>الرصيد المتاح</item>
+        <item>إجمالي السحب على المكشوف</item>
+        <item>حد السحب على المكشوف المتاح</item>
+        <item>المبلغ في الانتظار</item>
+        <item>مبلغ اخر راتب مودع</item>
+        <item>تاريخ اخر راتب مودع</item>
+    </string-array>
+
+    <string-array name="account_option">
+        <item>تمويل باي داي</item>
+        <item>خدمة الراتب المبكر</item>
+        <item>بطاقة الائتمان</item>
+        <item>تمويل شخصي</item>
+    </string-array>
+
+    <string name="conversion_value" translatable="false">%1s %2s = %3s %4s as on 16-10-2018</string>
+    <string name="step_by_step_guide">"دليل الإجراءات خطوة بخطوة"</string>
+    <string name="scan_qr_code">"امسح رمز الطلب السريع هذا"</string>
+    <string name="scan_payday_card">"امسح بطاقة باي داي"</string>
+    <string name="position_payday_card">"ضع البطاقة داخل نطاق كادر التصوير"</string>
+    <string name="card_scan_error">"يرجى مسح بطاقتك\n مرة أخرى"</string>
+    <string name="capture_front_emirates_id">"التقط صورة للجزء الأمامي من بطاقة الهوية الإماراتية"</string>
+    <string name="capture_back_emirates_id">"التقط صورة للجزء الخلفي من بطاقة الهوية الإماراتية"</string>
+    <string name="scan_back_emirates_id_note">"لن نحتفظ بصورة بطاقة الهوية الإماراتية الخاصة بك أبدًا.\n وسيتم التعامل مع بياناتك بطريقة آمنة."</string>
+    <string name="register_card_detail">"بيانات بطاقة باي داي"</string>
+    <string name="card_holder_name">"اسم حامل البطاقة"</string>
+    <string name="expiry_date">"تاريخ الانتهاء"</string>
+    <string name="capture">"التقاط"</string>
+    <string name="customer_selfie">"التقاط صورة شخصية"</string>
+    <string name="prepaid">"مسبق الدفع"</string>
+    <string name="postpaid">"فواتير آجلة الدفع"</string>
+    <string name="operator_image_view">"عرض صورة المشغل"</string>
+    <string name="enter_mobile_number">"أدخل رقم هاتفك الجوال"</string>
+    <string name="enter_mobile_number_payments">"أدخل رقم هاتفك الجوال"</string>
+    <string name="calling_card">"بطاقة الاتصال"</string>
+    <string name="faq">"الأسئلة الشائعة"</string>
+    <string name="international_remittance">"التحويل الدولي للاموال"</string>
+    <string name="accounts">"الحسابات"</string>
+    <string name="registered_beneficiaries">"المستفيدون المسجلون"</string>
+    <string name="balance">"الرصيد"</string>
+    <string name="payday_card">payday_card</string>
+    <string name="mobile_recharge">"إعادة تعبئة رصيد الهاتف الجوال"</string>
+    <string name="available_overdraft_limit">"حد السحب على المكشوف المتاح"</string>
+    <string name="overdraft_limit_2">"حد السحب على المكشوف"</string>
+    <string name="ok">"موافق"</string>
+    <string name="enter_amount">"أدخل المبلغ"</string>
+    <string name="enter_atm_pin">"أدخل رمز التعريف الشخصي"</string>
+    <string name="enter_atm_pin_salik">"أدخل رمز التعريف الشخصي"</string>
+    <string name="atm_pin">"رمز التعريف الشخصي"</string>
+    <string name="token_id">"المعرف المميز"</string>
+    <string name="transaction_successful">"تمت المعاملة بنجاح"</string>
+
+    <string name="loans">"القروض"</string>
+    <string name="eligible_for_loan">"أنت مؤهل للحصول على القرض"</string>
+
+    <string-array name="mini_statements">
+        <item>كشف حساب عن شهر</item>
+        <item>كشف حساب عن ثلاث شهور</item>
+        <item>كشف حساب عن ستة أشهر</item>
+    </string-array>
+
+    <string-array name="transaction_history">
+        <item>معاملات البطاقة</item>
+        <item>القرض</item>
+        <item>تحويل من باي داي\n الي باي داي</item>
+        <item>دفع الفواتير</item>
+        <item>الرواتب المودعة</item>
+    </string-array>
+
+    <string-array name="transaction_history_transfer">
+        <item>حساب باي داي إلى حساب باي داي</item>
+        <item>التحويل المحلي للأموال</item>
+        <item>تحويل الي البطاقة الائتمانية</item>
+    </string-array>
+
+    <string-array name="transaction_history_option">
+        <item>شهري</item>
+        <item>اخر خمس عمليات</item>
+    </string-array>
+
+    <string-array name="setting_options">
+        <item>تغيير كلمة المرور</item>
+        <item>التحقق من المستخدم باستخدام بصمة الاصابع</item>
+    </string-array>
+
+
+    <string name="purpose_of_payment">"الغرض من الدفع"</string>
+    <string name="account_no_label">"رقم الحساب"</string>
+    <string name="edit_icon">edit icon</string>
+    <string name="from">"من"</string>
+    <string name="to">"إلى"</string>
+    <string name="currency">"عملة التحويل  : AED"</string>
+    <string name="available_balance_in_aed">الرصيد المتاح AED %1s</string>
+    <string name="beneficiary">"المستفيد"</string>
+    <string name="transfer_details">"بيانات \nالتحويل"</string>
+    <string name="summary">"موجز"</string>
+    <string name="previous">"السابق"</string>
+    <string name="cardless_withdrawal">"السحب بدون بطاقة"</string>
+    <string name="personal_loan">"قرض شخصي"</string>
+    <string name="loan_amount">AED 0</string>
+    <string name="payments">"المدفوعات"</string>
+    <string name="bill_payment">"مدفوعات الهاتف"</string>
+    <string name="utilities">"مدفوعات المرافق"</string>
+    <string name="transport">"مدفوعات خدمات النقل"</string>
+    <string name="road_transport">"مدفوعات خدمات النقل"</string>
+    <string name="etisalat">"شبكة اتصالات"</string>
+    <string name="du">"شبكة دو"</string>
+    <string name="amount">"المبلغ"</string>
+
+    <string name="date">"التاريخ"</string>
+    <string name="beneficiary_bank">"بنك المستفيد"</string>
+    <string name="benificiary_name">"اسم المستفيد"</string>
+    <string name="aed">AED</string>
+    <string name="successfully_paid">"تم الدفع بنجاح"</string>
+    <string name="available_balance_text">"الرصيد المتاح"</string>
+    <string name="montly">"شهري"</string>
+    <string name="mini_statement">"كشف الحساب المصغر"</string>
+    <string name="email_subscription">"نوع كشف الحساب"</string>
+    <string name="dr">Dr</string>
+    <string name="cr">Cr</string>
+    <string name="confirm_email">أكد معرف البريد الإلكتروني</string>
+    <string name="statement_type">نوع كشف الحساب</string>
+
+    <string name="apply">"طلب"</string>
+    <string name="apply_pop_up">"تأكيد"</string>
+    <string name="products">"المنتجات"</string>
+    <string name="apply_cc">"تطبيق بطاقة الائتمان"</string>
+    <string name="apply_dc">"تطبيق بطاقة الخصم"</string>
+    <string name="apply_loan_title">"تطبيق قرض"</string>
+    <string name="apply_loan_top_up_title">" القرض الاضافي"</string>
+    <string name="loan_amount_title">"مبلغ القرض"</string>
+    <string name="monthly_emi">"قيمة القسط الشهري"</string>
+    <string name="months_value">%1s الشهور</string>
+
+    <string name="edit_beneficiary">"تعديل بيانات المستفيد"</string>
+    <string name="payday_to_payday">"حساب باي داي إلى حساب باي داي"</string>
+    <string name="local_money_transfer">"التحويل\n المحلي للأموال"</string>
+    <string name="local_money_transfer_1">التحويل المحلي للأموال</string>
+    <string name="select_country">"اختر الدولة"</string>
+    <string name="select_bank">"اختر البنك"</string>
+    <string name="beneficiary_name">"اسم المستفيد"</string>
+    <string name="account_number_field">"رقم الحساب"</string>
+    <string name="address_field">"العنوان"</string>
+    <string name="address_line1">"العنوان السطر 1"</string>
+    <string name="address_line2">"العنوان السطر 2"</string>
+    <string name="mobile_number">"رقم الهاتف الجوال"</string>
+    <string name="mobile">"الهاتف الجوال"</string>
+    <string name="country">"الدولة"</string>
+    <string name="bank">"البنك"</string>
+    <string name="edit_beneficiary_success">"تم تعديل بيانات المستفيد بنجاح"</string>
+    <string name="short_name">"الاسم المختصر"</string>
+    <string name="payday_to_payday_1">"حساب باي داي إلى حساب باي داي"</string>
+    <string name="elife">"حساب eLife"</string>
+    <string name="landline">"خط أرضي"</string>
+    <string name="enter_pvt_number">"أدخل رقم إيصال المخالفة"</string>
+
+    <string name="enter_new_pin">"ادخل الرقم السري الجديد"</string>
+    <string name="confirm_pin">"تأكيد الرقم السري"</string>
+    <string name="message">"الرسالة"</string>
+    <string name="select_issue">"اختر الموضوع"</string>
+    <string name="enter_new_mobile_no">"أدخل رقم الهاتف الجوال الجديد"</string>
+    <string name="send_message">"إرسال الرسالة"</string>
+    <string name="arrow_image">"صورة سهم"</string>
+    <string name="area_of_issue">"سبب الشكوي"</string>
+    <string name="message_request">"رقم الطلب 1s%"</string>
+
+    <string name="money_transfer">"تحويل الأموال"</string>
+
+    <string name="payday_card_title">"بطاقة Payday"</string>
+    <string name="banner">"لوحة العرض"</string>
+    <string name="Offers">"العروض"</string>
+    <string name="overdraft">"السحب على المكشوف"</string>
+    <string name="transaction_history">"سجل المعاملات"</string>
+
+    <string name="payment_holiday">"تأجيل قسط"</string>
+    <string name="activate_card">"تفعيل البطاقة"</string>
+    <string name="card_transaction_dispute">"الأبلاغ عن معاملات غير صحيحة علي البطاقة"</string>
+    <string name="help">"المساعدة"</string>
+    <string name="thumb_print_instruction">"لتسهيل الأمر، يمكنك تسجيل الدخول باستخدام بصمة الأصابع الخاصة بالهاتف الجوال"</string>
+    <string name="activate">"تفعيل"</string>
+    <string name="settings">"الإعدادات"</string>
+    <string name="service_requests">طلب الخدمة</string>
+    <string name="start">"بدء"</string>
+    <string name="terms_conds_error">"عليك قبول الشروط والأحكام"</string>
+    <string name="loan_disbursal">"تم حجز القرض الخاص بك وصرفه إلى بطاقتك"</string>
+    <string name="await_instruction">"في انتظار الانتهاء من\n المعاملة"</string>
+    <string name="mobile_service_provider">"مقدمي خدمات شبكة الهاتف الجوال"</string>
+
+    <string name="passport_title">"لن نحتفظ بصورة جواز سفرك أبدًا. وسيتم التعامل مع بياناتك بطريقة آمنة."</string>
+    <string name="scan_passport">"امسح جواز السفر"</string>
+    <string name="enter_email_id">"أدخل عنوان البريد الإلكتروني"</string>
+    <string name="confirm_email_id">"يرجي تأكيد عنوان البريد الإلكتروني"</string>
+    <string name="email_not_match">"عنوان البريد الإلكتروني غير مطابق"</string>
+    <string name="enter_new_mobile_number">"يرجي إدخال رقم الهاتف الجوال الجديد"</string>
+    <string name="confirm_mobile">"يرجي تأكيد رقم الهاتف الجوال"</string>
+    <string name="mobile_not_match">"رقم الهاتف الجوال غير مطابق"</string>
+    <string name="scan_emirates_error">"يرجى مسح الهوية الإماراتية الخاصة بك مرة أخرى"</string>
+    <string name="emirates_update_succesful">"تم تحديث صورة الهوية الإماراتية بنجاح"</string>
+    <string name="capture_photo_page_passport">التقاط صورة الصفحة من جواز السفر</string>
+    <string name="capture_signature_page_passport">التقاط صفحة التوقيع من جواز السفر</string>
+    <string name="capture_address_page_passport">التقاط صفحة عنوان جواز السفر</string>
+    <string name="passport_capture_successful">القبض على جواز السفر الناجح</string>
+    <string name="passport_update_succesful">"تم تحديث بيانات جواز السفر بنجاح"</string>
+    <string name="email_update_succesful">"تم تحديث عنوان البريد الإلكتروني بنجاح"</string>
+    <string name="mobile_update_succesful">"تم تحديث رقم الهاتف الجوال بنجاح"</string>
+    <string name="update_email_id">"تحديث عنوان البريد الإلكتروني"</string>
+    <string name="update_mobile_no">"تحديث رقم الهاتف الجوال"</string>
+    <string name="update_emirates">"تحديث الهوية الإماراتية"</string>
+    <string name="update_passport">"تحديث بيانات جواز السفر"</string>
+
+
+    
+    <string name="due">"مستحق"</string>
+    <string name="eligible_for_deferment">"أنت مؤهل للحصول على تأجيل للقسط المستحق"</string>
+    <string name="defer">"تأجيل"</string>
+    <string name="number_of_installment">"عدد الأقساط"</string>
+
+
+    <string name="empty_mobile_no">"يرجى إدخال رقم هاتفك الجوال"</string>
+    <string name="empty_mobile_no_payments">"يرجى إدخال رقم هاتفك الجوال"</string>
+    <string name="invalid_mobile_no">"رقم هاتف جوال غير صحيح"</string>
+    <string name="invalid_expiry_date">"تاريخ الإنتهاء غير صحيح"</string>
+    <string name="empty_card_no">"يرجي إدخال رقم بطاقة الدفع"</string>
+    <string name="invalid_card_no">"يرجى إدخال رقم بطاقة بشكل صحيح"</string>
+    <string name="empty_card_name">"يرجي إدخال أسم حامل البطاقة"</string>
+    <string name="empty_user_id">"يرجى إدخال أسم المستخدم"</string>
+    <string name="invalid_user_id">"يجب ألا يقل عدد حروف أسم المستخدم عن 8 حروف بدون أي مسافات"</string>
+    <string name="empty_password">"يرجي إدخال كلمة المرور"</string>
+    <string name="empty_confirm_password">"يرجي تأكيد كلمة المرور"</string>
+    <string name="invalid_password_len">"يجب ألا يقل عدد حروف كلمة المرور عن 8 حروف"</string>
+    <string name="password_contains_userid">"يجب ألا تتضمن كلمة المرور أسم المستخدم"</string>
+    <string name="password_not_match">"كلمة المرور غير مطابقة"</string>
+    <string name="password_not_same_as_old">"يجب ألا تكون كلمة المرور الجديدة هي نفس كلمة المرور القديمة"</string>
+    <string name="skip">"تخطي"</string>
+    <string name="card_username_length">"يجب ألا يقل عدد حروف اسم البطاقة عن حرفين"</string>
+    <string name="enter_new_password">"أدخل كلمة المرور الجديدة"</string>
+    <string name="change_password">"تغيير كلمة المرور"</string>
+    <string name="invalid_amount">"يرجي إدخال مبلغ صحيح"</string>
+    <string name="ic_back">ic_back</string>
+    <string name="ic_profile">ic_profile</string>
+    <string name="flag">flag</string>
+    <string name="invalid_account_length">%1s الرجاء إدخال رقم أرقام</string>
+    <string name="invalid_account_length_ranged">%1s-%2s الرجاء إدخال رقم الأرقام</string>
+    <string name="register_emirate_details">"بيانات الهوية الإماراتية"</string>
+    <string name="please_enter_otp">"يرجى إدخال كلمة المرور المؤقتة"</string>
+    <string name="empty_emirate_id">"يرجى إدخال بيانات الهوية الإماراتية"</string>
+    <string name="invalid_emirate_id">"رقم الهوية الإماراتية غير صحيح"</string>
+    <string name="loading">"جارٍ التحميل…"</string>
+    <string name="something_went_wrong">"حدث خطأ ما"</string>
+    <string name="pin_does_not_match">"أرقام التعريف الشخصي مختلفة"</string>
+    <string name="please_enter_pin">"يرجى إدخال رقم تعريف شخصي صحيح"</string>
+    <string name="forgot_user_id">"هل نسيت أسم المستخدم"</string>
+    <string name="reset_password">"إعادة تعيين كلمة المرور"</string>
+    <string name="new_password">"كلمة المرور الجديدة"</string>
+    <string name="enter_card_number">"أدخل رقم بطاقة الدفع"</string>
+    <string name="enter_card_pin">"أدخل رمز التعريف الشخصي للبطاقة"</string>
+    <string name="no_loan_available">"لا يوجد لديك اي قرض حالياً مع دار التمويل."</string>
+    <string name="categories">"الخدمات"</string>
+    <string name="block_card">"إيقاف البطاقة"</string>
+    <string name="card_block_success">"تم إيقاف البطاقة\n بنجاح"</string>
+    <string name="nationality">"الجنسية"</string>
+    <string name="dob">"تاريخ الميلاد"</string>
+    <string name="empty_nationality">"يرجى إدخال الجنسية"</string>
+    <string name="invalid_dob">"تاريخ الميلاد غير صحيح"</string>
+    <string name="dob_mismatch">"تاريخ الميلاد غير متوافق مع بيانات الهوية الإماراتية"</string>
+    <string name="empty_dob">"يرجى إدخال تاريخ الميلاد"</string>
+    <string name="empty_expiry_date">"يرجى إدخال تاريخ إنتهاء صلاحية بطاقة الهوية"</string>
+    <string name="link_accounts">"ربط الحسابات"</string>
+    <string name="three_dots">…</string>
+    <string name="invalid_pin">"رمز التعريف الشخصي غير صحيح"</string>
+    <string name="invalid_installment_value">"قيمة القسط الشهري غير صحيحة"</string>
+    <string name="enter_manually">"يرجي إدخال البيانات يدويا"</string>
+    <string name="enter_current_password">"أدخل كلمة المرور الحالية"</string>
+    <string name="inbox">"صندوق البريد الوارد"</string>
+    <string name="select_issue_area_error">"يرجى اختيار موضوع مناسب من القائمة"</string>
+    <string name="select_issue_error">"يرجى اختيار سبب مناسب من القائمة"</string>
+    <string name="valid_message_error">"يرجى إدخال رسالة صحيحة"</string>
+    <string name="add_beneficiary">"إضافة مستفيد"</string>
+    <string name="account_summary">"موجز الحساب"</string>
+    <string name="loan_details">"تفاصيل القرض"</string>
+    <string name="payday_cards">"بطاقات باي داي"</string>
+    <string name="terms_conditions_error">"يرجي قبول الشروط والأحكام"</string>
+    <string name="fingerprint_dialog_title">"تفعيل التحقق من المستخدم من خلال بصمة الأصابع "</string>
+    <string name="fingerprint_dialog_title2">"مطابقة بصمة الاصبع"</string>
+    <string name="fingerprint_dialog_subtitle">"باي داي"</string>
+    <string name="fingerprint_dialog_description">"لتسهيل الأمر، يمكنك تسجيل الدخول باستخدام بصمة الأصابع الخاصة بالهاتف الجوال"</string>
+    <string name="notification_channel">fh_notification_channel</string>
+    <string name="channel_desc">notification channel for App</string>
+    <string name="channel_id">payday_fh</string>
+    <string name="enter_account_number">"أدخل رقم الحساب"</string>
+    <string name="empty_account_no">"يرجي إدخال رقم الحساب"</string>
+    <string name="invalid_account_no">"يرجى إدخال رقم حساب صحيح"</string>
+    <string name="due_date">"تاريخ الاستحقاق"</string>
+    <string name="details">"التفاصيل"</string>
+    <string name="last_bill_amount">"مبلغ آخر فاتورة"</string>
+    <string name="bill_amount">"مبلغ الفاتورة"</string>
+    <string name="no_transaction_available">"لا توجد معاملات في الوقت الحالي"</string>
+    <string name="no_operators_available">"لا يتوفر مشغلون"</string>
+    <string name="no_offers_available">"لا تتوفر عروض في الوقت الحالي"</string>
+    <string name="customer_name">"اسم العميل"</string>
+    <string name="available_balance_label">"الرصيد المتاح"</string>
+    <string name="payday_card_number_label">"رقم بطاقة باي داي"</string>
+    <string name="multiple_of_50">"يرجى إدخال مبلغ بمضاعفات ال 50"</string>
+    <string name="location">"الموقع"</string>
+    <string name="un_successfully_paid">"عملية دفع غير ناجحة"</string>
+    <string name="home">"الصفحة الرئيسية"</string>
+    <string name="branches">"محدد المواقع"</string>
+    <string name="enter_name">"الاسم"</string>
+    <string name="indian_bill_payment">"مدفوعات الهند"</string>
+    <string name="airtel">"إيرتيل"</string>
+    <string name="verified">"تم التحقق"</string>
+    <string name="not_verified">"لم يتم التحقق"</string>
+    <string name="contact_updated">"تم تحديث جهة الاتصال بنجاح"</string>
+    <string name="money_in">"الأموال الواردة"</string>
+    <string name="money_out">"الأموال الصادرة"</string>
+    <string name="available_overdraft">"حد السحب على المكشوف المتاح"</string>
+    <string name="sent_box">"صندوق المرسل"</string>
+    <string name="welcome_to_payday">"مرحبًا بك في باي داي"</string>
+    <string name="sign_in_diff_account">"تسجيل الدخول باسم مستخدم مختلف"</string>
+    <string name="biometric_auth">"التحقق عن طريق بصمة الاصابع/ صورة الوجة"</string>
+    <string name="fingerprint">"بصمة الأصابع"</string>
+    <string name="enabled">"تفعيل"</string>
+    <string name="disabled">"تعطيل"</string>
+    <string name="version_name">"الإصدار %1s"</string>
+    <string name="broadband">"البرودباند"</string>
+    <string name="gsm">"حساب الجوال"</string>
+    <string name="evision">"اي- فيجين"</string>
+    <string name="biometric_auth_enabled">"تم تفعيل التحقق من المستخدم باستخدام بصمة الاصابع/ صورة الوجة"</string>
+    <string name="personal_details">"البيانات الشخصية"</string>
+    <string name="emirates_id">"الهوية الإماراتية"</string>
+    <string name="passport">"جواز السفر"</string>
+    <string name="email_id">"عنوان البريد الإلكتروني"</string>
+    <string name="mobile_num">"رقم الهاتف الجوال"</string>
+    <string name="update_kyc_document">"تحديث الوثائق"</string>
+    <string name="link">"ربط"</string>
+    <string name="upload">"تحميل"</string>
+    <string name="emergency_contact">"جهة الاتصال في حالات الطوارئ"</string>
+    <string name="name">"الاسم"</string>
+    <string name="relation">"العلاقة"</string>
+    <string name="invalid_email">"عنوان بريد إلكتروني غير صحيح"</string>
+    <string name="empty_name">"يرجي إدخال الاسم"</string>
+    <string name="empty_value">"يرجي إدخال القيمة"</string>
+    <string name="upload_mobile_number">"تحديث رقم الهاتف الجوال"</string>
+    <string name="set_pin">"إعادة تعيين/ إعادة ضبط الرقم السري للبطاقة"</string>
+    <string name="send">"إرسال"</string>
+    <string name="enter_message_hint">&#8230; اكتب المشكلات الخاصة بك هنا</string>
+    <string name="generic_payment_error">"خطأ في تقديم طلبك. يرجى المحاولة في وقت لاحق."</string>
+    <string name="dewa">DEWA</string>
+    <string name="fewa">"الهيئة الاتحادية للكهرباء والمياه"</string>
+    <string name="aadc">"شركة العين للتوزيع"</string>
+    <string name="dubai_police">Dubai Police</string>
+    <string name="mawaqif">"مواقف"</string>
+    <string name="salik">"سالك"</string>
+    <string name="nol">NOL</string>
+    <string name="du_">"شبكة دو"</string>
+    <string name="etisalat_">"شبكة اتصالات"</string>
+    <string name="transactions">"المعاملات"</string>
+    <string name="emirates_id_expire">"صلاحية بطاقة الهوية الإماراتية أنتهت أو إنها على وشك الانتهاء"</string>
+    <string name="update">"تحديث"</string>
+    <string name="payable_amount">"المبلغ المدفوع"</string>
+    <string name="card_details">"بيانات البطاقة"</string>
+    <string name="payment_details">"تفاصيل المدفوعات"</string>
+    <string name="browse_plans">"استعراض الخطط"</string>
+    <string name="dth">"خدمة البث التلفزيوني المباشر للمنازل"</string>
+    <string name="enter_customer_id">"يرجي أدخل الأسم التعريفي العميل"</string>
+    <string name="customer_id">" الأسم التعريفي العميل"</string>
+    <string name="landline_number">"رقم الهاتف الأرضي"</string>
+    <string name="std_code">"الرمز القياسي"</string>
+    <string name="enter_landline_number">"أدخل رقم الهاتف الأرضي"</string>
+    <string name="select_plan">"اختر الخطة"</string>
+    <string name="add_beneficiary_success">"تمت إضافة بيانات المستفيد بنجاح"</string>
+    <string name="no_beneficiaries_available">"لا يوجد أي مستفيد مسجل"</string>
+    <string name="request_error">"عذرًا! لم نتمكن من معالجة طلبك. يرجى المحاولة في وقت لاحق."</string>
+    <string name="no_mobile_no">"لا يوجد أي رقم هاتف جوال"</string>
+    <string name="user_Id_not_available">"أسم المستخدم موجود بالفعل"</string>
+    <string name="otp_instructions">"يرجى إدخال رمز التحقق المرسل إلى رقم هاتف الجوال"</string>
+    <string name="invalid_date">"تاريخ غير صحيح"</string>
+    <string name="payday_to_credit">"من باي داي الي بطاقة الائتمان"</string>
+    <string name="insufficient_balance">"رصيد البطاقة غير كافٍ"</string>
+    <string name="invalid_name">"الأسم المدخل غير صحيح"</string>
+    <string name="invalid_nationality">"الجنسية المدخله غير صحيحة"</string>
+    <string name="i_accept">"&#160;"موافق </string>
+    <string name="date_format">%1s/%2s/%3s</string>
+    <string name="date_format_hypen">%1s-%2s-%3s</string>
+    <string name="label_month">"الشهر"</string>
+    <string name="label_year">"السنة"</string>
+    <string name="select_card_expiry">"اختر تاريخ انتهاء البطاقة"</string>
+    <string name="close">"إغلاق"</string>
+    <string name="no_internet">"لا يوجد اتصال بالإنترنت"</string>
+    <string name="change">"التغيير"</string>
+    <string name="invalid_type_format">Invalid %1s</string>
+    <string name="biometric_authentication">"التحقق من المستخدم باستخدام بصمة الاصابع / صورة الوجة"</string>
+    <string name="locator">"محدد المواقع"</string>
+    <string name="branch_locations">"مواقع الفروع"</string>
+    <string name="apply_for_loan_topup">طلب الحصول علي قرض إضافي</string>
+    <string name="operators">"المشغلون"</string>
+    <string name="insurance">"التأمين"</string>
+    <string name="gas">"خدمات الغاز"</string>
+    <string name="electricity">"خدمات الكهرباء"</string>
+    <string name="enter_consumer_number">"يرجي إدخال رقم المستخدم"</string>
+    <string name="consumer_number">"رقم المستخدم"</string>
+    <string name="enter_policy_number">"يرجي إدخال رقم وثيقة التأمين"</string>
+    <string name="policy_number">"رقم وثيقة التأمين"</string>
+    <string name="select_dob">"اختر تاريخ الميلاد"</string>
+    <string name="request">"طلب"</string>
+    <string name="previous_request">"الطلبات السابقة"</string>
+    <string name="reschedule_loan">"إعادة جدولة القرض"</string>
+    <string name="early_settlement">"السداد المبكر "</string>
+    <string name="liability">"شهادة مديونية"</string>
+    <string name="clearence_letter">"شهادة مخالصة"</string>
+    <string name="partial_settlement">"السداد الجزئي"</string>
+    <string name="request_id">"رقم الطلب"</string>
+    <string name="time">"الوقت"</string>
+    <string name="status">"الحالة"</string>
+    <string name="last_login">%1s\n :آخر تسجيل دخول</string>
+    <string name="beneficiary_disabled">"تم تعطيل المستفيد، يرجى تمكينه."</string>
+    <string name="enter_PIN">"أدخل رمز التعريف الشخصي"</string>
+    <string name="international_topup">"مدفوعات الهاتف الدولية"</string>
+    <string name="passport_number_hint">"أدخل رقم جواز السفر"</string>
+    <string name="invalid_passport_number">"رقم جواز السفر غير صحيح"</string>
+    <string name="password_expired">"انتهت صلاحية كلمة المرور. يرجى تحديث كلمة المرور الخاصة بك."</string>
+    <string name="confirm_request">"هل تؤكد طلبك؟"</string>
+    <string name="invalid_loan_number">"رقم القرض غير صحيح"</string>
+    <string name="no_requests">"لا توجد طلبات"</string>
+    <string name="download">"تنزيل"</string>
+    <string name="download_started">"بدأت عملية التنزيل"</string>
+    <string name="download_complete">"انتهت عملية التنزيل"</string>
+    <string name="application_id">"رقم الطلب"</string>
+    <string name="app_permissions">"تصريح التطبيق"</string>
+    <string name="write_storage_permissions">اسمح لـ PayDay FH بحفظ الملفات على جهازك. \n\n لتمكين هذا، انقر فوق إعدادات التطبيق أدناه وتنشيط التخزين ضمن قائمة الأذونات
+    </string>
+    <string name="camera_permission_title">إذن الكاميرا</string>
+    <string name="camera_permission_description">تم حظر الوصول إلى الكاميرا.
+         \n\n لتمكين النقر فوق "إعدادات التطبيق" أدناه وتنشيط \"الكاميرا\" ضمن قائمة الأذونات.
+    </string>
+    <string name="not_now">"ليس الآن"</string>
+    <string name="app_settings">"إعدادات التطبيق"</string>
+    <string name="card_blocked">"تم إيقاف بطاقتك."</string>
+    <string name="short_code">"الرمز المختصر"</string>
+    <string name="for_payday_card">For PayDay Card:</string>
+    <string name="sms_banking">"الخدمات البنكية عبر الرسائل النصية القصيرة"</string>
+    <string name="call">"مكالمة"</string>
+    <string name="tenure_in_years">"المدة (المدة بالسنوات)"</string>
+    <string name="tenure">"المدة"</string>
+    <string name="interest_rates">"سعر الفائدة ( ٪ PA)"</string>
+    <string name="get_emi_details">"الحصول على تفاصيل الأقساط الشهرية المتساوية"</string>
+    <string name="total_payable_amount">"إجمالي المبلغ مستحق الدفع"</string>
+    <string name="interest_amount">"مبلغ الفائدة"</string>
+    <string name="principal_amount">"المبلغ أصل القرض"</string>
+    <string name="calculate_again">"أعادة الحسبة مرة أخرى"</string>
+    <string name="loan_calculator_label">"حاسبة القروض"</string>
+    <string name="please_select_service">"يرجى اختيار خدمة"</string>
+    <string name="please_select_plan">"الرجاء اختيار خطة"</string>
+    <string name="number_format_error">"ملاحظة: يجب أن يكون النمط 9715xxxxxxxx+"</string>
+    <string name="chars_counter">0/255</string>
+    <string name="INR">INR</string>
+    <string name="pay">"دفع"</string>
+    <string name="fine_details">"تفاصيل الغرامة"</string>
+    <string name="search">"بحث"</string>
+    <string name="no_countries_found">"لم يتم العثور على أي دولة"</string>
+    <string name="outstanding_amount">"المبلغ غير المسدد"</string>
+    <string name="loan_terms_conditions">"أتقدم انا صاحب الحساب بموجب هذة الموافقة بطلب الحصول علي قرض شخصي \"بايداي فاينانس\" من دار التمويل ولهذا، أفوض و أخول دار التمويل بالحصول علي بياناتي المالية من الجهات المختصة بما في ذلك البيانات الموجودة لدي شركة الاتحاد للمعلومات الائتمانية (AECB)"</string>
+    <string name="apply_loan_otp_instructions">"بعد تأكيد إيداع مبلغ القرض من خلال إدخال كلمة المرور المؤقتة سترسل التفاصيل الدقيقة للقرض عبر البريد الإلكتروني/ الرسائل النصية القصيرة."</string>
+
+    <string name="loan_customer_warning">"عذرًا، \nلست مفوضًا بذلك. يرجى التواصل مع صاحب العمل للحصول على بطاقة باي داي."</string>
+    <string name="paid_on">"تم الدفع في 1s%"</string>
+
+    <string name="sms_code_msg">"ما عليك سوى اختيار \"الرمز القصير \" للحصول على المعلومات المطلوبة وإرسال رسالة قصيرة إلى الرقم 2326 بالتنسيق: [رمز قصير] [مسافة] [آخر 6 أرقام من رقم البطاقة] \n\n على سبيل المثال: MIN 123456"</string>
+    <string name="uae_toll_free">"الرقم المجاني في الإمارات العربية المتحدة:"</string>
+    <string name="tel">"الهاتف:"</string>
+    <string name="fax">"الفاكس:"</string>
+    <string name="email">"البريد الالكتروني:"</string>
+    <string name="atm_locations">"مواقع أجهزة الصراف الآلي"</string>
+    <string name="account_no_nine">"الرجاء إدخال رقم الحساب المكون من 9 أرقام"</string>
+    <string name="long_account_no">"الرجاء إدخال رقم الحساب المكون من 12 رقمًا"</string>
+    <string name="transfer_amount">"تحويل الأموال"</string>
+    <string name="loan_customer">"عميل القرض"</string>
+    <string name="payday_customer">"عميل باي داي"</string>
+    <string name="converted_payable_amount">"المبلغ مستحق الدفع"</string>
+    <string name="book">"حجز"</string>
+    <string name="proceed">"استمر"</string>
+    <string name="decline">"لا أوافق"</string>
+    <string name="du_prefix_no">+971-</string>
+    <string name="please_select_bank">يرجى اختيار البنك</string>
+    <string name="iban_number">IBAN Number</string>
+    <string name="transaction_history_2">سجل المعاملات</string>
+    <string name="mobile_format">يجب أن يكون تنسيق الرقم 9715xxxxxxxx+</string>
+    <string name="months_valued">%1s الشهور</string>
+    <string name="delete_warning">هل أنت متأكد من حذف هذا المستفيد؟</string>
+    <string name="enable_warning">هل أنت متأكد من تمكين هذا المستفيد؟</string>
+    <string name="enable">مكن</string>
+    <string name="disable">تعطيل</string>
+    <string name="total_amount">المبلغ الإجمالي</string>
+    <string name="description">"الوصف"</string>
+    <string name="charges">رسوم</string>
+    <string name="vat">الضريبة المضافة</string>
+    <string name="campaign_management">إدارة الحملة</string>
+    <string name="snooze">غفوة</string>
+    <string name="disable_warning">هل أنت متأكد من تعطيل هذا المستفيد؟</string>
+    <string name="suggestions_complaints">"اقتراحات وشكاوى"</string>
+    <string name="no_messages_warning">لا توجد اقتراحات أو شكاوى متاحة</string>
+    <string name="add_to_beneficiary">أضف إلى المستفيد</string>
+    <string name="passport_number">رقم جواز السفر</string>
+    <string name="create_dispute">خلق النزاع</string>
+    <string name="reference_no">رقم المرجع.</string>
+    <string name="transaction_amount">قيمة التحويل</string>
+    <string name="merchant_name">اسم التاجر</string>
+    <string name="transaction_date">تاريخ الصفقة</string>
+    <string name="name_should_not_less_than_3">يجب ألا يقل الاسم عن 3 أحرف</string>
+    <string name="next_installment_date">تاريخ القسط التالي</string>
+    <string name="add_as_beneficiary">أضف المستفيد</string>
+    <string name="action_settings">"الإعدادات"</string>
+    <string name="upload_ticket">"تحميل البطاقة"</string>
+    <string name="please_select">"يرجى الاختيار"</string>
+    <string name="change_pin">"إعادة ضبط الرقم السري للبطاقة"</string>
+    <string name="loan_summary">"تفاصيل القرض"</string>
+    <string name="scan">تفحص</string>
+    <string name="scan_emirates_id">"مسح الهوية الإماراتية"</string>
+    <string name="edit">تعديل</string>
+    <string name="invalid_amount_ranged">"يرجى إدخال مبلغ يتراوح بين AED %1s و AED %2s"</string>
+    <string name="invalid_float_amount_ranged">"يرجى إدخال مبلغ يتراوح بين AED %1s و AED %2s"</string>
+    <string name="invalid_amount_ranged_with_currency">"الرجاء إدخال مبلغ يتراوح بين %1s%2s و %3s%4s"</string>
+    <string name="enter_old_pin">ادخل الرقم السري الحالي</string>
+    <string name="internal_server_error">خطأ في الخادم الداخلي</string>
+    <string name="camera">الة تصوير</string>
+    <string name="gallery">صالة عرض</string>
+
+    <string name="phone_permission_title">إذن المكالمة</string>
+    <string name="phone_permission_description">تم حظر الوصول إلى الاتصال. \n\nلتمكين انقر فوق إعدادات التطبيق أدناه وتفعيل الهاتف ضمن قائمة الأذونات.</string>
+    <string name="browse">تصفح</string>
+
+    <string name="credit">رصيد</string>
+    <string name="international"> دولي</string>
+    <string name="data">البيانات</string>
+    <string name="wasel_renewal">تجديد واصل</string>
+    <string name="wasel_recharge">واصل شحن</string>
+
+    <string-array name="purpose_of_payment">
+        <item>Education Support</item>
+        <item>Family Support</item>
+        <item>Student Support</item>
+        <item>Education Support</item>
+        <item>Student Support</item>
+        <item>Education Support</item>
+        <item>Family Support</item>
+    </string-array>
+
+    <string-array name="aadc_service_type">
+        <item>""</item>
+        <item>رقم الحساب</item>
+        <item>الهوية الإماراتية</item>
+        <item>رمز تعريف الشخص</item>
+        <item>رقم الهاتف الجوال</item>
+    </string-array>
+
+    <string-array name="loan_services_topup">
+        <!--<item>طلب الحصول علي قرض إضافي</item>-->
+        <item>تأجيل قسط</item>
+        <item>إعادة جدولة</item>
+        <item>شهادة مخالصة</item>
+        <item>السداد المبكر </item>
+        <item>السداد الجزئي</item>
+        <item>شهادة مديونية</item>
+        <!--<item> </item>-->
+    </string-array>
+
+    <string-array name="loan_services">
+        <!--<item>تقدم بطلب قرض</item>-->
+        <item>تأجيل قسط</item>
+        <item>إعادة جدولة القرض</item>
+        <item>شهادة مخالصة</item>
+        <item>السداد المبكر </item>
+        <item>السداد الجزئي</item>
+        <item>شهادة مديونية</item>
+        <!--<item> </item>-->
+    </string-array>
+
+    <string-array name="sms_codes">
+        <item>BAL</item>
+        <item>LTA</item>
+        <item>SAL</item>
+        <item>ACT</item>
+    </string-array>
+
+    <string-array name="sms_description">
+        <item>الرصيد المتاح في البطاقة</item>
+        <item>حالة اخر عملية علي البطاقة</item>
+        <item>آخر راتب مودع</item>
+        <item>تفعيل</item>
+    </string-array>
+
+    <string-array name="snooze">
+        <item>1 يوم</item>
+        <item>3 أيام</item>
+        <item>5 أيام</item>
+        <item>10 أيام</item>
+    </string-array>
+
+    <string-array name="registration_steps">
+        <item>التقاط والتحقق من هوية الإمارات -</item>
+        <item>المسح الضوئي والتحقق من بطاقة يوم الدفع -</item>
+        <item>التحقق من رقم الجوال -</item>
+        <item>إنشاء تفاصيل تسجيل الدخول -</item>
+        <item>إضافة المصادقة البيومترية (اختياري) -</item>
+    </string-array>
+
+    <string-array name="service_request_array">
+        <item>تفعيل البطاقة</item>
+        <item>الأبلاغ عن معاملات غير صحيحة علي البطاقة</item>
+        <item>إعادة ضبط الرقم السري للبطاقة</item>
+        <item>إيقاف البطاقة</item>
+    </string-array>
+    <string-array name="money_transfer_options">
+        <item>تحويل دولي</item>
+        <item>من باي داي\nالي باي داي</item>
+        <item>تحويل\nالي حساب محلي</item>
+        <item>من باي داي\nالي بطاقة الائتمان</item>
+        <item>سجل\nالمعاملات</item>
+    </string-array>
+
+    <string name="loan_topup_amount">مبلغ القرض الاضافي</string>
+    <string name="loan_topup_emi">قيمة قسط مبلغ القرض الاضافي</string>
+    <string name="new_tenure">مدة القرض الجديد</string>
+    <string name="loan_topup_note">بعد تأكيد تنفيذ القرض الاضافي يرجي مراجعة صفحة بيانات القرض للاطلاع علي قيمة القرض بعد الزيادة</string>
+    <string name="track_trans_status">تتبع حالة الطلب</string>
+    <string name="tap_on_the_transaction_to_initiate_track_request">اضغط علي المعاملة لتتبع حالة المعاملة</string>
+    <string name="send_money">أرسال</string>
+    <string name="rate_calculator">حاسبة اسعار التحويل</string>
+    <string name="select_beneficiary">أختر المستفيد</string>
+    <string name="transaction_details">تفاصيل المعاملة</string>
+    <string name="uae_exchange_transfer_success">المعاملة قيد التنفيذ قد يستغرق استكمال التحويل من 24 الي 48 ساعة من مقدم الخدمة</string>
+    <string name="uae_exchange_terms_conditions_link">سيتم تحويل الي متصفح الانترنت هل ترغب في الاستمرار</string>
+    <string name="status_colon">"الحالة:"</string>
+    <string name="empty_emirate_card_number">يرجي ادخال رقم البطاقة</string>
+    <string name="invalid_emirate_card_number">رقم بكاقة الهوية غير صحيح</string>
+    <string name="international_money_transfer">التحويل الدولي للاموال</string>
+    <string name="locate_exchange">مواقع الفروع</string>
+    <string name="register_intl_beneficiary_instruction">يرجي زيارة أقرب فرع لشركة الصرافة لتسجيل بيانات المستفيد</string>
+    <string name="intl_money_transfer">التحويل الدولي للاموال</string>
+    <string name="enter_promo_code">ادخل كود الخصم</string>
+    <string name="exchange_rate_inclusive">أسعار التحويل قد تكون قابلة للتغيير </string>
+    <string name="select_card">أختر بطاقة الدفع</string>
+    <string name="account_balance">رصيد البطاقة</string>
+    <string name="commission">عمولة</string>
+    <string name="exchange_house_commision">رسوم شركة الصرافة</string>
+    <string name="Purpose">الغرض من التحويل</string>
+    <string name="promo_code">كود الخصم</string>
+    <string name="i_accept_terms_and_conditions">لقد قرأت و قبلت الشروط و الأحكام</string>
+    <string name="recurring_payment">دفعات مستديمة</string>
+    <string name="exchange_house_reference_no">رقم الطلب لشركة الصرافة</string>
+    <string name="fh_reference_no">رقم الطلب</string>
+    <string name="recurring_amount">مبلغ الدفعة المستديمة</string>
+    <string name="you_pay">المبلغ المحول</string>
+    <string name="purpose">الغرض من\n التحويل</string>
+    <string name="recurring_period">مدة الدفعة المستديمة</string>
+    <string name="recurring_frequency">عملة الدفعة المستديمة</string>
+    <string name="recurr_on_holidays">تنفيذ الدفعة المستديمة خلال العطلات</string>
+    <string name="charges_of_exchange_house">رسوم شركة الصرافة</string>
+    <string name="total_amount_payable">اجمالي المبلغ</string>
+    <string name="they_get">المبلغ المستلم</string>
+    <string name="you_send">المبلغ المحول</string>
+    <string name="transaction_options">خيارات المعاملة</string>
+    <string name="make_payment">انشاء عملية دفع</string>
+    <string name="track_request_initiated_successfully">تم بدء تتبع الطلب بنجاح</string>
+    <string name="view_details">استعراض التفاصيل</string>
+    <string name="search_currency">بحث العملات</string>
+    <string name="cancel_recurring_payment">هل ترغب في انهاء طلب التحويل المستديم</string>
+    <string name="yes">نعم</string>
+    <string name="exchange_rate_label">%3$s %4$s = %1$s %2$s :سعر التحويل*</string>
+    <string name="error_amount">أدخل المبلغ</string>
+    <string name="invalid_purpose">غرض غير صحيح</string>
+    <string name="fetching_account_details">يرجي الأنتظار جاري استخراج بيانات الحساب</string>
+    <string name="fetching_transaction_details">استخراج بيانات الحساب</string>
+    <string name="fetching_transactions">استخراج المعاملة</string>
+    <string name="my_beneficiaries">المستفيدون</string>
+    <string name="payout_amt">%1s %2s</string>
+    <string name="load_more">استعراض المزيد</string>
+    <string name="enter_emirates_card_number">أدخل أرقام البطاقة الهوية- تسعة ارقام</string>
+    <string name="invalid_promo_code">كود الخصم غير صحيح</string>
+    <string name="not_valid_emirates">عذرا ! الهوية غير مسجلة لدي شركة الصرافة للتسجيل يرجي زيارة فرع شركة الصرافة</string>
+    <string name="added_to_favourites">تم أضافة المعاملة لقائمة المعاملات المفضلة</string>
+    <string name="finance_house">دار التمويل</string>
+    <string name="uae_exchange">شركة الامارات العربية للصرافة</string>
+    <string name="update_exchange_email">يرجي تحديث عنوان البريد الالكتروني قبل الاستمرار</string>
+    <string name="state">الامارة</string>
+    <string name="no_location_availible">الفروع غير متاحة</string>
+    <string name="available_balance_after">رصيد البطاقة بعد الخصم</string>
+    <string name="locate_uae_exchange">مواقع فروع شركة الامارات العربية المتحدة للصرافة</string>
+    <string name="locate_al_ansari">مواقع شركة الانصاري للصرافة</string>
+    <string name="locating_your_device">تحديد موقع جهازك</string>
+    <string name="no_branches_in_area">لا يوجد فروع في تلك المنطقة</string>
+    <string name="location_permission_title">تصريح محدد المواقع</string>
+    <string name="location_permission_description">تم حظر الوصول إلى الموقع.\n\ n لتمكين النقر فوق "إعدادات التطبيق" أدناه وتنشيط \"الموقع \" ضمن قائمة الأذونات.
+    </string>
+    <string name="total">"الإجمالي"</string>
+    <string name="through">"بواسطة"</string>
+    <string name="other_beneficiaries">"مستفيدون أخرون"</string>
+    <string name="reference_hash">"الرقم المرجعي #"</string>
+    <string name="password_changed">كلمة المرور الخاصة بك تم تغييرها</string>
+    <string name="pin_changed">تم تغيير رقم التعريف الشخصي بنجاح</string>
+    <string name="successfully_transferred">تم التحويل بنجاح</string>
+
+    <string-array name="intl_remittance">
+        <item>حاسبة اسعار التحويل</item>
+        <item>انشاء تحويل</item>
+        <item>المستفيدون</item>
+        <item>حالة المعاملة</item>
+        <item>سجل المعاملات</item>
+        <item>مواقع فروع شركة الصرافة</item>
+    </string-array>
+
+    <string-array name="intl_locator_options">
+        <!--<item>شركة الامارات العربية للصرافة</item>-->
+        <item>Al Fardan Exchange</item>
+    </string-array>
+
+    <string-array name="intl_locator_option">
+        <item>شركة الامارات العربية للصرافة</item>
+        <item>Al Fardan Exchange</item>
+    </string-array>
+
+    <string-array name="imt_transfer_purpose">
+        <item>أغراض عائلية / أدخار</item>
+    </string-array>
+
+    <string-array name="transaction_options">
+        <item>استعراض تفاصيل المعاملة</item>
+        <item>اأضف الي قائمة المعاملات المفضلة</item>
+        <item>تكرار المعاملة</item>
+        <item>إرسال الي نفس المستفيد</item>
+        <item>تحميل نسخة</item>
+        <item>ارسال تفاصيل المعاملة</item>
+    </string-array>
+
+    <string-array name="transaction_options2">
+        <item>استعراض تفاصيل المعاملة</item>
+        <item>حذف من قائمة المعاملات المفضلة</item>
+        <item>تكرار المعاملة</item>
+        <item>إرسال الي نفس المستفيد</item>
+        <item>تحميل نسخة</item>
+        <item>ارسال تفاصيل المعاملة</item>
+    </string-array>
+
+    <string-array name="track_transaction">
+        <item>تحويل بنكي</item>
+        <!--<item>Cash Payout</item>-->
+    </string-array>
+
+    <string-array name="intl_transfer_tabs">
+        <item>تحويل بنكي</item>
+        <!--<item>Cash Transfer</item>-->
+    </string-array>
+
+    <string-array name="intl_transaction_tabs">
+        <item>المعاملات المفضلة</item>
+        <item>جميع المعاملات</item>
+    </string-array>
+
+    <string-array name="weekly_timing">
+        <item>Sun %1s</item>
+        <item>Mon %1s</item>
+        <item>Tue %1s</item>
+        <item>Wed %1s</item>
+        <item>Thu %1s</item>
+        <item>Fri %1s</item>
+        <item>Sat %1s</item>
+    </string-array>
+</resources>

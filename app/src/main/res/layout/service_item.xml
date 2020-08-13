@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="item"
+            type="com.fh.payday.datasource.models.Item" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/text_view"
+            style="@style/AppTheme.Text.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:drawablePadding="@dimen/dimen_4"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="@{clickListener}"
+            android:text="@{item.name}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small"
+            app:setDrawableTop="@{item.res}"
+            tools:text="@string/international_money_transfer" />
+
+    </LinearLayout>
+
+</layout>

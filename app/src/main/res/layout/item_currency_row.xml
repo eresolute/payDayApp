@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="country"
+            type="com.fh.payday.datasource.models.Country" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{clickListener}"
+            android:orientation="horizontal"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/dimen_4">
+
+            <TextView
+                style="@style/AppTheme.Text.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dimen_4"
+                android:padding="@dimen/dimen_4"
+                android:gravity="center"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text="@{country.name}"
+                app:setDrawableLeft="@{country.flag}" />
+
+            <TextView
+                style="@style/AppTheme.Text.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comfortaa_bold"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:layout_marginRight="@dimen/dimen_8"
+                android:text="@{country.abbr}"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:layout_marginStart="@dimen/dimen_8" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey_300" />
+
+    </LinearLayout>
+
+</layout>

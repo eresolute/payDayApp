@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/AppTheme.Text.Medium.Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_64"
+            android:layout_marginBottom="@dimen/dimen_16"
+            android:gravity="center"
+            android:text="@string/enter_atm_pin"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <com.mukesh.OtpView
+            android:id="@id/pin_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:cursorVisible="false"
+            android:inputType="numberPassword"
+            android:textSize="@dimen/text_8"
+            app:itemCount="4"
+            app:itemHeight="@dimen/dimen_40"
+            app:itemRadius="@dimen/dimen_6"
+            app:itemWidth="@dimen/dimen_40"
+            app:lineColor="@color/black"
+            app:state_filled="true"
+            app:viewType="rectangle" />
+
+        <TextView
+            android:id="@+id/tv_pin_error"
+            style="@style/AppTheme.Text.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginBottom="@dimen/dimen_32"
+            android:gravity="center"
+            android:text="@string/invalid_pin"
+            android:textColor="@color/color_red"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_title_confirm"
+            style="@style/AppTheme.Text.Medium.Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_16"
+            android:gravity="center"
+            android:text="@string/confirm_pin"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <com.mukesh.OtpView
+            android:id="@+id/pin_view_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:cursorVisible="false"
+            android:inputType="numberPassword"
+            android:textSize="@dimen/text_8"
+            app:itemCount="4"
+            app:itemHeight="@dimen/dimen_40"
+            app:itemRadius="@dimen/dimen_6"
+            app:itemWidth="@dimen/dimen_40"
+            app:lineColor="@color/black"
+            app:state_filled="true"
+            app:viewType="rectangle" />
+
+        <TextView
+            android:id="@+id/tv_pin_error_confirm"
+            style="@style/AppTheme.Text.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginBottom="@dimen/dimen_48"
+            android:gravity="center"
+            android:text="@string/invalid_pin"
+            android:textColor="@color/color_red"
+            android:visibility="invisible" />
+
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_32"
+            android:layout_marginEnd="@dimen/dimen_24"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/btn_primary_color"
+            app:cornerRadius="@dimen/button_corner"
+            app:rippleColor="@color/btn_secondary_color" />
+
+    </LinearLayout>
+</ScrollView>

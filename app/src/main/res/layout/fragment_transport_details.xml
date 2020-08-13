@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardElevation="@dimen/card_elevation"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/dimen_8"
+    android:layoutDirection="locale"
+    tools:ignore="UnusedAttribute">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_12">
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16"
+            android:layout_marginBottom="8dp"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            app:cornerRadius="@dimen/button_corner"
+            app:backgroundTint="@color/btn_primary_color"
+            app:rippleColor="@color/btn_secondary_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_details"
+            style="@style/AppTheme.Text.Body1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/fine_details"
+            android:textAlignment="center"
+            android:padding="@dimen/dimen_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/location"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_location"
+            app:layout_constraintEnd_toStartOf="@+id/tv_location"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_details"
+            tools:text="Paris"/>
+
+        <TextView
+            android:id="@+id/amount"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fine_amount"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_amount"
+            app:layout_constraintEnd_toStartOf="@+id/tv_amount"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_location"
+            tools:text="AED 10.00"/>
+
+        <TextView
+            android:id="@+id/card_details"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/pvt_number"
+            android:gravity="start"
+            android:textAlignment="textStart"
+            android:textDirection="locale"
+            app:layout_constraintBottom_toTopOf="@+id/btn_next"
+            app:layout_constraintEnd_toStartOf="@+id/tv_car_details"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amount"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_car_details"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="end"
+            android:textAlignment="viewEnd"
+            android:textDirection="ltr"
+            app:layout_constraintBottom_toTopOf="@+id/btn_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/card_details"
+            app:layout_constraintTop_toBottomOf="@+id/tv_amount"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="+9710512345678"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

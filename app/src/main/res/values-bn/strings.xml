@@ -1,0 +1,954 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">"পে ডে এফএইচ "</string>
+    <string name="powered_by">"দ্বারা চালিত"</string>
+    <string name="next">"পরবর্তী"</string>
+    <string name="submit">"জমা দিন"</string>
+    <string name="confirm">"নিশ্চিত করুন "</string>
+    <string name="invalid_type_format">"অবৈধ %1s"</string>
+    <string name="confirmation">অনুমোদন</string>
+    <string name="verify">"যাচাই করুন"</string>
+    <string name="default_text">"ডিফল্ট টেক্সট"</string>
+    <string name="amount_in_aed">AED %1s</string>
+    <string name="amount_in_inr">INR %1s</string>
+    <string name="percentage">%1$s%%</string>
+    <string name="processing">"প্রসেসিং"</string>
+    <string name="invalid_credentials">অবৈধ প্রশংসাপত্র.%1s</string>
+    <string name="apply_for_loan_topup">"শীর্ষ ঋণের জন্য আবেদন করুন "</string>
+    <string name="text_intro_1">"আপনার ব্যক্তিগত\n ডিজিটাল ব্যাংক"</string>
+    <string name="text_intro_2">"তাত্ক্ষণিকভাবে আপনার প্রিয়জনের\n নিকট অর্থ স্থানান্তর করুন"</string>
+    <string name="text_intro_3">আপনার বিল পরিশোধ করুন এবং ক্যাশব্যাক নিন </string>
+    <string name="card">কার্ড নির্বাচন করুন </string>
+    <string name="contact_us">"আমাদের সাথে যোগাযোগ করুন"</string>
+    <string name="how_to_register">"কিভাবে নিবন্ধন করবেন"</string>
+
+    <string name="login">"লগইন"</string>
+    <string name="account_number">"হিসাব নম্বর"</string>
+    <string name="register">"নিবন্ধন"</string>
+    <string name="user_id">"ব্যবহারকারীর আইডি "</string>
+    <string name="password">"পাসওয়ার্ড"</string>
+    <string name="passwordKyc">"পাসওয়ার্ড"</string>
+    <string name="forgot_password">"পাসওয়ার্ড ভুলে গেছেন"</string>
+    <string name="forgot_user_id_password">"ব্যবহারকারীর আইডি বা পাসওয়ার্ড ভুলে গেছেন?"</string>
+    <string name="card_number">"কার্ড নম্বর"</string>
+    <string name="confirm_mobile_no">"আপনার মোবাইল নম্বর নিশ্চিত করুন"</string>
+    <string name="verify_otp">"ওটিপি যাচাই করুন "</string>
+    <string name="enter_otp">"ওটিপি লিখুন"</string>
+    <string name="otp_info">"আপনার মোবাইল নম্বরে পাঠানো ভিরিফিকেশন কোডটি টাইপ করুন"</string>
+    <string name="otp_sent_to_registered_number">"আপনার মোবাইল নম্বরে পাঠানো ভিরিফিকেশন কোডটি টাইপ করুন"</string>
+    <string name="resend_otp">"ওটিপি পুনরায় পাঠান"</string>
+    <string name="create_login_details">"লগইন বিবরণ তৈরি করুন"</string>
+    <string name="password_pattern_info">"একটি মিশ্র বর্ণ, সংখ্যা এবং প্রতীক সহ  ৮ বা ততোধিক অক্ষর ব্যবহার করুন"</string>
+    <string name="confirm_password">"পাসওয়ার্ড নিশ্চিত করুন"</string>
+    <string name="account_registered">"আপনার অ্যাকাউন্ট সফলভাবে\n নিবন্ধিত হয়েছে"</string>
+    <string name="invalid_username" tools:ignore="ExtraTranslation">"অবৈধ ব্যবহারকারী আইডি"</string>
+    <string name="invalid_password">"অবৈধ পাসওয়ার্ড"</string>
+    <string name="scan_card">"আপনার কার্ড স্ক্যান করুন"</string>
+    <string name="position_card_instruction">"ফ্রেমে আপনার কার্ডটি দিন "</string>
+
+    <string name="card_services">"কার্ড সেবা"</string>
+    <string name="loan">"ঋণ"</string>
+    <string name="loan_services_title">"ঋণ সেবা"</string>
+    <string name="early_salary">"প্রাথমিক বেতন"</string>
+    <string name="emi">"ইএমআই "</string>
+    <string name="card_balance">"কার্ড ব্যালেন্স "</string>
+    <string name="last_salary_credited">"সর্বশেষ বেতন ক্রেডিট"</string>
+    <string name="welcome">"স্বাগতম "</string>
+    <string name="cancel">"বাতিল"</string>
+    <string name="choose_language">"ভাষা নির্বাচন করুন"</string>
+    <string name="interested">"আগ্রহী"</string>
+    <string name="not_interested">"আগ্রহী নই"</string>
+
+    <string-array name="drawer_items">
+        <item>কার্ড বিস্তারিত</item>
+        <!--<item>পণ্য</item>-->
+        <item>পরিষেবা অনুরোধ</item>
+        <item>আমাদের সঙ্গে \nযোগাযোগ</item>
+        <item>লগ আউট</item>
+    </string-array>
+
+    <string-array name="card_service_items">
+        <!--<item>কার্ড বিবরণ</item>-->
+        <item>লেনদেন</item>
+        <item>বেতন ক্রেডিট</item>
+        <item>রিসেট পিন</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="services">
+        <item>ইন্টেল অর্থ\n ট্র্যান্সফার </item>
+        <item>ডু</item>
+        <item>ইতিসালাত</item>
+        <item>পে ডে -পে ডে\nস্থানান্তর</item>
+        <item>ইন্ডিয়া বিল পরিশোধ</item>
+    </string-array>
+
+    <string-array name="freq_services">
+        <item>লেনদেন \nইতিহাস</item>
+        <item>পরিশোধ</item>
+        <item>স্থানান্তর</item>
+        <item>কার্ড সেবা সমূহ</item>
+        <item>অফার</item>
+        <item>ঋণ সেবা সমূহ</item>
+    </string-array>
+
+    <string name="apply_for_loan">"ঋণের জন্য আবেদন করুন"</string>
+    <string name="loan_calculator">"ঋণ\n ক্যালকুলেটর"</string>
+    <string name="support">"সমর্থন"</string>
+
+    <string name="title_how_to_fragment">"কিভাবে নিবন্ধন করবেন"</string>
+
+    <string name="select_currency">"মুদ্রা নির্বাচন করুন"</string>
+
+    <string name="card_statement">"কার্ড বিবৃতি"</string>
+
+    <string name="description_date">"বর্ণনা \n তারিখ"</string>
+    <string name="salaries_credited">"বেতন ক্রেডিট"</string>
+    <string name="salaries_credited_date">"বেতন ক্রেডিট তারিখ"</string>
+
+    <string name="atm_image">"এটিএম ঠিকানা মেশিন"</string>
+
+    <string name="loan_offer_details">"ঋণ অফার বিবরণ"</string>
+    <string name="loan_type">"ঋণের ধরন"</string>
+    <string name="loan_number">"ঋণ সংখ্যা"</string>
+    <string name="loan_disbursal_date">"ঋণ বিতরণ তারিখ"</string>
+    <string name="interest_rate">"সুদের হার"</string>
+    <string name="original_loan_amount">"ঋণ পরিমাণ"</string>
+    <string name="monthly_installment">"মাসিক কিস্তি"</string>
+    <string name="no_installments_paid">"প্রদত্ত কিস্তির সংখ্যা"</string>
+    <string name="principal_outstanding">"প্রিন্সিপ্যাল আউট স্ট্যান্ডিং "</string>
+    <string name="outstanding_installments">"আউট স্ট্যান্ডিং কিস্তি সমূহ "</string>
+    <string name="monthly_installments">"মাসিক কিস্তি সমূহ"</string>
+
+    <string name="terms_and_Conditions">"শর্তাবলী"</string>
+    <string name="accept">"গ্রহণ করা"</string>
+    <string name="loan_offer_terms_cond">"আমি পড়েছি এবং শর্তাবলীর প্রতি সম্মত হয়েছি"</string>
+    <string name="agree_terms">আমি পড়া এবং সম্মত হন &#160;</string>
+
+    <string-array name="edit_beneficiary_options">
+        <item>পে ডে-পে ডে</item>
+        <item>পে ডে - ক্রেডিট কার্ড</item>
+        <item>স্থানীয় অর্থ স্থানান্তর</item>
+        <item>পে ডে থেকে পে ডে ঋণ</item>
+    </string-array>
+
+    <string-array name="locator_options">
+        <item>শাখা অবস্থান</item>
+        <item>এসএমএস শর্ট কোড</item>
+    </string-array>
+
+    <string-array name="contact_us_options">
+        <item>কল সেন্টার নাম্বার</item>
+        <item>ওয়েব সাইট</item>
+        <item>পরামর্শ এবং অভিযোগ</item>
+    </string-array>
+
+    <string-array name="payday_card_key">
+        <item>কাষ্টমারের নাম</item>
+        <item>পে ডে কার্ড নাম্বার</item>
+        <item>কার্ড ধরন</item>
+        <item>কার্ডের অবস্থা</item>
+        <item>উপলব্ধ ব্যালেন্স পরিমাণ</item>
+        <item>পূর্ণ ওভারড্রাফট সীমা</item>
+        <item>সচরাচর ওভারড্রাফট সীমা</item>
+        <item>ধরে রাখা পরিমাণ</item>
+        <item>সর্বশেষ বেতন ক্রেডিট পরিমাণ</item>
+        <item>সর্বশেষ বেতন ক্রেডিট তারিখ</item>
+    </string-array>
+
+    <string-array name="account_option">
+        <item>পে ডে ফাইন্যান্স</item>
+        <item>প্রাথমিক বেতন</item>
+        <item>ক্রেডিট কার্ড</item>
+        <item>কার্যনির্বাহী ফাইন্যান্স</item>
+    </string-array>
+
+    <string name="conversion_value" translatable="false">%1s %2s = %3s %4s as on 16-10-2018</string>
+    <string name="step_by_step_guide">"ধাপে ধাপে গাইড "</string>
+    <string name="scan_qr_code">"এই কিউ আর কোডটি স্ক্যান করুন"</string>
+    <string name="scan_payday_card">"পে ডে কার্ডটি স্ক্যান করুন"</string>
+    <string name="position_payday_card">"এই ফ্রেমে পে ডে কার্ডটি দিন "</string>
+    <string name="card_scan_error">"আপনার কার্ডটি পুনরায়\n স্ক্যান করুন"</string>
+    <string name="capture_front_emirates_id">"এমিরাটস আইডির সামনের অংশের ছবি তুলুন "</string>
+    <string name="capture_back_emirates_id">"এমিরাটস আইডির পেছনের অংশের ছবি তুলুন"</string>
+    <string name="scan_back_emirates_id_note">"আমরা কখনও আপনার এমিরেট আইডি সংরক্ষণ বা রেখে দেব\n না। আপনার বিবরণ নিরাপদে প্রক্রিয়া করা হবে।"</string>
+    <string name="register_card_detail">"কার্ড বিবরণ"</string>
+    <string name="card_holder_name">"কার্ডের নাম"</string>
+    <string name="expiry_date">"মেয়াদ শেষ হওয়ার তারিখ"</string>
+    <string name="capture">"ছবি তুলুন "</string>
+    <string name="customer_selfie">"সেলফি তুলুন "</string>
+    <string name="prepaid">"প্রিপেইড"</string>
+    <string name="postpaid">"পোস্টপেইড"</string>
+    <string name="operator_image_view">"অপারেটর ইমেজ ভিউ"</string>
+    <string name="enter_mobile_number">"মোবাইল নম্বর লিখুন"</string>
+    <string name="enter_mobile_number_payments">"মোবাইল নম্বর লিখুন"</string>
+    <string name="calling_card">"কলিং কার্ড"</string>
+    <string name="faq">"এফ এ কিউ "</string>
+    <string name="international_remittance">"ইন্টেল অর্থ ট্র্যান্সফার"</string>
+    <string name="accounts">"অ্যাকাউন্টস"</string>
+    <string name="registered_beneficiaries">"নিবন্ধিত সুবিধাভোগী"</string>
+    <string name="balance">"ব্যালেন্স "</string>
+    <string name="payday_card">payday_card</string>
+    <string name="mobile_recharge">"মোবাইল রিচার্জ"</string>
+    <string name="available_overdraft_limit">"পর্যাপ্ত ওভারড্রাফ্ট সীমা "</string>
+    <string name="overdraft_limit_2">"ওভারড্রাফট সীমা "</string>
+    <string name="ok">"ঠিক আছে"</string>
+    <string name="enter_amount">"পরিমান লিখুন"</string>
+    <string name="enter_atm_pin">"পিন লিখুন"</string>
+    <string name="enter_atm_pin_salik">"পিন লিখুন"</string>
+    <string name="atm_pin">"পিন"</string>
+    <string name="token_id">"টোকেন আইডি"</string>
+    <string name="transaction_successful">"লেনদেন সফল হয়েছে "</string>
+
+    <string name="loans">"ঋণ"</string>
+    <string name="eligible_for_loan">"আপনি ঋণের জন্য যোগ্য"</string>
+
+    <string-array name="mini_statements">
+        <item>এক মাসের বিবরণ</item>
+        <item>তিন মাসের বিবরণ</item>
+        <item>ছয় মাসের বিবরণ</item>
+    </string-array>
+
+    <string-array name="transaction_history">
+        <item>কার্ড লেনদেন সমূহ</item>
+        <item>ঋণ</item>
+        <item>পে ডে -পে ডে\nস্থানান্তর</item>
+        <item>বিল পরিশোধ</item>
+        <item>বেতন ক্রেডিট</item>
+    </string-array>
+
+    <string-array name="transaction_history_transfer">
+        <item>পে ডে থেকে পে ডে</item>
+        <item>স্থানীয় অর্থ স্থানান্তর</item>
+        <item>ক্রেডিট কার্ড স্থানান্তর</item>
+    </string-array>
+
+    <string-array name="transaction_history_option">
+        <item>মাসিক</item>
+        <item>৫ সর্বশেষ স্থানান্তর</item>
+    </string-array>
+
+    <string-array name="setting_options">
+        <item>পাসওয়ার্ড পরিবর্তন</item>
+        <item>বায়োমেট্রিক প্রমাণীকরণ</item>
+    </string-array>
+
+
+    <string name="purpose_of_payment">"পরিশোধ করার উদ্যেশ্য"</string>
+    <string name="account_no_label">"একাউন্ট নাম্বার"</string>
+    <string name="edit_icon">edit icon</string>
+    <string name="from">"থেকে"</string>
+    <string name="to">"প্রতি "</string>
+    <string name="currency">"রেমিট্যান্স মুদ্রা : AED"</string>
+    <string name="available_balance_in_aed">পর্যাপ্ত টাকা: AED %1s</string>
+    <string name="beneficiary">"মৃত ব্যক্তির সম্পত্তির উত্তরাধিকারী"</string>
+    <string name="transfer_details">"স্থানান্তর\n বিবরণ"</string>
+    <string name="summary">"সারাংশ"</string>
+    <string name="previous">"পূর্বের "</string>
+    <string name="cardless_withdrawal">"কার্ডবিহীন উইথড্র "</string>
+    <string name="personal_loan">"ব্যক্তিগত ঋণ"</string>
+    <string name="loan_amount">AED 0</string>
+    <string name="payments">"পেমেন্ট"</string>
+    <string name="bill_payment">"বিল পরিশোধ করা"</string>
+    <string name="utilities">"উপযোগিতা"</string>
+    <string name="transport">"পরিবহন"</string>
+    <string name="road_transport">"রাস্তা এবং পরিবহন"</string>
+    <string name="etisalat">"এতিসালাত "</string>
+    <string name="du">"ডু"</string>
+    <string name="amount">"পরিমাণ"</string>
+
+    <string name="date">"তারিখ"</string>
+    <string name="beneficiary_bank">"সুবিধাভোগী ব্যাংক"</string>
+    <string name="benificiary_name">"সুবিধাভোগীর নাম"</string>
+    <string name="aed">AED</string>
+    <string name="successfully_paid">"সফলভাবে পরিশোধিত হয়েছে "</string>
+    <string name="available_balance_text">"পর্যাপ্ত ব্যালেন্স "</string>
+    <string name="montly">"মাসিক"</string>
+    <string name="mini_statement">"সংক্ষিপ্ত বিবরণ "</string>
+    <string name="email_subscription">"ইমেল সাবস্ক্রিপশন"</string>
+    <string name="dr">"ডিআর "</string>
+    <string name="cr">"সিআর "</string>
+    <string name="confirm_email">"ইমেল আইডি নিশ্চিত করুন"</string>
+    <string name="statement_type">"বিবরণের প্রকার"</string>
+
+    <string name="apply">"প্রয়োগ করা"</string>
+    <string name="apply_pop_up">"প্রয়োগ করা"</string>
+    <string name="products">"পণ্য"</string>
+    <string name="apply_cc">"ক্রেডিট কার্ড প্রয়োগ করুন"</string>
+    <string name="apply_dc">"ডেবিট কার্ড প্রয়োগ করুন"</string>
+    <string name="apply_loan_title">"ঋণ প্রয়োগ করুন"</string>
+    <string name="apply_loan_top_up_title">"ঋণ টপ আপ "</string>
+    <string name="loan_amount_title">"ঋণের পরিমাণ"</string>
+    <string name="monthly_emi">"মাসিক ইএমআই"</string>
+    <string name="months_value">%1s মাস</string>
+
+    <string name="edit_beneficiary">"সুবিধাভোগী সম্পাদনা করুন"</string>
+    <string name="payday_to_payday">"পে ডে\n থেকে পে ডে "</string>
+    <string name="local_money_transfer">"স্থানীয়\n টাকা স্থানান্তর"</string>
+    <string name="local_money_transfer_1">স্থানীয় টাকা স্থানান্তর</string>
+    <string name="select_country">"দেশ নির্বাচন করুন"</string>
+    <string name="select_bank">"ব্যাংক নির্বাচন করুন"</string>
+    <string name="beneficiary_name">"সুবিধাভোগীর নাম"</string>
+    <string name="account_number_field">"হিসাব নম্বর"</string>
+    <string name="address_field">"ঠিকানা "</string>
+    <string name="address_line1">"ঠিকানা লাইন 1"</string>
+    <string name="address_line2">"ঠিকানা লাইন 2"</string>
+    <string name="mobile_number">"মোবাইল নম্বর"</string>
+    <string name="mobile">"মোবাইল"</string>
+    <string name="country">"দেশ"</string>
+    <string name="bank">"ব্যাংক"</string>
+    <string name="edit_beneficiary_success">"সুবিধাভোগী সফলভাবে সম্পাদিত হয়েছে "</string>
+    <string name="short_name">"সংক্ষিপ্ত নাম"</string>
+    <string name="payday_to_payday_1">"পে ডে থেকে পে ডে "</string>
+    <string name="elife">"ই লাইফ "</string>
+    <string name="landline">"ল্যান্ডলাইন"</string>
+    <string name="enter_pvt_number">"পিভিটি নম্বর লিখুন"</string>
+
+    <string name="enter_new_pin">"নতুন পিন লিখুন"</string>
+    <string name="confirm_pin">"পিন নিশ্চিত করুন"</string>
+    <string name="message">"বার্তা"</string>
+    <string name="select_issue">"ইস্যু নির্বাচন করুন"</string>
+    <string name="enter_new_mobile_no">"নতুন মোবাইল নম্বর লিখুন"</string>
+    <string name="send_message">"বার্তা পাঠান"</string>
+    <string name="arrow_image">"তীর চিত্র"</string>
+    <string name="area_of_issue">"ইস্যুর এলাকা "</string>
+    <string name="message_request">অনুরোধ নং. %1s</string>
+
+    <string name="money_transfer">"অর্থ হস্তান্তর"</string>
+
+    <string name="payday_card_title">"পে ডে  কার্ড"</string>
+    <string name="banner">"পতাকা"</string>
+    <string name="Offers">"অফার"</string>
+    <string name="overdraft">"ত্তভারড্রাফট"</string>
+    <string name="transaction_history">"লেনদেন ইতিহাস"</string>
+
+    <string name="payment_holiday">"পেমেন্ট হলিডে "</string>
+    <string name="activate_card">"কার্ড সক্রিয় করুন"</string>
+    <string name="card_transaction_dispute">"কার্ড লেনদেন বিতর্ক"</string>
+    <string name="help">"সাহায্য"</string>
+    <string name="thumb_print_instruction">"এটি আরও সহজতর করতে, আপনি আঙ্গুলের ছাপ দিয়ে লগইন করতে পারেন যা ইতোমধ্যে এই মোবাইলে সংরক্ষিত হয়েছে"</string>
+    <string name="activate">"সক্রিয় করুন "</string>
+    <string name="settings">"সেটিংস"</string>
+    <string name="service_requests">Service Requests</string>
+    <string name="start">"শুরু"</string>
+    <string name="terms_conds_error">"আপনাকে শর্তাবলী গ্রহণ করতে হবে"</string>
+    <string name="loan_disbursal">"আপনার loanণ বুক করা হয়েছে এবং আপনার অ্যাকাউন্টে বিতরণ করা হয়েছে"</string>
+    <string name="await_instruction">"লেনদেনের জন্য অপেক্ষা\n করা হচ্ছে"</string>
+    <string name="mobile_service_provider">"মোবাইল সার্ভিস প্রদানকারীগণ "</string>
+
+    <string name="passport_title">"আমরা কখনও আপনার পাসপোর্ট সংরক্ষণ  বা রেখে দেব না। আপনার বিবরণ নিরাপদে প্রক্রিয়া করা হবে।"</string>
+    <string name="scan_passport">"পাসপোর্ট স্ক্যান করুন"</string>
+    <string name="enter_email_id">"ইমেইল আইডি লিখুন"</string>
+    <string name="confirm_email_id">"ইমেইল আইডি নিশ্চিত করুন"</string>
+    <string name="email_not_match">"ইমেইল মিলছে না"</string>
+    <string name="enter_new_mobile_number">"নতুন মোবাইল নম্বর লিখুন"</string>
+    <string name="confirm_mobile">"মোবাইল নম্বর নিশ্চিত করুন"</string>
+    <string name="mobile_not_match">"মোবাইল নম্বর মিলছে না"</string>
+    <string name="scan_emirates_error">"আপনার এমিরেটস আইডি পুনরায় স্ক্যান করুন"</string>
+    <string name="emirates_update_succesful">"এমিরেটস আইডি আপডেট সফল হয়েছে "</string>
+    <string name="capture_photo_page_passport">Capture Photo Page of Passport</string>
+    <string name="capture_signature_page_passport">Capture Signature Page of Passport</string>
+    <string name="capture_address_page_passport">Capture Address Page of Passport</string>
+    <string name="passport_capture_successful">Passport Capture Successful</string>
+    <string name="passport_update_succesful">"পাসপোর্ট আপডেট সফল হয়েছে "</string>
+    <string name="email_update_succesful">"ইমেল আইডি আপডেট সফল হয়েছে "</string>
+    <string name="mobile_update_succesful">"মোবাইল নম্বর আপডেট সফল হয়েছে "</string>
+    <string name="update_email_id">"ইমেইল আইডি আপডেট করুন"</string>
+    <string name="update_mobile_no">"মোবাইল নম্বর আপডেট করুন"</string>
+    <string name="update_emirates">"আপডেট এমিরেটস আইডি করুন "</string>
+    <string name="update_passport">"পাসপোর্ট আপডেট করুন"</string>
+
+    <string name="due">"ডি ইউ ই "</string>
+    <string name="eligible_for_deferment">"আপনি বিচ্ছেদের জন্য যোগ্য"</string>
+    <string name="defer">"মুলতবি করুন  "</string>
+    <string name="number_of_installment">"কিস্তির সংখ্যা"</string>
+
+
+    <string name="empty_mobile_no">"দয়া করে আপনার মোবাইল নম্বর লিখুন "</string>
+    <string name="empty_mobile_no_payments">"দয়া করে আপনার মোবাইল নম্বর লিখুন "</string>
+    <string name="invalid_mobile_no">"অকার্যকর মোবাইল নম্বর"</string>
+    <string name="invalid_expiry_date">"অবৈধ মেয়াদ শেষ হওয়ার তারিখ"</string>
+    <string name="empty_card_no">"দয়া করে কার্ড নম্বর লিখুন  "</string>
+    <string name="invalid_card_no">"বৈধ কার্ড নম্বর লিখুন দয়া করে"</string>
+    <string name="empty_card_name">"দয়া করে কার্ড নাম লিখুন  "</string>
+    <string name="empty_user_id">"দয়া করে ব্যবহারকারী আইডি লিখুন   "</string>
+    <string name="invalid_user_id">"ব্যবহারকারী আইডি স্পেস বিহীন কমপক্ষে 8 অক্ষর বিশিষ্ট হওয়া উচিৎ   "</string>
+    <string name="empty_password">"দয়া করে পাসওয়ার্ড লিখুন "</string>
+    <string name="empty_confirm_password">"পাসওয়ার্ড নিশ্চিত করুন "</string>
+    <string name="invalid_password_len">"পাসওয়ার্ড অন্তত 8 অক্ষর বিশিষ্ট হওয়া উচিত"</string>
+    <string name="password_contains_userid">"পাসওয়ার্ডে ব্যবহারকারী আইডি থাকবে না"</string>
+    <string name="password_not_match">"পাসওয়ার্ড মিলছে না"</string>
+    <string name="password_not_same_as_old">"নতুন পাসওয়ার্ড পুরনো পাসওয়ার্ডের মতো হবে না"</string>
+    <string name="skip">"বাদ দিন "</string>
+    <string name="card_username_length">"কার্ড নাম অন্তত 2 অক্ষর বিশিষ্ট হওয়া উচিত"</string>
+    <string name="enter_new_password">"নতুন পাসওয়ার্ড লিখুন"</string>
+    <string name="change_password">"পাসওয়ার্ড পরিবর্তন করুন"</string>
+    <string name="invalid_amount">"দয়া করে একটি বৈধ পরিমাণ লিখুন "</string>
+    <string name="ic_back">ic_back</string>
+    <string name="ic_profile">ic_profile</string>
+    <string name="flag">flag</string>
+    <string name="invalid_account_length">দয়া করে একটি %1s-সংখ্যা বিশিষ্ট নম্বর লিখুন</string>
+    <string name="invalid_account_length_ranged">দয়া করে একটি %1s-%2s সংখ্যা বিশিষ্ট নম্বর লিখুন</string>
+    <string name="register_emirate_details">"এমিরেটস আইডি বিবরণ "</string>
+    <string name="please_enter_otp">"ওটিপি প্রবেশ করুন"</string>
+    <string name="empty_emirate_id">"দয়া করে এমিরেটস আইডি লিখুন "</string>
+    <string name="invalid_emirate_id">"অবৈধ এমিরেটস আইডি  "</string>
+    <string name="loading">"লোড হচ্ছে ......"</string>
+    <string name="something_went_wrong">"কিছু ভুল হয়েছে"</string>
+    <string name="pin_does_not_match">"পিন ভিন্নরকম "</string>
+    <string name="please_enter_pin">"দয়া করে বৈধ পিন লিখুন  "</string>
+    <string name="forgot_user_id">"ব্যবহারকারী আইডি ভুলে গেছেন"</string>
+    <string name="reset_password">"পাসওয়ার্ড রিসেট করুন"</string>
+    <string name="new_password">"নতুন পাসওয়ার্ড"</string>
+    <string name="enter_card_number">"কার্ড নম্বর লিখুন"</string>
+    <string name="enter_card_pin">"কার্ড পিন লিখুন"</string>
+    <string name="no_loan_available">Currently, you dont have any loan with FH. If you want to apply, click on the button below.</string>
+    <string name="categories">"ধরন"</string>
+    <string name="block_card">"ব্লক কার্ড"</string>
+    <string name="card_block_success">"কার্ড সফলভাবে \nব্লক হয়েছে "</string>
+    <string name="nationality">"জাতীয়তা"</string>
+    <string name="dob">"ডিওবি"</string>
+    <string name="empty_nationality">"জাতীয়তা লিখুন  "</string>
+    <string name="invalid_dob">"জন্ম তারিখ অবৈধ "</string>
+    <string name="dob_mismatch">"এমিরেটস আইডির সাথে ডিওবি মিলছে না!"</string>
+    <string name="empty_dob">"ডিওবি লিখুন "</string>
+    <string name="empty_expiry_date">"মেয়াদ শেষ হওয়ার তারিখ লিখুন "</string>
+    <string name="link_accounts">"লিঙ্ক অ্যাকাউন্ট"</string>
+    <string name="three_dots">…</string>
+    <string name="invalid_pin">"অবৈধ পিন"</string>
+    <string name="invalid_installment_value">"অবৈধ কিস্তি ভ্যালু "</string>
+    <string name="enter_manually">"ম্যানুয়ালি লিখুন"</string>
+    <string name="enter_current_password">"বর্তমান পাসওয়ার্ড লিখুন"</string>
+    <string name="inbox">"ইনবক্স"</string>
+    <string name="select_issue_area_error">"দয়া করে একটি বৈধ ইস্যু এলাকা নির্বাচন করুন"</string>
+    <string name="select_issue_error">"দয়া করে একটি বৈধ ইস্যু নির্বাচন করুন"</string>
+    <string name="valid_message_error">"দয়া করে একটি বৈধ বার্তা লিখুন  "</string>
+    <string name="add_beneficiary">"সুবিধাভোগী যোগ করুন"</string>
+    <string name="account_summary">"অ্যাকাউন্ট সারসংক্ষেপ"</string>
+    <string name="loan_details">"ঋণ বিবরণ"</string>
+    <string name="payday_cards">"পে ডে কার্ড"</string>
+    <string name="terms_conditions_error">দয়া করে শর্তাবলী গ্রহণ করুন </string>
+    <string name="fingerprint_dialog_title">"আঙ্গুলের ছাপ অনুমোদন সক্রিয় করুন "</string>
+    <string name="fingerprint_dialog_title2">Fingerprint Authentication</string>
+    <string name="fingerprint_dialog_subtitle">"পে ডে "</string>
+    <string name="fingerprint_dialog_description">"এটি আরও সহজতর করতে, আপনি আঙ্গুলের ছাপ দিয়ে লগইন করতে পারেন যা ইতোমধ্যে এই মোবাইলে সংরক্ষিত রয়েছে"</string>
+    <string name="notification_channel">fh_notification_channel</string>
+    <string name="channel_desc">notification channel for App</string>
+    <string name="channel_id">payday_fh</string>
+    <string name="enter_account_number">"অ্যাকাউন্ট নম্বর লিখুন"</string>
+    <string name="empty_account_no">"দয়া করে অ্যাকাউন্ট নম্বর লিখুন  "</string>
+    <string name="invalid_account_no">"দয়া করে বৈধ অ্যাকাউন্ট নম্বর লিখুন  "</string>
+    <string name="due_date">"ডিউ তারিখ"</string>
+    <string name="details">"বিস্তারিত "</string>
+    <string name="last_bill_amount">"সর্বশেষ বিলের পরিমাণ"</string>
+    <string name="bill_amount">"বিলের পরিমাণ"</string>
+    <string name="no_transaction_available">"কোন লেনদেন পর্যাপ্ত নেই"</string>
+    <string name="no_operators_available">"কোন অপারেটর পর্যাপ্ত নেই "</string>
+    <string name="no_offers_available">"কোন অফার পর্যাপ্ত নেই"</string>
+    <string name="customer_name">"ক্রেতার নাম"</string>
+    <string name="available_balance_label">"পর্যাপ্ত টাকা"</string>
+    <string name="payday_card_number_label">"পে ডে কার্ড নম্বর"</string>
+    <string name="multiple_of_50">"দয়া করে 50 এর মধ্যে একটি পরিমাণ লিখুন "</string>
+    <string name="location">"অবস্থান"</string>
+    <string name="un_successfully_paid">"পেমেন্ট ব্যর্থ হয়েছে"</string>
+    <string name="home">"বাড়ি"</string>
+    <string name="branches">"লোকেটার"</string>
+    <string name="enter_name">"নাম"</string>
+    <string name="indian_bill_payment">"ভারত বিল পেমেন্ট"</string>
+    <string name="airtel">"এয়ারটেল"</string>
+    <string name="verified">"যাচাইকৃত "</string>
+    <string name="not_verified">"যাচাই করা হয়নি "</string>
+    <string name="contact_updated">"কন্টাক্ট সফলভাবে আপডেট হয়েছে "</string>
+    <string name="money_in">"টাকা ভিতরে "</string>
+    <string name="money_out">"টাকা বাইরে "</string>
+    <string name="available_overdraft">"পর্যাপ্ত ওভারড্রাফ্ট "</string>
+    <string name="sent_box">"প্রেরিত বক্স"</string>
+    <string name="welcome_to_payday">"পে ডে তে স্বাগতম"</string>
+    <string name="sign_in_diff_account">"বিভিন্ন ব্যবহারকারী হিসাবে সাইন ইন করুন"</string>
+    <string name="biometric_auth">"বায়োমেট্রিক প্রমাণীকরণ "</string>
+    <string name="fingerprint">"ফিঙ্গারপ্রিন্ট "</string>
+    <string name="enabled">"সক্ষম"</string>
+    <string name="disabled">"অক্ষম"</string>
+    <string name="version_name">Version %1s</string>
+    <string name="broadband">"ব্রডব্যান্ড"</string>
+    <string name="gsm">"গিএসএম "</string>
+    <string name="evision">"ই-ভিশন"</string>
+    <string name="biometric_auth_enabled">"বায়োমেট্রিক প্রমাণীকরণ সক্রিয়"</string>
+    <string name="personal_details">"ব্যক্তিগত বিবরণ"</string>
+    <string name="emirates_id">"এমিরেটস আইডি"</string>
+    <string name="passport">"পাসপোর্ট"</string>
+    <string name="email_id">"ইমেইল আইডি"</string>
+    <string name="mobile_num">"মোবাইল নম্বর"</string>
+    <string name="update_kyc_document">"কেওয়াইসি নথি আপডেট করুন"</string>
+    <string name="link">"লিংক"</string>
+    <string name="upload">"আপলোড"</string>
+    <string name="emergency_contact">"জরুরী যোগাযোগ"</string>
+    <string name="name">"নাম"</string>
+    <string name="relation">"সম্পর্ক"</string>
+    <string name="invalid_email">"অবৈধ ইমেইল"</string>
+    <string name="empty_name">"দয়া করে নাম লিখুন  "</string>
+    <string name="empty_value">"দয়া করে মান লিখুন  "</string>
+    <string name="upload_mobile_number">"মোবাইল নম্বর আপডেট করুন"</string>
+    <string name="set_pin">"পিপিনটি রিসেট করুন"</string>
+    <string name="send">"পাঠান"</string>
+    <string name="enter_message_hint">এখানে আপনার সমস্যা লিখুন&#8230;</string>
+    <string name="generic_payment_error">"আপনার অনুরোধ সার্ভিসিংয়ে ত্রুটি। দয়া করে কিছুক্ষণ পর চেষ্টা করুন."</string>
+    <string name="dewa">DEWA</string>
+    <string name="fewa">"এফইডব্লিওএ  "</string>
+    <string name="aadc">"এএডিসি "</string>
+    <string name="dubai_police">Dubai Police</string>
+    <string name="mawaqif">"মাওয়াক্বিপ "</string>
+    <string name="salik">"সালিক"</string>
+    <string name="nol">NOL</string>
+    <string name="du_">"ডু "</string>
+    <string name="etisalat_">"এতিসালাত"</string>
+    <string name="transactions">"লেনদেন"</string>
+    <string name="emirates_id_expire">"এমিরেটস আইডি মেয়াদ শেষ হয়ে গেছে বা শেষ হবার উপক্রম "</string>
+    <string name="update">"আপডেট "</string>
+    <string name="payable_amount">"প্রদেয় পরিমান"</string>
+    <string name="card_details">"কার্ড বিবরণ"</string>
+    <string name="payment_details">"পেমেন্ট বিবরণ"</string>
+    <string name="browse_plans">"পরিকল্পনা ব্রাউজ করুন"</string>
+    <string name="dth">"ডিটিএইচ"</string>
+    <string name="enter_customer_id">"গ্রাহক আইডি লিখুন"</string>
+    <string name="customer_id">"গ্রাহক আইডি"</string>
+    <string name="landline_number">"ল্যান্ডলাইন নম্বর"</string>
+    <string name="std_code">"এসটিডি কোড"</string>
+    <string name="enter_landline_number">"ল্যান্ডলাইন নম্বর লিখুন"</string>
+    <string name="select_plan">"পরিকল্পনা নির্বাচন করুন"</string>
+    <string name="add_beneficiary_success">"সুবিধাভোগী সফলভাবে যোগ করা হয়েছে"</string>
+    <string name="no_beneficiaries_available">"কোন সুবিধাভোগী পর্যাপ্ত নেই "</string>
+    <string name="request_error">"দুঃখিত! আমরা আপনার অনুরোধ প্রক্রিয়া করতে অক্ষম। দয়া করে  কিছুক্ষণ পর চেষ্টা করুন।"</string>
+    <string name="no_mobile_no">"কোন মোবাইল নম্বর পাওয়া যায় না"</string>
+    <string name="user_Id_not_available">"ব্যবহারকারী আইডি ইতিমধ্যে বিদ্যমান"</string>
+    <string name="otp_instructions">"দয়া করে আপনার মোবাইল নম্বরে পাঠানো \nভেরিফিকেশন কোডটি টাইপ করুন"</string>
+    <string name="invalid_date">"অবৈধ তারিখ"</string>
+    <string name="payday_to_credit">"পে ডে থেকে ক্রেডিট কার্ড  "</string>
+    <string name="insufficient_balance">"অপর্যাপ্ত কার্ড ব্যালেন্স"</string>
+    <string name="invalid_name">"অবৈধ নাম"</string>
+    <string name="invalid_nationality">"অবৈধ জাতীয়তা"</string>
+    <string name="i_accept">আমি গ্রহণ করছি &#160;</string>
+    <string name="date_format">%1s/%2s/%3s</string>
+    <string name="date_format_hypen">%1s-%2s-%3s</string>
+    <string name="label_month">"মাস"</string>
+    <string name="label_year">"বছর"</string>
+    <string name="select_card_expiry">"কার্ড মেয়াদ শেষ নির্বাচন করুন"</string>
+    <string name="close">"বন্ধ "</string>
+    <string name="no_internet">"কোন ইন্টারনেট সংযোগ নেই"</string>
+    <string name="change">"পরিবর্তন"</string>
+    <string name="biometric_authentication">"বায়োমেট্রিক প্রমাণীকরণ"</string>
+    <string name="locator">"লোকেটার"</string>
+    <string name="branch_locations">"শাখা অবস্থান"</string>
+
+    <string name="operators">"অপারেটর"</string>
+    <string name="insurance">"বীমা"</string>
+    <string name="gas">"গ্যাস"</string>
+    <string name="electricity">"বিদ্যুৎ"</string>
+    <string name="enter_consumer_number">"ভোক্তা সংখ্যা লিখুন"</string>
+    <string name="consumer_number">"ভোক্তা সংখ্যা"</string>
+    <string name="enter_policy_number">"পলিসি নম্বর লিখুন"</string>
+    <string name="policy_number">"পলিসি নম্বর  "</string>
+    <string name="select_dob">"ডিওবি নির্বাচন করুন"</string>
+    <string name="request">"অনুরোধ"</string>
+    <string name="previous_request">"পূর্ববর্তী অনুরোধ"</string>
+    <string name="reschedule_loan">"পুনঃনির্ধারণ ঋণ"</string>
+    <string name="early_settlement">"প্রারম্ভিক নিষ্পত্তি"</string>
+    <string name="liability">"দায় লেটার "</string>
+    <string name="clearence_letter">"ক্লিয়ারেন্স লেটার "</string>
+    <string name="partial_settlement">"আংশিক নিষ্পত্তি"</string>
+    <string name="request_id">"অনুরোধ আইডি"</string>
+    <string name="time">"সময়"</string>
+    <string name="status">"অবস্থা"</string>
+    <string name="last_login">শেষ লগইন: \n %1s</string>
+    <string name="beneficiary_disabled">"সুবিধাভোগী নিষ্ক্রিয় করা হয়েছে, দয়া করে সক্রিয় করুন।"</string>
+    <string name="enter_PIN">"পিন লিখুন"</string>
+    <string name="international_topup">আন্তর্জাতিক পেমেন্টস</string>
+
+    <string name="passport_number_hint">"পাসপোর্ট নম্বর লিখুন"</string>
+    <string name="invalid_passport_number">"অবৈধ পাসপোর্ট নম্বর"</string>
+    <string name="password_expired">"পাসওয়ার্ড মেয়াদ উত্তীর্ণ। দয়া করে আপনার পাসওয়ার্ড আপডেট করুন।"</string>
+    <string name="confirm_request">"আপনি আপনার অনুরোধ নিশ্চিত করেছেন?"</string>
+    <string name="invalid_loan_number">"অবৈধ ঋণ সংখ্যা "</string>
+    <string name="no_requests">"কোন অনুরোধ নেই"</string>
+    <string name="download">"ডাউনলোড"</string>
+    <string name="download_started">"ডাউনলোড শুরু হয়েছে "</string>
+    <string name="download_complete">"ডাউনলোড সম্পন্ন হয়েছে "</string>
+    <string name="application_id">"আবেদন আইডি"</string>
+    <string name="app_permissions">"অ্যাপ অনুমোদন "</string>
+    <string name="write_storage_permissions">"আপনার ডিভাইসে \'PayDay FH\' টি ফাইল সংরক্ষণ করার অনুমতি দিন।. \n\n এটি সক্ষম করতে, নীচের অ্যাপ্লিকেশন সেটিংগুলিতে ক্লিক করুন এবং অনুমতি মেনুতে স্টোরেজ সক্রিয় করুন।"
+    </string>
+    <string name="camera_permission_title">ক্যামেরা অনুমতি</string>
+    <string name="camera_permission_description"> ক্যামেরা অ্যাক্সেস নিষিদ্ধ করা হয়েছে।
+        \n\n সক্ষম করতে নীচে ক্লিক \'অ্যাপ সেটিংস\' ক্লিক করুন এবং অনুমতি মেনুতে \'ক্যামেরা \' সক্রিয় করুন।</string>
+    <string name="not_now">"এখন না"</string>
+    <string name="app_settings">"অ্যাপ সেটিংস"</string>
+    <string name="card_blocked">"আপনার কার্ডটি ব্লক করা হয়েছে।"</string>
+    <string name="short_code">"শর্ট কোড"</string>
+    <string name="for_payday_card">For PayDay Card:</string>
+    <string name="sms_banking">"এসএমএস ব্যাংকিং"</string>
+    <string name="call">"কল"</string>
+    <string name="tenure_in_years">"ভোগদখল  (বছর)"</string>
+    <string name="tenure">"ভোগদখল"</string>
+    <string name="interest_rates">সুদের হার (% PA)</string>
+    <string name="get_emi_details">"ইএমআই বিস্তারিত পান"</string>
+    <string name="total_payable_amount">"মোট প্রদেয় পরিমাণ"</string>
+    <string name="interest_amount">"সুদের পরিমাণ"</string>
+    <string name="principal_amount">"মৌলিক পরিমাণ"</string>
+    <string name="calculate_again">"আবার হিসাব করুন"</string>
+    <string name="loan_calculator_label">"ঋণ ক্যালকুলেটর"</string>
+    <string name="please_select_service">"দয়া করে একটি সেবা নির্বাচন করুন"</string>
+    <string name="please_select_plan">"দয়া করে একটি পরিকল্পনা নির্বাচন করুন"</string>
+    <string name="number_format_error">"নোট: বিন্যাস +971–5xxxxxxxx হতে হবে"</string>
+    <string name="chars_counter">0/255</string>
+    <string name="INR">INR</string>
+    <string name="pay">"পরিশোধ "</string>
+    <string name="fine_details">"জরিমানা বিবরণ"</string>
+    <string name="search">"অনুসন্ধান"</string>
+    <string name="no_countries_found">"কোন দেশ খুঁজে পাওয়া যায় নি"</string>
+    <string name="outstanding_amount">"বাকির পরিমাণ"</string>
+    <string name="loan_terms_conditions">"আমি পেড ডে ঋণের জন্য ফাইন্যান্স হাউজে আবেদন করি এবং এর জন্য আমি আমার ইতিহাদ ক্রেডিট ব্যুরো সহ ফিন্যান্স হাউসকে আমার ক্রেডিট এবং আর্থিক তথ্য অ্যাক্সেস করার অনুমতি প্রদান করি। "</string>
+    <string name="apply_loan_otp_instructions">"ওটিপি প্রবেশ করে ঋণ বুকিং নিশ্চিত করার পরে সঠিক ঋণের বিবরণ ইমেল / এসএমএসের মাধ্যমে পাঠানো হবে"</string>
+
+    <string name="loan_customer_warning">"দুঃখিত আপনি \nঅনুমোদিত নন। পে ডে কার্ডের জন্য নিয়োগকর্তার সাথে যোগাযোগ করুন।"</string>
+    <string name="paid_on">পরিশোধিত %1s</string>
+
+    <string name="sms_code_msg">প্রয়োজনীয় তথ্যের জন্য কেবল \"শর্ট কোড \" নির্বাচন করুন এবং ফর্ম্যাটে 2326 নম্বরে একটি এসএমএস পাঠান: [শর্ট কোড] [স্পেস] [কার্ড নম্বরটির শেষ 6 টি সংখ্যা] \n \n যেমন: এমআইএন 123456</string>
+    <string name="uae_toll_free">"সংযুক্ত আরব আমিরাত টোল মুক্ত :" </string>
+    <string name="tel">"টেল:" </string>
+    <string name="fax">"ফ্যাক্স:" </string>
+    <string name="email">"ইমেইল:" </string>
+    <string name="atm_locations">"এটিএম অবস্থান"</string>
+    <string name="account_no_nine">"দয়া করে একটি 9-সংখ্যা বিশিষ্ট অ্যাকাউন্ট নম্বর লিখুন "</string>
+    <string name="long_account_no">"দয়া করে একটি 12-সংখ্যা বিশিষ্ট অ্যাকাউন্ট নম্বর লিখুন "</string>
+    <string name="transfer_amount">"স্থানান্তর পরিমাণ"</string>
+    <string name="loan_customer">"ঋণ গ্রাহক"</string>
+    <string name="payday_customer">"পে ডে গ্রাহক"</string>
+    <string name="converted_payable_amount">"রূপান্তরিত প্রদেয় পরিমাণ "</string>
+    <string name="book">"বই"</string>
+    <string name="proceed">"এগিয়ে যান"</string>
+    <string name="decline">"হ্রাস "</string>
+    <string name="du_prefix_no">+971-</string>
+    <string name="please_select_bank">"দয়া করে ব্যাংক নির্বাচন করুন"</string>
+    <string name="iban_number">"আইবিএনএন নাম্বার"</string>
+    <string name="transaction_history_2">"লেনদেন এবং \n ইতিহাস"</string>
+    <string name="mobile_format">"মোবাইল ফরম্যাট অবশ্যই ০৫****হওয়া"</string>
+    <string name="months_valued">"%1s মাস ভ্যালু "</string>
+    <string name="delete_warning">আপনি কি এই সুবিধাভোগী মোছার বিষয়ে নিশ্চিত?</string>
+    <string name="enable_warning">আপনি কি এই সুবিধাভোগী সক্ষম করতে নিশ্চিত?</string>
+    <string name="enable">"সক্ষম করুন "</string>
+    <string name="disable">"অক্ষম করুন "</string>
+    <string name="total_amount">সর্বমোট পরিমাণ</string>
+    <string name="description">বিবরণ</string>
+    <string name="charges">চার্জ</string>
+    <string name="vat">"ভ্যাট"</string>
+    <string name="campaign_management">"প্রচারাভিযান পরিচালন "</string>
+    <string name="snooze">তন্দ্রা</string>
+    <string name="disable_warning">আপনি কি এই সুবিধাভোগী অক্ষম করার বিষয়ে নিশ্চিত?</string>
+    <string name="suggestions_complaints">"পরামর্শ এবং অভিযোগ"</string>
+    <string name="no_messages_warning">"কোন বার্তা বা অভিযোগ সচরাচর নয় "</string>
+    <string name="add_to_beneficiary">"সুবিধাভোগী যোগ করুন"</string>
+    <string name="passport_number">"পাসপোর্ট নাম্বার"</string>
+    <string name="create_dispute">"ডিসপুট তৈরি করুন "</string>
+    <string name="reference_no">"রেফারেন্স নং"</string>
+    <string name="transaction_amount">লেনদেনের পরিমাণ</string>
+    <string name="merchant_name">ব্যবসায়ীর নাম</string>
+    <string name="transaction_date">লেনদেন তারিখ</string>
+    <string name="name_should_not_less_than_3">"নাম ৩ সংখ্যার এর কম হওয়া উচিৎ নয় "</string>
+    <string name="next_installment_date">পরবর্তী কিস্তির তারিখ</string>
+    <string name="add_as_beneficiary">"সুবিধাভোগী হিসেবে যোগ করুন"</string>
+    <string name="action_settings">"ক্রিয়া সেটিংস"</string>
+    <string name="upload_ticket">"টিকিট আপলোড করুন"</string>
+    <string name="please_select">"অনুগ্রহ করে নির্বাচন করুন"</string>
+    <string name="change_pin">"পিন পরিবর্তন করুন"</string>
+    <string name="loan_summary">"ঋণ সারসংক্ষেপ"</string>
+    <string name="scan">স্ক্যান</string>
+    <string name="scan_emirates_id">"আমিরাতি আইডি স্ক্যান করুন "</string>
+
+    <string name="uae_mobile_length">"দয়া করে ৯ সংখ্যার নাম্বার দিন "</string>
+    <string name="terms_conditions_error_2">"দয়া করে শর্তাদি গ্রহণ করুন "</string>
+    <string name="uae_mobile_format">"মোবাইল ফরম্যাট +৯৭১****হওয়া উচিৎ "</string>
+    <string name="credit_card_transfer">"পে ডে\n ক্রেডিট কার্ড "</string>
+    <string name="payday_to_credit_1">"পে ডে থেকে ক্রেডিট কার্ড "</string>
+    <string name="enter_emirates_id">"আমিরাতি আইডি লিখুন "</string>
+    <string name="enter_emirates_id_payments">"আমিরাতি আইডি লিখুন "</string>
+    <string name="beneficiaries">"সুবিধাভোগী"</string>
+    <string name="invalid_beneficiary">"অবৈধ সুবিধাভোগী"</string>
+    <string name="pvt_number">"পিভিটি নাম্বার "</string>
+    <string name="not_enough_balance">"যথেষ্ট পরিমাণ ব্যালেন্স নেই "</string>
+    <string name="fine_amount">"জরিমানা পরিমাণ"</string>
+    <string name="enter_amount_format">"প্রবেশ করান %1s"</string>
+
+    <string name="card_status">"আপনার কার্ড %1s"</string>
+    <string name="card_status_stoplist">"আপনার কার্ড আছে %1s "</string>
+    <string name="please_enter_pvt_no">"দয়া করে পিভিটি নাম্বার প্রবেশ করান "</string>
+    <string name="invalid_pvt_no">"দয়া করে বৈধ পিভিটি প্রবেশ করান "</string>
+    <string name="no_internet_connectivity">"ইন্টারনেট সংযোগটি অফলাইন বলে মনে হচ্ছে।"</string>
+    <string name="retry">"পুনরায় চেষ্টা করা"</string>
+    <string name="select_type">"প্রকার নির্বাচন করুন"</string>
+    <string name="enter_person_id">"দয়া করে ব্যক্তির আইডি লিখুন "</string>
+    <string name="empty_person_id">"শূন্য ব্যক্তি আইডি "</string>
+    <string name="inValid_person_id">"অবৈধ ব্যক্তি আইডি"</string>
+    <string name="select_language">"ভাষা নির্বাচন কর"</string>
+    <string name="please_select_language">"দয়া করে ভাষা নির্বাচন করুন "</string>
+    <string name="person_id">"ব্যক্তি আইডি "</string>
+    <string name="placeholder" translatable="false">xxxxxxxxxxxxxxx</string>
+    <string name="uea_plus_country_dash">+971-</string>
+    <string name="please_select_type">"দয়া করে প্রকার নির্বাচন করুন "</string>
+    <string name="delele_beneficiary_confirmation">"আপনি কি নিশ্চিত \"%1s\" সুবিধাভোগী মুছবেন?"</string>
+    <string name="enable_beneficiary_confirmation">"আপনি কি %1s \"%2s\" সুবিধাভোগীর বিষয়ে নিশ্চিত?"</string>
+    <string name="delete">"মুছে ফেলুন "</string>
+    <string name="update_beneficiary">"সুবিধাভোগী হালনাগাদ করুন "</string>
+    <string name="maturity_date">"পরিপক্কতার তারিখ"</string>
+    <string name="explore">"অনুসন্ধান করুন "</string>
+    <string name="popular_services">"জনপ্রিয় সেবা সমূহ "</string>
+    <string name="apply_for_deferment">"মূলতবির জন্য আবেদন করুন "</string>
+    <string name="transaction_type">"লেনদেনের প্রকার "</string>
+    <string name="edit">সম্পাদন করা</string>
+    <string name="invalid_amount_ranged">দয়া করে %1s AED এবং %2s AED এর মধ্যে একটি পরিমাণ প্রবেশ করুন</string>
+    <string name="invalid_float_amount_ranged">দয়া করে %1s AED এবং %2s AED এর মধ্যে একটি পরিমাণ প্রবেশ করুন</string>
+    <string name="invalid_amount_ranged_with_currency">দয়া করে %1s %2s এবং %3s %4s এর মধ্যে একটি পরিমাণ প্রবেশ করুন</string>
+    <string name="enter_old_pin">বর্তমান পিন প্রবেশ করান</string>
+    <string name="internal_server_error">অভ্যন্তরীণ সার্ভার ত্রুটি</string>
+    <string name="camera">ক্যামেরা</string>
+    <string name="gallery">দরদালান</string>
+
+    <string name="phone_permission_title">Call Permission</string>
+    <string name="phone_permission_description">কল অ্যাক্সেস নিষিদ্ধ করা হয়েছে.
+        \n\nনীচের অ্যাপ্লিকেশন সেটিংস ক্লিক করতে সক্ষম করুন এবং অনুমতি মেনুতে ফোন সক্রিয় করুন।
+    </string>
+    <string name="browse">ব্রাউজ করুন</string>
+
+    <string name="credit">ধার</string>
+    <string name="international">আন্তর্জাতিক</string>
+    <string name="data">উপাত্ত</string>
+    <string name="wasel_renewal">ওয়াসেল নবায়ন</string>
+    <string name="wasel_recharge">ওয়াসেল রিচার্জ</string>
+
+    <string-array name="purpose_of_payment">
+        <item>Education Support</item>
+        <item>Family Support</item>
+        <item>Student Support</item>
+        <item>Education Support</item>
+        <item>Student Support</item>
+        <item>Education Support</item>
+        <item>Family Support</item>
+    </string-array>
+
+    <string-array name="aadc_service_type">
+        <item>""</item>
+        <item>একাউন্ট নাম্বার</item>
+        <item>এমিরাটস আইডি</item>
+        <item>ব্যক্তিগত আইডি</item>
+        <item>মোবাইল নাম্বার</item>
+    </string-array>
+
+    <string-array name="loan_services_topup">
+        <!--<item>ঋণ টপআপের জন্য আবেদন</item>-->
+        <item>পেমেন্ট হলিডে</item>
+        <item>পুনরায় সঞ্চালনের জন্য নির্ধারণ</item>
+        <item>ছাড়পত্র</item>
+        <item>প্রাথমিক নিষ্পত্তি</item>
+        <item>আংশিক নিষ্পত্তি</item>
+        <item>দায়বদ্ধতা পত্র</item>
+        <!--<item> </item>-->
+    </string-array>
+
+    <string-array name="loan_services">
+        <!--<item>Mag-aplikasyonly para sa Pautang </item>-->
+        <item>পেমেন্ট হলিডে</item>
+        <item>পুনরায় নির্ধারিত ঋণ</item>
+        <item>ছাড়পত্র</item>
+        <item>প্রাথমিক নিষ্পত্তি</item>
+        <item>আংশিক নিষ্পত্তি</item>
+        <item>দায়বদ্ধতা পত্র</item>
+        <!--<item> </item>-->
+    </string-array>
+
+    <string-array name="sms_codes">
+        <item>BAL</item>
+        <item>LTA</item>
+        <item>SAL</item>
+        <item>ACT</item>
+    </string-array>
+
+    <string-array name="sms_description">
+        <item>আপনার কার্ডের সচরাচর ব্যালেন্স</item>
+        <item>আপনার কার্ডে সর্বশেষ লেনদেন মোড</item>
+        <item>সর্বশেষ বেতন ক্রেডিট</item>
+        <item>অ্যাক্টিভেশন</item>
+    </string-array>
+
+    <string-array name="snooze">
+        <item>১ দিন</item>
+        <item>৩ দিন</item>
+        <item>৫ দিন</item>
+        <item>১০ দিন</item>
+    </string-array>
+
+    <string-array name="registration_steps">
+        <item>- এমিরাটস আইডির ছবি তুলুন এবং যাচাই করুন</item>
+        <item>- পেডে কার্ড স্ক্যান এবং যাচাই করুন</item>
+        <item>- মোবাইল নম্বর যাচাই করুন</item>
+        <item>- লগইন বিবরণ তৈরি করুন</item>
+        <item>- বায়োমেট্রিক প্রমাণীকরণ যুক্ত করুন (ঐচ্ছিক)</item>
+    </string-array>
+
+    <string-array name="service_request_array">
+        <item>সক্রিয় কার্ড</item>
+        <item>কার্ড লেনদেন বিরোধ</item>
+        <item>পিনটি পুনরায় সেট করুন</item>
+        <item>ব্লক কার্ড</item>
+    </string-array>
+    <string-array name="money_transfer_options">
+        <item>ইন্টেল অর্থ\n ট্র্যান্সফার </item>
+        <item>Payday\nto Payday</item>
+        <item>Local\nMoney Transfer</item>
+        <item>Payday \nto Credit Card</item>
+        <item>Transaction\nHistory</item>
+    </string-array>
+
+    <string name="loan_topup_amount">সর্বোচ্চ পরিমাণ</string>
+    <string name="loan_topup_emi">সর্বোচ্চ ইএমআই পরিমাণ </string>
+    <string name="new_tenure">নতুন মেয়াদ</string>
+    <string name="loan_topup_note">আপনি একবার সর্বোচ্চ ঋণ বুকিং নিশ্চিত করার পর দয়াকরে নতুন মোট প্রতিফলিত আপডেট ঋণের বিস্তারিত বিবরণের স্ক্রিন দেখুন  </string>
+    <string name="track_trans_status">ট্রানজেকশন স্থিতি অনুসরণ করা</string>
+    <string name="tap_on_the_transaction_to_initiate_track_request">ট্র্যাকের আবেদন শুরু করতে ট্রানজেকশনের বাটনে চাপুন</string>
+    <string name="send_money">অর্থ প্রেরণ</string>
+    <string name="rate_calculator">ক্যালকুলেটর হার </string>
+    <string name="select_beneficiary">সুবিধাভোগী নির্বাচন করুন </string>
+    <string name="transaction_details">লেনদেনের বিবরণ</string>
+    <string name="uae_exchange_transfer_success">আপনার আবেদন সফলভাবে গৃহীত হয়েছে এবং আপনার ট্রানজেকশন আইডি %1s আপনার লেনদেন এক্সচেঞ্জ হাউসের কর্তৃক ২৪-৪৮ কর্মঘন্টার ভিতরে কার্যকর হবে.</string>
+    <string name="uae_exchange_terms_conditions_link">আপনাকে বাহ্যিক ব্রাউজারে পুনঃনির্দেশিত করা হবে । আপনি কি নিশ্চিত যে, আপনি চালিয়ে চালিয়ে যেতে চান ?</string>
+    <string name="status_colon">বর্ণনা:</string>
+    <string name="empty_emirate_card_number">দয়াকরে কার্ড নাম্বার প্রবেশ করান</string>
+    <string name="invalid_emirate_card_number">মেয়াদোত্তীর্ণ আমিরাত কার্ড নাম্বার</string>
+    <string name="international_money_transfer">ইন্টেল অর্থ ট্র্যান্সফার</string>
+    <string name="locate_exchange">অফিসের অবস্থান </string>
+    <string name="register_intl_beneficiary_instruction">একজন সুবিধাভোগী নিবন্দন করতে দয়াকরে নিকটবর্তী এক্সচেঞ্জে \nঅফিসে সাক্ষাৎ করুন</string>
+    <string name="intl_money_transfer">ইন্টেল অর্থ ট্র্যান্সফার</string>
+    <string name="enter_promo_code">ইন্টেল প্রোমো কোড</string>
+    <string name="exchange_rate_inclusive">বিনিময় হার অন্তর্ভুক্তিকরণ</string>
+    <string name="select_card">কার্ড নির্বাচন করুন</string>
+    <string name="account_balance">হিসাবের পরিমাণ</string>
+    <string name="commission">কমিশন</string>
+    <string name="exchange_house_commision">এক্সচেঞ্জ হাউসের চার্জ</string>
+    <string name="Purpose">উদ্দেশ্য</string>
+    <string name="promo_code">প্রোমো কোড</string>
+    <string name="i_accept_terms_and_conditions">আমি যাবতীয় শর্তাবলী গ্রহণ করি</string>
+    <string name="recurring_payment">পূণরায় প্রদান করা</string>
+    <string name="exchange_house_reference_no">এক্সচেঞ্জ হাউস রেফারেন্স নাম্বার</string>
+    <string name="fh_reference_no">এফএইচ রেফারেন্স নাম্বার</string>
+    <string name="recurring_amount">পুনরাবৃত্ত পরিমাণ</string>
+    <string name="you_pay">আপনি পে করেন</string>
+    <string name="purpose">উদ্দেশ্য</string>
+    <string name="recurring_period">পুনরাবৃত্ত পিরিয়ড</string>
+    <string name="recurring_frequency">পুনরায় ফ্রিকোয়েন্সি</string>
+    <string name="recurr_on_holidays">ছুটির দিনের পুনরাবৃত্তি</string>
+    <string name="charges_of_exchange_house">এক্সচেঞ্জ হাউসের চার্জ</string>
+    <string name="total_amount_payable">প্রদেয় মোট পরিমাণ</string>
+    <string name="they_get">তারা পায়</string>
+    <string name="you_send">আপনি পাঠান</string>
+    <string name="transaction_options">ট্রাননজেকশন অপশন</string>
+    <string name="make_payment">অর্থ প্রদান করুন</string>
+    <string name="track_request_initiated_successfully">ট্র্যাক আবেধন সফলভাবে শুরু হয়েছে </string>
+    <string name="view_details">বিস্তারিত দেখুন</string>
+    <string name="search_currency">মুদ্রা অনুসন্ধান</string>
+    <string name="cancel_recurring_payment">আপনি কি নিশ্চিত যে, আপনি পুনরাবৃত্ত অর্থ প্রদান বাতিল করতে চান?</string>
+    <string name="yes">হ্যাঁ</string>
+    <string name="exchange_rate_label">*বিনিময় হার: %1s %2s = %3s %4s</string>
+    <string name="error_amount">একটা পরিমাণ উল্লেখ করুন</string>
+    <string name="invalid_purpose">মেয়াদোত্তীর্ণ উদ্দেশ্য</string>
+    <string name="fetching_account_details">আমরা যখন আপনার একাউন্টের বিস্তারিত তথ্য সংগ্রহ করবো তখন দয়া করে অপেক্ষা করুন</string>
+    <string name="fetching_transaction_details">ট্রানজেকশনের বিস্তারিত তথ্য সংগ্রহ করণ</string>
+    <string name="fetching_transactions">ট্রানজেকশন সংগ্রহ করা</string>
+    <string name="my_beneficiaries">আমার সুবিধাভোগীরা</string>
+    <string name="payout_amt">%1s %2s</string>
+    <string name="load_more">আরো লোড করণ</string>
+    <string name="enter_emirates_card_number">নয় ডিজিটের আমিরাত কার্ড নাম্বার প্রবেশ লেখুন</string>
+    <string name="invalid_promo_code">মেয়াদোত্তীর্ণ প্রোমো কোড</string>
+    <string name="not_valid_emirates">দুঃখিত আপনার আমিরাত আইডি ইউএই এক্সচেইঞ্জে নিবন্ধিত নয় । নিবন্ধনের জন্য অনুগ্রহপূর্বক নিকটবর্তী ইউএই এক্সচেঞ্জ অফিসে সাক্ষাৎ করুন</string>
+    <string name="added_to_favourites">ফেভারিট হিসেবে ট্রানজেকশন যুক্ত করা হয়েছে</string>
+    <string name="finance_house">ফিনান্স হাউস</string>
+    <string name="uae_exchange">ইউএই এক্সচেঞ্জ</string>
+    <string name="update_exchange_email">চালু করার আগে অনুগ্রহপূর্বক ইমেল আপডেট করুন</string>
+    <string name="state">রাষ্ট্র</string>
+    <string name="no_location_availible">শাখা উপলব্ধ নেই</string>
+    <string name="available_balance_after">পরবর্তি পর্যাপ্ত ব্যাল্যান্স</string>
+    <string name="locate_uae_exchange">ইউএই এক্সচেঞ্জের অবস্থান</string>
+    <string name="locate_al_ansari">আল আনসারী অবস্থান নির্ধারণ করুন</string>
+    <string name="locating_your_device">আপনার ডিভাইসের অবস্থান নির্ধারণ করুন</string>
+    <string name="no_branches_in_area">এ এলাকায় কোন শাখা নেই</string>
+    <string name="location_permission_title">অনুমতি প্রদানের লোকেশন</string>
+    <string name="location_permission_description">লোকেশন এক্সেস নিষিদ্ধ করা হয়েছে । সক্রিয় করার জন্য নিচের "এপ সেটিংস" এ ক্লিক করুন । অনুমতি পত্রের নিচে লোকেশন দেয়া আছে.
+    </string>
+    <string name="_continue">এগিয়ে যান</string>
+
+    <string name="total">Total</string>
+    <string name="through">Through</string>
+    <string name="other_beneficiaries">Other Beneficiaries</string>
+    <string name="reference_hash">Reference #</string>
+
+    <string-array name="intl_remittance">
+        <item>হিসেবের হার</item>
+        <item>অর্থ ট্র্যান্সফার</item>
+        <item>আমার সুবিধাভোগীরা</item>
+        <item>লেনদেন ট্র্যাক/স্থিতি করণ</item>
+        <item>লেনদেনের হিস্টোরি বা বিবরণী</item>
+        <item>এক্সচেইঞ্জ বা অফিসের লোকেশন</item>
+    </string-array>
+
+    <string-array name="intl_locator_options">
+        <!--<item>ইউএই এক্সচেইঞ্জ</item>-->
+        <item>Al Fardan Exchange</item>
+    </string-array>
+    <string-array name="intl_locator_option">
+        <item>ইউএই এক্সচেইঞ্জ</item>
+        <item>Al Fardan Exchange</item>
+    </string-array>
+
+    <string-array name="imt_transfer_purpose">
+        <item>পরিবার রক্ষণাবেক্ষণ/সংরক্ষণ</item>
+    </string-array>
+
+    <string-array name="transaction_options">
+        <item>লেনদেনের বিস্তারিত বিবরণ দেখুন</item>
+        <item>ফেভারিটে যুক্ত করুন</item>
+        <item>পুনঃ লেনদেন</item>
+        <item>অর্থের পরিমাণ পুনরায় পাঠান </item>
+        <item>ডাউনলোড করণ</item>
+        <item>লেনদেন শেয়ার করণ</item>
+    </string-array>
+
+    <string-array name="transaction_options2">
+        <item>লেনদেনের বিস্তারিত বিবরণ দেখুন</item>
+        <item>ফেভারিট থেকে মুছে ফেলুন</item>
+        <item>পুনঃ লেনদেন</item>
+        <item>অর্থের পরিমাণ পুনরায় পাঠান </item>
+        <item>ডাউনলোড করণ</item>
+        <item>লেনদেন শেয়ার করণ</item>
+    </string-array>
+
+    <string-array name="track_transaction">
+        <item>ব্যাংক ট্র্যান্সফার </item>
+        <!--<item>নগদ পরিশোধ </item>-->
+    </string-array>
+
+    <string-array name="intl_transfer_tabs">
+        <item>ব্যাংক ট্র্যান্সফার </item>
+        <!--<item>নগদ ট্র্যান্সফার</item>-->
+    </string-array>
+
+    <string-array name="intl_transaction_tabs">
+        <item>ফেভারিটস</item>
+        <item>সকল ট্রানজেকশন</item>
+    </string-array>
+
+    <string-array name="weekly_timing">
+        <item>রবিবার %1s</item>
+        <item>সোমবার %1s</item>
+        <item>মঙ্গলবার %1s</item>
+        <item>বুধবার %1s</item>
+        <item>বৃহস্পতিবার %1s</item>
+        <item>শুক্রবার %1s</item>
+        <item>শনিবার %1s</item>
+    </string-array>
+</resources>

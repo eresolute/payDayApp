@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_bg_blue"
+    android:orientation="vertical"
+    tools:context=".views2.registration.RegisterActivity">
+
+    <include
+        android:id="@id/i_toolbar"
+        layout="@layout/toolbar" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/card_radius">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_card_name"
+                    style="@style/AppTheme.Text.Small.Bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dimen_8"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor" />
+
+                <TextView
+                    android:id="@+id/tv_card_number"
+                    style="@style/AppTheme.Text.Small.Bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_card_balance"
+                style="@style/AppTheme.Text.Small.Bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_300"
+                android:padding="@dimen/dimen_8"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/view_pager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+            <com.fh.payday.utilities.NonSwipeableViewPager
+                android:id="@id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_card_balance" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <include
+        android:id="@id/i_bottombar"
+        layout="@layout/bottombar_dashboard" />
+
+</LinearLayout>

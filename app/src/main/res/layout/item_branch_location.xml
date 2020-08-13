@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_grey"
+    android:paddingTop="@dimen/dimen_8"
+    android:paddingBottom="@dimen/dimen_8"
+    android:paddingStart="@dimen/dimen_4"
+    android:paddingEnd="@dimen/dimen_4"
+    android:textDirection="locale"
+    tools:ignore="UnusedAttribute">
+
+    <ImageView
+        android:id="@+id/iv_locator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/dimen_8"
+        android:paddingStart="@dimen/dimen_24"
+        android:paddingLeft="@dimen/dimen_24"
+        android:paddingEnd="@dimen/dimen_24"
+        android:paddingRight="@dimen/dimen_24"
+        android:src="@drawable/ic_bank_small"
+        app:layout_constraintBottom_toBottomOf="@id/tv_timing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_address" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        style="@style/AppTheme.Text.Body2.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@+id/tv_country"
+        app:layout_constraintEnd_toStartOf="@+id/iv_plus"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/iv_locator"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_country"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/textColor"
+        app:layout_constraintBottom_toTopOf="@+id/tv_timing"
+        app:layout_constraintEnd_toStartOf="@+id/iv_plus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/iv_locator"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address" />
+
+    <TextView
+        android:id="@+id/tv_timing"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/textColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/iv_plus"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/iv_locator"
+        app:layout_constraintTop_toBottomOf="@+id/tv_country" />
+
+    <ImageView
+        android:id="@+id/iv_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/dimen_8"
+        android:src="@drawable/ic_plus"
+        app:layout_constraintBottom_toBottomOf="@id/tv_timing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_country"
+        app:layout_constraintTop_toTopOf="@+id/tv_address" />
+
+</android.support.constraint.ConstraintLayout>

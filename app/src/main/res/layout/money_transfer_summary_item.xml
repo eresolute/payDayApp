@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="transferSummary"
+            type="com.fh.payday.datasource.models.moneytransfer.ui.TransferSummary" />
+    </data>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_8">
+
+        <TextView
+            android:id="@+id/tv_item"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa"
+            android:hint="Yawar"
+            android:paddingEnd="@dimen/dimen_8"
+            android:paddingRight="@dimen/dimen_8"
+            android:text="@{transferSummary.item}"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toBottomOf="@id/tv_description"
+            app:layout_constraintEnd_toStartOf="@id/barrier"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_description" />
+        <View
+            android:id="@+id/barrier"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/tv_item"
+            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintTop_toBottomOf="@id/tv_item"
+            app:layout_constraintStart_toStartOf="@id/tv_item"/>
+        <TextView
+            android:id="@+id/tv_description"
+            style="@style/AppTheme.Text.Small.Bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="@{transferSummary.description}"
+            android:hint="123"
+            android:paddingLeft="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:paddingRight="@dimen/dimen_8"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toBottomOf="@id/tv_item"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/barrier"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

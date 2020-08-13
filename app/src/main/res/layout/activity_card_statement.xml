@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_bg_blue"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/i_toolbar"
+        layout="@layout/toolbar" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/card_radius">
+
+        <LinearLayout
+            android:id="@+id/layout_edit_beneficiary_options"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_monthly"
+                style="@style/AppTheme.Text.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@drawable/bg_grey_12"
+                android:drawableStart="@drawable/ic_card_statement_sm"
+                android:drawableLeft="@drawable/ic_card_statement_sm"
+                android:drawablePadding="@dimen/dimen_8"
+                android:fontFamily="@font/comfortaa_bold"
+                android:padding="@dimen/dimen_8"
+                android:text="@string/montly"
+                android:visibility="gone"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:id="@+id/tv_mini_statement"
+                style="@style/AppTheme.Text.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@drawable/bg_grey_12"
+                android:drawableStart="@drawable/ic_mini_statement"
+                android:drawableLeft="@drawable/ic_mini_statement"
+                android:drawablePadding="@dimen/dimen_8"
+                android:fontFamily="@font/comfortaa_bold"
+                android:padding="@dimen/dimen_8"
+                android:text="@string/mini_statement"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:id="@+id/tv_email_subscription"
+                style="@style/AppTheme.Text.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@drawable/bg_grey_12"
+                android:drawableStart="@drawable/ic_email_subscription_blue"
+                android:drawableLeft="@drawable/ic_email_subscription_blue"
+                android:drawablePadding="@dimen/dimen_8"
+                android:fontFamily="@font/comfortaa_bold"
+                android:padding="@dimen/dimen_8"
+                android:visibility="gone"
+                android:text="@string/email_subscription"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColor" />
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <include
+        android:id="@id/i_bottombar"
+        layout="@layout/bottombar_dashboard" />
+
+</LinearLayout>

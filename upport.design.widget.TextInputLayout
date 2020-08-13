@@ -1,0 +1,446 @@
+[33mcommit a8975999aa7899c75a132bcdaa37379d8950df87[m[33m ([m[1;36mHEAD -> [m[1;32mafd-autocomplete[m[33m, [m[1;31morigin/afd-autocomplete[m[33m)[m
+Author: Rahul <ydvrahul8@gmail.com>
+Date:   Tue Jun 9 18:29:31 2020 +0530
+
+    custom autocompletetext
+
+[33mcommit bcac23e9e813a60e2c8bbac93f9cddef93f3564a[m
+Merge: 55420b65d 1e40204cc
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Mon Jun 8 18:18:13 2020 +0530
+
+    Merge branch 'al-fardaan' into afd-autocomplete
+
+[33mcommit 1e40204cc9ad547326bb7c8ebdfcc699948294f2[m[33m ([m[1;31morigin/al-fardaan[m[33m, [m[1;32mal-fardaan[m[33m)[m
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Mon Jun 8 18:13:51 2020 +0530
+
+    removed top margin and padding top for send to field in BT
+
+[33mcommit 88b38b21d7161efc6b6b4caf87accda812f0268a[m
+Merge: 0128b7778 eed1b3d4b
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Mon Jun 8 17:46:00 2020 +0530
+
+    Merge remote-tracking branch 'origin/al-fardaan' into al-fardaan
+
+[33mcommit 0128b777839fe5e96a02261e42065029f2444824[m
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Mon Jun 8 17:44:46 2020 +0530
+
+    Label added for payment mode in Repeat Transaction : Issue fixed
+
+[33mcommit eed1b3d4b7174e1a3b1fea2632908ef2f0379fa7[m
+Merge: 26f4d94f3 e964c9ae8
+Author: Rahul <ydvrahul8@gmail.com>
+Date:   Mon Jun 8 17:34:16 2020 +0530
+
+    Merge branch 'al-fardaan' of https://github.com/eresolute/payDay into al-fardaan
+
+[33mcommit 26f4d94f3107961638b4b2f325abb07402226445[m
+Author: Rahul <ydvrahul8@gmail.com>
+Date:   Mon Jun 8 17:33:54 2020 +0530
+
+    Pickup location popup fixed
+
+[33mcommit e964c9ae8929faef69880012e386c8ff62970692[m
+Merge: 3d04d2e9f d2afbdab1
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Mon Jun 8 16:59:52 2020 +0530
+
+    Merge remote-tracking branch 'origin/al-fardaan' into al-fardaan
+
+[33mcommit 3d04d2e9f8b0544daa0dd899737e6ee1070ff176[m
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Mon Jun 8 16:59:12 2020 +0530
+
+    Add Beneficiary button hide in rate calculator
+
+[33mcommit 55420b65d3106551767ed3bebe848b1ceb853c08[m
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Mon Jun 8 16:56:30 2020 +0530
+
+    Add Beneficiary button hide in rate calculator
+
+[33mcommit d2afbdab1f3b7c6d12e4a289de5e942d364fd220[m
+Merge: 9629905b7 d8ffa8f71
+Author: Rahul <ydvrahul8@gmail.com>
+Date:   Mon Jun 8 16:03:40 2020 +0530
+
+    Merge branch 'al-fardaan' of https://github.com/eresolute/payDay into al-fardaan
+
+[33mcommit 9629905b726f8bc37ca3cabbbfeedb2b0258fff8[m
+Author: Rahul <ydvrahul8@gmail.com>
+Date:   Mon Jun 8 16:03:07 2020 +0530
+
+    address error message issue fixed
+
+[33mcommit 38273d5a8212f506764eccb911be44496f5e2ca2[m
+Merge: 576758308 d8ffa8f71
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Mon Jun 8 14:10:38 2020 +0530
+
+    Merge branch 'al-fardaan' into afd-autocomplete
+
+[33mcommit d8ffa8f718443502b08e1b5abef745430f9e6dbc[m
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Mon Jun 8 14:09:16 2020 +0530
+
+    Add Beneficiary button position issue fixed
+
+[33mcommit cee341b9374737eba6a4d86c7e342738b5c6d436[m
+Author: Rahul <ydvrahul8@gmail.com>
+Date:   Mon Jun 8 13:15:36 2020 +0530
+
+    country code issue resolved
+
+[33mcommit ece33b776ebbd6d0a5c35709acec39c59418cf22[m
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Mon Jun 8 12:25:16 2020 +0530
+
+    Removed ok button from favourite dialog, and handled "Handler function to dismiss the dialog"
+
+[33mcommit 576758308c41000f9f84526ab4385513341b197c[m
+Merge: 94ad5951b 128e960fa
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Mon Jun 8 11:41:55 2020 +0530
+
+    Merged al-fardaan branch
+    Merged File: BeneficiaryBankDetailsFragment.kt
+
+[33mcommit 128e960fa6787d9c1e72a903bcf9a92c42506081[m
+Merge: 0598359f2 20ff2440c
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Mon Jun 8 11:35:32 2020 +0530
+
+    Merge remote-tracking branch 'origin/al-fardaan' into al-fardaan
+
+[33mcommit 0598359f24c95042e31d600a3e81b45295780f99[m
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Mon Jun 8 11:35:06 2020 +0530
+
+    State value set to "All states" if null or empty
+
+[33mcommit 20ff2440c58f27ec5a2f7f51098abb62c62125e4[m
+Author: Rahul <ydvrahul8@gmail.com>
+Date:   Mon Jun 8 10:44:52 2020 +0530
+
+    hint issue resolved
+
+[33mcommit 498cebba984818686484b5af59ad9a1221821975[m
+Author: Rahul <ydvrahul8@gmail.com>
+Date:   Sun Jun 7 20:21:27 2020 +0530
+
+    mobile no. code issue fixed
+
+[33mcommit 72692ece684b5c5c31ae522d1cdc030444b6e5ea[m
+Merge: 14bf6456a a6178a3f8
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Sun Jun 7 17:52:18 2020 +0530
+
+    Merge remote-tracking branch 'origin/al-fardaan' into al-fardaan
+
+[33mcommit 14bf6456ab78902b74f26b040d275efbc5f9bc03[m
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Sun Jun 7 17:50:36 2020 +0530
+
+    Resend Issue fixed: after resend transaction is suucessful, skips beneficiary screen when money transfer screen is redirected issue fixed
+
+[33mcommit a6178a3f8083acd4d7b5608a1ed28f40775282f6[m
+Merge: 42b577d12 a064ce5d2
+Author: Rahul <ydvrahul8@gmail.com>
+Date:   Sun Jun 7 17:30:43 2020 +0530
+
+    Merge branch 'al-fardaan' of https://github.com/eresolute/payDay into al-fardaan
+
+[33mcommit 42b577d12cd7d5f6f69285e80a507745011b7964[m
+Author: Rahul <ydvrahul8@gmail.com>
+Date:   Sun Jun 7 17:29:19 2020 +0530
+
+    Focus on Country and ifsc code issue fixed
+
+[33mcommit a064ce5d216a93f66eb454a0aa0ffae557ec8e30[m
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Sun Jun 7 16:23:40 2020 +0530
+
+    minor issue fixed: state click
+
+[33mcommit 94ad5951b298b72dedf76e627e4b5f4d5bf0030c[m
+Author: Aamer Paul <aamerpaul@gmail.com>
+Date:   Sun Jun 7 14:15:00 2020 +0530
+
+    Update - Autocomplete design on bank name
+
+[33mcommit ccd40adc1908d7e26a841308689177d77f8fa543[m
+Merge: 33292c416 20ec8e9d8
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Sun Jun 7 13:58:16 2020 +0530
+
+    Merge remote-tracking branch 'origin/al-fardaan' into al-fardaan
+
+[33mcommit 33292c4169daf537655a60bb9f51d86a8bd55ad3[m
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Sun Jun 7 13:57:45 2020 +0530
+
+    value set to default value if size is one, and design issue fixed
+
+[33mcommit 20ec8e9d87503ddf65c5341e601d23fbaa3bc760[m
+Author: Aamer Paul <aamerpaul@gmail.com>
+Date:   Sun Jun 7 12:11:21 2020 +0530
+
+    Fixed - validation issue in select pickup location
+
+[33mcommit 2ba613a70f1456ce37f5c5f226ed34ffd660c50b[m
+Merge: e6482c9d3 b1c430931
+Author: Aamer Paul <aamerpaul@gmail.com>
+Date:   Sun Jun 7 11:59:17 2020 +0530
+
+    Merge remote-tracking branch 'origin/al-fardaan' into al-fardaan
+
+[33mcommit e6482c9d318c660dfac470dc52253e879e36a272[m
+Author: Aamer Paul <aamerpaul@gmail.com>
+Date:   Sun Jun 7 11:57:17 2020 +0530
+
+    Updated - by default selected if only one bank or pickup location available
+
+[33mcommit b1c4309315be322772a15016bea6ebf5c7848b59[m
+Merge: 8cf110611 ce4f88891
+Author: Tehreem <tehreemfazili5@gmail.com>
+Date:   Sun Jun 7 11:36:29 2020 +0530
+
+    Merge branch 'al-fardaan' of https://github.com/cdabid/payDay into al-fardaan
+
+[33mcommit 8cf1106117dee535bf3f4f3eac419f33922953cb[m
+Author: Tehreem <tehreemfazili5@gmail.com>
+Date:   Sun Jun 7 11:35:39 2020 +0530
+
+     handled state city in beneficiarybankdetailsfragment
+
+[33mcommit ce4f8889113df5f6d40b419ada08285448fed9c2[m
+Author: Aamer Paul <aamerpaul@gmail.com>
+Date:   Sun Jun 7 11:04:59 2020 +0530
+
+    Fixed - hint alignment in fragment_bank_details.xml
+
+[33mcommit 8f4bfaf6ffbdc3d5fa623e9f030773b048fceda9[m
+Author: Aamer Paul <aamerpaul@gmail.com>
+Date:   Sun Jun 7 11:00:44 2020 +0530
+
+    Fixed - app crashes onClicking state with no bank selected
+
+[33mcommit f36a8d4088b6d1ff3880cbe148735751505c2af3[m
+Merge: 5ac659534 b9c5215fc
+Author: Tehreem <tehreemfazili5@gmail.com>
+Date:   Sat Jun 6 14:08:46 2020 +0530
+
+    Merge branch 'al-fardaan' of https://github.com/cdabid/payDay into al-fardaan
+
+[33mcommit 5ac6595345c771ba0947c3d57ff645c9cb573f62[m
+Author: Tehreem <tehreemfazili5@gmail.com>
+Date:   Sat Jun 6 14:08:14 2020 +0530
+
+    changed position of add beneficiary button, set state and city if size 1
+
+[33mcommit b9c5215fccfc1f8f132ab58589ce4af877033b76[m
+Author: Rahul <ydvrahul8@gmail.com>
+Date:   Thu Jun 4 19:53:20 2020 +0530
+
+    Ifsc and swift isses fixed
+
+[33mcommit 973cf56dc6fe0cb2cbb005e279d1162073797ad3[m
+Author: Rahul <ydvrahul8@gmail.com>
+Date:   Thu Jun 4 19:06:38 2020 +0530
+
+    Nationality text issue fixed
+
+[33mcommit 93e376c7a60cfac8cc68c486778b20095267877e[m
+Merge: 0e56b0003 1758a1ab5
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Thu Jun 4 12:12:04 2020 +0530
+
+    Merge remote-tracking branch 'origin/al-fardaan' into al-fardaan
+
+[33mcommit 0e56b00036ad4125f13d715f164572c1c9297654[m
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Thu Jun 4 12:11:22 2020 +0530
+
+    mobile code, nationality, flag issue handled in cash payout and bank transfer
+
+[33mcommit f8afec3e2abb9f35b6da8fcd4e169add453175c0[m
+Merge: ca2661911 1758a1ab5
+Author: Tehreem <tehreemfazili5@gmail.com>
+Date:   Thu Jun 4 12:08:28 2020 +0530
+
+    Merge branch 'al-fardaan' of https://github.com/cdabid/payDay into al-fardaan
+
+[33mcommit ca266191100c393acd16a8e821a447469715f689[m
+Author: Tehreem <tehreemfazili5@gmail.com>
+Date:   Thu Jun 4 12:07:54 2020 +0530
+
+    changed addBeneficiary button position
+
+[33mcommit 1758a1ab509fba6bfd276502496f5166aa3df847[m
+Merge: 8c0da7877 57de8f61c
+Author: Rahul <ydvrahul8@gmail.com>
+Date:   Thu Jun 4 11:28:41 2020 +0530
+
+    Merge branch 'al-fardaan' of https://github.com/eresolute/payDay into al-fardaan
+
+[33mcommit 8c0da7877f9713d1409b1d7e540bb278f37bd82e[m
+Author: Rahul <ydvrahul8@gmail.com>
+Date:   Thu Jun 4 11:28:12 2020 +0530
+
+    Hint issue fixed in add benificiary cashout
+
+[33mcommit 57de8f61c8d7b975f54f620b277c7126eab7392c[m
+Merge: c04e45635 78e6af910
+Author: yawargulzar <yawargulzar198@gmail.com>
+Date:   Thu Jun 4 10:53:15 2020 +0530
+
+    Merge branch 'al-fardaan' of https://github.com/cdabid/payDay into al-fardaan
+
+[33mcommit c04e456350ee1f5e0c91a71f02252f3250c1ef3e[m
+Author: yawargulzar <yawargulzar198@gmail.com>
+Date:   Thu Jun 4 10:52:49 2020 +0530
+
+    Issue no 7 fixed
+
+[33mcommit 78e6af9108495ebe330b799dde99d974a6555bd8[m
+Merge: 616ace78f c796dd848
+Author: Rahul <ydvrahul8@gmail.com>
+Date:   Wed Jun 3 20:29:10 2020 +0530
+
+    merging branch conflict resolved
+
+[33mcommit 616ace78fd066c99d6f098930eec99817f6baba2[m
+Author: Rahul <ydvrahul8@gmail.com>
+Date:   Wed Jun 3 20:13:54 2020 +0530
+
+    Address Line and Nationality Focus issue fixed
+
+[33mcommit c796dd8486909debffd0d0b4d39b4fcc3d195cbf[m
+Merge: b85262e31 242ae20bc
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Wed Jun 3 18:45:52 2020 +0530
+
+    Merge remote-tracking branch 'origin/al-fardaan' into al-fardaan
+
+[33mcommit b85262e313c51eea36a1a60b391ecac2c1cb8587[m
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Wed Jun 3 18:45:31 2020 +0530
+
+    null value issue fixed
+
+[33mcommit 242ae20bc661b7e02269ea4a73aff113b791f05f[m
+Merge: a9c8ccbce f4dcc0422
+Author: yawargulzar <yawargulzar198@gmail.com>
+Date:   Wed Jun 3 18:05:24 2020 +0530
+
+    Merge branch 'al-fardaan' of https://github.com/cdabid/payDay into al-fardaan
+
+[33mcommit a9c8ccbce404bd906c04e7283acdbdcbcf1e4fb2[m
+Author: yawargulzar <yawargulzar198@gmail.com>
+Date:   Wed Jun 3 18:05:05 2020 +0530
+
+    Issue number 5 fixed
+
+[33mcommit f4dcc0422be01cc9ea223feec293acac41826e50[m
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Wed Jun 3 16:43:42 2020 +0530
+
+    currency value set to default if list size is one
+
+[33mcommit c6e59966a00d038c11d0b6bbf55042eaba271bdc[m
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Wed Jun 3 15:12:10 2020 +0530
+
+    button disable in case customer is inactive
+
+[33mcommit bdae2db6bc5f6e3b84997aaa75f2c358fade270a[m
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Wed Jun 3 12:49:04 2020 +0530
+
+    payout branch address removed in branch name
+    resend transaction issue fixed : added payment mode
+    button locate hidden in case of "No beneficiaries found"
+
+[33mcommit 165c3cec1a44cc24cc67bae63ce57d8cc476ec14[m
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Mon May 18 16:03:08 2020 +0530
+
+    crash handled in rate calculator
+
+[33mcommit 00f004b6d5f9d228fb09b3548078739e03551a3d[m
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Sun May 17 17:38:26 2020 +0530
+
+    state changed to dropdown
+
+[33mcommit 45231a4bafd61ceec77f48ce3a71871a09e36763[m
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Sun May 17 15:42:03 2020 +0530
+
+    sendOtp field addd in customer activation otp
+
+[33mcommit 73afbaf19341d5c140cd1e9521504436baec948f[m
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Thu May 14 17:17:45 2020 +0530
+
+    locate office issue fixed: Enabled only Al Fardan
+
+[33mcommit 2e66733fd648f5109a75199716fc6b50883ed6b6[m
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Thu May 14 16:20:44 2020 +0530
+
+    handled error codes separately for customer activation
+
+[33mcommit 3baef0c23a28b4de1d0e6e7ae614d243e2ffbd8e[m
+Merge: 89de19450 bd2e13ee9
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Thu May 14 15:54:34 2020 +0530
+
+    Merge remote-tracking branch 'origin/al-fardaan' into al-fardaan
+    
+    # Conflicts:
+    #       app/src/main/java/com/fh/payday/views2/intlRemittance/cashpayout/SearchAgentFragment.kt
+
+[33mcommit 89de19450c5da694a2d975f5377b901b23fec8b4[m
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Thu May 14 15:50:45 2020 +0530
+
+    customer activation otp issue fixed in transfers and my beneficiaries
+
+[33mcommit bd2e13ee9e1ce602d3f476960cbd313dd5bf823d[m
+Author: Aamer Paul <aamerpaul@gmail.com>
+Date:   Thu May 14 14:43:16 2020 +0530
+
+    Fixed - on backpress on cashpayout (Add Beneficiary) summary  navigates to Find Agent
+
+[33mcommit f16c64d959a9f5927a4da94f01de4e47c464b9f7[m
+Merge: db9f4b3b2 4ace9affc
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Thu May 14 14:42:08 2020 +0530
+
+    Merge remote-tracking branch 'origin/al-fardaan' into al-fardaan
+    
+    # Conflicts:
+    #       app/src/main/java/com/fh/payday/views2/intlRemittance/cashpayout/SearchAgentFragment.kt
+
+[33mcommit db9f4b3b207cb810c5ef7f4f61b5c4a8a27dbf17[m
+Author: Bismah Qadri <bismahqadri@gmail.com>
+Date:   Thu May 14 14:37:46 2020 +0530
+
+    Repeat Transaction Issue fixed
+
+[33mcommit 4ace9affc65604f23928515c58f2a9441212f305[m
+Merge: cf28555da 72e41035d
+Author: Tehreem <tehreemfazili5@gmail.com>
+Date:   Thu May 14 14:30:27 2020 +0530
+
+    solved conflict
+
+[33mcommit cf28555da51307d8035cf3c2a7e392dceb5c41f5[m
+Author: Tehreem <tehreemfazili5@gmail.com>
+Date:   Thu May 14 14:23:04 2020 +0530
+
+    fixed valiation issue on back in cashpayout

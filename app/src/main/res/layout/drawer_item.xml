@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="isViewVisible"
+            type="boolean"/>
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener"/>
+        <variable
+            name="item"
+            type="com.fh.payday.datasource.models.Item"/>
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@id/linear_layout"
+            android:paddingLeft="@dimen/dimen_8"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingRight="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:paddingTop="@dimen/dimen_8"
+            android:paddingBottom="@dimen/dimen_8"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClickListener="@{clickListener}"
+            android:background="?attr/selectableItemBackground"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/AppTheme.Text.Small"
+                android:textColor="@color/white"
+                android:text="@{item.name}"
+                app:setDrawableLeft="@{item.res}"
+                android:gravity="start"
+                android:textAlignment="viewStart"
+                android:drawablePadding="@dimen/dimen_16" />
+
+            <ImageView
+                android:id="@+id/iv_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_select"
+                android:layout_gravity="center"
+                android:rotationY="@integer/locale_mirror_flip"
+                android:contentDescription="@string/app_name"
+                android:visibility="@{isViewVisible ? View.GONE : View.VISIBLE}"/>
+
+        </LinearLayout>
+
+        <!--<View android:id="@id/view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.07dp"-->
+            <!--android:background="@color/white"-->
+            <!--android:layout_marginLeft="@dimen/dimen_48"-->
+            <!--android:layout_marginStart="@dimen/dimen_48"-->
+            <!--android:visibility="@{isViewVisible ? View.GONE : View.VISIBLE}"/>-->
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textDirection="locale"
+    tools:ignore="UnusedAttribute">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dimen_8">
+
+        <TextView
+            android:id="@+id/tv_address_detail"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            app:layout_constraintBottom_toTopOf="@+id/tv_toll_free"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_toll_free"
+            style="@style/AppTheme.Text.Body2.Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:gravity="start"
+            android:text="@string/uae_toll_free"
+            app:layout_constraintBottom_toTopOf="@+id/tv_telephone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_address_detail" />
+
+        <TextView
+            android:id="@+id/tv_telephone"
+            style="@style/AppTheme.Text.Body2.Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/tel"
+            app:layout_constraintBottom_toTopOf="@+id/tv_fax"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_toll_free" />
+
+        <TextView
+            android:id="@+id/tv_fax"
+            style="@style/AppTheme.Text.Body2.Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/fax"
+            app:layout_constraintBottom_toTopOf="@+id/tv_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_telephone" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            style="@style/AppTheme.Text.Body2.Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/email"
+            app:layout_constraintBottom_toTopOf="@id/group"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_fax" />
+
+        <android.support.constraint.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="chip_sun,chip_mon,chip_tue,chip_wed,chip_thu,chip_fri,chip_sat" />
+
+        <android.support.design.chip.Chip
+            android:id="@+id/chip_sun"
+            style="@style/WeeklyTimings.Start"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:textAlignment="center"
+            android:textAppearance="@style/ChipTextAppearance"
+            app:layout_constraintBottom_toTopOf="@+id/chip_tue"
+            app:layout_constraintEnd_toStartOf="@+id/chip_mon"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_email"
+            tools:text="Sun 10:00 am - 06:00 pm" />
+
+        <android.support.design.chip.Chip
+            android:id="@+id/chip_mon"
+            style="@style/WeeklyTimings.End"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:textAlignment="center"
+            android:textAppearance="@style/ChipTextAppearance"
+            app:layout_constraintBottom_toTopOf="@+id/chip_wed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/chip_sun"
+            app:layout_constraintTop_toBottomOf="@+id/tv_email"
+            tools:text="Mon 09:00 am - 06:00 pm" />
+
+        <android.support.design.chip.Chip
+            android:id="@+id/chip_tue"
+            style="@style/WeeklyTimings.Start"
+            android:textAlignment="center"
+            android:textAppearance="@style/ChipTextAppearance"
+            app:layout_constraintBottom_toTopOf="@+id/chip_thu"
+            app:layout_constraintEnd_toStartOf="@+id/chip_wed"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chip_sun"
+            tools:text="Tue 10:00 am - 06:00 pm" />
+
+        <android.support.design.chip.Chip
+            android:id="@+id/chip_wed"
+            style="@style/WeeklyTimings.End"
+            android:textAlignment="center"
+            android:textAppearance="@style/ChipTextAppearance"
+            app:layout_constraintBottom_toTopOf="@+id/chip_fri"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/chip_tue"
+            app:layout_constraintTop_toBottomOf="@+id/chip_mon"
+            tools:text="Wed 10:00 am - 06:00 pm" />
+
+        <android.support.design.chip.Chip
+            android:id="@+id/chip_thu"
+            style="@style/WeeklyTimings.Start"
+            android:textAlignment="center"
+            android:textAppearance="@style/ChipTextAppearance"
+            app:layout_constraintBottom_toTopOf="@+id/chip_sat"
+            app:layout_constraintEnd_toStartOf="@+id/chip_fri"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chip_tue"
+            tools:text="Thu 09:00 am - 05:00 pm" />
+
+        <android.support.design.chip.Chip
+            android:id="@+id/chip_fri"
+            style="@style/WeeklyTimings.End"
+            android:textAlignment="center"
+            android:textAppearance="@style/ChipTextAppearance"
+            app:layout_constraintBottom_toTopOf="@+id/chip_sat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/chip_thu"
+            app:layout_constraintTop_toBottomOf="@+id/chip_wed"
+            tools:text="Fri 10:00 am - 06:00 pm" />
+
+        <android.support.design.chip.Chip
+            android:id="@+id/chip_sat"
+            style="@style/WeeklyTimings"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_8"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:textAlignment="center"
+            android:textAppearance="@style/ChipTextAppearance"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chip_thu"
+            tools:text="Sat 10:00 am - 06:00 pm" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

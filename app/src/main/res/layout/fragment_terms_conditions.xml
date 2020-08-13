@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="@dimen/dimen_10"
+    app:cardElevation="@dimen/dimen_10"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/dimen_10">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/AppTheme.Text.Medium.Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_4"
+            android:text="@string/terms_and_Conditions"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toTopOf="@id/web_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/cb_terms_conditions"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <CheckBox
+            android:id="@+id/cb_terms_conditions"
+            style="@style/AppTheme.Text.Time.Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/dimen_8"
+            android:paddingBottom="@dimen/dimen_8"
+            android:text="@string/loan_offer_terms_cond"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toTopOf="@+id/btn_accept"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/web_view"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_accept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginEnd="@dimen/dimen_24"
+            android:layout_marginRight="@dimen/dimen_24"
+            android:text="@string/accept"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/btn_primary_color"
+            app:cornerRadius="@dimen/button_corner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:rippleColor="@color/btn_secondary_color" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.design.card.MaterialCardView>
+

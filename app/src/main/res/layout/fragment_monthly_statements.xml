@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/dimen_8"/>
+    <TextView
+        android:id="@+id/text_view"
+        style="@style/AppTheme.Text.Small.Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_no_transaction_icon"
+        android:drawablePadding="@dimen/dimen_16"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="@dimen/dimen_8"
+        android:text="@string/no_transaction_available"
+        android:textColor="@color/grey_500"
+        android:visibility="gone" />
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+</FrameLayout>

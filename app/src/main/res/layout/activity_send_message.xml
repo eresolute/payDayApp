@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_bg_blue"
+    android:orientation="vertical"
+    tools:context=".views2.message.SendMessageActivity">
+    <include
+        android:id="@id/i_toolbar"
+        layout="@layout/toolbar" />
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/card_radius">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dimen_20"
+            android:paddingRight="@dimen/dimen_20"
+            android:paddingStart="@dimen/dimen_20"
+            android:paddingEnd="@dimen/dimen_20">
+
+            <TextView
+                android:id="@+id/tv_issue_area"
+                style="@style/AppTheme.Text.Small.Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:background="@drawable/bg_spinner"
+                android:drawableStart="@drawable/ic_issue_info"
+                android:drawableLeft="@drawable/ic_issue_info"
+                android:drawableEnd="@drawable/ic_right_arrow"
+                android:drawableRight="@drawable/ic_right_arrow"
+                android:drawablePadding="@dimen/dimen_8"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_8"
+                android:text="@string/area_of_issue"
+                app:layout_constraintBottom_toTopOf="@+id/tv_error"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ProgressBar
+                android:id="@+id/pb_area"
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:layout_margin="@dimen/dimen_8"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/tv_issue_area"
+                app:layout_constraintEnd_toEndOf="@id/tv_issue_area"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@id/tv_issue_area"
+                app:layout_constraintTop_toTopOf="@id/tv_issue_area" />
+
+            <TextView
+                android:id="@+id/tv_error"
+                style="@style/AppTheme.Text.Small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dimen_16"
+                android:paddingLeft="@dimen/dimen_16"
+                android:paddingRight="@dimen/dimen_16"
+                android:text="@string/select_issue_area_error"
+                android:textColor="@color/colorError"
+                android:textSize="@dimen/text_12"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/tv_issue_area"
+                app:layout_constraintStart_toStartOf="@+id/tv_issue_area"
+                app:layout_constraintTop_toBottomOf="@+id/tv_issue_area"
+                android:paddingEnd="@dimen/dimen_16" />
+
+            <TextView
+                android:id="@+id/tv_issue"
+                style="@style/AppTheme.Text.Small.Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_4"
+                android:background="@drawable/bg_spinner"
+                android:drawableStart="@drawable/ic_issue_info"
+                android:drawableLeft="@drawable/ic_issue_info"
+                android:drawableEnd="@drawable/ic_right_arrow"
+                android:drawableRight="@drawable/ic_right_arrow"
+                android:drawablePadding="@dimen/dimen_8"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_8"
+                android:text="@string/select_issue"
+                app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_error" />
+
+            <ProgressBar
+                android:id="@+id/pb_issue"
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:layout_margin="@dimen/dimen_8"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/tv_issue"
+                app:layout_constraintEnd_toEndOf="@id/tv_issue"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@id/tv_issue"
+                app:layout_constraintTop_toTopOf="@id/tv_issue" />
+
+            <TextView
+                android:id="@+id/tv_issue_error"
+                style="@style/AppTheme.Text.Small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dimen_16"
+                android:paddingLeft="@dimen/dimen_16"
+                android:paddingRight="@dimen/dimen_16"
+                android:paddingBottom="@dimen/dimen_4"
+                android:text="@string/select_issue_error"
+                android:textColor="@color/colorError"
+                android:textSize="@dimen/text_12"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/tv_issue"
+                app:layout_constraintStart_toStartOf="@+id/tv_issue"
+                app:layout_constraintTop_toBottomOf="@+id/tv_issue"
+                android:paddingEnd="@dimen/dimen_16" />
+
+            <TextView
+                android:id="@+id/tv_counter"
+                style="@style/AppTheme.Text.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dimen_16"
+                android:paddingLeft="@dimen/dimen_16"
+                android:paddingTop="@dimen/dimen_16"
+                android:paddingRight="@dimen/dimen_16"
+                android:paddingBottom="@dimen/dimen_16"
+                android:text="@string/chars_counter"
+                android:textSize="@dimen/text_8"
+                app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_issue_error"
+                app:layout_constraintVertical_bias="0.45"
+                android:paddingEnd="@dimen/dimen_16" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/dimen_8"
+                app:boxBackgroundColor="@color/grey"
+                app:boxCornerRadiusBottomEnd="@dimen/input_text_corner"
+                app:boxCornerRadiusBottomStart="@dimen/input_text_corner"
+                app:boxCornerRadiusTopEnd="@dimen/input_text_corner"
+                app:boxCornerRadiusTopStart="@dimen/input_text_corner"
+                app:layout_constraintBottom_toTopOf="@+id/btn_submit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_issue_error">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_message"
+                    style="@style/AppTheme.Text.Small.Bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 ,.?\/#_-'!*"
+                    android:gravity="start"
+                    android:maxLength="255"
+                    android:nextFocusForward="@id/tv_message_error"
+                    android:padding="@dimen/dimen_10"
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/textColor" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_message_error"
+                style="@style/AppTheme.Text.Small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dimen_16"
+                android:paddingLeft="@dimen/dimen_16"
+                android:paddingRight="@dimen/dimen_16"
+                android:paddingBottom="@dimen/dimen_8"
+                android:text="@string/valid_message_error"
+                android:textColor="@color/colorError"
+                android:textSize="@dimen/text_12"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+                android:paddingEnd="@dimen/dimen_16" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:text="@string/send"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/btn_primary_color"
+                app:cornerRadius="@dimen/button_corner"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+                app:rippleColor="@color/btn_secondary_color" />
+        </android.support.constraint.ConstraintLayout>
+
+        <include
+            layout="@layout/no_internet_connectivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </android.support.v7.widget.CardView>
+
+    <include
+        android:id="@id/i_bottombar"
+        layout="@layout/bottombar_dashboard" />
+
+</LinearLayout>

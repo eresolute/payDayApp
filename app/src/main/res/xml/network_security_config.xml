@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">retailapi.fh.ae</domain>
+        <domain includeSubdomains="true">mobile.paydaysit.financehouse.ae</domain>
+        <domain includeSubdomains="true">mobile.paydayuat.financehouse.ae</domain>
+        <pin-set>I
+            <pin digest="SHA-256">N1bvjfL1tqp1h+/3KwjuF3+FSpVmjVXYW3dYXN/uQt0=</pin>
+            <pin digest="SHA-256">4a6cPehI7OG6cuDZka5NDZ7FR8a60d3auda+sKfg4Ng=</pin>
+        </pin-set>
+    </domain-config>
+</network-security-config>

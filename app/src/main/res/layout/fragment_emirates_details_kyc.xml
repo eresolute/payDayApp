@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="@dimen/dimen_10"
+    app:cardElevation="@dimen/dimen_10"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/dimen_8">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12">
+
+            <TextView
+                style="@style/AppTheme.Text.Medium.Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/dimen_12"
+                android:paddingBottom="@dimen/dimen_12"
+                android:text="@string/register_emirate_details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_20"
+                app:layout_constraintBottom_toTopOf="@+id/linear_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginBottom="@dimen/dimen_16"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/cb_terms_conditions"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    style="@style/AppTheme.Text.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dimen_8"
+                    android:text="@string/emirates_id"
+                    android:textColor="@color/black_overlay" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textInputLayout_emirates_id"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundColor="@color/grey_light"
+                    app:boxCornerRadiusBottomEnd="@dimen/input_text_corner"
+                    app:boxCornerRadiusBottomStart="@dimen/input_text_corner"
+                    app:boxCornerRadiusTopEnd="@dimen/input_text_corner"
+                    app:boxCornerRadiusTopStart="@dimen/input_text_corner"
+                    app:boxStrokeColor="@color/colorAccent">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_emirates_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_emirates_id_card"
+                        android:drawableLeft="@drawable/ic_emirates_id_card"
+                        android:drawablePadding="12dp"
+                        android:inputType="number"
+                        android:maxLength="15"
+                        android:gravity="start"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/text_normal" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    style="@style/AppTheme.Text.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dimen_8"
+                    android:text="@string/expiry_date"
+                    android:textColor="@color/black_overlay" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textInputLayout_expiry_date"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundColor="@color/grey_light"
+                    app:boxCornerRadiusBottomEnd="@dimen/input_text_corner"
+                    app:boxCornerRadiusBottomStart="@dimen/input_text_corner"
+                    app:boxCornerRadiusTopEnd="@dimen/input_text_corner"
+                    app:boxCornerRadiusTopStart="@dimen/input_text_corner"
+                    app:boxStrokeColor="@color/colorAccent">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_expiry_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_calendar_new"
+                        android:drawableLeft="@drawable/ic_calendar_new"
+                        android:drawablePadding="@dimen/dimen_12"
+                        android:inputType="date"
+                        android:maxLength="10"
+                        android:gravity="start"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/text_normal" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    style="@style/AppTheme.Text.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dimen_8"
+                    android:text="@string/nationality"
+                    android:textColor="@color/black_overlay" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textInputLayout_nationality"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundColor="@color/grey_light"
+                    app:boxCornerRadiusBottomEnd="@dimen/input_text_corner"
+                    app:boxCornerRadiusBottomStart="@dimen/input_text_corner"
+                    app:boxCornerRadiusTopEnd="@dimen/input_text_corner"
+                    app:boxCornerRadiusTopStart="@dimen/input_text_corner"
+                    app:boxStrokeColor="@color/colorAccent">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_nationality"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                        android:drawableStart="@drawable/ic_nationality"
+                        android:drawableLeft="@drawable/ic_nationality"
+                        android:drawablePadding="@dimen/dimen_12"
+                        android:inputType="textFilter|textCapCharacters"
+                        android:maxLength="3"
+                        android:gravity="start"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/text_normal" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    style="@style/AppTheme.Text.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dimen_8"
+                    android:text="@string/dob"
+                    android:textColor="@color/black_overlay" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textInputLayout_dob"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundColor="@color/grey_light"
+                    app:boxCornerRadiusBottomEnd="@dimen/input_text_corner"
+                    app:boxCornerRadiusBottomStart="@dimen/input_text_corner"
+                    app:boxCornerRadiusTopEnd="@dimen/input_text_corner"
+                    app:boxCornerRadiusTopStart="@dimen/input_text_corner"
+                    app:boxStrokeColor="@color/colorAccent">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_calendar_new"
+                        android:drawableLeft="@drawable/ic_calendar_new"
+                        android:drawablePadding="@dimen/dimen_12"
+                        android:inputType="date"
+                        android:maxLength="10"
+                        android:gravity="start"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/text_normal" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/cb_terms_conditions"
+                style="@style/AppTheme.Text.Time.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/dimen_8"
+                android:paddingBottom="@dimen/dimen_8"
+                android:text="@string/i_accept"
+                android:textColor="@color/textColor"
+                app:layout_constraintBottom_toTopOf="@+id/btn_submit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear_layout"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/tv_terms_condition_link"
+                style="@style/AppTheme.Text.Time.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_and_Conditions"
+                android:textColor="@color/blue_green"
+                app:layout_constraintBottom_toBottomOf="@+id/cb_terms_conditions"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@id/cb_terms_conditions"
+                app:layout_constraintTop_toTopOf="@+id/cb_terms_conditions" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/btn_primary_color"
+                app:cornerRadius="@dimen/button_corner"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb_terms_conditions"
+                app:rippleColor="@color/btn_secondary_color" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+
+</android.support.v7.widget.CardView>

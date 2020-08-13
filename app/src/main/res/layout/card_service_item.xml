@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <import type="com.fh.payday.views.custombindings.DataBindingsKt"/>
+        <variable
+            name="listener"
+            type="android.view.View.OnClickListener"/>
+        <variable
+            name="item"
+            type="com.fh.payday.datasource.models.Item"/>
+    </data>
+
+    <LinearLayout
+        android:id="@id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/dimen_2"
+        android:onClick="@{listener}"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/text_view"
+            style="@style/AppTheme.Text.Small.Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            setDrawableTop="@{item.res}"
+            android:drawablePadding="@dimen/dimen_8"
+            android:gravity="center"
+            android:paddingStart="@dimen/dimen_4"
+            android:paddingTop="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_4"
+            android:paddingBottom="@dimen/dimen_8"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="@{item.name}"
+            android:textColor="@color/textColor"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</layout>

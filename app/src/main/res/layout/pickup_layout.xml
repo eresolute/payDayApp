@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_pickup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_favourite_list_added"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:drawableLeft="@drawable/ic_fav_icon2x"
+        android:drawablePadding="@dimen/dimen_4"
+        android:gravity="center"
+        android:paddingRight="@dimen/dimen_8"
+        android:text="@string/benificiary_added_to_your_favourite_list" />
+
+    <TextView
+        android:id="@+id/pickup_from"
+        style="@style/AppTheme.Text.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:padding="@dimen/dimen_4"
+        android:text="@string/pickup_from" />
+
+    <TextView
+        android:id="@+id/pickup_address"
+        style="@style/AppTheme.Text.Body1.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_4"
+        android:textColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/pickup_address_details"
+        style="@style/AppTheme.Text.Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_4"
+        android:textColor="@color/grey_600" />
+
+</LinearLayout>

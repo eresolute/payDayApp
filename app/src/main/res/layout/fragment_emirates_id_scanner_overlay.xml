@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views2.emiratesidscanner.EmiratesIdScannerOverlayFragment">
+
+    <ImageView
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_56"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:layout_marginBottom="@dimen/dimen_56"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/camera_frame" />
+
+    <TextView
+        android:id="@+id/tv_instructions"
+        style="@style/AppTheme.Text.Medium.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/dimen_24"
+        android:padding="@dimen/dimen_4"
+        android:text="@string/capture_front_emirates_id"
+        android:textAlignment="center"
+        android:textColor="@color/color_red" />
+
+</FrameLayout>

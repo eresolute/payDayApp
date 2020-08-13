@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:paddingTop="@dimen/dimen_8"
+    android:textDirection="locale"
+    tools:ignore="UnusedAttribute">
+
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/payday_card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/tv_card_name"
+        style="@style/AppTheme.Text.Small.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:paddingTop="@dimen/dimen_4"
+        android:textColor="@color/textColor"
+        app:layout_constraintBottom_toTopOf="@+id/tv_card_number"
+        app:layout_constraintEnd_toStartOf="@+id/textView61"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/iv_user"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        tools:text="Zahir Hassan" />
+
+    <TextView
+        android:id="@+id/textView61"
+        style="@style/AppTheme.Text.Time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimen_4"
+        android:text="@string/account_balance"
+        android:textColor="@color/grey_700"
+        app:layout_constraintBottom_toTopOf="@+id/tv_card_balance"
+        app:layout_constraintEnd_toStartOf="@+id/img_toggle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_card_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tv_card_number"
+        style="@style/AppTheme.Text.Time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_700"
+        app:layout_constraintEnd_toStartOf="@+id/textView61"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tv_card_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_card_name"
+        tools:text="xxxxxxxxxxx1212" />
+
+    <TextView
+        android:id="@+id/tv_card_balance"
+        style="@style/AppTheme.Text.Small.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        app:layout_constraintBottom_toTopOf="@+id/tv_transfer_amount"
+        app:layout_constraintEnd_toEndOf="@+id/textView61"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textView61"
+        app:layout_constraintTop_toBottomOf="@+id/textView61"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="AED 1,000" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView49"
+        style="@style/AppTheme.Text.Time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:text="@string/total_payable_amount"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/tv_comission_label"
+        app:layout_constraintEnd_toStartOf="@+id/tv_card_balance"
+        app:layout_constraintStart_toStartOf="@+id/tv_card_number"
+        app:layout_constraintTop_toBottomOf="@+id/tv_card_number" />
+
+    <TextView
+        android:id="@+id/tv_transfer_amount"
+        style="@style/AppTheme.Text.Small.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:visibility="visible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView49"
+        app:layout_constraintEnd_toEndOf="@+id/tv_card_balance"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView49"
+        tools:text="AED 2000" />
+
+    <TextView
+        android:id="@+id/textView59"
+        style="@style/AppTheme.Text.Time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_2"
+        android:text="@string/available_balance_after"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_card_balance"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tv_card_number"
+        app:layout_constraintTop_toBottomOf="@+id/tv_vat_label" />
+
+    <TextView
+        android:id="@+id/tv_balance_amount"
+        style="@style/AppTheme.Text.Small.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:visibility="visible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView59"
+        app:layout_constraintEnd_toEndOf="@+id/textView61"
+        app:layout_constraintStart_toStartOf="@+id/tv_transfer_amount"
+        tools:text="AED 2000" />
+
+    <TextView
+        android:id="@+id/tv_comission_label"
+        style="@style/AppTheme.Text.Time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_2"
+        android:text="@string/commission"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/tv_vat_label"
+        app:layout_constraintEnd_toEndOf="@+id/tv_card_number"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tv_card_number"
+        app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+    <TextView
+        android:id="@+id/tv_commission"
+        style="@style/AppTheme.Text.Small.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:visibility="gone"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_comission_label"
+        app:layout_constraintEnd_toEndOf="@+id/textView61"
+        app:layout_constraintStart_toEndOf="@+id/tv_card_number" />
+
+    <TextView
+        android:id="@+id/tv_vat_label"
+        style="@style/AppTheme.Text.Time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_2"
+        android:text="@string/vat"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/textView59"
+        app:layout_constraintEnd_toStartOf="@+id/textView61"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tv_card_number"
+        app:layout_constraintTop_toBottomOf="@+id/tv_comission_label" />
+
+    <TextView
+        android:id="@+id/tv_vat"
+        style="@style/AppTheme.Text.Small.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:visibility="gone"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_vat_label"
+        app:layout_constraintEnd_toEndOf="@+id/tv_transfer_amount"
+        app:layout_constraintStart_toStartOf="@+id/tv_card_balance" />
+
+    <ImageView
+        android:id="@+id/img_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/dimen_4"
+        android:src="@drawable/ic_arrow_right_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_bg_blue"
+    android:orientation="vertical"
+    android:id="@id/root_view"
+    tools:context=".views2.loancalculator.LoanCalculatorActivity">
+
+    <include android:id="@id/i_toolbar" layout="@layout/toolbar" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/card_radius"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.fh.payday.utilities.NonSwipeableViewPager
+                android:id="@id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@color/white" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <include android:id="@id/i_bottombar" layout="@layout/bottombar_dashboard"/>
+
+</LinearLayout>

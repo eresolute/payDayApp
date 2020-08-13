@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@id/progress_bar"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Group
+        android:id="@+id/root_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="btn_apply,tv_progress_value,tv_loan_amount,tv_min_loan_amount,seekBar_loan_amount,tv_max_loan_amount,progress_bar_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_loan_amount"
+        style="@style/AppTheme.Text.Body2.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loan_amount_title"
+        android:textSize="@dimen/text_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <SeekBar
+        android:id="@+id/seekBar_loan_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/seekbar_margin_start_end"
+        android:layout_marginEnd="@dimen/seekbar_margin_start_end"
+        android:layout_marginBottom="8dp"
+        android:progressTint="@color/colorAccent"
+        app:thumbTint="@color/btn_primary_color"
+        android:progressBackgroundTint="@color/grey_400"
+        app:layout_constraintBottom_toBottomOf="@+id/progress_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_loan_amount" />
+
+    <TextView
+        android:id="@+id/tv_progress_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:textSize="@dimen/text_10"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar_loan_amount"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar_loan_amount"
+        app:layout_constraintStart_toStartOf="@+id/seekBar_loan_amount" />
+
+    <TextView
+        android:id="@+id/tv_min_loan_amount"
+        style="@style/AppTheme.Text.Body2.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:text="@string/loan_amount"
+        android:textSize="@dimen/text_10"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar_loan_amount"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="@+id/seekBar_loan_amount"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar_loan_amount" />
+
+    <TextView
+        android:id="@+id/tv_max_loan_amount"
+        style="@style/AppTheme.Text.Body2.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:textSize="@dimen/text_10"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar_loan_amount"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="@+id/seekBar_loan_amount"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar_loan_amount" />
+
+
+    <android.support.constraint.Group
+        android:id="@+id/group_loan_emi_tenure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="tv_emi_amount_label,tv_tenure,tv_tenure_label,tv_emi_amount"
+        app:layout_constraintBottom_toTopOf="@+id/btn_apply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar_loan_amount" />
+
+
+    <TextView
+        android:id="@+id/tv_emi_amount_label"
+        style="@style/AppTheme.Text.Body2.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:padding="@dimen/dimen_8"
+        android:text="@string/emi"
+        android:textSize="@dimen/text_16"
+        app:layout_constraintBottom_toTopOf="@+id/tv_emi_amount"
+        app:layout_constraintEnd_toEndOf="@+id/tv_emi_amount"
+        app:layout_constraintStart_toStartOf="@+id/tv_emi_amount" />
+
+    <TextView
+        android:id="@+id/tv_tenure_label"
+        style="@style/AppTheme.Text.Body2.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:padding="@dimen/dimen_8"
+        android:text="@string/tenure"
+        android:textSize="@dimen/text_16"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/tv_tenure"
+        app:layout_constraintEnd_toEndOf="@+id/tv_tenure"
+        app:layout_constraintStart_toStartOf="@+id/tv_tenure" />
+
+    <TextView
+        android:id="@+id/tv_emi_amount"
+        style="@style/AppTheme.Text.Time.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_blue_gradient"
+        android:paddingStart="@dimen/dimen_24"
+        android:paddingTop="@dimen/dimen_6"
+        android:paddingEnd="@dimen/dimen_24"
+        android:paddingBottom="@dimen/dimen_6"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/group_loan_emi_tenure"
+        app:layout_constraintEnd_toStartOf="@id/tv_tenure"/>
+
+    <TextView
+        android:id="@+id/tv_tenure"
+        style="@style/AppTheme.Text.Time.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_blue_gradient"
+        android:paddingStart="@dimen/dimen_24"
+        android:paddingTop="@dimen/dimen_6"
+        android:paddingEnd="@dimen/dimen_24"
+        android:paddingBottom="@dimen/dimen_6"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/group_loan_emi_tenure"
+        app:layout_constraintStart_toEndOf="@id/tv_emi_amount"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn_apply"
+        style="@style/AppTheme.Button.Intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/proceed"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/btn_primary_color"
+        app:cornerRadius="@dimen/button_corner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        app:rippleColor="@color/btn_secondary_color" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_2"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_apply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_apply" />
+
+</android.support.constraint.ConstraintLayout>

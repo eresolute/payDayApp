@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_view">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView60"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8"
+            android:text="@string/from"
+            app:layout_constraintBottom_toTopOf="@+id/view12"
+            app:layout_constraintEnd_toStartOf="@+id/view14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/img_edit_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8"
+            android:src="@drawable/ic_edit"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/view12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            android:contentDescription="@string/app_name"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="@dimen/dimen_8"
+            app:layout_constraintEnd_toStartOf="@+id/img_edit_from"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/view14"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_from_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Zahir Hassan"/>
+
+            <TextView
+                android:id="@+id/tv_from_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="xxxx xxxx xxxx 2345"/>
+            <TextView
+                android:id="@+id/et_sender_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="mehrajmuheeb@gmail.com"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view12"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey_700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+        <TextView
+            android:id="@+id/textView63"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8"
+            android:text="@string/to"
+            app:layout_constraintBottom_toTopOf="@+id/view13"
+            app:layout_constraintEnd_toStartOf="@+id/view14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view12"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/img_edit_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8"
+            android:src="@drawable/ic_edit"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/view13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout7"
+            app:layout_constraintTop_toBottomOf="@+id/view12"
+            app:layout_constraintVertical_bias="0.0"
+            android:contentDescription="@string/app_name"/>
+
+        <View
+            android:id="@+id/view13"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey_700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+
+        <View
+            android:id="@+id/view14"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.28"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView64"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8"
+            android:text="@string/amount"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout8"
+            app:layout_constraintEnd_toStartOf="@+id/view14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view13"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_8"
+            app:layout_constraintEnd_toStartOf="@+id/img_edit_to"
+            app:layout_constraintStart_toEndOf="@+id/view14"
+            app:layout_constraintTop_toBottomOf="@+id/view12">
+
+            <TextView
+                android:id="@+id/tv_to_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Zahir Hassan" />
+
+            <TextView
+                android:id="@+id/tv_to_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="xxxx xxxx xxxx 2345" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:background="@drawable/bg_blue_border_light"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_8"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout9"
+            app:layout_constraintStart_toEndOf="@+id/view14"
+            app:layout_constraintTop_toBottomOf="@+id/view13">
+
+            <TextView
+                style="@style/AppTheme.Text.Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/you_pay"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/grey_700" />
+
+            <TextView
+                android:id="@+id/tv_payin_amount"
+                style="@style/AppTheme.Text.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_4"
+                tools:text="2000"
+                android:textAlignment="center"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMaxTextSize="@dimen/text_18"
+                app:autoSizeMinTextSize="@dimen/text_12"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/tv_payin_currency"
+                style="@style/AppTheme.Text.Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="AED"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_8"
+            android:background="@drawable/bg_blue_border_light"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout8"
+            app:layout_constraintTop_toBottomOf="@+id/view13">
+
+            <TextView
+                style="@style/AppTheme.Text.Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/they_get"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/grey_700" />
+
+            <TextView
+                android:id="@+id/tv_payout_amount"
+                style="@style/AppTheme.Text.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_4"
+                tools:text="2000"
+                android:textAlignment="center"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMaxTextSize="@dimen/text_18"
+                app:autoSizeMinTextSize="@dimen/text_12"
+                android:textColor="@color/colorAccent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/tv_payout_currency"
+                style="@style/AppTheme.Text.Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="INR"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_exchange_rate_label"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:padding="@dimen/dimen_4"
+            tools:text="Exchange Rate: AED 1.00 = 20.00 INR"
+            android:textAlignment="textEnd"
+            android:textColor="@color/grey_700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view14"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout9" />
+
+        <View
+            android:id="@+id/view15"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:background="@color/grey_700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_exchange_rate_label" />
+
+        <TextView
+            android:id="@+id/textView66"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:padding="@dimen/dimen_8"
+            android:text="@string/exchange_house_commision"
+            app:layout_constraintBottom_toTopOf="@+id/view18"
+            app:layout_constraintEnd_toStartOf="@+id/view14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view15"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_8"
+            android:background="@drawable/bg_blue_border_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/view14"
+            app:layout_constraintTop_toBottomOf="@+id/view15"
+            android:layout_marginEnd="@dimen/dimen_8">
+
+            <View
+                android:id="@+id/view16"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:background="@color/colorAccent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view17"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView67"
+                app:layout_constraintVertical_bias="0.01999998" />
+
+            <TextView
+                android:id="@+id/textView67"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dimen_8"
+                android:text="@string/commission"
+                app:layout_constraintEnd_toStartOf="@+id/view16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView68"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dimen_8"
+                android:text="@string/vat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.674"
+                app:layout_constraintStart_toEndOf="@+id/view16"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_comission"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dimen_8"
+                tools:text="AED 10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/view16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMaxTextSize="@dimen/text_18"
+                app:autoSizeMinTextSize="@dimen/text_12"
+                app:layout_constraintTop_toBottomOf="@+id/view17" />
+
+            <TextView
+                android:id="@+id/tv_vat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dimen_8"
+                tools:text="AED 10"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMaxTextSize="@dimen/text_18"
+                app:autoSizeMinTextSize="@dimen/text_12"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view16"
+                app:layout_constraintTop_toBottomOf="@+id/view17" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:id="@+id/view18"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:background="@color/grey_700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+        <TextView
+            android:id="@+id/textView71"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8"
+            android:text="@string/total_payable_amount"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout10"
+            app:layout_constraintEnd_toStartOf="@+id/view14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view18"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:background="@drawable/bg_blue_border_light"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_8"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout9"
+            app:layout_constraintStart_toEndOf="@+id/view14"
+            app:layout_constraintTop_toBottomOf="@+id/view18">
+
+            <TextView
+                style="@style/AppTheme.Text.Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/you_pay"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/grey_700" />
+
+            <TextView
+                android:id="@+id/tv_total_payin_amount"
+                style="@style/AppTheme.Text.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_4"
+                tools:text="2000"
+                android:textAlignment="center"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMaxTextSize="@dimen/text_18"
+                app:autoSizeMinTextSize="@dimen/text_12"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/tv_total_payin_currency"
+                style="@style/AppTheme.Text.Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="AED"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_8"
+            android:background="@drawable/bg_blue_border_light"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout10"
+            app:layout_constraintTop_toBottomOf="@+id/view18">
+
+            <TextView
+                style="@style/AppTheme.Text.Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/they_get"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/grey_700" />
+
+            <TextView
+                android:id="@+id/tv_total_payout_amount"
+                style="@style/AppTheme.Text.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_4"
+                tools:text="2000"
+                android:textAlignment="center"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMaxTextSize="@dimen/text_18"
+                app:autoSizeMinTextSize="@dimen/text_12"
+                android:textColor="@color/colorAccent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/tv_total_payout_currency"
+                style="@style/AppTheme.Text.Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="INR"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view19"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:background="@color/grey_700"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout11"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView73"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8"
+            android:text="@string/Purpose"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_purpose"
+            app:layout_constraintEnd_toStartOf="@+id/view14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view19"
+            app:layout_constraintVertical_bias="0.100000024" />
+
+        <TextView
+            android:id="@+id/tv_purpose"
+            style="@style/AppTheme.Text.Small.Bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8"
+            tools:text="Family Maintenance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView73"
+            app:layout_constraintTop_toBottomOf="@+id/view19" />
+
+        <View
+            android:id="@+id/view20"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey_700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_purpose" />
+
+        <TextView
+            android:id="@+id/textView75"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8"
+            android:text="@string/promo_code"
+            android:layout_marginTop="@dimen/dimen_16"
+            app:layout_constraintEnd_toStartOf="@+id/view14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view20" />
+
+        <TextView
+            android:id="@+id/tv_promo_code"
+            style="@style/AppTheme.Text.Small.Bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_16"
+            tools:text="FH-123"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view14"
+            app:layout_constraintTop_toBottomOf="@+id/view20" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_promo_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/dimen_8"
+            app:boxStrokeColor="@color/colorAccent"
+            app:boxStrokeWidth="0.5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_promo_code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view14"
+            app:layout_constraintTop_toTopOf="@+id/tv_promo_code"
+            android:layout_marginRight="@dimen/dimen_8">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_detail_promo_code"
+                style="@style/AppTheme.Text.Small.Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="start"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="viewStart"
+                android:textDirection="ltr"
+                tools:ignore="UnusedAttribute" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/cb_terms_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_36"
+            android:padding="@dimen/dimen_4"
+            android:text="@string/agree_terms"
+            app:layout_constraintEnd_toStartOf="@+id/tv_terms_condition_link"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_promo_code" />
+
+        <TextView
+            android:id="@+id/tv_terms_condition_link"
+            style="@style/AppTheme.Text.Time.Bold"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="@string/terms_and_Conditions"
+            android:textColor="@color/blue_green"
+            app:layout_constraintBottom_toBottomOf="@+id/cb_terms_condition"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/cb_terms_condition"
+            app:layout_constraintTop_toTopOf="@+id/cb_terms_condition" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_24"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_8"
+            android:text="@string/confirm"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            app:backgroundTint="@color/btn_primary_color"
+            app:cornerRadius="@dimen/button_corner"
+            app:layout_constraintBottom_toTopOf="@+id/textView57"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cb_terms_condition"
+            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:rippleColor="@color/btn_secondary_color" />
+
+        <TextView
+            android:id="@+id/textView57"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:gravity="center"
+            android:text="@string/exchange_rate_inclusive"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btn_confirm"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/btn_confirm"
+            app:layout_constraintTop_toBottomOf="@+id/btn_confirm"
+            app:layout_constraintVertical_bias="0.83" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

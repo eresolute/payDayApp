@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:drawableStart="@drawable/ic_calling_card_small"
+    android:drawableLeft="@drawable/ic_calling_card_small"
+    android:drawablePadding="@dimen/dimen_8"
+    android:fontFamily="@font/comfortaa_bold"
+    android:gravity="center"
+    android:text="@string/calling_card"
+    android:textColor="@color/black"
+    android:textSize="@dimen/text_12" />
+

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="listener"
+            type="android.view.View.OnClickListener"/>
+        <variable
+            name="atmData"
+            type="com.fh.payday.datasource.models.AtmLocator"/>
+
+    </data>
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/dimen_20"
+            android:paddingEnd="@dimen/dimen_20"
+            android:paddingStart="@dimen/dimen_20"
+            android:paddingLeft="@dimen/dimen_20"
+            android:paddingTop="@dimen/dimen_8"
+            android:paddingBottom="@dimen/dimen_8"
+            android:onClick="@{listener}"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/dimen_24"
+                android:paddingEnd="@dimen/dimen_24"
+                android:paddingLeft="@dimen/dimen_24"
+                android:paddingStart="@dimen/dimen_24"
+                app:src="@{atmData.icon}"
+                android:contentDescription="@string/atm_image"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:layout_gravity="start"
+                    style="@style/AppTheme.Text.Medium"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@android:color/black"
+                    android:text="@{atmData.name}"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/AppTheme.Text.Small"
+                    android:textAlignment="viewStart"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="@{atmData.address}"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lt_blue"/>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="services_icons">
+        <item>@drawable/ic_intl_money_transfer_white_44</item>
+        <item>@drawable/ic_du_white</item>
+        <item>@drawable/ic_etisalat_white</item>
+        <item>@drawable/ic_payday_to_payday_44</item>
+        <item>@drawable/ic_bill_payment_44</item>
+    </integer-array>
+
+    <!--Frequent Services-->
+    <integer-array name="freq_services_icons">
+        <item>@drawable/ic_transaction_history_44_white</item>
+        <item>@drawable/ic_payments_44_white</item>
+        <item>@drawable/ic_transfers_44_white</item>
+        <item>@drawable/ic_card_services_44_white</item>
+        <item>@drawable/ic_offers_44_white</item>
+        <item>@drawable/ic_loans_white</item>
+    </integer-array>
+
+    <integer-array name="card_service_icons">
+        <!--<item>@drawable/ic_cardless_withdraw_blue_small</item>-->
+        <!--<item>@drawable/ic_card_statement_sm</item>-->
+        <item>@drawable/ic_transactions_sm</item>
+        <!--<item>@drawable/ic_early_salary</item>-->
+        <item>@drawable/ic_salaries_credited</item>
+        <item>@drawable/ic_reset_change_pin_sm</item>
+        <item>0</item>
+        <!--<item>0</item>-->
+    </integer-array>
+
+    <integer-array name="transaction_history_option_icons">
+        <item>@drawable/ic_bill_payment_v2</item>
+        <item>@drawable/ic_bill_payment_v2</item>
+    </integer-array>
+    <integer-array name="transaction_option_icons">
+        <item>@drawable/ic_imt_view</item>
+        <item>@drawable/ic_favorite</item>
+        <item>@drawable/ic_repeat</item>
+        <item>@drawable/ic_resend</item>
+        <item>@drawable/ic_download_black</item>
+        <item>@drawable/ic_imt_share</item>
+    </integer-array>
+    <integer-array name="transaction_option_icons2">
+        <item>@drawable/ic_imt_view</item>
+        <item>@drawable/ic_un_favorite</item>
+        <item>@drawable/ic_repeat</item>
+        <item>@drawable/ic_resend</item>
+        <item>@drawable/ic_download_black</item>
+        <item>@drawable/ic_imt_share</item>
+    </integer-array>
+    <integer-array name="transaction_history_icons">
+        <item>@drawable/ic_card_transactions</item>
+        <item>@drawable/ic_loan_small</item>
+        <item>@drawable/ic_fund_transfer</item>
+        <!--<item>@drawable/ic_intl_money_transfer_small</item>-->
+        <item>@drawable/ic_bill_payment_small</item>
+        <item>@drawable/ic_salaries_credited_small</item>
+    </integer-array>
+    <integer-array name="transaction_history_transfer_icons">
+        <item>@drawable/ic_payday_to_payday_small</item>
+        <item>@drawable/ic_local_money_transfer_small</item>
+        <!--<item>@drawable/ic_intl_money_transfer_small</item>-->
+        <item>@drawable/ic_fund_transfer</item>
+    </integer-array>
+    <integer-array name="track_transaction_icons">
+        <item>@drawable/ic_bank_small</item>
+        <item>@drawable/ic_fund_transfer</item>
+    </integer-array>
+    <integer-array name="drawer_item_icons">
+        <!--<item>@drawable/ic_card_services</item>-->
+        <!--<item>@drawable/ic_payments</item>-->
+        <!--<item>@drawable/ic_transfers</item>-->
+        <!--<item>@drawable/ic_transaction_history</item>-->
+        <!--<item>@drawable/ic_account_summary</item>-->
+        <item>@drawable/ic_card_services</item>
+        <!--<item>@drawable/ic_products</item>-->
+        <item>@drawable/ic_service_requests</item>
+        <!--<item>@drawable/ic_account_summary</item>-->
+        <!--<item>@drawable/ic_support</item>-->
+        <item>@drawable/ic_messages</item>
+        <!--<item>@drawable/ic_settings</item>-->
+        <!--<item>@drawable/ic_payments</item>-->
+        <!--<item>@drawable/ic_account_summary</item>-->
+        <item>@drawable/ic_logout</item>
+    </integer-array>
+u
+    <!--Edit Beneficiary Options-->
+    <integer-array name="edit_beneficiary_icons">
+        <item>@drawable/ic_payday_to_payday_small</item>
+        <item>@drawable/ic_payday_to_cc</item>
+        <item>@drawable/ic_local_money_transfer_small</item>
+        <item>@drawable/ic_payday_to_loan</item>
+        <!--<item>@drawable/ic_intl_money_transfer_small</item>-->
+    </integer-array>
+
+    <!--Locator Icons-->
+    <integer-array name="locator_icons">
+    <item>@drawable/ic_cardless_withdraw_blue_small</item>
+    <!--<item>@drawable/ic_branch_location</item>-->
+<!--    <item>@drawable/ic_sms_banking_short</item>-->
+    </integer-array>
+
+    <integer-array name="intl_locator_icons">
+        <item>@drawable/ic_locate_exchange</item>
+        <!--<item>@drawable/ic_branch_location</item>-->
+        <item>@drawable/ic_locate_exchange</item>
+    </integer-array>
+
+    <integer-array name="contact_us_icons">
+        <item>@drawable/ic_call_center_number</item>
+        <item>@drawable/ic_website</item>
+        <item>@drawable/ic_message</item>
+    </integer-array>
+
+    <!--Settings Options-->
+    <integer-array name="setting_icons">
+        <item>@drawable/ic_change_password</item>
+        <!--<item>@drawable/ic_change_pin</item>
+        <item>@drawable/ic_link_accounts</item>-->
+        <!--<item>@drawable/ic_update_mobile_number</item>
+        <item>@drawable/ic_email_blue</item>-->
+        <item>@drawable/ic_fingerprint_settings</item>
+    </integer-array>
+
+
+
+    <!--Products Option-->
+    <integer-array name="product_icons">
+        <!--<item>@drawable/ic_credit_card</item>-->
+        <item>@drawable/ic_loan_small</item>
+        <!--<item>@drawable/ic_debit_card</item>-->
+        <item>@drawable/ic_payday_finance</item>
+        <!--<item>@drawable/ic_early_salary</item>-->
+    </integer-array>
+
+    <!--Account Option-->
+    <integer-array name="account_options">
+        <item>@drawable/ic_payday_finance</item>
+        <item>@drawable/ic_early_salary</item>
+        <item>@drawable/ic_credit_card</item>
+        <item>@drawable/ic_executive_finance</item>
+    </integer-array>
+
+    <integer-array name="loan_services_icons_topup">
+        <!--<item>@drawable/ic_topup</item>-->
+        <item>@drawable/ic_payment_holiday_blue</item>
+        <item>@drawable/ic_clearance_letter</item>
+        <item>@drawable/ic_reschedule</item>
+        <item>@drawable/ic_early_settlement</item>
+        <item>@drawable/ic_partial_settlement</item>
+        <item>@drawable/ic_liability_letter</item>
+        <item>0</item>
+    </integer-array>
+
+    <integer-array name="loan_services_icons">
+        <!--<item>@drawable/ic_apply_for_loan_gradient</item>-->
+        <item>@drawable/ic_reschedule</item>
+        <item>@drawable/ic_early_settlement</item>
+        <item>@drawable/ic_liability_letter</item>
+        <item>@drawable/ic_clearance_letter</item>
+        <item>@drawable/ic_partial_settlement</item>
+        <item>@drawable/ic_payment_holiday_blue</item>
+        <!--<item>0</item>-->
+    </integer-array>
+
+    <integer-array name="service_requests_icons">
+        <item>@drawable/ic_activate_card_blue</item>
+        <item>@drawable/ic_card_transaction_dispute_blue</item>
+        <item>@drawable/ic_reset_change_pin</item>
+        <item>@drawable/ic_lock_card_blue</item>
+    </integer-array>
+
+    <string-array name="icon_money_transfer">
+        <item>@drawable/ic_intl_money_transfer</item>
+        <item>@drawable/ic_payday_to_payday</item>
+        <item>@drawable/ic_local_money_transfer</item>
+        <item>@drawable/ic_cc_transfer</item>
+        <item>@drawable/ic_transaction_history_44</item>
+    </string-array>
+    <string-array name="intl_remittance_icons">
+        <item>@drawable/ic_calculator_gradient</item>
+        <item>@drawable/ic_transfer_gradient</item>
+        <item>@drawable/ic_beneficiary_gradient</item>
+        <item>@drawable/ic_track_gradient</item>
+        <item>@drawable/ic_history_gradient</item>
+        <item>@drawable/ic_locate_gradient</item>
+    </string-array>
+
+    <string-array name="money_exchange_logo">
+        <item>@drawable/uaex_logo</item>
+        <item>@drawable/af_rate_cal_logo</item>
+    </string-array>
+</resources>

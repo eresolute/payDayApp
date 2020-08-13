@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_8"
+    android:gravity="start"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_item"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="@drawable/bg_grey_12"
+        android:drawableStart="@drawable/ic_bill_payment"
+        android:drawableLeft="@drawable/ic_bill_payment"
+        android:drawablePadding="@dimen/dimen_8"
+        android:fontFamily="@font/comfortaa_bold"
+        android:padding="@dimen/dimen_8"
+        android:text="@string/montly"
+        android:textAlignment="viewStart"
+        android:textColor="@color/textColor" />
+
+</LinearLayout>

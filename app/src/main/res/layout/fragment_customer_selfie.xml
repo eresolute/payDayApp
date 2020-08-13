@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme.RegisterScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_4">
+
+    <ImageView
+        android:id="@+id/img_selfie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_selfie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.204"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/text_instruct"
+        style="@style/AppTheme.Text.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_8"
+        android:gravity="center"
+        android:text="@string/customer_selfie"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16"
+        app:layout_constraintBottom_toTopOf="@+id/btn_capture"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_selfie"
+        app:layout_constraintVertical_bias="0.07999998"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn_capture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/capture"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/btn_primary_color"
+        app:cornerRadius="@dimen/button_corner"
+        app:layout_constraintBottom_toTopOf="@+id/btn_skip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/btn_secondary_color" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn_skip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/skip"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/blue"
+        app:cornerRadius="@dimen/button_corner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/blue_green" />
+
+
+</android.support.constraint.ConstraintLayout>

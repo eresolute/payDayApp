@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardElevation="@dimen/card_elevation"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/dimen_8">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_20"
+        android:paddingRight="@dimen/dimen_20"
+        android:paddingStart="@dimen/dimen_20"
+        android:paddingEnd="@dimen/dimen_20">
+
+        <TextView
+            android:id="@+id/tv_select_lang"
+            style="@style/AppTheme.Text.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10"
+            android:text="@string/select_language"
+            android:textAlignment="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/layout_spinner_lang"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/layout_spinner_lang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_spinner"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/layout_spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_lang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dimen_10"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_lang_error"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen_16"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingRight="@dimen/dimen_16"
+            android:paddingBottom="@dimen/dimen_8"
+            android:text="@string/please_select_language"
+            android:textColor="@color/colorError"
+            android:textSize="@dimen/text_12"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/layout_spinner_lang"
+            app:layout_constraintStart_toStartOf="@+id/layout_spinner_lang"
+            app:layout_constraintTop_toBottomOf="@+id/layout_spinner_lang"
+            android:paddingEnd="@dimen/dimen_16" />
+
+        <TextView
+            android:id="@+id/tv_select_type"
+            style="@style/AppTheme.Text.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_16"
+            android:text="@string/select_type"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/layout_spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_spinner_lang" />
+
+        <LinearLayout
+            android:id="@+id/layout_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_spinner"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/btn_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_select_type">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dimen_10"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_error"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen_16"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingRight="@dimen/dimen_16"
+            android:paddingBottom="@dimen/dimen_8"
+            android:text="@string/please_select_type"
+            android:textColor="@color/colorError"
+            android:textSize="@dimen/text_12"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/layout_spinner"
+            app:layout_constraintStart_toStartOf="@+id/layout_spinner"
+            app:layout_constraintTop_toBottomOf="@+id/layout_spinner"
+            android:paddingEnd="@dimen/dimen_16" />
+
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/btn_primary_color"
+            app:cornerRadius="@dimen/button_corner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_spinner"
+            app:rippleColor="@color/btn_secondary_color" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
+
+
+
+
+
+

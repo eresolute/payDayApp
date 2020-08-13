@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dimen_4"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dimen_8"
+        android:paddingEnd="@dimen/dimen_8">
+
+        <include
+            android:id="@+id/layout_payment"
+            layout="@layout/layout_payment_option"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_send"
+            style="@style/AppTheme.Text.Body3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:text="@string/send_to"
+            app:layout_constraintBottom_toTopOf="@id/tv_country"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_payment" />
+
+        <android.support.v7.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/tv_country"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:completionThreshold="1"
+            android:layout_marginEnd="@dimen/dimen_2"
+            android:layout_marginRight="@dimen/dimen_2"
+            android:imeOptions="actionNext"
+            android:background="@drawable/bg_grey_dark_grey_border"
+            android:drawableEnd="@drawable/ic_arrow_down_grey"
+            android:drawableRight="@drawable/ic_arrow_down"
+            android:gravity="start|center"
+            android:hint="@string/country"
+            android:singleLine="true"
+            android:textAlignment="textStart"
+            app:layout_constraintBottom_toTopOf="@id/tv_recipient_details"
+            app:layout_constraintEnd_toStartOf="@id/tv_currency"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_send" />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/tv_currency"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/dimen_4"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:background="@drawable/bg_grey_dark_grey_border"
+            android:gravity="center"
+            android:focusable="false"
+            android:hint="@string/cur"
+            android:textColorHint="@color/grey_400"
+            app:layout_constraintBottom_toBottomOf="@id/tv_country"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_country"
+            app:layout_constraintTop_toTopOf="@id/tv_country"
+            app:layout_constraintWidth_percent="0.2" />
+
+        <TextView
+            android:id="@+id/tv_recipient_details"
+            style="@style/AppTheme.Text.Body3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:text="@string/recipient_details"
+            app:layout_constraintBottom_toTopOf="@id/radioButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_country" />
+
+        <RadioGroup
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/tv_error_rg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_recipient_details"
+            app:layout_constraintTop_toBottomOf="@id/tv_recipient_details">
+
+            <RadioButton
+                android:id="@+id/rb_mr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:layout_marginRight="@dimen/dimen_8"
+                android:buttonTint="@color/blue"
+                android:text="@string/mr"
+                android:textColor="@color/blue"
+                tools:ignore="UnusedAttribute" />
+
+            <RadioButton
+                android:id="@+id/rb_mrs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:layout_marginRight="@dimen/dimen_8"
+                android:buttonTint="@color/blue"
+                android:text="@string/mrs"
+                android:textColor="@color/blue"
+                tools:ignore="UnusedAttribute" />
+
+            <RadioButton
+                android:id="@+id/rb_ms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/blue"
+                android:text="@string/ms"
+                android:textColor="@color/blue"
+                tools:ignore="UnusedAttribute" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_error_rg"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="@dimen/dimen_4"
+            android:text="@string/please_select"
+            android:textAlignment="viewStart"
+            android:textColor="@color/color_red"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/textInputLayout_firstname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioButton" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout_firstname"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:gravity="start"
+            android:layoutDirection="ltr"
+            android:nextFocusDown="@id/et_lastname"
+            android:textAlignment="textStart"
+            app:boxBackgroundColor="@color/grey"
+            app:boxCornerRadiusBottomEnd="@dimen/input_text_corner"
+            app:boxCornerRadiusBottomStart="@dimen/input_text_corner"
+            app:boxCornerRadiusTopEnd="@dimen/input_text_corner"
+            app:boxCornerRadiusTopStart="@dimen/input_text_corner"
+            app:layout_constraintBottom_toTopOf="@id/textInputLayout_lastname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_error_rg"
+            tools:ignore="UnusedAttribute">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_firstname"
+                style="@style/AppTheme.Text.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                android:gravity="start"
+                android:hint="@string/first_name_as_per_bank"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="20"
+                android:paddingTop="@dimen/dimen_14"
+                android:paddingBottom="@dimen/dimen_14"
+                android:singleLine="true"
+                android:textAlignment="textStart"
+                android:textColor="@color/textColor" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout_lastname"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:gravity="start"
+            android:layoutDirection="ltr"
+            android:textAlignment="textStart"
+            app:boxBackgroundColor="@color/grey"
+            app:boxCornerRadiusBottomEnd="@dimen/input_text_corner"
+            app:boxCornerRadiusBottomStart="@dimen/input_text_corner"
+            app:boxCornerRadiusTopEnd="@dimen/input_text_corner"
+            app:boxCornerRadiusTopStart="@dimen/input_text_corner"
+            app:layout_constraintBottom_toTopOf="@id/til_mobile_no_code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textInputLayout_firstname"
+            tools:ignore="UnusedAttribute">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_lastname"
+                style="@style/AppTheme.Text.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                android:gravity="start"
+                android:hint="@string/last_name_as_per_bank"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="20"
+                android:paddingTop="@dimen/dimen_14"
+                android:paddingBottom="@dimen/dimen_14"
+                android:singleLine="true"
+                android:textAlignment="textStart"
+                android:textColor="@color/textColor" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_mobile_no_code"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="start"
+            android:layoutDirection="ltr"
+            android:textAlignment="textStart"
+            app:boxBackgroundColor="@color/grey"
+            app:boxCornerRadiusBottomEnd="@dimen/input_text_corner"
+            app:boxCornerRadiusBottomStart="@dimen/input_text_corner"
+            app:boxCornerRadiusTopEnd="@dimen/input_text_corner"
+            app:boxCornerRadiusTopStart="@dimen/input_text_corner"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout_mobile_no"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout_mobile_no"
+            tools:ignore="UnusedAttribute">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_mobile_no_code"
+                style="@style/AppTheme.Text.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="@color/grey_500"
+                android:drawableStart="@drawable/ic_flag_placeholder"
+                android:drawableLeft="@drawable/ic_flag_placeholder"
+                android:drawablePadding="@dimen/dimen_8"
+                android:focusable="false"
+                android:gravity="start|center_vertical"
+                android:inputType="number"
+                android:longClickable="false"
+                android:maxLength="5"
+                android:paddingTop="@dimen/dimen_14"
+                android:paddingBottom="@dimen/dimen_14"
+                android:text="@string/_91"
+                android:textAlignment="textStart" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout_mobile_no"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layoutDirection="ltr"
+            android:nextFocusDown="@id/editText_addressLine1"
+            android:textAlignment="textStart"
+            app:boxBackgroundColor="@color/grey"
+            app:boxCornerRadiusBottomEnd="@dimen/input_text_corner"
+            app:boxCornerRadiusBottomStart="@dimen/input_text_corner"
+            app:boxCornerRadiusTopEnd="@dimen/input_text_corner"
+            app:boxCornerRadiusTopStart="@dimen/input_text_corner"
+            app:layout_constraintBottom_toTopOf="@id/nationality"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/til_mobile_no_code"
+            app:layout_constraintTop_toBottomOf="@id/textInputLayout_lastname"
+            tools:ignore="UnusedAttribute">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_mobile_no"
+                style="@style/AppTheme.Text.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="start|center_vertical"
+                android:hint="@string/mobile_num"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingTop="@dimen/dimen_14"
+                android:paddingBottom="@dimen/dimen_14"
+                android:textAlignment="textStart"
+                android:textColor="@color/textColor" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/nationality"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:gravity="start"
+            android:text="@string/nationality"
+            android:textAlignment="textStart"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/tv_nationality"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textInputLayout_mobile_no" />
+
+        <AutoCompleteTextView
+            android:id="@+id/tv_nationality"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="@dimen/dimen_2"
+            android:layout_marginRight="@dimen/dimen_2"
+            android:completionThreshold="1"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:background="@drawable/bg_grey_dark_grey_border"
+            android:gravity="start|center"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:textAlignment="textStart"
+            android:hint="@string/nationality"
+            android:drawableEnd="@drawable/ic_arrow_down_grey"
+            android:drawableRight="@drawable/ic_arrow_down"
+            app:layout_constraintBottom_toTopOf="@id/textInputLayout_egyptian_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nationality" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout_egyptian_id"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:gravity="start"
+            app:boxBackgroundColor="@color/grey"
+            app:boxCornerRadiusBottomEnd="@dimen/input_text_corner"
+            app:boxCornerRadiusBottomStart="@dimen/input_text_corner"
+            android:visibility="gone"
+            app:boxCornerRadiusTopEnd="@dimen/input_text_corner"
+            app:boxCornerRadiusTopStart="@dimen/input_text_corner"
+            app:layout_constraintTop_toBottomOf="@id/tv_nationality"
+            app:layout_constraintBottom_toTopOf="@id/textInputLayout_addressLine1"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:hint=""
+            android:nextFocusDown="@id/editText_addressLine1"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_egyptian_id"
+                style="@style/AppTheme.Text.Small"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 ,-/"
+                android:hint="@string/egyptian_id"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:inputType="textPersonName"
+                android:textColor="@color/textColor"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout_addressLine1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:gravity="start"
+            app:boxBackgroundColor="@color/grey"
+            app:boxCornerRadiusBottomEnd="@dimen/input_text_corner"
+            app:boxCornerRadiusBottomStart="@dimen/input_text_corner"
+            app:boxCornerRadiusTopEnd="@dimen/input_text_corner"
+            app:boxCornerRadiusTopStart="@dimen/input_text_corner"
+            app:layout_constraintTop_toBottomOf="@id/textInputLayout_egyptian_id"
+            app:layout_constraintBottom_toTopOf="@id/textInputLayout_addressLine2"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:hint=""
+            android:nextFocusDown="@id/editText_addressLine2"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_addressLine1"
+                style="@style/AppTheme.Text.Small"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 ,-/"
+                android:hint="@string/address_line1"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:inputType="textPersonName"
+                android:textColor="@color/textColor"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout_addressLine2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:gravity="start"
+            app:boxBackgroundColor="@color/grey"
+            app:boxCornerRadiusBottomEnd="@dimen/input_text_corner"
+            app:boxCornerRadiusBottomStart="@dimen/input_text_corner"
+            app:boxCornerRadiusTopEnd="@dimen/input_text_corner"
+            app:boxCornerRadiusTopStart="@dimen/input_text_corner"
+            app:layout_constraintTop_toBottomOf="@id/textInputLayout_addressLine1"
+            app:layout_constraintBottom_toTopOf="@id/textInputLayout_relationship"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint=""
+            android:nextFocusDown="@id/et_relationship"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="textPersonName"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_addressLine2"
+                android:singleLine="true"
+                style="@style/AppTheme.Text.Small"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 ,-/"
+                android:hint="@string/address_line2"
+                android:imeOptions="actionDone"
+                android:textColor="@color/textColor"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout_relationship"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layoutDirection="ltr"
+            android:textAlignment="textStart"
+            app:boxBackgroundColor="@color/grey"
+            app:boxCornerRadiusBottomEnd="@dimen/input_text_corner"
+            app:boxCornerRadiusBottomStart="@dimen/input_text_corner"
+            app:boxCornerRadiusTopEnd="@dimen/input_text_corner"
+            app:boxCornerRadiusTopStart="@dimen/input_text_corner"
+            app:layout_constraintBottom_toTopOf="@id/space"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textInputLayout_addressLine2"
+            tools:ignore="UnusedAttribute">
+
+            <AutoCompleteTextView
+                android:id="@+id/et_relationship"
+                style="@style/AppTheme.Text.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:gravity="start"
+                android:focusable="false"
+                android:hint="@string/relationship"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLength="20"
+                android:paddingLeft="@dimen/dimen_14"
+                android:paddingTop="@dimen/dimen_14"
+                android:paddingBottom="@dimen/dimen_14"
+                android:singleLine="true"
+                android:textAlignment="textStart"
+                android:textColor="@color/textColor" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="0dp"
+            android:layout_height="16dp"
+            app:layout_constraintBottom_toTopOf="@id/btn_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/button_bottom_margin"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/btn_primary_color"
+            app:cornerRadius="@dimen/button_corner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:rippleColor="@color/btn_secondary_color" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

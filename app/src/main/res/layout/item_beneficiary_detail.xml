@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_key"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:paddingBottom="@dimen/dimen_8"
+        android:paddingRight="@dimen/dimen_8"
+        android:paddingLeft="@dimen/dimen_8"
+        android:text="@string/country"
+        android:textColor="@color/grey_700"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_value"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_value"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingStart="@dimen/dimen_8"
+        android:paddingEnd="@dimen/dimen_8" />
+
+    <TextView
+        android:id="@+id/tv_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewEnd"
+        android:gravity="end"
+        android:paddingBottom="@dimen/dimen_8"
+        android:paddingRight="@dimen/dimen_8"
+        android:paddingLeft="@dimen/dimen_8"
+        tools:text="India"
+        style="@style/AppTheme.Text.Small"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/tv_key"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingEnd="@dimen/dimen_8"
+        android:paddingStart="@dimen/dimen_8" />
+
+</android.support.constraint.ConstraintLayout>

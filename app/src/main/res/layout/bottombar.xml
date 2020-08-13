@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal"
+    android:padding="4dp"
+    android:layout_gravity="bottom"
+    style="@style/AppTheme.BottomBar">
+
+    <TextView
+        android:id="@+id/btm_menu_how_to_reg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/how_to_register"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/ic_how_to_register"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_x_small"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    <TextView
+        android:id="@+id/btm_menu_cash_out"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/branch_locations"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/ic_cash_out"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_x_small"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+
+    <TextView
+        android:id="@+id/btm_menu_faq"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/faq"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/ic_faq"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_x_small"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    <TextView
+        android:id="@+id/btm_menu_currency_conv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/explore"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/ic_explore"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_x_small"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+
+
+
+</LinearLayout>

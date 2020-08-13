@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="plan"
+            type="com.fh.payday.datasource.models.Plan" />
+    </data>
+
+    <LinearLayout
+        android:id="@id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_20"
+        android:background="@drawable/bg_blue_grey"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_10">
+
+        <TextView
+            android:id="@+id/tv_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa"
+            android:text="@{plan.currency}"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="@{String.valueOf(plan.amount)}"
+            android:textSize="@dimen/text_20" />
+
+    </LinearLayout>
+
+</layout>

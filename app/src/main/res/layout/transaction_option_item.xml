@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    tools:ignore="UnusedAttribute">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="@dimen/dimen_28"
+        android:layout_height="@dimen/dimen_28"
+        android:layout_margin="@dimen/dimen_8"
+        android:layout_marginBottom="@dimen/dimen_4"
+        android:contentDescription="@string/app_name"
+        tools:src="@drawable/ic_view"
+        android:tint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_transaction_option"
+        style="@style/AppTheme.Text.Body1.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_2"
+        android:layout_marginLeft="@dimen/dimen_2"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:padding="@dimen/dimen_4"
+        android:textColor="@color/textDarkColor"
+        app:layout_constraintBottom_toBottomOf="@id/image_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toEndOf="@id/image_view"
+        app:layout_constraintTop_toTopOf="@+id/image_view"
+        tools:text="View Transaction Details" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_400"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

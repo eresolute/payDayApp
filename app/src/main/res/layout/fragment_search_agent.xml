@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dimen_8"
+        android:paddingEnd="@dimen/dimen_8">
+
+        <TextView
+            android:id="@+id/tv_pickup_location"
+            style="@style/AppTheme.Text.Body3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="@dimen/dimen_8"
+            android:paddingBottom="@dimen/dimen_8"
+            android:textSize="13sp"
+            android:text="@string/search_for_a_pickup_location"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/tv_country"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:id="@+id/tv_bankName"
+            android:visibility="gone"
+            style="@style/AppTheme.Text.Body3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="@dimen/dimen_8"
+            android:paddingBottom="@dimen/dimen_8"
+            android:textSize="13sp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_pickup_location"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpUsage" />
+
+
+        <TextView
+            android:id="@+id/tv_country"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="@dimen/dimen_2"
+            android:layout_marginRight="@dimen/dimen_2"
+            android:background="@drawable/bg_grey_dark_grey_border"
+            android:drawableEnd="@drawable/ic_arrow_down_grey"
+            android:drawableRight="@drawable/ic_arrow_down"
+            android:gravity="start|center"
+            android:hint="@string/send_money_to_country"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:singleLine="true"
+            android:textAlignment="textStart"
+            app:layout_constraintBottom_toTopOf="@id/textInputLayout_state"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_pickup_location" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout_state"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layoutDirection="ltr"
+            android:textAlignment="textStart"
+            app:boxBackgroundColor="@color/grey"
+            android:layout_marginBottom="@dimen/dimen_4"
+            app:boxCornerRadiusBottomEnd="@dimen/input_text_corner"
+            app:boxCornerRadiusBottomStart="@dimen/input_text_corner"
+            app:boxCornerRadiusTopEnd="@dimen/input_text_corner"
+            app:boxCornerRadiusTopStart="@dimen/input_text_corner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textInputLayout_pickup_location"
+            app:layout_constraintBottom_toTopOf="@id/tv_location_title"
+            tools:ignore="UnusedAttribute">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_state"
+                style="@style/AppTheme.Text.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableEnd="@drawable/ic_arrow_down_grey"
+                android:drawableRight="@drawable/ic_arrow_down"
+                android:gravity="start|center_vertical"
+                android:hint="@string/state"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:paddingTop="@dimen/dimen_14"
+                android:paddingBottom="@dimen/dimen_14"
+                android:textAlignment="textStart"
+                android:textColor="@color/textColor" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout_pickup_location"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:gravity="start"
+            android:layoutDirection="ltr"
+            android:textAlignment="textStart"
+            app:boxBackgroundColor="@color/grey"
+            app:boxCornerRadiusBottomEnd="@dimen/input_text_corner"
+            app:boxCornerRadiusBottomStart="@dimen/input_text_corner"
+            app:boxCornerRadiusTopEnd="@dimen/input_text_corner"
+            app:boxCornerRadiusTopStart="@dimen/input_text_corner"
+            app:layout_constraintEnd_toStartOf="@+id/img_search"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_country"
+            app:layout_constraintBottom_toTopOf="@id/textInputLayout_state"
+            tools:ignore="UnusedAttribute">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_bank_name"
+                style="@style/AppTheme.Text.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|center_vertical"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:paddingTop="@dimen/dimen_14"
+                android:paddingBottom="@dimen/dimen_14"
+                android:textAlignment="textStart"
+                android:textColor="@color/textColor" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_search_button2x"
+            app:layout_constraintBottom_toBottomOf="@id/textInputLayout_pickup_location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textInputLayout_pickup_location"
+            app:layout_constraintTop_toTopOf="@id/textInputLayout_pickup_location" />
+
+        <TextView
+            android:id="@+id/tv_location_title"
+            style="@style/AppTheme.Text.Small.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="@dimen/dimen_8"
+            android:paddingBottom="@dimen/dimen_8"
+            android:text="@string/pickup_locations"
+            android:textAlignment="textStart"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout_state"/>
+        <TextView
+            android:id="@+id/tv_not_available"
+            style="@style/AppTheme.Text.Small.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dimen_8"
+            android:paddingBottom="@dimen/dimen_8"
+            android:text="@string/no_bank_found"
+            android:textAlignment="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/btn_next"
+            app:layout_constraintTop_toBottomOf="@id/tv_location_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_locations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/btn_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_location_title"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_next"
+            style="@style/AppTheme.Text.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="@dimen/button_bottom_margin"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/btn_primary_color"
+            app:cornerRadius="@dimen/button_corner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="@color/btn_secondary_color" />
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

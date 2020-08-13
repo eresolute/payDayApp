@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--<View-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_weight="0.1"-->
+            <!--android:background="@color/grey_400" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/icon1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:contentDescription="@string/app_name"-->
+            <!--android:src="@drawable/ic_from_account" />-->
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.2"
+            android:background="@color/grey_400" />
+
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_beneficiary" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.2"
+            android:background="@color/grey_400" />
+
+        <ImageView
+            android:id="@+id/icon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_transfer_details" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.2"
+            android:background="@color/grey_400" />
+
+        <ImageView
+            android:id="@+id/icon4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_summary" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.2"
+            android:background="@color/grey_400" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--<View-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_weight="0.1"-->
+            <!--android:background="@color/grey_400"-->
+            <!--android:visibility="invisible" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView1"-->
+            <!--style="@style/AppTheme.Text.Time"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingStart="@dimen/dimen_4"-->
+            <!--android:paddingEnd="@dimen/dimen_4"-->
+            <!--android:text="@string/from_account" />-->
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.2"
+            android:background="@color/grey_400"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="@dimen/dimen_4"
+            android:paddingEnd="@dimen/dimen_4"
+            android:text="@string/beneficiary" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.2"
+            android:background="@color/grey_400"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="@dimen/dimen_4"
+            android:paddingEnd="@dimen/dimen_4"
+            android:text="@string/transfer_details" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.2"
+            android:background="@color/grey_400"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="@dimen/dimen_4"
+            android:paddingEnd="@dimen/dimen_4"
+            android:text="@string/summary" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.2"
+            android:background="@color/grey_400"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</LinearLayout>

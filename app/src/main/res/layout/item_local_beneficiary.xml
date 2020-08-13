@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:id="@+id/root_view"
+    android:textDirection="locale"
+    tools:ignore="UnusedAttribute">
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="@dimen/dimen_32"
+        android:layout_height="@dimen/dimen_32"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:contentDescription="@string/payday_card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_beneficiary_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_user_blue"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/tv_beneficiary_name"
+        style="@style/AppTheme.Text.Medium.Bold"
+        android:layout_width="0dp"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:gravity="start"
+        app:layout_constraintBottom_toTopOf="@+id/tv_bank_name"
+        app:layout_constraintEnd_toStartOf="@+id/imgOption"
+        app:layout_constraintStart_toEndOf="@+id/iv_user"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_bank_name"
+        style="@style/AppTheme.Text.Time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:visibility="visible"
+        android:gravity="start"
+        app:layout_constraintBottom_toTopOf="@+id/account_no"
+        app:layout_constraintEnd_toStartOf="@+id/imgOption"
+        app:layout_constraintStart_toEndOf="@id/iv_user"
+        app:layout_constraintTop_toBottomOf="@+id/tv_beneficiary_name" />
+
+    <TextView
+        android:id="@+id/account_no"
+        style="@style/AppTheme.Text.Time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="start"
+        app:layout_constraintBottom_toTopOf="@+id/iban_no"
+        app:layout_constraintEnd_toStartOf="@+id/imgOption"
+        app:layout_constraintStart_toEndOf="@id/iv_user"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bank_name" />
+
+    <TextView
+        android:id="@+id/iban_no"
+        style="@style/AppTheme.Text.Time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgOption"
+        app:layout_constraintStart_toEndOf="@id/iv_user"
+        app:layout_constraintTop_toBottomOf="@+id/account_no" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/grey_400"
+        android:layout_marginTop="@dimen/dimen_4"
+        app:layout_constraintTop_toBottomOf="@+id/iban_no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imgOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_beneficiary_name"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_beneficiary_name"
+        android:src="@drawable/ic_options"
+        android:contentDescription="@string/app_name"/>
+
+</android.support.constraint.ConstraintLayout>

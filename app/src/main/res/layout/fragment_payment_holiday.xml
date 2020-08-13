@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_terms_condition_link"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_no_loan"
+        style="@style/AppTheme.Text.Small.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_icon_loan"
+        android:drawablePadding="@dimen/dimen_16"
+        android:gravity="center"
+        android:paddingStart="@dimen/dimen_16"
+        android:paddingTop="@dimen/dimen_4"
+        android:paddingEnd="@dimen/dimen_16"
+        android:paddingBottom="@dimen/dimen_4"
+        android:text="@string/no_loan_available"
+        android:textColor="@color/textColor"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cb_term_conditions"
+        style="@style/AppTheme.Text.Time.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/dimen_8"
+        android:paddingBottom="@dimen/dimen_8"
+        android:text="@string/i_accept"
+        android:textColor="@color/textColor"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_apply_loan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_no_loan"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_terms_condition_link"
+        style="@style/AppTheme.Text.Time.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/terms_and_Conditions"
+        android:textColor="@color/blue_green"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_term_conditions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cb_term_conditions"
+        app:layout_constraintTop_toTopOf="@+id/cb_term_conditions" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn_apply_loan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/apply_for_loan"
+        android:textAllCaps="false"
+        android:visibility="invisible"
+        app:backgroundTint="@color/btn_primary_color"
+        app:cornerRadius="@dimen/button_corner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_no_loan"
+        app:layout_constraintVertical_bias="0.8"
+        app:rippleColor="@color/btn_secondary_color" />
+
+
+</android.support.constraint.ConstraintLayout>

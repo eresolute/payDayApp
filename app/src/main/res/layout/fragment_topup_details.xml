@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardElevation="@dimen/card_elevation"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/dimen_8"
+    android:textDirection="locale"
+    tools:ignore="UnusedAttribute">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_12">
+
+        <TextView
+            android:id="@+id/tv_mobile_number"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/mobile_number"
+            app:layout_constraintEnd_toStartOf="@+id/tv_mobile_number_val"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_mobile_number_val"
+            style="@style/AppTheme.Text.Small.Bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textAlignment="viewEnd"
+            android:textDirection="ltr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_mobile_number"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UnusedAttribute"
+            tools:text="+9710512345678"/>
+
+        <TextView
+            android:id="@+id/tv_bill_amount"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:visibility="gone"
+            android:text="@string/bill_amount"
+            app:layout_constraintEnd_toStartOf="@+id/tv_bill_amount_val"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_mobile_number" />
+
+        <TextView
+            android:id="@+id/tv_bill_amount_val"
+            style="@style/AppTheme.Text.Small.Bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="end"
+            android:textAlignment="viewEnd"
+            android:textDirection="ltr"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_bill_amount"
+            app:layout_constraintTop_toBottomOf="@+id/tv_mobile_number_val"
+            tools:text="AED 1000"/>
+
+        <TextView
+            android:id="@+id/tv_paid_amount"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:visibility="gone"
+            android:text="@string/payable_amount"
+            app:layout_constraintEnd_toStartOf="@+id/tv_paid_amount_val"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_bill_amount" />
+
+        <TextView
+            android:id="@+id/tv_paid_amount_val"
+            style="@style/AppTheme.Text.Small.Bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="end"
+            android:textAlignment="viewEnd"
+            android:textDirection="ltr"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_paid_amount"
+            app:layout_constraintTop_toBottomOf="@+id/tv_bill_amount_val"
+            tools:text="AED 10.00"/>
+
+        <TextView
+            android:id="@+id/tv_due_date"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="start"
+            android:text="@string/due_date"
+            app:layout_constraintEnd_toStartOf="@+id/tv_due_date_val"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_paid_amount" />
+
+        <TextView
+            android:id="@+id/tv_due_date_val"
+            style="@style/AppTheme.Text.Small.Bold"
+            android:layout_width="0dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="8dp"
+            android:gravity="end"
+            android:textAlignment="viewEnd"
+            android:textDirection="ltr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_due_date"
+            app:layout_constraintTop_toBottomOf="@+id/tv_paid_amount_val"
+            tools:text="12/12/2018"/>
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="@string/confirm"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/btn_primary_color"
+            app:cornerRadius="@dimen/button_corner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_due_date_val"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="@color/btn_secondary_color" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
+
+
+
+
+
+

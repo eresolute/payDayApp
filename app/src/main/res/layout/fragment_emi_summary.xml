@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_orange_gradient"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="0.5">
+
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/monthly_emi"
+            style="@style/AppTheme.Text.Small"
+            android:padding="@dimen/dimen_4"
+            android:textColor="@color/white"
+            android:gravity="start"
+            android:textAlignment="viewStart"
+            app:layout_constraintBottom_toTopOf="@+id/tv_emi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/tv_emi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_4"
+            android:textColor="@color/white"
+            style="@style/AppTheme.Text.Large"
+            android:gravity="start"
+            android:textAlignment="viewStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="@dimen/dimen_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        app:layout_constraintVertical_weight="1">
+
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_emi_again"
+            style="@style/AppTheme.Button.Intro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/calculate_again"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/btn_primary_color"
+            app:cornerRadius="@dimen/button_corner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.95"
+            app:rippleColor="@color/btn_secondary_color" />
+
+        <TextView
+            android:id="@+id/tv_principal_amount_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/principal_amount"
+            style="@style/AppTheme.Text.Small"
+            android:textColor="@color/textColor"
+            android:layout_marginTop="@dimen/dimen_8"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_principal_amount"
+            app:layout_constraintEnd_toStartOf="@+id/tv_principal_amount"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/tv_interest_label"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/tv_principal_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            style="@style/AppTheme.Text.Small"
+            android:textColor="@color/textColor"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:gravity="end"
+            app:layout_constraintBottom_toTopOf="@+id/tv_interest_amount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_principal_amount_label"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_chainStyle="packed"/>
+
+        <TextView
+            android:id="@+id/tv_interest_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/interest_amount"
+            style="@style/AppTheme.Text.Small"
+            android:textColor="@color/textColor"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_interest_amount"
+            app:layout_constraintEnd_toStartOf="@+id/tv_interest_amount"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintBottom_toTopOf="@+id/tv_total_amount_label"
+            app:layout_constraintTop_toBottomOf="@+id/tv_principal_amount_label"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_interest_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="-"
+            style="@style/AppTheme.Text.Small"
+            android:textColor="@color/textColor"
+            android:gravity="end"
+            app:layout_constraintBottom_toTopOf="@+id/tv_total_amount_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_interest_label"
+            app:layout_constraintTop_toBottomOf="@+id/tv_principal_amount" />
+
+        <TextView
+            android:id="@+id/tv_total_amount_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="@string/total_payable_amount"
+            style="@style/AppTheme.Text.Small"
+            android:textColor="@color/textColor"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_total_amount"
+            app:layout_constraintEnd_toStartOf="@+id/tv_total_amount"
+            app:layout_constraintTop_toBottomOf="@+id/tv_interest_label"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintBottom_toTopOf="@+id/btn_get_emi"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_total_amount"
+            style="@style/AppTheme.Text.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:gravity="end"
+            android:text="-"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toTopOf="@+id/btn_get_emi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_total_amount_label"
+            app:layout_constraintTop_toBottomOf="@+id/tv_interest_amount"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

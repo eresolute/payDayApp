@@ -1,0 +1,1043 @@
+<resources>
+    <string name="app_name">پے ڈے ایف ایچ</string>
+    <string name="fingerprint_dialog_subtitle">پے ڈے</string>
+    <string name="welcome_to_payday">پے ڈے میں خوش آمدید</string>
+    <string name="payday_card_title">پے ڈے  کارڈ</string>
+    <string name="text_intro_1">آپ کا اپنا\n ڈیجیٹل بینک</string>
+    <string name="text_intro_2">فوری  طور پراپنے\n پیاروں کو رقم منتقل کریں</string>
+    <string name="text_intro_3">اپنے بل ادا کریں اور کیش بیک حاصل کریں</string>
+    <string name="choose_language">زبان کا انتخاب کریں</string>
+    <string name="capture_front_emirates_id">اماراتی شناختی کارڈ کے فرنٹ حصے کا فوٹو لیں</string>
+    <string name="capture">کھینچیں</string>
+    <string name="capture_back_emirates_id">اماراتی شناختی کارڈ کے پچھلے  حصے کا فوٹو لیں</string>
+    <string name="scan_emirates_error">براہ کرم اپنا اماراتی شناختی کارڈ کی دوبارہ تصویر کھینچیں</string>
+    <string name="enter_manually">خود سے اندراج کریں</string>
+    <string name="register_emirate_details">اماراتی شناختی کارڈ کی تفصیل</string>
+    <string name="emirates_id">اماراتی شناختی کارڈ</string>
+    <string name="expiry_date">تاریخ منسوخ</string>
+    <string name="nationality">قومیت</string>
+    <string name="dob">تاریخ پیدائش</string>
+    <string name="invalid_emirate_id">اماراتی شناختی کارڈ  غلط ہے</string>
+    <string name="empty_expiry_date">برائے مہربانی تاریخ منسوخ درج کریں</string>
+    <string name="select_country">ملک کا انتخاب کیجئے</string>
+    <string name="no_countries_found">کوئی ملک نہیں ملا</string>
+    <string name="empty_nationality">براہ کرم قومیت درج کریں</string>
+    <string name="dob_mismatch">تاریخ پیدائش اماراتی شناختی کارڈ میں موجود تاریخ پیدائش سے نہیں ملتا ہے</string>
+    <string name="terms_conditions_error">براۓ مہربانی شرائط و ضوابط کو قبول کریں</string>
+    <string name="processing">آپ کی درخواست پر کام ہو رہا ہے</string>
+    <string name="card_number">کارڈ نمبر</string>
+    <string name="card_holder_name">کارڈ کا نام</string>
+    <string name="position_payday_card">پے ڈے کارڈ کی فریم میں تصویر لیں</string>
+    <string name="card">کارڈ منتخب کریں</string>
+
+    <string name="card_scan_error">براہ کرم اپنے کارڈ کی دوبارہ تصویر فراھم کریں</string>
+    <string name="empty_card_no">کارڈ نمبر فراھم کریں</string>
+    <string name="empty_card_name">کارڈ کا نام فراھم کریں</string>
+    <string name="select_card_expiry">کارڈ ختم ہونے کی مدت  کا انتخاب کریں</string>
+
+    <string name="register_card_detail">کارڈ کی تفصیل</string>
+    <string name="enter_mobile_number">موبائل نمبر درج کریں</string>
+    <string name="enter_mobile_number_payments">موبائل نمبر درج کریں</string>
+    <string name="confirm_mobile_no">اپنے موبائل نمبر کی توثیق کریں</string>
+    <string name="invalid_mobile_no">غلط موبائل نمبر</string>
+    <string name="mobile_not_match">موبائل نمبر میں مماثلت نہیں ہے</string>
+    <string name="next">اگلا</string>
+    <string name="number_format_error">+971&#8211;5XXXXXXX ترتیب یہ ہونی چاہئے</string>
+    <string name="verify_otp">OTP کی تصدیق کریں</string>
+    <string name="otp_info">براہ کرم اپنے موبائل نمبر پر بھیجا گیا  تصدیقی کوڈ درج کریں</string>
+    <string name="otp_sent_to_registered_number">براہ کرم اپنے موبائل نمبر پر بھیجا گیا  تصدیقی کوڈ درج کریں</string>
+    <string name="verify">تصدیق کریں</string>
+    <string name="create_login_details">لاگ ان بنانے کی تفصیلات بتائیں</string>
+    <string name="invalid_user_id">یوزر آئی ٖڈی اسپیس کے بغیر 8 حروف کا ہونا ضروری ہے</string>
+    <string name="empty_password">پاس ورڈ درج کریں</string>
+    <string name="fingerprint_dialog_description">لاگ ان کی آسانی کے لئے، آپ فنگر پرنٹ استمال کرسکتے ہیں جو اس موبائل میں پہلے سے ہی محفوظ ہے</string>
+    <string name="skip">چھوڑ دیں</string>
+    <string name="activate">کارڈ کو فعال کریں</string>
+    <string name="fingerprint_dialog_title">فنگر پرنٹ سینسر کو ٹچ کریں۔</string>
+    <string name="fingerprint_dialog_title2">Fingerprint Authentication</string>
+    <string name="cancel">منسوخ کریں</string>
+
+    <string name="user_id">صارف کی شناخت</string>
+    <string name="invalid_username">صارف کی شناخت غلط ہے</string>
+    <string name="invalid_password">صارف کا پاسورڈ غلط ہے</string>
+
+    <string name="forgot_user_id">صارف کی شناخت بھول گئے۔</string>
+    <string name="payday_customer">پے ڈے گاہک</string>
+    <string name="loan_customer">قرض گاہک</string>
+    <string name="enter_card_number">کارڈ نمبر درج کریں</string>
+    <string name="enter_card_pin">کارڈ پن درج کریں</string>
+
+
+    <string name="new_password">نیا پاس ورڈ</string>
+    <string name="submit">جمع</string>
+    <string name="confirm_password">پاس ورڈ کی توثیق کریں</string>
+
+    <string name="reset_password">پاس ورڈ دوبارہ سیٹ کریں۔</string>
+    <string name="password_not_match">پاس ورڈ میچ نہیں کرتا</string>
+
+    <string name="enter_otp">براہ مہربانی OTP درج کریں</string>
+
+
+    <string name="forgot_password">پاسورڈ بھول گیا</string>
+    <string name="resend_otp">OTP دوبارہ بھیجیں</string>
+
+    <string name="update">ترمیم</string>
+    <string name="password_expired">پاس ورڈ کی مدت ختم  ہوگئی ہے . برائے مہربانی اپنا پاس ورڈ ترمیم کریں.</string>
+    <string name="password">پاس ورڈ</string>
+    <string name="passwordKyc">پاس ورڈ</string>
+    <string name="login">لاگن</string>
+    <string name="forgot_user_id_password">یوزر آئی ڈی  یا پاس ورڈ بھول گیا؟</string>
+    <string name="sign_in_diff_account">مختلف صارف / یوزر  کے طور پر سائن ان کریں</string>
+
+    <string name="register">رجسٹر کریں</string>
+
+    <string name="uae_toll_free">متحدہ عرب امارات ٹول  فری</string>
+    <string name="tel">ٹیلی فون</string>
+    <string name="fax">فیکس</string>
+    <string name="email">ای میل</string>
+
+    <string name="faq">عمومی سوالات</string>
+    <string name="how_to_register">رجسٹر کیسے کریں</string>
+    <string name="branch_locations">برانچ کے مقامات</string>
+    <string name="atm_locations">اے ٹی ایم کے مقامات</string>
+    <string name="step_by_step_guide">مرحلہ وار مدد۔</string>
+
+    <string name="welcome">خوش آمدید</string>
+    <string name="title_how_to_fragment">رجسٹر کیسے کریں</string>
+    <string name="emirates_id_expire">امارات آئی ڈی کی مدت ختم ہو چکی ہے یا ختم ہونے والی ہے</string>
+    <string name="payday_card_number_label">پے ڈے کارڈ نمبر</string>
+    <string name="card_blocked">آپ کا کارڈ مسدود ہے</string>
+
+
+    <string name="card_balance">کارڈ بیلنس</string>
+    <string name="banner">بینر</string>
+    <string name="no_offers_available">کوئی آفر دستیاب نہیں ہے</string>
+    <string name="last_salary_credited">آخری تنخواہ</string>
+    <string name="loans">قرض</string>
+    <string name="customer_name">صارف کا نام</string>
+    <string name="loan_type">قرض کی قسم</string>
+    <string name="loan_number">قرض کا نمبر</string>
+    <string name="loan_disbursal_date">قرض فراہم کی تاریخ</string>
+    <string name="original_loan_amount">قرض کی رقم</string>
+    <string name="no_installments_paid">ادا کی گئی قسطوں کی تعداد</string>
+    <string name="interest_rates">شرح سود</string>
+
+    <string name="principal_outstanding">اصل بقایا</string>
+    <string name="outstanding_installments">بقایا قسطیں</string>
+    <string name="monthly_installments">ماہانہ قسطیں</string>
+    <string name="loan_terms_conditions">میں اس کے ذریعہ فائنانس ہاؤس کے ساتھ تنخواہ والے قرض کے لئے درخواست کرتا ہوں اور اس کے لئے میں اپنے کریڈٹ اور مالی معلومات تک رسائی حاصل کرنے کے لئے فنانس ہاؤس کو اجازت دیتا ہوں جس میں اتحاد کریڈٹ بیورو شامل ہے</string>
+    <string name="generic_payment_error">آپ کی درخواست خلل آ گیا ہے۔ براہ کرم کچھ دیر بعد کوشش کریں۔</string>
+    <string name="loan_customer_warning">معذرت ،\n آپ مجاز نہیں ہیں۔ براہ کرم پے ڈے کارڈ کے لئے اپنی کمپنی سے رابطہ کریں</string>
+
+    <string name="categories">اقسام</string>
+    <string name="transaction_history">لین دین کی تاریخ</string>
+    <string name="available_balance_label">دستیاب رقم</string>
+    <string name="money_in">رقم آمد</string>
+    <string name="money_out">رقم اخراج</string>
+
+    <string name="no_transaction_available">کوئی لین دین دستیاب نہیں</string>
+    <string name="mini_statement">مختصر لین دین کی تفصیل</string>
+
+    <string name="description">تفصیل</string>
+    <string name="amount">رقم</string>
+    <string name="payday_to_payday">پے ڈے سے پے ڈے</string>
+    <string name="bill_payment">بل کی اداگی</string>
+    <string name="salaries_credited">تنخواہ موسول ہو گئ</string>
+    <string name="Offers">پیشکش</string>
+    <string name="payments">اداگی</string>
+    <string name="landline">لینڈلائن</string>
+    <string name="payable_amount">قابل ادائیگی رقم</string>
+    <string name="insufficient_balance">ناکافی کارڈ بیلنس</string>
+    <string name="successfully_paid">کامیابی سے ادا ہوگیا ہے</string>
+
+    <string name="converted_payable_amount">تبدیل شدہ قابل ادائیگی رقم</string>
+    <string name="enter_landline_number">لینڈ لائن نمبر درج کریں</string>
+    <string name="enter_customer_id">گاہک کا شناختی نمبر درج کریں</string>
+    <string name="select_dob">تاریخ پیدائش منتخب کریں</string>
+    <string name="insurance">انشورنس</string>
+
+    <string name="gas">گیس</string>
+    <string name="enter_consumer_number">صارف نمبر درج کریں</string>
+    <string name="electricity">بجلی</string>
+    <string name="enter_pvt_number">پی وی ٹی نمبر درج کریں</string>
+
+
+    <string name="multiple_of_50">براہ کرم ۵۰  کے ضرب میں رقم داخل کریں</string>
+    <string name="date">تاریخ</string>
+    <string name="road_transport">سڑکیں اور آمدورفت</string>
+
+    <string name="account_number">اکاؤنٹ نمبر</string>
+
+    <string name="mobile_number">موبائل نمبر</string>
+    <string name="empty_emirate_id">اماراتی شناختی کارڈ نمبردرج کریں</string>
+
+    <string name="utilities">متحدہ عرب امارات کے بل</string>
+    <string name="indian_bill_payment">انڈیا کے بل کی ادائیگی</string>
+    <string name="transport">متحدہ عرب امارات ٹرانسپورٹ</string>
+
+    <string name="dth">ڈی ٹی ایچ</string>
+    <string name="browse_plans">منصوبے منتخب کریں</string>
+    <string name="enter_policy_number">پالیسی نمبر درج کریں</string>
+    <string name="policy_number">پالیسی نمبر</string>
+    <string name="please_select_plan">براہ کرم کوئی منصوبہ منتخب کریں</string>
+    <string name="invalid_account_no">براہ کرم درست اکاؤنٹ نمبر درج کریں</string>
+    <string name="due_date">واجب الادا تاریخ</string>
+    <string name="mobile_service_provider">موبائل سروس فراہم کرنے والے</string>
+    <string name="fewa">فیوا</string>
+    <string name="aadc">اے اے ڈی سی</string>
+
+    <string name="time">وقت</string>
+    <string name="elife">ای لائف</string>
+    <string name="airtel">ایرٹیل</string>
+
+
+    <string name="money_transfer">رقم کی منتقلی</string>
+    <string name="enter_amount">رقم درج کریں</string>
+    <string name="pay">ادا کریں</string>
+    <string name="invalid_amount">براہ کرم درست رقم درج کریں</string>
+    <string name="bank">بینک</string>
+    <string name="edit_beneficiary_success">وصول کنندہ کی تفصیل کامیابی کے ساتھ ترمیم کی گئی</string>
+
+    <string name="bill_amount">بل کی رقم</string>
+    <string name="mawaqif">مواقف</string>
+    <string name="please_enter_otp">برائے مہربانی OTP درج کریں</string>
+    <string name="salik">سالک</string>
+
+    <string name="payday_to_credit">پے ڈے سے کریڈٹ کارڈ</string>
+    <string name="local_money_transfer">مقامی رقم کی منتقلی</string>
+    <string name="transaction_successful">لین دین کامیابی سے مکمل ہو گی ہے</string>
+    <string name="payday_to_payday_1">پے ڈے سے پے ڈے</string>
+    <string name="benificiary_name">وصول کنندہ کا نام</string>
+
+    <string name="add_beneficiary_success">وصول کنندہ کی تفصیل کامیابی کے ساتھ شامل کی گئی</string>
+    <string name="transfer_amount">رقم کی منتقلی</string>
+    <string name="transfer_details">منتقلی کی تفصیلات</string>
+
+    <string name="beneficiary">وصول کنندہ</string>
+    <string name="summary">خلاصہ</string>
+    <string name="registered_beneficiaries">درج شدہ وصول کنندہ</string>
+    <string name="add_beneficiary">وصول کنندہ شامل کریں</string>
+
+    <string name="short_name">مختصر نام</string>
+    <string name="select_bank">بینک منتخب کریں</string>
+    <string name="card_services">کارڈ سے متعلق خدمات</string>
+    <string name="card_statement">کارڈ سے متعلق گوشوارہ</string>
+    <string name="transactions">لین دین</string>
+    <string name="change_pin">پن ری سیٹ کریں</string>
+
+    <string name="pin_does_not_match">پن مختلف ہیں</string>
+    <string name="invalid_pin">پن غلط ہے</string>
+    <string name="confirm_pin">پن کی تصدیق کریں</string>
+
+    <string name="card_details">کارڈ کی تفصیلات</string>
+    <string name="products">مصنوعات</string>
+    <string name="block_card">کارڈ منقطع کریں</string>
+    <string name="card_block_success">آپ کا کارڈ کامیابی کے ساتھ منقطع ہوگیا ہے</string>
+    <string name="activate_card">کارڈ فعال کریں</string>
+
+
+    <string name="card_transaction_dispute">کارڈ کے لین دین میں تنازعہ ہے</string>
+
+    <string name="passport">پاسپورٹ</string>
+    <string name="email_id">ای میل آئ ڈی</string>
+    <string name="enter_new_mobile_no">نیا موبائل نمبر درج کریں</string>
+    <string name="mobile_num">موبائل نمبر</string>
+    <string name="link">لنک</string>
+    <string name="emirates_update_succesful">اماراتی شناختی کارڈ کامیابی سے ترمیم ہوگیا ہے</string>
+
+    <string name="mobile_update_succesful">موبائل نمبرکامیابی سے ترمیم ہوگیا ہے</string>
+    <string name="contact_updated">آپ کی تفصیل کامیابی سے ترمیم ہوگیا ہے</string>
+    <string name="settings">ترتیبات</string>
+
+
+    <string name="enter_current_password">موجودہ پاسورڈ درج کریں</string>
+    <string name="invalid_passport_number">پاسپورٹ نمبرغلط ہے</string>
+    <string name="update_kyc_document">کے وائےسے دستاویز کو ترمیم کریں</string>
+    <string name="passport_number_hint">پاسپورٹ نمبر</string>
+
+
+    <string name="emergency_contact">ایمرجنسی کونٹیکٹ</string>
+    <string name="contact_us">ہم سے رابطہ کریں</string>
+    <string name="call">کال کریں</string>
+    <string name="help">مدد</string>
+
+    <string name="select_issue_area_error">براہ کرم شکايت کا درست شعبہ منتخب کریں</string>
+    <string name="select_issue_error">براہ کرم درست شکايت منتخب کریں</string>
+    <string name="area_of_issue">شکايات کا شعبہ</string>
+    <string name="select_issue">مسئلہ منتخب کریں</string>
+    <string name="message_request">درخواست نمبر :</string>
+
+    <string name="branches">مقام شناس</string>
+
+    <string name="short_code">انسائڈ لوکیٹر -&gt; ایس ایم ایس بینکنگ -&gt; ایس ایم ایس بینکنگ لیبل کو شارٹ کوڈ میں تبدیل کریں</string>
+    <string name="loan_calculator_label">قرض کا محاسب</string>
+    <string name="tenure">میعاد</string>
+    <string name="get_emi_details">مساوی ماہانہ قسطوں کی تفصیلات حاصل کریں</string>
+    <string name="monthly_emi">ماہانہ مساوی قسطیں</string>
+    <string name="principal_amount">اصل رقم</string>
+    <string name="interest_amount">سود کی رقم</string>
+    <string name="total_payable_amount">قابل ادائیگی رقم</string>
+    <string name="calculate_again">دوبارہ حساب کریں</string>
+    <string name="loan_services_title">قرض کی خدمات</string>
+
+    <string name="reschedule_loan">قرض کو اقساط میں تبدیلی کریں</string>
+    <string name="previous_request">سابقہ ​​درخواستیں</string>
+    <string name="request">درخواست</string>
+    <string name="request_id">درخواست نمبر</string>
+    <string name="status">حالت</string>
+    <string name="early_settlement">قبل اذ وقت انتظام</string>
+    <string name="liability">واجباتی خط</string>
+    <string name="clearence_letter">صداقت نامہ</string>
+    <string name="partial_settlement">جزوی انتظام</string>
+    <string name="payment_holiday">ادائیگی کی چھٹی</string>
+    <string name="apply">درخواست دیں</string>
+    <string name="apply_pop_up">درخواست دیں</string>
+    <string name="emi">مساوی ماہانہ قسطیں</string>
+    <string name="loan_offer_terms_cond">میں نے شرائط و ضوابط کو پڑھا اور اس سے اتفاق کیا ہے</string>
+    <string name="eligible_for_loan">آپ قرض کے اہل ہیں</string>
+    <string name="book">بک</string>
+    <string name="decline">رد</string>
+    <string name="apply_loan_otp_instructions">او ٹی پی کو درج کرکے قرض کی بکنگ کی تصدیق کے بعد قرض کی صحیح تفصیلات ای میل / ایس ایم ایس کے ذریعہ ارسال کی جائیں گی</string>
+    <string name="apply_loan_top_up_title">قرضہ کا اضافہ</string>
+    <string name="interested">دلچسپی</string>
+    <string name="loan_disbursal">آپ کا قرض بک ہو گیا ہے اور آپ کے کارڈ/اکاؤنٹ میں منتقل کر دیا گیا ہے</string>
+    <string name="request_error">معذرت! ہم آپ کی درخواست پر کارروائی کرنے سے قاصر ہیں براہ کرم بعد میں دوبارہ کوشش کریں!</string>
+    <string name="eligible_for_deferment">آپ التوا کے اہل ہیں</string>
+    <string name="defer">ملتوی</string>
+    <string name="number_of_installment">قسطوں کی تعداد</string>
+
+
+    <string name="powered_by">"اسکو تقویت دی گئی "</string>
+    <string name="confirm">"کنفرم کریں "</string>
+    <string name="confirmation">تصدیق</string>
+    <string name="invalid_type_format">غلط 1s% </string>
+    <string name="default_text">"پہلے سے طے شدہ متن/ٹکسٹ "</string>
+    <string name="amount_in_aed">AED %1s</string>
+    <string name="amount_in_inr">INR %1s</string>
+    <string name="percentage">%1$s%%</string>s
+    <string name="invalid_credentials">جعلی اسناد.1s%</string>
+    <string name="apply_for_loan_topup">لون ٹاپ اپ کے لئے درخواست دیں</string>
+
+    <string name="password_pattern_info">"مرکب حروف اعداد یا علامتوں کے ساتھ 8 یا زیادہ حرف استعمال کریں"</string>
+    <string name="account_registered">"آپ کا اکاؤنٹ کامیابی سے\n رجسٹرڈ ہوگیا ہے"</string>
+    <string name="scan_card">"اپنا کارڈ اسکین کریں"</string>
+    <string name="position_card_instruction">"اپنے کارڈ کو فریم میں رکھیں"</string>
+
+    <string name="loan">"قرض"</string>
+    <string name="early_salary">"ابتدائی تنخواہ"</string>
+    <string name="not_interested">"دلچسپی نہیں ہے "</string>
+
+    <string-array name="drawer_items">
+        <item>کارڈ کی تفصیل</item>
+        <!--<item>مصنوعات</item>-->
+        <item>خدمت کی درخواستیں</item>
+        <item>ہم سے رابطہ کریں</item>
+        <item>لاگ آوٹ</item>
+    </string-array>
+
+    <string-array name="card_service_items">
+        <!--<item>کارڈ سے متعلق گوشوارہ</item>-->
+        <item>لین دین</item>
+        <item>تنخواہ جمع ہوگئی</item>
+        <item>پن ری سیٹ کریں</item>
+        <item />
+    </string-array>
+
+    <string-array name="services">
+        <item>"بیرون ملک\n رقم کی منتقلی"</item>
+        <item>ڈو</item>
+        <item>اتصالات</item>
+        <item>پے ڈے - پے ڈے \nمنتقلی</item>
+        <item>انڈیا کے بل کی ادائیگی</item>
+    </string-array>
+
+    <string-array name="freq_services">
+        <item>لین دین \nکی تاریخ</item>
+        <item>اداگی</item>
+        <item>منتقلی</item>
+        <item>کارڈ سے متعلق خدمات</item>
+        <item>پیشکش</item>
+        <item>قرض کی خدمات</item>
+    </string-array>
+
+    <string name="apply_for_loan">"قرض کے لئے درخواست کریں"</string>
+    <string name="loan_calculator">"قرض\n کیلکولیٹر"</string>
+    <string name="support">"سپورٹ"</string>
+
+
+    <string name="select_currency">"کرنسی منتخب کریں"</string>
+
+
+    <string name="description_date">"تفصیل / تاریخ"</string>
+    <string name="salaries_credited_date">"تنخواہ کے جمع کئے جانےکی تاریخ "</string>
+
+    <string name="atm_image">"اے ٹی ایم ایڈریس مشینیں"</string>
+
+    <string name="loan_offer_details">"قرض پیشکش کی تفصیلات"</string>
+    <string name="interest_rate">"شرح سود"</string>
+    <string name="monthly_installment">"ماہانہ تنصیب"</string>
+
+    <string name="terms_and_Conditions">"شرائط و ضوابط"</string>
+    <string name="accept">"قبول کریں"</string>
+    <string name="agree_terms">&#160; میں نے پڑھ لیا اور متفق ہوں </string>
+
+
+    <string-array name="edit_beneficiary_options">
+        <item>پے ڈے سے پے ڈے</item>
+        <item>پے ڈے سے کریڈٹ کارڈ</item>
+        <item>مقامی رقم کی منتقلی</item>
+        <item>پے ڈے سے پے ڈے قرض</item>
+    </string-array>
+
+    <string-array name="locator_options">
+        <item>برانچ کے مقامات</item>
+        <item>ایس ایم ایس بینکنگ کے مختصر کوڈز</item>
+    </string-array>
+
+    <string-array name="contact_us_options">
+        <item>کال سینٹر نمبر</item>
+        <item>ویب سائٹ</item>
+        <item>تجاویز اور شکایات</item>
+    </string-array>
+
+    <string-array name="payday_card_key">
+        <item>صارف کا نام</item>
+        <item>پے ڈے کارڈ نمبر</item>
+        <item>کارڈ کی قسم</item>
+        <item>کارڈ کی حالت</item>
+        <item>دستیاب بیلنس کی رقم</item>
+        <item>کل اوور ڈرافٹ کی حد</item>
+        <item>اوور ڈرافٹ کی حد دستیاب ہے</item>
+        <item>انعقاد پر رقم</item>
+        <item>آخری تنخواہ کی رقم</item>
+        <item>آخری تنخواہ جمع کی تاریخ</item>
+    </string-array>
+
+    <string-array name="account_option">
+        <item>پے ڈے قرض</item>
+        <item>ابتدائی تنخواہ</item>
+        <item>کریڈٹ کارڈ</item>
+        <item>ایگزیکٹو تنخواہ</item>
+    </string-array>
+
+    <string name="conversion_value" translatable="false">%1s %2s = %3s %4s as on 16-10-2018</string>
+    <string name="scan_qr_code">"اس QR کوڈ کو اسکین کریں"</string>
+    <string name="scan_payday_card">"پے ڈے  کارڈ سکین"</string>
+    <string name="scan_back_emirates_id_note">"ہم آپ کی اماراتی شناختی کارڈ کو نہیں رکھیں گے یا محفوظ نہیں کریں گے. \nآپ کی تفصیلات پر  محفوظ طریقے سے  عملدرآمد کیا جائیگا ."</string>
+    <string name="customer_selfie">"سیلفی کپپچر کریں"</string>
+    <string name="prepaid">"پری پیڈ "</string>
+    <string name="postpaid">"پوسٹ پیڈ"</string>
+    <string name="operator_image_view">"آپریٹر تصویر کا منظر"</string>
+    <string name="calling_card">"کالنگ کارڈ"</string>
+    <string name="international_remittance">"بیرون ملک رقم کی منتقلی "</string>
+    <string name="international_money_transfer">"بیرون ملک رقم کی منتقلی"</string>
+     <string name="intl_money_transfer">"بیرون ملک رقم کی منتقلی"</string>
+    <string name="accounts">"اکاؤنٹس"</string>
+    <string name="balance">"بقیہ"</string>
+    <string name="payday_card">payday_card</string>
+    <string name="mobile_recharge">"موبائل ریچارج"</string>
+    <string name="available_overdraft_limit">"دستیاب اضافی ڈرافٹ کی حد"</string>
+    <string name="overdraft_limit_2">"اوورڈرافٹ کی حد"</string>
+    <string name="ok">"ٹھیک ہے"</string>
+    <string name="enter_atm_pin">"PIN درج کریں"</string>
+    <string name="enter_atm_pin_salik">"PIN درج کریں"</string>
+    <string name="atm_pin">"پن"</string>
+    <string name="token_id">"ٹوکن  آئی ڈی "</string>
+
+    <string-array name="mini_statements">
+        <item>ايک ماہ کا حساب</item>
+        <item>تين ماہ کا حساب</item>
+        <item>چھ ماہ کا حساب</item>
+    </string-array>
+
+    <string-array name="transaction_history">
+        <item>کارڈ کی لین دین کی تفصیل</item>
+        <item>قرض</item>
+        <item>پے ڈے - پے ڈے \nمنتقلی</item>
+        <item>بل کی اداگی</item>
+        <item>تنخواہ جمع ہوگئی</item>
+    </string-array>
+
+    <string-array name="transaction_history_transfer">
+        <item>پے ڈے سے پے ڈے</item>
+        <item>مقامی رقم کی منتقلی</item>
+        <item>کریڈٹ کارڈ ميں منتقلی</item>
+    </string-array>
+
+    <string-array name="transaction_history_option">
+        <item>ماہانہ</item>
+        <item>آخری پانچ لین دین</item>
+    </string-array>
+
+    <string-array name="setting_options">
+        <item>پاس ورڈ تبدیل کریں</item>
+        <item>بائیو میٹرک استناد</item>
+    </string-array>
+
+
+    <string name="purpose_of_payment">"ادائیگی کا مقصد"</string>
+    <string name="account_no_label">"اکاؤنٹ نمبر"</string>
+    <string name="edit_icon">edit icon</string>
+    <string name="from">"سے"</string>
+    <string name="to">"تک "</string>
+    <string name="currency">" بھیجی جانی والی کرنسی : AED"</string>
+    <string name="available_balance_in_aed">دستیاب بیلنس: AED %1s</string>
+    <string name="previous">"پچھلا"</string>
+    <string name="cardless_withdrawal">"بغیر کارڈ کے پیسہ نکالنا "</string>
+    <string name="personal_loan">"ذاتی قرض"</string>
+    <string name="loan_amount">AED 0</string>
+    <string name="etisalat">"اتصالات"</string>
+    <string name="du">"du"</string>
+
+    <!--Card Service Activity-->
+    <string name="beneficiary_bank">"جسکو بھیجا جائیگا اسکا بینک "</string>
+    <string name="aed">AED</string>
+    <string name="available_balance_text">"دستیاب بیلنس"</string>
+    <string name="montly">"ماہانہ"</string>
+    <string name="email_subscription">ای میل سکریپشن۔</string>
+    <string name="dr">Dr</string>
+    <string name="cr">Cr</string>
+    <string name="confirm_email">ای میل شناخت کی تصدیق کریں۔</string>
+    <string name="statement_type">"اسٹیٹمنٹ کی قسم"</string>
+
+
+    <!--Option Activity-->
+    <string name="apply_cc">"کریڈٹ کارڈ اپلائی  کریں"</string>
+    <string name="apply_dc">"ڈیبٹ کارڈ اپلائی  کریں"</string>
+    <string name="apply_loan_title">"قرض کے لئے اپلائی کریں "</string>
+    <string name="loan_amount_title">"قرضے کی رقم"</string>
+    <string name="months_value">%1s مہینے</string>
+
+    <string name="edit_beneficiary">"جسکو بھیجا جائیگا اسکے نام  میں ترمیم کریں"</string>
+    <string name="local_money_transfer_1">مقامی رقم کی منتقلی۔</string>
+    <string name="beneficiary_name">"جسکو بھیجا جائیگا  اسکا نام"</string>
+    <string name="account_number_field">"اکاؤنٹ نمبر"</string>
+    <string name="address_field">"ایڈریس"</string>
+    <string name="address_line1">"پتہ لائن 1"</string>
+    <string name="address_line2">"پتہ لائن 2"</string>
+    <string name="mobile">"موبائل"</string>
+    <string name="country">"ملک"</string>
+
+    <string name="enter_new_pin">"نیا پن درج کریں"</string>
+    <string name="message">"پیغام"</string>
+    <string name="send_message">"پیغام بھیجیں"</string>
+    <string name="arrow_image">"تیر کی تصویر"</string>
+    <string name="overdraft">"اوورڈرافٹ"</string>
+
+
+    <!--Service Requests-->
+    <string name="thumb_print_instruction">"مزید آسانی کے لئے ، آپ فنگر پرنٹ کے ساتھ لاگ ان کرسکتے ہیں جو اس موبائل میں پہلے سے ہی محفوظ ہے"</string>
+    <string name="service_requests">خدمت کی درخواستیں۔</string>
+    <string name="start">"شروع کریں"</string>
+    <string name="terms_conds_error">"آپ کو شرائط و ضوابط کو قبول کرنے کی ضرورت ہے"</string>
+    <string name="await_instruction">"ٹرانزیکشن کے مکمل\n ہونے کا  انتظار ہے "</string>
+
+    <!--KYC Options-->
+    <string name="passport_title">"ہم آپ کے پاس پاسپورٹ کو جمع  یا محفوظ نہیں کریں گے. آپ کی تفصیلات  پر محفوظ طریقے سے  عملدرآمد کیا جائیگا "</string>
+    <string name="scan_passport">"پاسپورٹ کو اسکین کریں "</string>
+    <string name="enter_email_id">"ای میل آئی ڈٰ ی درج کریں"</string>
+    <string name="confirm_email_id">"ای میل آئی ڈی کنفرم کریں "</string>
+    <string name="email_not_match">"ای میل مماثلت نہیں رکھتی"</string>
+    <string name="enter_new_mobile_number">"نیا موبائل نمبر درج کریں"</string>
+    <string name="confirm_mobile">"موبائل نمبر کی توثیق کریں"</string>
+    <string name="capture_photo_page_passport">پاسپورٹ کا فوٹو پیج حاصل کریں</string>
+    <string name="capture_signature_page_passport">پاسپورٹ کے دستخط والے صفحے پر قبضہ کریں</string>
+    <string name="capture_address_page_passport">پاسپورٹ کا پتہ صفحہ پر قبضہ کریں</string>
+    <string name="passport_capture_successful">پاسپورٹ کیپچر کامیاب</string>
+    <string name="passport_update_succesful">"پاسپورٹ اپ ڈیٹ کامیاب رہا "</string>
+    <string name="email_update_succesful">"ای میل آئی ڈی اپڈیٹ کامیاب رہا "</string>
+    <string name="update_email_id">"ای میل آئی ڈی  اپ ڈیٹ کریں"</string>
+    <string name="update_mobile_no">"موبائل نمبر اپ ڈیٹ کریں"</string>
+    <string name="update_emirates">"اماراتی شناختی کارڈ اپ ڈیٹ کریں"</string>
+    <string name="update_passport">"پاسپورٹ اپ ڈیٹ کریں "</string>
+
+
+    <!--card services activity-->
+    <string name="due">"ادائیگی کی آخری تاریخ "</string>
+
+    <string name="empty_mobile_no">"اپنا موبائل نمبر درج کریں"</string>
+    <string name="empty_mobile_no_payments">"اپنا موبائل نمبر درج کریں"</string>
+    <string name="invalid_expiry_date">"غلط ختم ہونے کی تاریخ"</string>
+    <string name="invalid_card_no">"براہ کرم درست کارڈ نمبر درج کریں"</string>
+    <string name="empty_user_id">"برائے مہربانی یوزر آئی ڈی  درج کریں"</string>
+    <string name="empty_confirm_password">"براہ مہربانی پاس ورڈ کی تصدیق کریں"</string>
+    <string name="invalid_password_len">"پاس ورڈ کم سے کم 8 حروف ہونا چاہئے"</string>
+    <string name="password_contains_userid">"پاس ورڈ میں یوزر آئی ٖڈی  نہیں ہونا چاہئے"</string>
+    <string name="password_not_same_as_old">"نیا پاس ورڈ پرانا پاسورڈ جیسے ہی نہیں ہونا چاہئے"</string>
+    <string name="card_username_length">"کارڈ کا نام کم از کم 2 حروف ہونا چاہئے"</string>
+    <string name="enter_new_password">"نیا پاس ورڈ درج کریں"</string>
+    <string name="change_password">"پاس ورڈ تبدیل کریں"</string>
+    <string name="ic_back">ic_back</string>
+    <string name="ic_profile">ic_profile</string>
+    <string name="flag">flag</string>
+    <string name="invalid_account_length">براہ کرم %1s کا ہندسہ نمبر درج کریں۔</string>
+    <string name="invalid_account_length_ranged">براہ کرم %1s-%2s ہندسوں کا نمبر درج کریں۔</string>
+    <string name="loading">"لوڈ  ہو رہا ہے "</string>
+    <string name="something_went_wrong">"کچھ غلط ہو گیا"</string>
+    <string name="please_enter_pin">"براہ کرم درست پن درج کریں"</string>
+    <string name="no_loan_available">"کوئی قرض دستیاب نہیں ہے"</string>
+    <string name="invalid_dob">"تاریخ پیدائش غلط ہے "</string>
+    <string name="empty_dob">"براہ کرم تاریخ پیدائش  درج کریں"</string>
+    <string name="link_accounts">"اکاؤنٹس کولنک کریں "</string>
+    <string name="three_dots">…</string>
+    <string name="invalid_installment_value">"غلط تنصیب کی قیمت"</string>
+    <string name="inbox">"ان باکس"</string>
+    <string name="valid_message_error">"براہ کرم ایک درست پیغام درج کریں"</string>
+    <string name="account_summary">"اکاؤنٹ کا خلاصہ"</string>
+    <string name="loan_details">"قرض تفصیلات"</string>
+    <string name="payday_cards">"پےڈ کارڈ"</string>
+    <string name="notification_channel">fh_notification_channel</string>
+    <string name="channel_desc">notification channel for App</string>
+    <string name="channel_id">payday_fh</string>
+    <string name="enter_account_number">"اکاؤنٹ نمبر درج کریں"</string>
+    <string name="empty_account_no">"برائے مہربانی اکاؤنٹ نمبر درج کریں"</string>
+    <string name="details">"تفصیلات"</string>
+    <string name="last_bill_amount">"آخری بل رقم"</string>
+    <string name="no_operators_available">"کوئی آپریٹر دستیاب نہیں"</string>
+    <string name="location">"مقام/لوکیشن"</string>
+    <string name="un_successfully_paid">"ادائیگی ناکام ہوگئی"</string>
+    <string name="home">"گھر"</string>
+    <string name="enter_name">"نام"</string>
+    <string name="verified">"تصدیق شدہ"</string>
+    <string name="not_verified">"غیر تصدیق شدہ"</string>
+    <string name="available_overdraft">"دستیاب اوور ڈرافٹ"</string>
+    <string name="sent_box">"بھیجے ہوئے میسیج کا  باکس"</string>
+    <string name="biometric_auth">"بائیو میٹرک  تحقیق "</string>
+    <string name="fingerprint">"فنگر پرنٹ"</string>
+    <string name="enabled">"فعال"</string>
+    <string name="disabled">"غیر "</string>
+    <string name="version_name">"ورژن %1s"</string>
+    <string name="broadband">"براڈبینڈ"</string>
+    <string name="gsm">"جی ایس ایم"</string>
+    <string name="evision">"ای ویژن"</string>
+    <string name="biometric_auth_enabled">"بائیو میٹرک توثیق کو  فعال کر دیا گیا "</string>
+    <string name="personal_details">"ذاتی معلومات"</string>
+    <string name="upload">"اپ لوڈ کریں"</string>
+    <string name="name">"نام"</string>
+    <string name="relation">"تعلقات"</string>
+    <string name="invalid_email">"غلط ای میل"</string>
+    <string name="empty_name">"برائے مہربانی نام درج کریں"</string>
+    <string name="empty_value">"براہ مہربانی ویلو   درج کریں"</string>
+    <string name="upload_mobile_number">"موبائل نمبر اپ ڈیٹ کریں"</string>
+    <string name="set_pin">"پن ری سیٹ کریں"</string>
+    <string name="send">"بھیجیں"</string>
+    <string name="enter_message_hint">&#8230;اپنے مسائل یہاں لکھیں</string>
+    <string name="dewa">DEWA</string>
+    <string name="dubai_police">Dubai Police</string>
+    <string name="nol">NOL</string>
+    <string name="du_">"DU"</string>
+    <string name="etisalat_">"اتصالات"</string>
+    <string name="payment_details">"ادائیگی کی تفصیلات"</string>
+    <string name="customer_id">"گاہک کی شناخت"</string>
+    <string name="landline_number">"لینڈلائن نمبر"</string>
+    <string name="std_code">"اسٹڈی کوڈ" </string>
+    <string name="select_plan">"پلان منتخب کریں"</string>
+    <string name="no_beneficiaries_available">"کوئی فائدہ اٹھانے والا یا اکاؤنٹ ہولڈر یا جسکو بھیجا جائیگا وہ دستیاب نہیں ہے "</string>
+    <string name="no_mobile_no">"کوئی موبائل نمبر دستیاب نہیں ہے"</string>
+    <string name="user_Id_not_available">"صارف کی یوزر آئی ڈی  پہلے ہی موجود ہے"</string>
+    <string name="otp_instructions">"براہ کرم اپنے موبائل نمبر پر بھیجا گیا\n توثیقی کوڈ درج کریں"</string>
+    <string name="invalid_date">"غلط تاریخ"</string>
+    <string name="invalid_name">"غلط نام"</string>
+    <string name="invalid_nationality">"غلط قومیت"</string>
+    <string name="i_accept">&#160;مجھے قبول ہے</string>
+    <string name="date_format">%1s/%2s/%3s</string>
+    <string name="date_format_hypen">%1s-%2s-%3s</string>
+    <string name="label_month">"مہینے"</string>
+    <string name="label_year">"سال"</string>
+    <string name="close">"بند کریں"</string>
+    <string name="no_internet">"کوئی انٹرنیٹ کنکشن نہیں ہے"</string>
+    <string name="change">"تبدیل کریں"</string>
+    <string name="biometric_authentication">"بائیو میٹرک کی  توثیق"</string>
+    <string name="locator">"لوکیٹر"</string>
+
+    <string name="operators">"آپریٹرز"</string>
+    <string name="consumer_number">"صارفین کی تعداد"</string>
+    <string name="last_login">%1s\n :آخری لاگ ان</string>
+    <string name="beneficiary_disabled">"بینیفیشری( اکاؤنٹ )  غیر فعال  ہے  براہ کرم فعال کریں."</string>
+    <string name="enter_PIN">"پن  درج کریں"</string>
+    <string name="international_topup">بین الاقوامی ادائیگی</string>
+
+    <string name="confirm_request">"کیا آپ اپنی درخواست کی تصدیق کرتے ہیں؟"</string>
+    <string name="invalid_loan_number">"غلط قرض نمبر"</string>
+    <string name="no_requests">"کوئی درخواست نہیں"</string>
+    <string name="download">"ڈاؤن لوڈ کریں"</string>
+    <string name="download_started">"ڈاؤن لوڈ شروع ہوگیا ہے "</string>
+    <string name="download_complete">"ڈاؤن لوڈ مکمل ہو گیا ہے "</string>
+    <string name="application_id">"درخواست کی آئی ڈٰی "</string>
+    <string name="app_permissions">"ایپ کی اجازت"</string>
+    <string name="write_storage_permissions">\'PayDay APP\' کو اپنے آلہ پر فائلوں کو محفوظ کرنے کی اجازت دیں۔
+         n\n\ اس کو اہل بنانے کے لئے ، نیچے دیئے گئے اے پی پی کی ترتیبات پر کلک کریں اور اجازت والے مینو کے تحت اسٹوریج کو چالو کریں۔
+    </string>
+    <string name="camera_permission_title">کیمرہ اجازت۔</string>
+    <string name="camera_permission_description">"کیمرے تک رسائی ممنوع ہے۔ \n\n ذیل میں \'اے پی پی کی ترتیبات\' پر کلک کریں اور اجازت نامے کے تحت \'کیمرہ\' کو چالو کریں۔"</string>
+    <string name="not_now">"ابھی نہیں"</string>
+    <string name="app_settings">"ایپ کی سیٹنگ "</string>
+    <string name="for_payday_card">For PayDay Card:</string>
+    <string name="sms_banking">"ایس ایم ایس بینکنگ"</string>
+    <string name="tenure_in_years">"ٹائم (سال)"</string>
+    <string name="please_select_service">"ایک سروس کا انتخاب کریں"</string>
+    <string name="chars_counter">0/255</string>
+    <string name="INR">INR</string>
+    <string name="fine_details">"ٹھیک تفصیلات"</string>
+    <string name="search">"تلاش کریں"</string>
+    <string name="outstanding_amount">"بقایا رقم"</string>
+
+    <string name="paid_on">ادا کیا 1s%</string>
+
+    <string name="sms_code_msg">"مطلوبہ معلومات کے لئے صرف \"شارٹ کوڈ \" منتخب کریں اور 2326 پر فارمیٹ میں ایس ایم ایس بھیجیں: [شارٹ کوڈ] [اسپیس] [کارڈ نمبر کے آخری 6 ہندسے] \n\n مثال کے طور پر: MIN 123456"</string>
+    <string name="account_no_nine">"براہ کرم 9 عددی  اکاؤنٹ نمبر درج کریں"</string>
+    <string name="long_account_no">"براہ کرم 12 عددی اکاؤنٹ نمبر درج کریں"</string>
+    <string name="proceed">"آگے بڑھیں "</string>
+    <string name="du_prefix_no">+971-</string>
+    <string name="please_select_bank">براہ کرم ایک بینک منتخب کریں</string>
+    <string name="iban_number">IBAN Number</string>
+    <string name="transaction_history_2">ٹرانزیکشن کی تاریخ</string>
+    <string name="mobile_format">نمبر کی شکل 9715xxxxxxxx+ ہونی چاہئے</string>
+    <string name="months_valued">%1s مہینے</string>
+    <string name="delete_warning">کیا آپ واقعی اس فائدہ اٹھانے والے کو حذف کرنا چاہتے ہیں؟</string>
+    <string name="enable_warning">کیا آپ واقعی اس فائدہ اٹھانے والے کو اہل بناتے ہیں؟</string>
+    <string name="enable">فعال</string>
+    <string name="disable">غیر</string>
+    <string name="total_amount">کل رقم</string>
+    <string name="charges">چارجز</string>
+    <string name="vat">VAT</string>
+    <string name="campaign_management">مہم کا انتظام</string>
+    <string name="snooze">اسنوز کریں</string>
+    <string name="disable_warning">کیا آپ واقعی اس فائدہ اٹھانے والے کو غیر فعال کرنے کے لئے ہیں؟</string>
+    <string name="suggestions_complaints">تجاویز اور شکایات</string>
+    <string name="no_messages_warning">کوئی تجاویز یا شکایات دستیاب نہیں ہیں</string>
+    <string name="add_to_beneficiary">فائدہ اٹھانے والے میں شامل کریں</string>
+    <string name="passport_number">پاسپورٹ نمبر</string>
+    <string name="create_dispute">تنازعہ پیدا کریں</string>
+    <string name="reference_no">حوالہ نمبر</string>
+    <string name="transaction_amount">لین دین کی رقم</string>
+    <string name="merchant_name">مرچنٹ کا نام</string>
+    <string name="transaction_date">ٹرانزیکشن کی تاریخ</string>
+    <string name="name_should_not_less_than_3">نام 3 حرف سے کم نہیں ہونا چاہئے۔</string>
+    <string name="next_installment_date">اگلی قسط تاریخ</string>
+    <string name="add_as_beneficiary">بطور بطور شامل کریں</string>
+    <string name="action_settings">"ترتیبات/سیٹنگ"</string>
+    <string name="upload_ticket">"ٹکٹ اپ لوڈ کریں"</string>
+    <string name="please_select">"براہ مہربانی منتخب کریں"</string>
+    <string name="loan_summary">"قرض کا خلاصہ"</string>
+    <string name="scan">اسکین کریں</string>
+    <string name="scan_emirates_id">"امارات آئی ڈی اسکین کریں "</string>
+
+    <string name="uae_mobile_length">براه كرم 9 ہندسوں کا نمبر درج کریں</string>
+    <string name="terms_conditions_error_2">**براه كرم شرائط و ضوابط قبول کریں</string>
+    <string name="uae_mobile_format">متحدہ عرب امارات کے موبائل نمبر کی ترتیب</string>
+
+    <string name="credit_card_transfer">پے ڈے سے کریڈٹ کارڈ</string>
+    <string name="payday_to_credit_1">پے ڈے سے کریڈٹ کارڈ</string>
+    <string name="enter_emirates_id">اماراتی شناختی کارڈ درج کریں</string>
+    <string name="enter_emirates_id_payments">اماراتی شناختی کارڈ درج کریں</string>
+    <string name="beneficiaries" translatable="false">وصول کنندہ گان</string>
+    <string name="invalid_beneficiary">وصول کنندہ کی تفسیل غلط ہے</string>
+    <string name="pvt_number">پی وی ٹی نمبر</string>
+    <string name="not_enough_balance">بقیہ ناکافی ہے</string>
+    <string name="fine_amount">جرمانے کی رقم</string>
+    <string name="enter_amount_format">1s% درج کریں</string>
+
+    <string name="card_status">آپ کا کارڈ %s ہے۔</string>
+    <string name="card_status_stoplist">آپ کا کارڈ %s میں ہے۔</string>
+    <string name="please_enter_pvt_no">براہ کرم پی وی ٹی نمبر درج کریں</string>
+    <string name="invalid_pvt_no">براہ کرم قابل قبول پی وی ٹی نمبر درج کریں</string>
+    <string name="no_internet_connectivity">انٹرنیٹ منقطع ہے</string>
+    <string name="retry">دوبارہ کوشش کریں</string>
+    <string name="select_type">قسم منتخب کریں</string>
+    <string name="enter_person_id">شخص کا شناختی نمبر درج کریں</string>
+    <string name="empty_person_id">برائے کرم شخص کا شناختی نمبر درج کریں</string>
+    <string name="inValid_person_id">شناختی نمبر غلط ہے</string>
+    <string name="select_language">زبان منتخب کریں</string>
+    <string name="please_select_language">برائے کرم زبان منتخب کریں</string>
+    <string name="person_id">شخص کا شناختی نمبر</string>
+    <string name="placeholder" translatable="false">xxxxxxxxxxxxxxx</string>
+    <string name="uea_plus_country_dash">+971-</string>
+    <string name="please_select_type">برائے کرم قسم منتخب کریں</string>
+    <string name="delele_beneficiary_confirmation">کیا آپ وصول کنندہ %1s کی تفصیل خارج کریںگے</string>
+    <string name="enable_beneficiary_confirmation">کیا آپ وصول کنندہ %1s کی تفصیل %2s کریںگے</string>
+    <string name="delete">خارج کریں</string>
+    <string name="update_beneficiary">وصول کنندہ کی تفصیل ترمیم کریں</string>
+    <string name="maturity_date">پختگی کی تاریخ</string>
+    <string name="explore">تلاش کریں</string>
+    <string name="popular_services">پسندیدہ خدمات</string>
+    <string name="apply_for_deferment">التوا کے لئے درخواست دیں</string>
+    <string name="transaction_type">لین دین کی قسم</string>
+    <string name="edit"> ترمیم</string>
+    <string name="invalid_amount_ranged">"براہ کرم AED %1s اور AED %2s کے درمیان رقم درج کریں"</string>
+    <string name="invalid_float_amount_ranged">"براہ کرم AED %1s اور AED %2s کے درمیان رقم درج کریں"</string>
+    <string name="invalid_amount_ranged_with_currency">براہ کرم  %1d%2s اور %3d%4s کے درمیان رقم درج کریں۔</string>
+    <string name="enter_old_pin">"موجودہ پن درج کریں۔"</string>
+    <string name="internal_server_error">" اندرونی سرور کی خرابی"</string>
+    <string name="camera">کیمرہ۔</string>
+    <string name="gallery">گیلری۔</string>
+
+    <string name="phone_permission_title">کال کی اجازت۔</string>
+    <string name="phone_permission_description">کال تک رسائی ممنوع ہے۔ \n\nذیل میں ایپ کی ترتیبات پر کلک کرنے کے لئے اور اجازت نامے کے تحت فون کو چالو کریں۔</string>
+    <string name="browse">براؤز کریں</string>
+    <string name="credit"> کریڈٹ</string>
+    <string name="international"> بین اقوامی</string>
+    <string name="data"> ڈیٹا</string>
+    <string name="wasel_renewal">واصل تجدید۔</string>
+    <string name="wasel_recharge">واصل ریچارج۔</string>
+
+    <string-array name="purpose_of_payment">
+        <item>Education Support</item>
+        <item>Family Support</item>
+        <item>Student Support</item>
+        <item>Education Support</item>
+        <item>Student Support</item>
+        <item>Education Support</item>
+        <item>Family Support</item>
+    </string-array>
+
+    <string-array name="aadc_service_type">
+        <item>""</item>
+        <item>اکاؤنٹ نمبر</item>
+        <item>اماراتی شناختی کارڈ </item>
+        <item>شخصی شناخت</item>
+        <item>موبائل نمبر</item>
+    </string-array>
+
+    <string-array name="loan_services_topup">
+        <!--<item>لون ٹاپ اپ کے لئے درخواست دیں۔</item>-->
+        <item>ادائیگی کی چھٹی</item>
+        <item>اقساط میں تبدیلی کریں</item>
+        <item>کلیئرنس لیٹر</item>
+        <item>قبل اذ وقت انتظام</item>
+        <item>جزوی انتظام</item>
+        <item>واجباتی خط</item>
+        <!--<item> </item>-->
+    </string-array>
+
+    <string-array name="loan_services">
+        <!--<item>قرض کے لئے درخواست دیں</item>-->
+        <item>ادائیگی کی چھٹی</item>
+        <item>قرض کو اقساط میں تبدیلی کریں</item>
+        <item>کلیئرنس لیٹر</item>
+        <item>قبل اذ وقت انتظام</item>
+        <item>جزوی انتظام</item>
+        <item>واجباتی خط</item>
+        <!--<item> </item>-->
+    </string-array>
+
+    <string-array name="sms_codes">
+        <item>BAL</item>
+        <item>LTA</item>
+        <item>SAL</item>
+        <item>ACT</item>
+    </string-array>
+
+    <string-array name="sms_description">
+        <item>آپ کے کارڈ پر دستیاب بقیہ۔</item>
+        <item>آپ کے کارڈ پر آخری لین دین کی وضع۔</item>
+        <item>آخری تنخواہ جمع۔</item>
+        <item>چالو کرنا۔</item>
+    </string-array>
+
+    <string-array name="snooze">
+        <item>ايک دن</item>
+        <item>تين دن</item>
+        <item>پانچ دن</item>
+        <item>دس دن</item>
+    </string-array>
+
+    <string-array name="registration_steps">
+        <item>امارات کی ID کیپچر کریں اور تصدیق کریں-</item>
+        <item>پے ڈے کارڈ کو اسکین اور تصدیق کریں-</item>
+        <item>موبائل نمبر کی تصدیق کریں-</item>
+        <item>لاگ ان کی تفصیلات بنائیں-</item>
+        <item>بائیو میٹرک تصدیق (اختیاری) شامل کریں-</item>
+    </string-array>
+
+    <string-array name="service_request_array">
+        <item>کارڈ فعال کریں </item>
+        <item>کارڈ لین دین \n تنازعہ</item>
+        <item>پن ری سیٹ کریں</item>
+        <item>کارڈ منقطع کریں</item>
+    </string-array>
+    <string-array name="money_transfer_options">
+        <item>بیرون ملک \n رقم کی منتقلی </item>
+        <item>Payday\nto Payday</item>
+        <item>Local\nMoney Transfer</item>
+        <item>Payday \nto Credit Card</item>
+        <item>Transaction\nHistory</item>
+    </string-array>
+
+    <string name="loan_topup_amount">ٹاپ اپ رقم</string>
+    <string name="loan_topup_emi">ٹاپ اپ ای ایم آئی</string>
+    <string name="new_tenure">نیا دورانیہ</string>
+    <string name="loan_topup_note">یک بار جب آپ اپنے ٹاپ اپ لون کی بکنگ کی تصدیق کر لیتے ہیں تو ، براہ کرم تفصیلی اسکرین پرجایں  جس میں کل رقم کی عکاسی ہوتی ہے۔</string>
+    <string name="track_trans_status">لین دین کی حیثیت ڈهونڈیں</string>
+    <string name="tap_on_the_transaction_to_initiate_track_request">ٹریک کی درخواست شروع کرنے کیلئے لین دین پر کلک  کریں</string>
+    <string name="send_money">پیسے بھیجیں</string>
+    <string name="rate_calculator">شرح کیلکولیٹر</string>
+    <string name="select_beneficiary">جانشین منتخب کریں</string>
+    <string name="transaction_details">لین دین کی تفصیلات</string>
+    <string name="uae_exchange_transfer_success">آپ کی درخواست کامیابی کے ساتھ موصول ہوگئی ہے اور آپ کی لین دین کی شناخت٪ 1s ہے۔ آپ کے لین دین کی کارروائی ایکسچینج ہاؤس کے ذریعہ اگلے 24–48 کاروباری اوقات میں ہوجائے گی۔</string>
+    <string name="uae_exchange_terms_conditions_link">آپ کو بیرونی براؤزر پر ری ڈائریکٹ کیا جائے گا۔ کیا آپ واقعی جاری رکھنا چاہتے ہیں؟</string>
+    <string name="status_colon">حیثیت:</string>
+    <string name="empty_emirate_card_number">برائے کرم کارڈ نمبر درج کریں</string>
+    <string name="invalid_emirate_card_number">اماراتی شناختی کارڈ غلط ہے</string>
+    <string name="locate_exchange">دفاتر کا پتہ لگائیں</string>
+    <string name="register_intl_beneficiary_instruction">براہ کرم، جانشین کی تفصیلات کے اندراج کے لئے قریب ترین ایکسچینج آفس جایں</string>
+    <string name="enter_promo_code">پرومو کوڈ درج کریں</string>
+    <string name="exchange_rate_inclusive">زر مبادلہ کی شرح تجویز کنندہ ہیں</string>
+    <string name="select_card">کارڈ منتخب کریں</string>
+    <string name="account_balance">رقم کی بقایا جات</string>
+    <string name="commission">کمیشن</string>
+    <string name="exchange_house_commision">ایکسچینج ہاؤس کی اُجرَت</string>
+    <string name="Purpose">مقصد</string>
+    <string name="promo_code">پرومو کوڈ</string>
+    <string name="i_accept_terms_and_conditions">میں شرائط و ضوابط قبول کرتا ہوں</string>
+    <string name="recurring_payment">معاورادائیگی</string>
+    <string name="exchange_house_reference_no">ایکسچینج ہاؤس حوالہ نمبر</string>
+    <string name="fh_reference_no">فنانس ہاؤس حوالہ نمبر</string>
+    <string name="recurring_amount">معاوررقم</string>
+    <string name="you_pay">آپ ادا کریں</string>
+    <string name="purpose">مقصد</string>
+    <string name="recurring_period">معاورمدت</string>
+    <string name="recurring_frequency">معاورتعدد</string>
+    <string name="recurr_on_holidays">تعطیلات پرالتفات کرنا</string>
+    <string name="charges_of_exchange_house">ایکسچینج ہاؤس کی اُجرَت</string>
+    <string name="total_amount_payable">قابل ادائیگی کی کل رقم</string>
+    <string name="they_get">وہ ملتے ہیں</string>
+    <string name="you_send">آپ بھیجیں</string>
+    <string name="transaction_options">لین دین کے اختیارات</string>
+    <string name="make_payment">ادائیگی کرنا</string>
+    <string name="track_request_initiated_successfully">ٹریک کی درخواست کامیابی کے ساتھ شروع کی گئی ہے</string>
+    <string name="view_details">تفصیلات دیکھیں</string>
+    <string name="search_currency">کرنسی تلاش کریں</string>
+    <string name="cancel_recurring_payment">کیا آپ واقعی معاورادائیگی کو منسوخ کرنا چاہتے ہیں؟</string>
+    <string name="yes">جی ہاں</string>
+    <string name="exchange_rate_label"> %3$s %4$s = %1$s %2$s :شرح تبادلہ*</string>
+    <string name="error_amount">براہ کرم رقم درج کریں</string>
+    <string name="invalid_purpose">غلط مقصد</string>
+    <string name="fetching_account_details">براہ کرم انتظار کریں جب تک ہم آپ کے اکاؤنٹ کی تفصیلات لاتے ہیں</string>
+    <string name="fetching_transaction_details">لین دین کی تفصیلات بازیافت کرنا</string>
+    <string name="fetching_transactions">لین دین بازیافت کرنا</string>
+    <string name="my_beneficiaries">میرے جانشین</string>
+    <string name="payout_amt">%1s %2s</string>
+    <string name="load_more">مزید لوڈ کریں</string>
+    <string name="enter_emirates_card_number">9 ہندسوں کے امارات کارڈ نمبر درج کریں</string>
+    <string name="invalid_promo_code">غلط پرومو کوڈ</string>
+    <string name="not_valid_emirates">معذرت ، آپ کا اماراتی شناختی کارڈ یو اے ای ایکسچینج میں رجسٹرڈ نہیں ہے۔ رجسٹریشن کے لئے براہ کرم قریبی متحدہ عرب امارات کے یو اے ای ایکسچینج دفترجایں</string>
+    <string name="added_to_favourites">لین دین کی تفصیلات پسندیدہ کے طور پر شامل ہوگئ ہے</string>
+    <string name="finance_house">فنانس ہاؤس</string>
+    <string name="uae_exchange">یو اے ای ایکسچینج</string>
+    <string name="update_exchange_email">براہ کرم آگے بڑھنے سے پہلے اپنا ای میل آئی ڈی اپ ڈیٹ کریں</string>
+    <string name="state">حالت</string>
+    <string name="no_location_availible">شاخیں دستیاب نہیں ہیں۔</string>
+    <string name="available_balance_after">کٹوتی کے بعد دستیاب بقایا جات</string>
+    <string name="locate_uae_exchange">یو اے ای ایکسچینج تلاش کریں</string>
+    <string name="locate_al_ansari">الانصاری ایکسچینج تلاش کریں</string>
+    <string name="locating_your_device">اپنے آلے کا پتہ لگانا…</string>
+    <string name="no_branches_in_area">اس علاقے میں کوئی شاخیں نہیں ہیں</string>
+    <string name="location_permission_title">مقام کی اجازت</string>
+    <string name="location_permission_description">مقام تک رسائی ممنوع ہے۔ ذیل میں \'اے پی پی کی ترتیبات\' پر کلک کریں اور اجازت والے مینو کے تحت \' مقام\' کو محرک کریں۔
+    </string>
+    <string name="total">Total</string>
+    <string name="through">Through</string>
+    <string name="other_beneficiaries">Other Beneficiaries</string>
+    <string name="reference_hash">Reference #</string>
+
+    <string name="_continue">"جاری رہے"</string>
+    <string name="or">"یا"</string>
+    <string name="app_update_available">"%2$s کا نیا ورژن (%1$s) دستیاب ہے۔"</string>
+    <string name="capture_emirates_id_front">Capture front side of your Emirates ID</string>
+    <string name="capture_emirates_id_back">Capture back side of your Emirates ID</string>
+    <string name="password_changed">"آپ کا پاس ورڈ تبدیل کر دیا گیا ہے۔"</string>
+    <string name="pin_changed">"آپ کا پن کامیابی کے ساتھ تبدیل کر دیا گیا ہے۔"</string>
+    <string name="successfully_transferred">"ریاست منتخب کریں"</string>
+    <string name="select_state">"ریاست منتخب کریں"</string>
+    <string name="no_state_found">"کامیابی کے ساتھ منتقلی ہوگئ ہے۔"</string>
+    <string name="choose_state">"ریاست کا انتخاب کریں"</string>
+    <string name="no_notifications_available">"کوئی اطلاع دستیاب نہیں ہے"</string>
+    <string name="mawaqif_card_balance">"مواقف کا بقای"ا</string>
+    <string name="reject">"مسترد کریں"</string>
+    <string name="notifications">"اطلاعات"</string>
+    <string name="view">"منظر"</string>
+    <string name="capture_emirated_id">Capture Emirates ID</string>
+    <string name="balance_after_transfer">"منتقلی کے بعد بیلنس: %s"</string>
+    <string name="emirates_scan_warning">"اسکین کرنے کے قابل نہیں ہے۔ روشنی کی مختلف حالتوں میں اسکین کرنے کی کوشش کریں اور یہ یقینی بنائیں کہ کارڈ فریم میں ہے۔"</string>
+    <string name="choose_plan">"منصوبہ منتخب کریں"</string>
+    <string name="please_choose_plan">"براہ کرم منصوبہ منتخب کریں-"</string>
+    <string name="bill_info">آپ کا اصل بل  %1s  ہے اور آپ  %2s ادا کر رہے ہیں</string>
+    <string name="mawaqif_topup">"مواقف کا ٹاپ اپ"</string>
+
+    <string name="storage_permission_title">"اسٹوریج کی اجازت"</string>
+    <string name="storage_permission_description">"فوٹو ، میڈیا اور فائلوں تک رسائی ممنوع ہے۔ ذیل میں ایپ کی ترتیبات  پر کلک کر کے  اجازت والے مینو کے ذریعے '\اسٹوریج'\ کو چالو کریں۔"
+    </string>
+    <string name="contact_permission_title">"رابطہ کی فہرست کی اجازت"</string>
+    <string name="contact_permission_description">"رابطہ کی فہرست کی رسائی ممنوع ہے۔  ذیل میں ایپ کی ترتیبات  پر کلک کر کے  اجازت والے مینو کے ذریعے '\رابطہ کی فہرست'\ کو چالو کریں۔"
+    </string>
+
+
+    <string-array name="intl_remittance">
+        <item>شرح کیلکولیٹر</item>
+        <item>پیسے کی منتقلی</item>
+        <item>میرے جانشین</item>
+        <item>لین دین کی حیثیت کا پتہ لگائں</item>
+        <item>لین دین کی پچهلی تفصیل</item>
+        <item>ایکسچینج کا دفتر تلاش کریں</item>
+    </string-array>
+
+    <string-array name="intl_locator_options">
+       <!-- <item>یو اے ای ایکسچینج</item>-->
+        <item>Al Fardan Exchange</item>
+    </string-array>
+
+    <string-array name="intl_locator_option">
+         <item>یو اے ای ایکسچینج</item>
+        <item>Al Fardan Exchange</item>
+    </string-array>
+
+    <string-array name="imt_transfer_purpose">
+        <item>خاندانی دیکھ بھال / بچت</item>
+    </string-array>
+
+    <string-array name="transaction_options">
+        <item>لین دین کی تفصیلات دیکھیں</item>
+        <item>پسندیدہ میں شامل کریں</item>
+        <item>لین دین دہرائیں</item>
+        <item>رقم دوبارہ بھیجیں</item>
+        <item>ڈاؤن لوڈ کریں</item>
+        <item>لین دین کا اشتراک</item>
+    </string-array>
+
+    <string-array name="transaction_options2">
+        <item>لین دین کی تفصیلات دیکھیں</item>
+        <item>پسندیدہ سے ہٹائیں</item>
+        <item>لین دین دہرائیں</item>
+        <item>رقم دوبارہ بھیجیں</item>
+        <item>ڈاؤن لوڈ کریں</item>
+        <item>لین دین کا اشتراک</item>
+    </string-array>
+
+    <string-array name="track_transaction">
+        <item>تار کی منتقلی</item>
+        <!--<item>نقد ادائیگی</item>-->
+    </string-array>
+
+    <string-array name="intl_transfer_tabs">
+        <item>تار کی منتقلی</item>
+        <!--<item>پیسے کی منتقلی</item>-->
+    </string-array>
+
+    <string-array name="intl_transaction_tabs">
+        <item>پسندیدہ</item>
+        <item>تمام لین دین</item>
+    </string-array>
+
+    <string-array name="weekly_timing">
+        <item>اتوار %1s</item>
+        <item>پیر %1s</item>
+        <item>منگل %1s</item>
+        <item>بدھ %1s</item>
+        <item>جمعرات %1s</item>
+        <item>جمعہ %1s</item>
+        <item>ہفتہ %1s</item>
+    </string-array>
+
+
+</resources>

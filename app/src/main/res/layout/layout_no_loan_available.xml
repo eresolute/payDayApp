@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_no_loan_available"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/tv_loan"
+        style="@style/AppTheme.Text.Small.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_icon_loan"
+        android:drawablePadding="@dimen/dimen_16"
+        android:gravity="center"
+        android:paddingStart="@dimen/dimen_16"
+        android:paddingTop="@dimen/dimen_4"
+        android:paddingEnd="@dimen/dimen_16"
+        android:paddingBottom="@dimen/dimen_4"
+        android:text="@string/no_loan_available"
+        android:textColor="@color/textColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn_apply_loan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/apply_for_loan"
+        android:textAllCaps="false"
+        app:backgroundTint="@color/btn_primary_color"
+        app:cornerRadius="@dimen/button_corner"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_loan"
+        app:layout_constraintVertical_bias="0.8"
+        app:rippleColor="@color/btn_secondary_color" />
+
+</android.support.constraint.ConstraintLayout>

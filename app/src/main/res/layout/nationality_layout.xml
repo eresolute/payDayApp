@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layout_nationality"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout_address"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:gravity="start"
+        android:layoutDirection="ltr"
+        android:textAlignment="textStart"
+        app:boxBackgroundColor="@color/grey"
+        app:boxCornerRadiusBottomEnd="@dimen/input_text_corner"
+        app:boxCornerRadiusBottomStart="@dimen/input_text_corner"
+        app:boxCornerRadiusTopEnd="@dimen/input_text_corner"
+        app:boxCornerRadiusTopStart="@dimen/input_text_corner"
+        app:layout_constraintBottom_toTopOf="@+id/btn_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout_relationship"
+        tools:ignore="UnusedAttribute">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_address"
+            style="@style/AppTheme.Text.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="@string/address_field"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine|text"
+            android:lines="3"
+            android:maxLength="50"
+            android:maxLines="3"
+            android:textColor="@color/textColor" />
+    </android.support.design.widget.TextInputLayout>-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout_egyptianId"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_4"
+        android:gravity="start"
+        app:boxBackgroundColor="@color/grey"
+        app:boxCornerRadiusBottomEnd="@dimen/input_text_corner"
+        app:boxCornerRadiusBottomStart="@dimen/input_text_corner"
+        android:visibility="gone"
+        app:boxCornerRadiusTopEnd="@dimen/input_text_corner"
+        app:boxCornerRadiusTopStart="@dimen/input_text_corner"
+        app:layout_constraintTop_toBottomOf="@id/tv_nationality"
+        app:layout_constraintBottom_toTopOf="@id/textInputLayout_addressLine1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:hint=""
+        android:nextFocusDown="@id/editText_addressLine1"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_egyptianId"
+            style="@style/AppTheme.Text.Small"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 ,-/"
+            android:hint="@string/egyptian_id"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:inputType="textPersonName"
+            android:textColor="@color/textColor"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout_addressLine1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_4"
+        android:gravity="start"
+        app:boxBackgroundColor="@color/grey"
+        app:boxCornerRadiusBottomEnd="@dimen/input_text_corner"
+        app:boxCornerRadiusBottomStart="@dimen/input_text_corner"
+        app:boxCornerRadiusTopEnd="@dimen/input_text_corner"
+        app:boxCornerRadiusTopStart="@dimen/input_text_corner"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:hint=""
+        android:nextFocusDown="@id/editText_addressLine2">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_addressLine1"
+            style="@style/AppTheme.Text.Small"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 ,-/"
+            android:hint="@string/address_line1"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:inputType="textPersonName"
+            android:textColor="@color/textColor"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout_addressLine2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_4"
+        android:gravity="start"
+        app:boxBackgroundColor="@color/grey"
+        app:boxCornerRadiusBottomEnd="@dimen/input_text_corner"
+        app:boxCornerRadiusBottomStart="@dimen/input_text_corner"
+        app:boxCornerRadiusTopEnd="@dimen/input_text_corner"
+        app:boxCornerRadiusTopStart="@dimen/input_text_corner"
+        android:hint=""
+        android:nextFocusDown="@id/et_relationship">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="textPersonName"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_addressLine2"
+            android:singleLine="true"
+            style="@style/AppTheme.Text.Small"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 ,-/"
+            android:hint="@string/address_line2"
+            android:imeOptions="actionDone"
+            android:textColor="@color/textColor"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_favourite_list"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:layout_gravity="end"
+        android:paddingRight="@dimen/dimen_8"
+        android:drawableLeft="@drawable/ic_add_fav2x"
+        android:drawablePadding="@dimen/dimen_8"
+        android:text="@string/add_beneficiary_to_my_favourite_list"
+        android:drawableStart="@drawable/ic_add_fav2x"
+        android:paddingEnd="@dimen/dimen_8" />
+
+
+
+</LinearLayout>

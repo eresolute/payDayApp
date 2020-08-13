@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_from"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingLeft="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:paddingRight="@dimen/dimen_8"
+            android:text="@string/from"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toBottomOf="@+id/linear_layout1"
+            app:layout_constraintEnd_toStartOf="@id/barrier"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linear_layout1" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/barrier"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_card_name"
+                style="@style/AppTheme.Text.Small.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:id="@+id/tv_card_number"
+                style="@style/AppTheme.Text.Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_amount"
+                style="@style/AppTheme.Text.Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/edit_icon"
+            android:src="@drawable/ic_edit"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/linear_layout1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.96"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linear_layout1" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:paddingTop="@dimen/dimen_8"
+            android:paddingBottom="@dimen/dimen_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout1" />
+
+        <TextView
+            android:id="@+id/tv_to"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingLeft="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:paddingRight="@dimen/dimen_8"
+            android:text="@string/to"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toBottomOf="@id/linear_layout2"
+            app:layout_constraintEnd_toStartOf="@+id/barrier"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/linear_layout2" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_8"
+            app:layout_constraintEnd_toStartOf="@+id/iv_to_edit"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/barrier"
+            app:layout_constraintTop_toBottomOf="@+id/view">
+
+            <TextView
+                android:id="@+id/tv_to_card_user_name"
+                style="@style/AppTheme.Text.Small.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Andrew Mathews"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:id="@+id/tv_to_card_number"
+                style="@style/AppTheme.Text.Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="FINANCE HOUSE"/>
+
+            <TextView
+                android:id="@+id/tv_to_mobile"
+                style="@style/AppTheme.Text.Time"
+                android:layout_width="wrap_content"
+                android:textDirection="ltr"
+                android:layout_height="wrap_content"
+                tools:text="+971-3455444444" />
+
+            <TextView
+                android:id="@+id/tv_iban"
+                style="@style/AppTheme.Text.Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_to_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/edit_icon"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingLeft="@dimen/dimen_8"
+            android:paddingTop="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:paddingRight="@dimen/dimen_8"
+            android:paddingBottom="@dimen/dimen_8"
+            android:src="@drawable/ic_edit"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/linear_layout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linear_layout2" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout2" />
+
+        <TextView
+            android:id="@+id/tv_tot_amount"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingLeft="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:paddingRight="@dimen/dimen_8"
+            android:text="@string/amount"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toTopOf="@+id/view3"
+            app:layout_constraintEnd_toStartOf="@+id/barrier"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <TextView
+            android:id="@+id/tv_total_amount"
+            style="@style/AppTheme.Text.Small.Bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingLeft="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:paddingRight="@dimen/dimen_8"
+            tools:text="AED 100.00"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_tot_amount"
+            app:layout_constraintEnd_toEndOf="@+id/linear_layout2"
+            app:layout_constraintEnd_toStartOf="@+id/iv_amount_edit"
+            app:layout_constraintStart_toEndOf="@id/barrier"
+            app:layout_constraintTop_toTopOf="@+id/tv_tot_amount" />
+
+        <ImageView
+            android:id="@+id/iv_amount_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/edit_icon"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingLeft="@dimen/dimen_8"
+            android:paddingTop="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:paddingRight="@dimen/dimen_8"
+            android:paddingBottom="@dimen/dimen_8"
+            android:src="@drawable/ic_edit"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_total_amount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_total_amount" />
+
+        <View
+            android:id="@+id/view3"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_charges"
+            app:layout_constraintTop_toBottomOf="@+id/tv_total_amount" />
+
+        <TextView
+            android:id="@+id/tv_charges"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingLeft="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:paddingRight="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:text="@string/charges"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toTopOf="@+id/view3"
+            app:layout_constraintEnd_toStartOf="@+id/barrier"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+        <TextView
+            android:id="@+id/tv_charges_value"
+            style="@style/AppTheme.Text.Small.Bold"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingLeft="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:paddingRight="@dimen/dimen_8"
+            tools:text="AED 100.00"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_charges"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/barrier"
+            app:layout_constraintTop_toTopOf="@+id/tv_charges" />
+        <View
+            android:id="@+id/view4"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_vat"
+            app:layout_constraintTop_toBottomOf="@+id/tv_charges" />
+        <TextView
+            android:id="@+id/tv_vat"
+            android:visibility="gone"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingLeft="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:paddingRight="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:text="@string/vat"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toTopOf="@+id/view5"
+            app:layout_constraintEnd_toStartOf="@+id/barrier"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <TextView
+            android:id="@+id/tv_vat_value"
+            android:visibility="gone"
+            style="@style/AppTheme.Text.Small.Bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingLeft="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:paddingRight="@dimen/dimen_8"
+            tools:text="AED 100.00"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_vat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/barrier"
+            app:layout_constraintTop_toTopOf="@+id/tv_vat" />
+        <View
+            android:id="@+id/view5"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_vat" />
+        <TextView
+            android:id="@+id/tv_tamount"
+            android:visibility="gone"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingLeft="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:paddingRight="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="@string/total_amount"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toTopOf="@+id/view6"
+            app:layout_constraintEnd_toStartOf="@+id/barrier"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+        <TextView
+            android:id="@+id/tv_tamount_value"
+            android:visibility="gone"
+            style="@style/AppTheme.Text.Small.Bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingLeft="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:paddingRight="@dimen/dimen_8"
+            tools:text="AED 100.00"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_tamount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/barrier"
+            app:layout_constraintTop_toTopOf="@+id/tv_tamount" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8"
+            android:visibility="gone"
+            android:scrollbars="vertical"
+            android:scrollbarThumbVertical="@color/grey_300"
+            android:fadeScrollbars="false"
+            android:scrollbarSize="@dimen/dimen_4"
+            app:layout_constraintBottom_toTopOf="@+id/tv_balance_left"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+        <TextView
+            android:id="@+id/tv_balance_left"
+            style="@style/AppTheme.Text.Small.Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:background="@drawable/bg_spinner"
+            android:padding="@dimen/dimen_8"
+            android:textAlignment="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/btn_confirm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@id/btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_24"
+            android:layout_marginEnd="@dimen/dimen_24"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:padding="@dimen/dimen_8"
+            android:text="@string/confirm"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/btn_primary_color"
+            app:cornerRadius="@dimen/button_corner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:rippleColor="@color/btn_secondary_color" />
+
+        <View
+            android:id="@+id/barrier"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+

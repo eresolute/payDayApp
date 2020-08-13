@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/AppTheme.Toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionBarSize"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@id/toolbar_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        android:focusable="true"
+        android:padding="@dimen/dimen_8"
+        android:src="@drawable/ic_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1" />
+
+    <TextView
+        android:id="@+id/ignored_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:drawableEnd="@drawable/ic_help"
+        android:drawableRight="@drawable/ic_help"
+        android:drawablePadding="@dimen/dimen_6"
+        android:gravity="center"
+        android:padding="@dimen/dimen_4"
+        android:text="@string/help"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="69dp" />
+
+    <TextView
+        android:id="@id/toolbar_title"
+        style="@style/AppTheme.Text.Medium.Bold"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/dimen_12"
+        android:gravity="bottom"
+        android:maxLines="1"
+        android:text="@string/default_text"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:ellipsize="end"
+        app:autoSizeMaxTextSize="@dimen/text_18"
+        app:autoSizeMinTextSize="@dimen/text_12"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_end"
+        app:layout_constraintStart_toEndOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="69dp" />
+    <ImageView
+        android:id="@+id/toolbar_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_notification_badge"
+        android:padding="@dimen/dimen_8"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toEndOf="@+id/guideline_end"
+        app:layout_constraintEnd_toStartOf="@+id/toolbar_help"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintHorizontal_bias="1"
+        />
+
+    <TextView
+        android:id="@+id/toolbar_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:drawableEnd="@drawable/ic_help"
+        android:drawableRight="@drawable/ic_help"
+        android:drawablePadding="@dimen/dimen_6"
+        android:gravity="center"
+        android:padding="@dimen/dimen_4"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@id/toolbar_notification"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1" />
+
+
+</android.support.constraint.ConstraintLayout>

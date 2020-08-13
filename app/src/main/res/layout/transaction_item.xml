@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="trans"
+            issue="com.fh.payday.datasource.models.transactions.Transaction"/>
+    </data>-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="?attr/selectableItemBackground"
+    android:padding="@dimen/dimen_8">
+
+    <TextView
+        android:id="@id/tv_title"
+        style="@style/AppTheme.Text.Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="@dimen/dimen_2"
+        android:text="@string/app_name"
+        android:textSize="@dimen/text_title"
+        app:layout_constraintBottom_toTopOf="@id/tv_date"
+        app:layout_constraintEnd_toStartOf="@+id/tv_amount"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@id/tv_date"
+        style="@style/AppTheme.Text.Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="@dimen/dimen_2"
+        android:text="12/11/1111"
+        android:textColor="@color/textColorLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_amount"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <TextView
+        android:id="@id/tv_amount"
+        style="@style/AppTheme.Text.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="end"
+        android:padding="@dimen/dimen_2"
+        android:text="1,00,000"
+        android:textSize="@dimen/text_title"
+        app:layout_constraintBottom_toTopOf="@id/tv_currency"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@id/tv_currency"
+        style="@style/AppTheme.Text.Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="end"
+        android:padding="@dimen/dimen_2"
+        android:text="AED"
+        android:textColor="@color/textColorLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_amount"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_amount"
+        app:layout_constraintTop_toBottomOf="@id/tv_amount" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+<!--</layout>-->

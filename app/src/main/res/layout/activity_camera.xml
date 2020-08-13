@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.shared.CameraActivity">
+
+    <include layout="@layout/content_camera" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn_capture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="@dimen/dimen_36"
+        android:fontFamily="@font/comfortaa_bold"
+        app:icon="@drawable/ic_camera_white"
+        app:iconGravity="textStart"
+        android:gravity="center"
+        android:padding="@dimen/dimen_8"
+        android:text="@string/capture"
+        android:textAllCaps="false"
+        android:layout_marginStart="@dimen/dimen_40"
+        android:layout_marginEnd="@dimen/dimen_40"
+        app:backgroundTint="@color/btn_primary_color"
+        app:cornerRadius="@dimen/button_corner"
+        app:rippleColor="@color/btn_secondary_color" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="@dimen/dimen_36"
+        android:visibility="gone"
+        android:progressTint="@color/btn_primary_color"/>
+
+</android.support.design.widget.CoordinatorLayout>

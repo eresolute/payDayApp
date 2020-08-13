@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/root_view"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_bg_blue"
+    tools:context=".views2.payments.recharge.MobileRechargeActivity">
+
+    <include
+        android:id="@id/i_toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintBottom_toTopOf="@id/card_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/card_radius"
+        app:layout_constraintBottom_toTopOf="@+id/i_bottombar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i_toolbar">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_operator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:contentDescription="@string/operator_image_view"
+                android:src="@mipmap/ic_du_xhdpi" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_prepaid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_2"
+                    android:text="@string/prepaid"
+                    android:textSize="@dimen/text_10" />
+
+                <RadioButton
+                    android:id="@+id/rb_postpaid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_2"
+                    android:text="@string/postpaid"
+                    android:textSize="@dimen/text_10" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radio_group_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_eLife"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_2"
+                    android:text="@string/elife"
+                    android:textSize="@dimen/text_10" />
+
+                <RadioButton
+                    android:id="@+id/rb_evision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:padding="@dimen/dimen_2"
+                    android:text="@string/evision"
+                    android:textSize="@dimen/text_10" />
+
+                <RadioButton
+                    android:id="@+id/rb_broadband"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_2"
+                    android:text="@string/broadband"
+                    android:textSize="@dimen/text_10" />
+
+                <RadioButton
+                    android:id="@+id/rb_gsm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_2"
+                    android:text="@string/gsm"
+                    android:textSize="@dimen/text_10" />
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/rb_del"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:fontFamily="@font/comfortaa_bold"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="@dimen/dimen_2"-->
+                    <!--android:text="@string/del"-->
+                    <!--android:textSize="@dimen/text_10" />-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/rb_dialup"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:fontFamily="@font/comfortaa_bold"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="@dimen/dimen_2"-->
+                    <!--android:text="@string/dialup"-->
+                    <!--android:textSize="@dimen/text_10" />-->
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radio_group_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_prepaid_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_2"
+                    android:text="@string/wasel_recharge"
+                    android:textSize="@dimen/text_10" />
+
+                <RadioButton
+                    android:id="@+id/rb_prepaid_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:padding="@dimen/dimen_2"
+                    android:text="@string/wasel_renewal"
+                    android:textSize="@dimen/text_10" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radio_group_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_2"
+                    android:text="@string/time"
+                    android:textSize="@dimen/text_10" />
+
+                <RadioButton
+                    android:id="@+id/rb_credit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_2"
+                    android:text="@string/credit"
+                    android:textSize="@dimen/text_10" />
+
+                <RadioButton
+                    android:id="@+id/rb_international"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_2"
+                    android:text="@string/international"
+                    android:textSize="@dimen/text_10" />
+
+                <RadioButton
+                    android:id="@+id/rb_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_2"
+                    android:text="@string/data"
+                    android:textSize="@dimen/text_10" />
+            </RadioGroup>
+
+            <com.fh.payday.utilities.NonSwipeableViewPager
+                android:id="@id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:layout_weight="1" />
+
+            <com.fh.payday.utilities.NonSwipeableViewPager
+                android:id="@+id/view_pager_prepaid"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <include
+        android:id="@id/i_bottombar"
+        layout="@layout/bottombar_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view" />
+
+</android.support.constraint.ConstraintLayout>

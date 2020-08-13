@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomLayout"
+    style="@style/AppTheme.BottomBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/dimen_2"
+    android:paddingEnd="@dimen/dimen_2">
+
+    <TextView
+        android:id="@+id/btm_home"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:drawableTop="@drawable/ic_home"
+        android:drawablePadding="4dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/home"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_x_small" />
+
+    <TextView
+        android:id="@+id/btm_menu_branch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:drawableTop="@drawable/ic_cash_out"
+        android:drawablePadding="4dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/branches"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_x_small" />
+
+    <TextView
+        android:id="@+id/btm_menu_loan_calc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:drawableTop="@drawable/ic_loan_calculator"
+        android:drawablePadding="4dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/loan_calculator"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_x_small" />
+
+    <TextView
+        android:id="@+id/btm_menu_support"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:drawableTop="@drawable/ic_support"
+        android:drawablePadding="4dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/contact_us"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_x_small" />
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    style="@style/AppTheme.RegisterScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="@dimen/dimen_10"
+    app:cardElevation="@dimen/dimen_10"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/dimen_8"
+    tools:context=".views2.registration.ScanEmiratesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/dimen_16"
+            android:src="@mipmap/ic_emirates_id_font" />
+
+        <TextView
+            android:id="@+id/tv_note"
+            style="@style/AppTheme.Text.Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:gravity="center"
+            android:text="@string/scan_back_emirates_id_note"
+            android:textColor="@color/textColorLight" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/AppTheme.Text.Body2.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="@string/capture_back_emirates_id"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_24"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:orientation="horizontal">
+
+            <android.support.design.button.MaterialButton
+                android:id="@id/btn_capture"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/start"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/btn_primary_color"
+                app:cornerRadius="@dimen/button_corner"
+                app:icon="@drawable/ic_camera_white"
+                app:iconGravity="textStart"
+                app:rippleColor="@color/btn_secondary_color" />
+
+            <TextView
+                android:id="@+id/btn_capture_kyc"
+                style="@style/AppTheme.Text.Small"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dimen_6"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:layout_marginEnd="@dimen/dimen_6"
+                android:layout_marginBottom="@dimen/dimen_6"
+                android:layout_weight="1"
+                android:background="@drawable/bg_round"
+                android:drawableStart="@drawable/ic_camera_white"
+                android:drawableLeft="@drawable/ic_camera_white"
+                android:gravity="center"
+                android:padding="@dimen/dimen_8"
+                android:text="@string/scan"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/btn_gallery"
+                style="@style/AppTheme.Text.Small"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dimen_6"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:layout_marginEnd="@dimen/dimen_6"
+                android:layout_marginBottom="@dimen/dimen_6"
+                android:layout_weight="1"
+                android:background="@drawable/bg_round"
+                android:drawableStart="@drawable/ic_gallery"
+                android:drawableLeft="@drawable/ic_gallery"
+                android:gravity="center"
+                android:padding="@dimen/dimen_8"
+                android:text="@string/browse"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_or"
+            style="@style/AppTheme.Text.Time.Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/or"
+            android:visibility="gone" />
+
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_skip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:text="@string/enter_manually"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:backgroundTint="@color/blue"
+            app:cornerRadius="@dimen/button_corner"
+            app:rippleColor="@color/blue_green" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

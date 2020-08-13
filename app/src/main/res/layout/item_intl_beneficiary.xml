@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:textDirection="locale"
+    tools:ignore="UnusedAttribute">
+
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="@dimen/dimen_32"
+        android:layout_height="@dimen/dimen_32"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:contentDescription="@string/payday_card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_beneficiary_name"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VectorDrawableCompat"
+        tools:srcCompat="@drawable/ic_united_arab_emirates_round" />
+
+    <TextView
+        android:id="@+id/tv_beneficiary_name"
+        style="@style/AppTheme.Text.Body1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:ellipsize="end"
+        app:layout_constraintBottom_toTopOf="@+id/tv_bank_name"
+        app:layout_constraintEnd_toStartOf="@+id/barrier1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_user"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Andrew Mathews" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="tv_currency" />
+
+    <TextView
+        android:id="@+id/tv_currency"
+        style="@style/AppTheme.Text.Body2.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/img_exchange_logo"
+        app:layout_constraintEnd_toStartOf="@+id/iv_favourites"
+        app:layout_constraintStart_toEndOf="@+id/barrier1"
+        app:layout_constraintTop_toTopOf="@id/img_exchange_logo"
+        tools:text=" - INR" />
+
+    <TextView
+        android:id="@+id/tv_bank_name"
+        style="@style/AppTheme.Text.Time.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:ellipsize="end"
+        android:textColor="@color/textHintColor"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/account_no"
+        app:layout_constraintEnd_toStartOf="@+id/barrier1"
+        app:layout_constraintStart_toEndOf="@id/iv_user"
+        app:layout_constraintTop_toBottomOf="@+id/tv_beneficiary_name"
+        tools:text="FINANCE HOUSE" />
+
+    <TextView
+        android:id="@+id/account_no"
+        style="@style/AppTheme.Text.Time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:layout_marginBottom="@dimen/dimen_4"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textColor="@color/textHintColor"
+        android:textDirection="ltr"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/view7"
+        app:layout_constraintEnd_toStartOf="@+id/barrier1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/iv_user"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bank_name"
+        tools:text="+971512345678" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:background="@color/grey_400"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account_no" />
+
+    <ImageView
+        android:id="@+id/iv_favourites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_4"
+        android:src="@drawable/ic_add_fav_small"
+        android:paddingLeft="@dimen/dimen_4"
+        app:layout_constraintStart_toEndOf="@id/tv_currency"
+        app:layout_constraintEnd_toStartOf="@id/img_exchange_logo"
+        app:layout_constraintTop_toTopOf="@id/img_exchange_logo"
+        app:layout_constraintBottom_toBottomOf="@id/img_exchange_logo"/>
+
+    <ImageView
+        android:id="@+id/img_exchange_logo"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:contentDescription="@string/app_name"
+        android:paddingStart="@dimen/dimen_8"
+        android:paddingEnd="@dimen/dimen_8"
+        android:src="@mipmap/uae_x"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_favourites"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

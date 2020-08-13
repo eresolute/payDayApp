@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/no_internet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/no_connectivity_margin"
+    android:visibility="gone"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/error_msg"
+        style="@style/AppTheme.Text.Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_no_internet"
+        android:drawablePadding="@dimen/dimen_4"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/textSecondaryColor"
+        tools:text="@string/no_internet_connectivity" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/no_connectivity_margin"
+        android:text="@string/retry"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/btn_primary_color"
+        app:cornerRadius="@dimen/button_corner"
+        app:rippleColor="@color/btn_secondary_color" />
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_2"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dimen_4"
+    android:paddingBottom="@dimen/dimen_4">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_custom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_selector_custom"
+        android:padding="@dimen/dimen_12">
+
+        <TextView
+            android:id="@+id/tv_prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa_bold"
+            android:gravity="left"
+            android:paddingStart="@dimen/dimen_4"
+            android:paddingTop="@dimen/dimen_4"
+            android:paddingEnd="@dimen/dimen_4"
+            android:paddingBottom="@dimen/dimen_4"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textDirection="ltr"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintBottom_toBottomOf="@+id/et_mobile_number"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/et_mobile_number"
+            app:layout_constraintTop_toTopOf="@+id/et_mobile_number"
+            tools:ignore="RtlHardcoded,UnusedAttribute" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_mobile_number"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:cursorVisible="true"
+            android:gravity="left"
+            android:paddingTop="@dimen/dimen_2"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAlignment="gravity"
+            android:textDirection="ltr"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/tv_prefix"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlHardcoded,UnusedAttribute" />
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_error_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:paddingStart="@dimen/dimen_4"
+        android:paddingTop="@dimen/dimen_2"
+        android:paddingEnd="@dimen/dimen_4"
+        android:paddingBottom="@dimen/dimen_2"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="@dimen/text_12"
+        android:visibility="gone" />
+</LinearLayout>

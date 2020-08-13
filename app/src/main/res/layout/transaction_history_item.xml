@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dimen_8"
+    android:layout_marginLeft="@dimen/dimen_8"
+    android:textDirection="locale"
+    tools:ignore="UnusedAttribute">
+
+    <TextView
+        android:id="@+id/tv_beneficiary_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textColor="@color/textColor"
+        android:textDirection="ltr"
+        android:textSize="@dimen/text_12"
+        app:layout_constraintBottom_toTopOf="@+id/tv_address"
+        app:layout_constraintEnd_toStartOf="@+id/tv_inr_amt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnusedAttribute"
+        tools:text="Andrew Mathews" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        style="@style/AppTheme.Text.Time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textColor="@color/grey_500"
+        android:textDirection="ltr"
+        app:layout_constraintEnd_toStartOf="@+id/tv_aed_amt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address"
+        tools:ignore="UnusedAttribute"
+        tools:text="12/03/2019 11:23 AM" />
+
+    <TextView
+        android:id="@+id/tv_inr_amt"
+        style="@style/AppTheme.Text.Small.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:paddingStart="@dimen/dimen_4"
+        android:paddingEnd="@dimen/dimen_4"
+        android:textAllCaps="true"
+        android:textColor="@color/colorError"
+        app:layout_constraintBottom_toTopOf="@+id/tv_aed_amt"
+        app:layout_constraintEnd_toStartOf="@+id/iv_option"
+        app:layout_constraintStart_toEndOf="@+id/tv_beneficiary_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_beneficiary_name"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="INR 400,000" />
+
+    <TextView
+        android:id="@+id/tv_aed_amt"
+        style="@style/AppTheme.Text.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaa_bold"
+        android:gravity="end"
+        android:paddingStart="@dimen/dimen_4"
+        android:paddingEnd="@dimen/dimen_4"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_date"
+        app:layout_constraintEnd_toStartOf="@+id/iv_option"
+        app:layout_constraintStart_toEndOf="@+id/tv_date"
+        app:layout_constraintTop_toBottomOf="@+id/tv_inr_amt"
+        tools:text="AED 20,000" />
+
+    <ImageView
+        android:id="@+id/iv_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/dimen_8"
+        android:src="@drawable/ic_options"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_inr_amt"
+        app:layout_constraintTop_toTopOf="@+id/tv_beneficiary_name" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        style="@style/AppTheme.Text.Time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textColor="@color/textColor"
+        android:textDirection="ltr"
+        app:layout_constraintBottom_toTopOf="@+id/tv_date"
+        app:layout_constraintEnd_toStartOf="@+id/tv_inr_amt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_beneficiary_name"
+        tools:ignore="UnusedAttribute"
+        tools:text="@string/app_name" />
+
+</android.support.constraint.ConstraintLayout>
